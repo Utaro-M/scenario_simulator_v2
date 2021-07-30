@@ -9,315 +9,320 @@
     <includes local="no">utility</includes>
     <includes local="no">vector</includes>
     <incdepgraph>
-      <node id="6698">
+      <node id="6619">
         <label>scenario_simulator_exception/exception.hpp</label>
       </node>
-      <node id="6711">
+      <node id="6632">
         <label>traffic_simulator/traffic_lights/traffic_light_state.hpp</label>
         <link refid="traffic__light__state_8hpp_source"/>
-        <childnode refid="6712" relation="include">
+        <childnode refid="6633" relation="include">
         </childnode>
-        <childnode refid="6713" relation="include">
+        <childnode refid="6634" relation="include">
         </childnode>
-        <childnode refid="6714" relation="include">
+        <childnode refid="6635" relation="include">
         </childnode>
       </node>
-      <node id="6718">
+      <node id="6639">
         <label>functional</label>
       </node>
-      <node id="6688">
+      <node id="6609">
         <label>geometry_msgs/msg/pose_stamped.hpp</label>
       </node>
-      <node id="6717">
+      <node id="6638">
         <label>traffic_simulator/traffic/traffic_sink.hpp</label>
         <link refid="traffic__sink_8hpp"/>
-        <childnode refid="6718" relation="include">
+        <childnode refid="6639" relation="include">
         </childnode>
-        <childnode refid="6704" relation="include">
+        <childnode refid="6625" relation="include">
         </childnode>
-        <childnode refid="6670" relation="include">
+        <childnode refid="6590" relation="include">
         </childnode>
-        <childnode refid="6716" relation="include">
+        <childnode refid="6637" relation="include">
         </childnode>
-        <childnode refid="6708" relation="include">
+        <childnode refid="6629" relation="include">
         </childnode>
       </node>
-      <node id="6687">
+      <node id="6608">
         <label>geographic_msgs/msg/geo_point.hpp</label>
       </node>
-      <node id="6680">
+      <node id="6600">
         <label>lanelet2_routing/RoutingGraph.h</label>
       </node>
-      <node id="6675">
+      <node id="6595">
         <label>lanelet2_core/geometry/Lanelet.h</label>
       </node>
-      <node id="6693">
+      <node id="6614">
         <label>openscenario_msgs/msg/entity_status.hpp</label>
       </node>
-      <node id="6712">
+      <node id="6633">
         <label>autoware_perception_msgs/msg/lamp_state.hpp</label>
       </node>
-      <node id="6704">
+      <node id="6625">
         <label>geometry_msgs/msg/pose.hpp</label>
       </node>
-      <node id="6714">
+      <node id="6635">
         <label>stdexcept</label>
       </node>
-      <node id="6706">
+      <node id="6627">
         <label>openscenario_msgs/msg/hermite_curve.hpp</label>
       </node>
-      <node id="6670">
+      <node id="6590">
         <label>string</label>
       </node>
-      <node id="6691">
+      <node id="6612">
         <label>lanelet2_extension_psim/utility/utilities.hpp</label>
       </node>
-      <node id="6695">
+      <node id="6616">
         <label>traffic_simulator/hdmap_utils/cache.hpp</label>
         <link refid="cache_8hpp_source"/>
-        <childnode refid="6686" relation="include">
+        <childnode refid="6607" relation="include">
         </childnode>
-        <childnode refid="6696" relation="include">
+        <childnode refid="6617" relation="include">
         </childnode>
-        <childnode refid="6697" relation="include">
+        <childnode refid="6618" relation="include">
         </childnode>
-        <childnode refid="6698" relation="include">
+        <childnode refid="6619" relation="include">
         </childnode>
-        <childnode refid="6699" relation="include">
+        <childnode refid="6620" relation="include">
         </childnode>
-        <childnode refid="6710" relation="include">
+        <childnode refid="6631" relation="include">
         </childnode>
-        <childnode refid="6708" relation="include">
+        <childnode refid="6629" relation="include">
         </childnode>
       </node>
-      <node id="6692">
+      <node id="6613">
         <label>map</label>
       </node>
-      <node id="6702">
+      <node id="6623">
         <label>traffic_simulator/math/hermite_curve.hpp</label>
         <link refid="hermite__curve_8hpp_source"/>
-        <childnode refid="6703" relation="include">
+        <childnode refid="6624" relation="include">
         </childnode>
-        <childnode refid="6686" relation="include">
+        <childnode refid="6607" relation="include">
         </childnode>
-        <childnode refid="6696" relation="include">
+        <childnode refid="6617" relation="include">
         </childnode>
-        <childnode refid="6704" relation="include">
+        <childnode refid="6625" relation="include">
         </childnode>
-        <childnode refid="6705" relation="include">
+        <childnode refid="6626" relation="include">
         </childnode>
-        <childnode refid="6706" relation="include">
+        <childnode refid="6627" relation="include">
         </childnode>
-        <childnode refid="6707" relation="include">
+        <childnode refid="6628" relation="include">
         </childnode>
-        <childnode refid="6708" relation="include">
+        <childnode refid="6629" relation="include">
         </childnode>
       </node>
-      <node id="6694">
+      <node id="6615">
         <label>rclcpp/rclcpp.hpp</label>
       </node>
-      <node id="6679">
+      <node id="6599">
         <label>lanelet2_routing/RoutingCost.h</label>
       </node>
-      <node id="6684">
+      <node id="6604">
         <label>tf2_geometry_msgs/tf2_geometry_msgs.h</label>
       </node>
-      <node id="6672">
+      <node id="6592">
         <label>traffic_simulator/hdmap_utils/hdmap_utils.hpp</label>
         <link refid="hdmap__utils_8hpp_source"/>
-        <childnode refid="6673" relation="include">
+        <childnode refid="6593" relation="include">
         </childnode>
-        <childnode refid="6674" relation="include">
+        <childnode refid="6594" relation="include">
         </childnode>
-        <childnode refid="6675" relation="include">
+        <childnode refid="6595" relation="include">
         </childnode>
-        <childnode refid="6676" relation="include">
+        <childnode refid="6596" relation="include">
         </childnode>
-        <childnode refid="6677" relation="include">
+        <childnode refid="6597" relation="include">
         </childnode>
-        <childnode refid="6678" relation="include">
+        <childnode refid="6598" relation="include">
         </childnode>
-        <childnode refid="6679" relation="include">
+        <childnode refid="6599" relation="include">
         </childnode>
-        <childnode refid="6680" relation="include">
+        <childnode refid="6600" relation="include">
         </childnode>
-        <childnode refid="6681" relation="include">
+        <childnode refid="6601" relation="include">
         </childnode>
-        <childnode refid="6682" relation="include">
+        <childnode refid="6602" relation="include">
         </childnode>
-        <childnode refid="6683" relation="include">
+        <childnode refid="6603" relation="include">
         </childnode>
-        <childnode refid="6684" relation="include">
+        <childnode refid="6604" relation="include">
         </childnode>
-        <childnode refid="6685" relation="include">
+        <childnode refid="6605" relation="include">
         </childnode>
-        <childnode refid="6686" relation="include">
+        <childnode refid="6606" relation="include">
         </childnode>
-        <childnode refid="6687" relation="include">
+        <childnode refid="6607" relation="include">
         </childnode>
-        <childnode refid="6688" relation="include">
+        <childnode refid="6608" relation="include">
         </childnode>
-        <childnode refid="6689" relation="include">
+        <childnode refid="6609" relation="include">
         </childnode>
-        <childnode refid="6690" relation="include">
+        <childnode refid="6610" relation="include">
         </childnode>
-        <childnode refid="6691" relation="include">
+        <childnode refid="6611" relation="include">
         </childnode>
-        <childnode refid="6692" relation="include">
+        <childnode refid="6612" relation="include">
         </childnode>
-        <childnode refid="6669" relation="include">
+        <childnode refid="6613" relation="include">
         </childnode>
-        <childnode refid="6693" relation="include">
+        <childnode refid="6589" relation="include">
         </childnode>
-        <childnode refid="6694" relation="include">
+        <childnode refid="6614" relation="include">
         </childnode>
-        <childnode refid="6670" relation="include">
+        <childnode refid="6615" relation="include">
         </childnode>
-        <childnode refid="6695" relation="include">
+        <childnode refid="6590" relation="include">
         </childnode>
-        <childnode refid="6702" relation="include">
+        <childnode refid="6616" relation="include">
         </childnode>
-        <childnode refid="6711" relation="include">
+        <childnode refid="6623" relation="include">
         </childnode>
-        <childnode refid="6710" relation="include">
+        <childnode refid="6632" relation="include">
         </childnode>
-        <childnode refid="6709" relation="include">
+        <childnode refid="6631" relation="include">
         </childnode>
-        <childnode refid="6708" relation="include">
+        <childnode refid="6630" relation="include">
         </childnode>
-        <childnode refid="6715" relation="include">
+        <childnode refid="6629" relation="include">
+        </childnode>
+        <childnode refid="6636" relation="include">
         </childnode>
       </node>
-      <node id="6700">
+      <node id="6621">
         <label>exception</label>
       </node>
-      <node id="6716">
+      <node id="6637">
         <label>traffic_simulator/traffic/traffic_module_base.hpp</label>
         <link refid="traffic__module__base_8hpp_source"/>
       </node>
-      <node id="6673">
+      <node id="6593">
         <label>geometry_msgs/msg/vector3.h</label>
       </node>
-      <node id="6705">
+      <node id="6626">
         <label>geometry_msgs/msg/vector3.hpp</label>
       </node>
-      <node id="6678">
+      <node id="6598">
         <label>lanelet2_routing/Route.h</label>
       </node>
-      <node id="6690">
+      <node id="6611">
         <label>lanelet2_extension_psim/utility/query.hpp</label>
       </node>
-      <node id="6703">
+      <node id="6624">
         <label>quaternion_operation/quaternion_operation.h</label>
       </node>
-      <node id="6689">
+      <node id="6610">
         <label>lanelet2_extension_psim/utility/message_conversion.hpp</label>
       </node>
-      <node id="6696">
+      <node id="6617">
         <label>geometry_msgs/msg/point.hpp</label>
       </node>
-      <node id="6701">
+      <node id="6622">
         <label>openscenario_msgs/msg/catmull_rom_spline.hpp</label>
       </node>
-      <node id="6708">
+      <node id="6629">
         <label>vector</label>
       </node>
-      <node id="6668">
+      <node id="6588">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/traffic/traffic_controller.cpp</label>
         <link refid="traffic__controller_8cpp"/>
-        <childnode refid="6669" relation="include">
+        <childnode refid="6589" relation="include">
         </childnode>
-        <childnode refid="6670" relation="include">
+        <childnode refid="6590" relation="include">
         </childnode>
-        <childnode refid="6671" relation="include">
+        <childnode refid="6591" relation="include">
         </childnode>
-        <childnode refid="6717" relation="include">
+        <childnode refid="6638" relation="include">
         </childnode>
-        <childnode refid="6709" relation="include">
+        <childnode refid="6630" relation="include">
         </childnode>
-        <childnode refid="6708" relation="include">
+        <childnode refid="6629" relation="include">
         </childnode>
       </node>
-      <node id="6709">
+      <node id="6606">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="6630">
         <label>utility</label>
       </node>
-      <node id="6707">
+      <node id="6628">
         <label>traffic_simulator/math/polynomial_solver.hpp</label>
         <link refid="polynomial__solver_8hpp_source"/>
-        <childnode refid="6708" relation="include">
+        <childnode refid="6629" relation="include">
         </childnode>
       </node>
-      <node id="6682">
+      <node id="6602">
         <label>lanelet2_traffic_rules/TrafficRulesFactory.h</label>
       </node>
-      <node id="6699">
+      <node id="6620">
         <label>traffic_simulator/math/catmull_rom_spline.hpp</label>
         <link refid="catmull__rom__spline_8hpp_source"/>
-        <childnode refid="6700" relation="include">
+        <childnode refid="6621" relation="include">
         </childnode>
-        <childnode refid="6696" relation="include">
+        <childnode refid="6617" relation="include">
         </childnode>
-        <childnode refid="6701" relation="include">
+        <childnode refid="6622" relation="include">
         </childnode>
-        <childnode refid="6670" relation="include">
+        <childnode refid="6590" relation="include">
         </childnode>
-        <childnode refid="6702" relation="include">
+        <childnode refid="6623" relation="include">
         </childnode>
-        <childnode refid="6709" relation="include">
+        <childnode refid="6630" relation="include">
         </childnode>
-        <childnode refid="6708" relation="include">
+        <childnode refid="6629" relation="include">
         </childnode>
       </node>
-      <node id="6677">
+      <node id="6597">
         <label>lanelet2_core/primitives/LaneletSequence.h</label>
       </node>
-      <node id="6713">
+      <node id="6634">
         <label>iostream</label>
       </node>
-      <node id="6674">
+      <node id="6594">
         <label>lanelet2_core/LaneletMap.h</label>
       </node>
-      <node id="6710">
+      <node id="6631">
         <label>unordered_map</label>
       </node>
-      <node id="6685">
+      <node id="6605">
         <label>autoware_auto_msgs/msg/had_map_bin.hpp</label>
       </node>
-      <node id="6715">
+      <node id="6636">
         <label>visualization_msgs/msg/marker_array.hpp</label>
       </node>
-      <node id="6697">
+      <node id="6618">
         <label>mutex</label>
       </node>
-      <node id="6676">
+      <node id="6596">
         <label>lanelet2_core/primitives/BasicRegulatoryElements.h</label>
       </node>
-      <node id="6681">
+      <node id="6601">
         <label>lanelet2_routing/RoutingGraphContainer.h</label>
       </node>
-      <node id="6686">
+      <node id="6607">
         <label>boost/optional.hpp</label>
       </node>
-      <node id="6683">
+      <node id="6603">
         <label>tf2/LinearMath/Matrix3x3.h</label>
       </node>
-      <node id="6671">
+      <node id="6591">
         <label>traffic_simulator/traffic/traffic_controller.hpp</label>
         <link refid="traffic__controller_8hpp"/>
-        <childnode refid="6669" relation="include">
+        <childnode refid="6589" relation="include">
         </childnode>
-        <childnode refid="6670" relation="include">
+        <childnode refid="6590" relation="include">
         </childnode>
-        <childnode refid="6672" relation="include">
+        <childnode refid="6592" relation="include">
         </childnode>
-        <childnode refid="6716" relation="include">
+        <childnode refid="6637" relation="include">
         </childnode>
-        <childnode refid="6709" relation="include">
+        <childnode refid="6630" relation="include">
         </childnode>
-        <childnode refid="6708" relation="include">
+        <childnode refid="6629" relation="include">
         </childnode>
       </node>
-      <node id="6669">
+      <node id="6589">
         <label>memory</label>
       </node>
     </incdepgraph>
