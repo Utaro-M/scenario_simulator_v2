@@ -244,26 +244,26 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="153">
+      <node id="160">
         <label>SimModelInterface</label>
         <link refid="classSimModelInterface"/>
       </node>
-      <node id="152">
+      <node id="159">
         <label>SimModelIdealTwist</label>
         <link refid="classSimModelIdealTwist"/>
-        <childnode refid="153" relation="public-inheritance">
+        <childnode refid="160" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="155">
+      <node id="162">
         <label>SimModelInterface</label>
         <link refid="classSimModelInterface"/>
       </node>
-      <node id="154">
+      <node id="161">
         <label>SimModelIdealTwist</label>
         <link refid="classSimModelIdealTwist"/>
-        <childnode refid="155" relation="public-inheritance">
+        <childnode refid="162" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

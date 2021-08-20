@@ -477,44 +477,44 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="158">
+      <node id="165">
         <label>SimModelIdealSteer</label>
         <link refid="classSimModelIdealSteer"/>
-        <childnode refid="156" relation="public-inheritance">
+        <childnode refid="163" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="157">
+      <node id="164">
         <label>SimModelIdealAccel</label>
         <link refid="classSimModelIdealAccel"/>
-        <childnode refid="156" relation="public-inheritance">
+        <childnode refid="163" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="161">
+      <node id="168">
         <label>SimModelTimeDelaySteerAccel</label>
         <link refid="classSimModelTimeDelaySteerAccel"/>
-        <childnode refid="156" relation="public-inheritance">
+        <childnode refid="163" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="162">
+      <node id="169">
         <label>SimModelTimeDelayTwist</label>
         <link refid="classSimModelTimeDelayTwist"/>
-        <childnode refid="156" relation="public-inheritance">
+        <childnode refid="163" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="160">
+      <node id="167">
         <label>SimModelTimeDelaySteer</label>
         <link refid="classSimModelTimeDelaySteer"/>
-        <childnode refid="156" relation="public-inheritance">
+        <childnode refid="163" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="156">
+      <node id="163">
         <label>SimModelInterface</label>
         <link refid="classSimModelInterface"/>
       </node>
-      <node id="159">
+      <node id="166">
         <label>SimModelIdealTwist</label>
         <link refid="classSimModelIdealTwist"/>
-        <childnode refid="156" relation="public-inheritance">
+        <childnode refid="163" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
