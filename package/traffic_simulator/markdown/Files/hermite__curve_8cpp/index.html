@@ -604,6 +604,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../design/Metrics/" class="md-nav__link">
+        Metrics
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -650,6 +662,21 @@
     <li class="md-nav__item">
       <a href="../../../../../etc/ContactUs/" class="md-nav__link">
         Contact Information
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
+        Development Rules
       </a>
     </li>
   
@@ -789,23 +816,6 @@
 <span class="p">{</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="n">HermiteCurve</span><span class="o">::</span><span class="n">HermiteCurve</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">HermiteCurve</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">curve</span><span class="p">)</span><span class="w"></span>
-<span class="o">:</span><span class="w"> </span><span class="n">ax_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">ax</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">bx_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">bx</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">cx_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">cx</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">dx_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">dx</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">ay_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">ax</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">by_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">by</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">cy_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">cy</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">dy_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">dy</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">az_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">ax</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">bz_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">bz</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">cz_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">cz</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">dz_</span><span class="p">(</span><span class="n">curve</span><span class="p">.</span><span class="n">dz</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">length_</span><span class="p">(</span><span class="n">getLength</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-
 <span class="n">HermiteCurve</span><span class="o">::</span><span class="n">HermiteCurve</span><span class="p">(</span><span class="w"></span>
 <span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Pose</span><span class="w"> </span><span class="n">start_pose</span><span class="p">,</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Pose</span><span class="w"> </span><span class="n">goal_pose</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">start_vec</span><span class="p">,</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Vector3</span><span class="w"> </span><span class="n">goal_vec</span><span class="p">)</span><span class="w"></span>
@@ -827,24 +837,6 @@
 <span class="w">  </span><span class="n">length_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getLength</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="k">const</span><span class="w"> </span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">HermiteCurve</span><span class="w"> </span><span class="n">HermiteCurve</span><span class="o">::</span><span class="n">toRosMsg</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">HermiteCurve</span><span class="w"> </span><span class="n">curve</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">ax</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ax_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">bx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bx_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">cx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cx_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">dx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dx_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">ay</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ay_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">by</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">by_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">cy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cy_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">dy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dy_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">az</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">az_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">bz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">bz_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">cz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cz_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">curve</span><span class="p">.</span><span class="n">dz</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dz_</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">curve</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-
 <span class="kt">double</span><span class="w"> </span><span class="n">HermiteCurve</span><span class="o">::</span><span class="n">getSquaredDistanceIn2D</span><span class="p">(</span><span class="w"></span>
 <span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Point</span><span class="w"> </span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">autoscale</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
@@ -856,16 +848,18 @@
 <span class="p">}</span><span class="w"></span>
 
 <span class="kt">double</span><span class="w"> </span><span class="n">HermiteCurve</span><span class="o">::</span><span class="n">getNewtonMethodStepSize</span><span class="p">(</span><span class="w"></span>
-<span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Point</span><span class="w"> </span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">autoscale</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="w">  </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Point</span><span class="w"> </span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="cm">/*, bool autoscale*/</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">autoscale</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">getLength</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">point_on_curve</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getPoint</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">autoscale</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="cm">/*</span>
+<span class="cm">  if (autoscale) {</span>
+<span class="cm">    s = s / getLength();</span>
+<span class="cm">  }</span>
+<span class="cm">  */</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">point_on_curve</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getPoint</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="cm">/*autoscale*/</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">s2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">pow</span><span class="p">(</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">x_term_diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">x</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">point_on_curve</span><span class="p">.</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="mi">-3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">ax_</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">s2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">bx_</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cx_</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">y_term_diff</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="n">point</span><span class="p">.</span><span class="n">y</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">point_on_curve</span><span class="p">.</span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="p">(</span><span class="mi">-3</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">ay_</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">s2</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">by_</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">cy_</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getSquaredDistanceIn2D</span><span class="p">(</span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">autoscale</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">x_term_diff</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y_term_diff</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="kt">double</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getSquaredDistanceIn2D</span><span class="p">(</span><span class="n">point</span><span class="p">,</span><span class="w"> </span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="w"> </span><span class="cm">/*autoscale*/</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="p">(</span><span class="n">x_term_diff</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y_term_diff</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">ret</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
@@ -1083,14 +1077,26 @@
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">x_dot</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y_dot_dot</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">x_dot_dot</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y_dot</span><span class="p">)</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">pow</span><span class="p">(</span><span class="n">x_dot</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">x_dot</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y_dot</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y_dot</span><span class="p">,</span><span class="w"> </span><span class="mf">1.5</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="kt">double</span><span class="w"> </span><span class="n">HermiteCurve</span><span class="o">::</span><span class="n">getMaximum2DCurvature</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">HermiteCurve</span><span class="o">::</span><span class="n">get2DMinMaxCurvatureValue</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">ret</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">curvatures</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">double</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">0.1</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="kt">double</span><span class="w"> </span><span class="n">curvature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get2DCurvature</span><span class="p">(</span><span class="n">s</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="n">curvatures</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">curvature</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="o">*</span><span class="n">std</span><span class="o">::</span><span class="n">max_element</span><span class="p">(</span><span class="n">curvatures</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">curvatures</span><span class="p">.</span><span class="n">end</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">ret</span><span class="p">.</span><span class="n">first</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">std</span><span class="o">::</span><span class="n">min_element</span><span class="p">(</span><span class="n">curvatures</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">curvatures</span><span class="p">.</span><span class="n">end</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">ret</span><span class="p">.</span><span class="n">second</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">std</span><span class="o">::</span><span class="n">max_element</span><span class="p">(</span><span class="n">curvatures</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">curvatures</span><span class="p">.</span><span class="n">end</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">ret</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">double</span><span class="w"> </span><span class="n">HermiteCurve</span><span class="o">::</span><span class="n">getMaximum2DCurvature</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">get2DMinMaxCurvatureValue</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">fabs</span><span class="p">(</span><span class="n">values</span><span class="p">.</span><span class="n">first</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">fabs</span><span class="p">(</span><span class="n">values</span><span class="p">.</span><span class="n">second</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">values</span><span class="p">.</span><span class="n">first</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">values</span><span class="p">.</span><span class="n">second</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="kt">double</span><span class="w"> </span><span class="n">HermiteCurve</span><span class="o">::</span><span class="n">getLength</span><span class="p">(</span><span class="kt">size_t</span><span class="w"> </span><span class="n">num_points</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
@@ -1121,7 +1127,7 @@
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace traffic_simulator</span>
 </code></pre></div>
 <hr />
-<p>Updated on  3 September 2021 at 01:15:29 UTC</p>
+<p>Updated on  3 September 2021 at 07:52:07 UTC</p>
                 
                   
                 

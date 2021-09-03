@@ -7,60 +7,65 @@
     <includes refid="pedestrian__category_8hpp" local="no">openscenario_interpreter/syntax/pedestrian_category.hpp</includes>
     <includes local="no">string</includes>
     <incdepgraph>
-      <node id="19750">
+      <node id="19925">
         <label>scenario_simulator_exception/exception.hpp</label>
       </node>
-      <node id="19746">
+      <node id="19921">
         <label>iomanip</label>
       </node>
-      <node id="19747">
+      <node id="19922">
         <label>openscenario_interpreter/utility/demangle.hpp</label>
         <link refid="demangle_8hpp_source"/>
-        <childnode refid="19748" relation="include">
+        <childnode refid="19923" relation="include">
         </childnode>
-        <childnode refid="19749" relation="include">
+        <childnode refid="19924" relation="include">
         </childnode>
       </node>
-      <node id="19751">
+      <node id="19926">
         <label>stdexcept</label>
       </node>
-      <node id="19748">
+      <node id="19923">
         <label>string</label>
       </node>
-      <node id="19745">
+      <node id="19920">
+        <label>exception</label>
+      </node>
+      <node id="19919">
         <label>openscenario_interpreter/error.hpp</label>
         <link refid="error_8hpp_source"/>
-        <childnode refid="19746" relation="include">
+        <childnode refid="19920" relation="include">
         </childnode>
-        <childnode refid="19747" relation="include">
+        <childnode refid="19921" relation="include">
         </childnode>
-        <childnode refid="19750" relation="include">
+        <childnode refid="19922" relation="include">
         </childnode>
-        <childnode refid="19751" relation="include">
+        <childnode refid="19925" relation="include">
+        </childnode>
+        <childnode refid="19926" relation="include">
         </childnode>
       </node>
-      <node id="19749">
+      <node id="19924">
         <label>typeinfo</label>
       </node>
-      <node id="19752">
+      <node id="19927">
         <label>openscenario_interpreter/syntax/pedestrian_category.hpp</label>
         <link refid="pedestrian__category_8hpp_source"/>
-        <childnode refid="19744" relation="include">
+        <childnode refid="19918" relation="include">
         </childnode>
       </node>
-      <node id="19744">
+      <node id="19918">
         <label>iostream</label>
       </node>
-      <node id="19743">
+      <node id="19917">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/pedestrian_category.cpp</label>
         <link refid="pedestrian__category_8cpp"/>
-        <childnode refid="19744" relation="include">
+        <childnode refid="19918" relation="include">
         </childnode>
-        <childnode refid="19745" relation="include">
+        <childnode refid="19919" relation="include">
         </childnode>
-        <childnode refid="19752" relation="include">
+        <childnode refid="19927" relation="include">
         </childnode>
-        <childnode refid="19748" relation="include">
+        <childnode refid="19923" relation="include">
         </childnode>
       </node>
     </incdepgraph>

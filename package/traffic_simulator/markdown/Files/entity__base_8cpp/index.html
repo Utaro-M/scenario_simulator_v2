@@ -604,6 +604,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../design/Metrics/" class="md-nav__link">
+        Metrics
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -650,6 +662,21 @@
     <li class="md-nav__item">
       <a href="../../../../../etc/ContactUs/" class="md-nav__link">
         Contact Information
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
+        Development Rules
       </a>
     </li>
   
@@ -777,14 +804,6 @@
 <span class="w">  </span><span class="n">status_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">boost</span><span class="o">::</span><span class="n">none</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="n">EntityBase</span><span class="o">::</span><span class="n">EntityBase</span><span class="p">(</span><span class="w"></span>
-<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">EntityStatus</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">initial_state</span><span class="p">)</span><span class="w"></span>
-<span class="o">:</span><span class="w"> </span><span class="n">EntityBase</span><span class="p">(</span><span class="n">type</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">status_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">initial_state</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-
 <span class="kt">void</span><span class="w"> </span><span class="n">EntityBase</span><span class="o">::</span><span class="n">onUpdate</span><span class="p">(</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">status_before_update_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">status_</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
 
 <span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="kt">double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">EntityBase</span><span class="o">::</span><span class="n">getStandStillDuration</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">stand_still_duration_</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
@@ -866,7 +885,7 @@
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace traffic_simulator</span>
 </code></pre></div>
 <hr />
-<p>Updated on  3 September 2021 at 01:15:29 UTC</p>
+<p>Updated on  3 September 2021 at 07:52:07 UTC</p>
                 
                   
                 

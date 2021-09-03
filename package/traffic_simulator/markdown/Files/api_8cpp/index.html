@@ -604,6 +604,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../design/Metrics/" class="md-nav__link">
+        Metrics
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -650,6 +662,21 @@
     <li class="md-nav__item">
       <a href="../../../../../etc/ContactUs/" class="md-nav__link">
         Contact Information
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
+        Development Rules
       </a>
     </li>
   
@@ -773,6 +800,8 @@
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">metrics_manager_</span><span class="p">.</span><span class="n">getLifecycle</span><span class="p">(</span><span class="n">name</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
+<span class="kt">bool</span><span class="w"> </span><span class="nf">API::metricExists</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">metrics_manager_</span><span class="p">.</span><span class="n">exists</span><span class="p">(</span><span class="n">name</span><span class="p">);</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
 <span class="kt">void</span><span class="w"> </span><span class="nf">API::setVerbose</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">verbose</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="n">metrics_manager_</span><span class="p">.</span><span class="n">setVerbose</span><span class="p">(</span><span class="n">verbose</span><span class="p">);</span><span class="w"></span>
@@ -813,6 +842,7 @@
 <span class="w">    </span><span class="n">simulation_api_schema</span><span class="o">::</span><span class="n">SpawnVehicleEntityResponse</span><span class="w"> </span><span class="n">res</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="n">req</span><span class="p">.</span><span class="n">set_is_ego</span><span class="p">(</span><span class="nb">true</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="n">simulation_interface</span><span class="o">::</span><span class="n">toProto</span><span class="p">(</span><span class="n">params</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">req</span><span class="p">.</span><span class="n">mutable_parameters</span><span class="p">());</span><span class="w"></span>
+<span class="w">    </span><span class="n">req</span><span class="p">.</span><span class="n">mutable_parameters</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">set_name</span><span class="p">(</span><span class="n">name</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="n">spawn_vehicle_entity_client_</span><span class="p">.</span><span class="n">call</span><span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">res</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">res</span><span class="p">.</span><span class="n">result</span><span class="p">().</span><span class="n">success</span><span class="p">();</span><span class="w"></span>
 <span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -848,6 +878,7 @@
 <span class="w">  </span><span class="n">simulation_api_schema</span><span class="o">::</span><span class="n">SpawnPedestrianEntityRequest</span><span class="w"> </span><span class="n">req</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="n">simulation_api_schema</span><span class="o">::</span><span class="n">SpawnPedestrianEntityResponse</span><span class="w"> </span><span class="n">res</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="n">simulation_interface</span><span class="o">::</span><span class="n">toProto</span><span class="p">(</span><span class="n">params</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">req</span><span class="p">.</span><span class="n">mutable_parameters</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">req</span><span class="p">.</span><span class="n">mutable_parameters</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">set_name</span><span class="p">(</span><span class="n">name</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="n">spawn_pedestrian_entity_client_</span><span class="p">.</span><span class="n">call</span><span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">res</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">res</span><span class="p">.</span><span class="n">result</span><span class="p">().</span><span class="n">success</span><span class="p">();</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
@@ -869,9 +900,9 @@
 <span class="w">  </span><span class="n">simulation_api_schema</span><span class="o">::</span><span class="n">SpawnMiscObjectEntityRequest</span><span class="w"> </span><span class="n">req</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="n">simulation_api_schema</span><span class="o">::</span><span class="n">SpawnMiscObjectEntityResponse</span><span class="w"> </span><span class="n">res</span><span class="p">;</span><span class="w"></span>
 <span class="w">  </span><span class="n">simulation_interface</span><span class="o">::</span><span class="n">toProto</span><span class="p">(</span><span class="n">params</span><span class="p">,</span><span class="w"> </span><span class="o">*</span><span class="n">req</span><span class="p">.</span><span class="n">mutable_parameters</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="n">req</span><span class="p">.</span><span class="n">mutable_parameters</span><span class="p">()</span><span class="o">-&gt;</span><span class="n">set_name</span><span class="p">(</span><span class="n">name</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="n">spawn_misc_object_entity_client_</span><span class="p">.</span><span class="n">call</span><span class="p">(</span><span class="n">req</span><span class="p">,</span><span class="w"> </span><span class="n">res</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">res</span><span class="p">.</span><span class="n">result</span><span class="p">().</span><span class="n">success</span><span class="p">();</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Pose</span><span class="w"> </span><span class="nf">API::getEntityPose</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"></span>
@@ -1161,7 +1192,7 @@
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace traffic_simulator</span>
 </code></pre></div>
 <hr />
-<p>Updated on  3 September 2021 at 01:15:29 UTC</p>
+<p>Updated on  3 September 2021 at 07:52:07 UTC</p>
                 
                   
                 

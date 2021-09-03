@@ -95,6 +95,8 @@
       <node id="161">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/metrics/out_of_range_metric.hpp</label>
         <link refid="out__of__range__metric_8hpp_source"/>
+        <childnode refid="158" relation="include">
+        </childnode>
       </node>
       <node id="156">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/entity/entity_manager.hpp</label>

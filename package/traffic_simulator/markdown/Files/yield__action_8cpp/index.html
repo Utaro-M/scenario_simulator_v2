@@ -604,6 +604,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../design/Metrics/" class="md-nav__link">
+        Metrics
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -650,6 +662,21 @@
     <li class="md-nav__item">
       <a href="../../../../../etc/ContactUs/" class="md-nav__link">
         Contact Information
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
+        Development Rules
       </a>
     </li>
   
@@ -854,6 +881,9 @@
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="n">setOutput</span><span class="p">(</span><span class="s">&quot;updated_status&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">calculateEntityStatusUpdated</span><span class="p">(</span><span class="n">target_speed</span><span class="p">.</span><span class="n">get</span><span class="p">()));</span><span class="w"></span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">waypoints</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateWaypoints</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">waypoints</span><span class="p">.</span><span class="n">waypoints</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">BT</span><span class="o">::</span><span class="n">NodeStatus</span><span class="o">::</span><span class="n">FAILURE</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">obstacle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateObstacle</span><span class="p">(</span><span class="n">waypoints</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="n">setOutput</span><span class="p">(</span><span class="s">&quot;waypoints&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">waypoints</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="n">setOutput</span><span class="p">(</span><span class="s">&quot;obstacle&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">obstacle</span><span class="p">);</span><span class="w"></span>
@@ -866,6 +896,9 @@
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="w">  </span><span class="n">setOutput</span><span class="p">(</span><span class="s">&quot;updated_status&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">calculateEntityStatusUpdated</span><span class="p">(</span><span class="n">target_speed</span><span class="p">.</span><span class="n">get</span><span class="p">()));</span><span class="w"></span>
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">waypoints</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateWaypoints</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">waypoints</span><span class="p">.</span><span class="n">waypoints</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">BT</span><span class="o">::</span><span class="n">NodeStatus</span><span class="o">::</span><span class="n">FAILURE</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">obstacle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">calculateObstacle</span><span class="p">(</span><span class="n">waypoints</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="n">setOutput</span><span class="p">(</span><span class="s">&quot;waypoints&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">waypoints</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="n">setOutput</span><span class="p">(</span><span class="s">&quot;obstacle&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">obstacle</span><span class="p">);</span><span class="w"></span>
@@ -876,7 +909,7 @@
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace entity_behavior</span>
 </code></pre></div>
 <hr />
-<p>Updated on  3 September 2021 at 01:15:29 UTC</p>
+<p>Updated on  3 September 2021 at 07:52:07 UTC</p>
                 
                   
                 

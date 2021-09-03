@@ -604,6 +604,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../design/Metrics/" class="md-nav__link">
+        Metrics
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -650,6 +662,21 @@
     <li class="md-nav__item">
       <a href="../../../../../etc/ContactUs/" class="md-nav__link">
         Contact Information
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
+        Development Rules
       </a>
     </li>
   
@@ -772,17 +799,6 @@
 <span class="k">namespace</span><span class="w"> </span><span class="nn">entity</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="n">VehicleEntity</span><span class="o">::</span><span class="n">VehicleEntity</span><span class="p">(</span><span class="w"></span>
-<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">EntityStatus</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">initial_state</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">VehicleParameters</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">params</span><span class="p">)</span><span class="w"></span>
-<span class="o">:</span><span class="w"> </span><span class="n">EntityBase</span><span class="p">(</span><span class="n">params</span><span class="p">.</span><span class="n">vehicle_category</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">initial_state</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">parameters</span><span class="p">(</span><span class="n">params</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">tree_ptr_</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">make_shared</span><span class="o">&lt;</span><span class="n">entity_behavior</span><span class="o">::</span><span class="n">vehicle</span><span class="o">::</span><span class="n">BehaviorTree</span><span class="o">&gt;</span><span class="p">())</span><span class="w"></span>
-<span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="n">entity_type_</span><span class="p">.</span><span class="n">type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">EntityType</span><span class="o">::</span><span class="n">VEHICLE</span><span class="p">;</span><span class="w"></span>
-<span class="w">  </span><span class="n">tree_ptr_</span><span class="o">-&gt;</span><span class="n">setValueToBlackBoard</span><span class="p">(</span><span class="s">&quot;vehicle_parameters&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">parameters</span><span class="p">);</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-
-<span class="n">VehicleEntity</span><span class="o">::</span><span class="n">VehicleEntity</span><span class="p">(</span><span class="w"></span>
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">VehicleParameters</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">params</span><span class="p">)</span><span class="w"></span>
 <span class="o">:</span><span class="w"> </span><span class="n">EntityBase</span><span class="p">(</span><span class="n">params</span><span class="p">.</span><span class="n">vehicle_category</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">),</span><span class="w"></span>
 <span class="w">  </span><span class="n">parameters</span><span class="p">(</span><span class="n">params</span><span class="p">),</span><span class="w"></span>
@@ -800,10 +816,34 @@
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
+<span class="kt">void</span><span class="w"> </span><span class="n">VehicleEntity</span><span class="o">::</span><span class="n">requestAssignRoute</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Pose</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">waypoints</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">LaneletPose</span><span class="o">&gt;</span><span class="w"> </span><span class="n">route</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="nl">waypoint</span> <span class="p">:</span><span class="w"> </span><span class="n">waypoints</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">lanelet_waypoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hdmap_utils_ptr_</span><span class="o">-&gt;</span><span class="n">toLaneletPose</span><span class="p">(</span><span class="n">waypoint</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lanelet_waypoint</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">route</span><span class="p">.</span><span class="n">emplace_back</span><span class="p">(</span><span class="n">lanelet_waypoint</span><span class="p">.</span><span class="n">get</span><span class="p">());</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">THROW_SEMANTIC_ERROR</span><span class="p">(</span><span class="s">&quot;Waypoint of pedestrian entity should be on lane.&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="n">requestAssignRoute</span><span class="p">(</span><span class="n">route</span><span class="p">);</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
 <span class="kt">void</span><span class="w"> </span><span class="n">VehicleEntity</span><span class="o">::</span><span class="n">requestAcquirePosition</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">LaneletPose</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">lanelet_pose</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">status_</span><span class="w"> </span><span class="n">and</span><span class="w"> </span><span class="n">status_</span><span class="o">-&gt;</span><span class="n">lanelet_pose_valid</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">route_planner_ptr_</span><span class="o">-&gt;</span><span class="n">getRouteLanelets</span><span class="p">(</span><span class="n">status_</span><span class="o">-&gt;</span><span class="n">lanelet_pose</span><span class="p">,</span><span class="w"> </span><span class="n">lanelet_pose</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="n">VehicleEntity</span><span class="o">::</span><span class="n">requestAcquirePosition</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Pose</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">map_pose</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">lanelet_pose</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">hdmap_utils_ptr_</span><span class="o">-&gt;</span><span class="n">toLaneletPose</span><span class="p">(</span><span class="n">map_pose</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">lanelet_pose</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">requestAcquirePosition</span><span class="p">(</span><span class="n">lanelet_pose</span><span class="p">.</span><span class="n">get</span><span class="p">());</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">THROW_SEMANTIC_ERROR</span><span class="p">(</span><span class="s">&quot;Goal of the vehicle entity should be on lane.&quot;</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
@@ -867,7 +907,7 @@
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace traffic_simulator</span>
 </code></pre></div>
 <hr />
-<p>Updated on  3 September 2021 at 01:15:29 UTC</p>
+<p>Updated on  3 September 2021 at 07:52:07 UTC</p>
                 
                   
                 

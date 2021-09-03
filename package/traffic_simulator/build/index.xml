@@ -60,6 +60,7 @@
     <member refid="classtraffic__simulator_1_1API_1a236ac6d8d87b2b174ac77c4226962c68" kind="function"><name>API</name></member>
     <member refid="classtraffic__simulator_1_1API_1a2e1ea4dc91018ccc82c9897267668f79" kind="function"><name>addMetric</name></member>
     <member refid="classtraffic__simulator_1_1API_1ab22b06383fec60a1071be11b0d8c2933" kind="function"><name>getMetricLifecycle</name></member>
+    <member refid="classtraffic__simulator_1_1API_1a8c1654abe2e1c15b7fad18059f921e4e" kind="function"><name>metricExists</name></member>
     <member refid="classtraffic__simulator_1_1API_1a7c971afaf5e2273489eb3cd09914da27" kind="function"><name>setVerbose</name></member>
     <member refid="classtraffic__simulator_1_1API_1a99fe59bcd7050c22ca5b0360ecbb641e" kind="function"><name>spawn</name></member>
     <member refid="classtraffic__simulator_1_1API_1a4754fecd5ca125ba276b7c583ba73035" kind="function"><name>spawn</name></member>
@@ -185,8 +186,6 @@
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a3a8463d122ca2995d1c1f157e15d3c93" kind="variable"><name>total_length_</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a1e97d2eecb3034fc2cac4796e24ac174" kind="variable"><name>control_points</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1acf0755fc00a2d5b6f68a5db85bd3ded0" kind="function"><name>CatmullRomSpline</name></member>
-    <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a128c3b4a0292c3511240b6fe71b9cf12" kind="function"><name>CatmullRomSpline</name></member>
-    <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a6a8f61124515167a71ac2d41df910302" kind="function"><name>CatmullRomSpline</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a104a9a379bf7ea43b52bf677db566d34" kind="function"><name>CatmullRomSpline</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a4882552609c5d464a6202683ddc2ae30" kind="function"><name>getLength</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a43d63eab9cfd14609df8863f8b6c52db" kind="function"><name>getMaximum2DCurvature</name></member>
@@ -194,13 +193,11 @@
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a12b98fa62c9d42a371e81a334e8fe583" kind="function"><name>getTangentVector</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a6a1fd62558e00d829c3640a0489b9618" kind="function"><name>getNormalVector</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a5304342863d4537b1090c77f50ca7dd7" kind="function"><name>getPose</name></member>
-    <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a7eab089b81e86c58bc40dac26aa1dfa2" kind="function"><name>getTrajectory</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a8739e87a3e27ae24b162358d522e3a90" kind="function"><name>getTrajectory</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a10215a5646b382adc88c66d3e9ecf402" kind="function"><name>getSValue</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1ab013ab32161293bed6ba0304f51f2ecd" kind="function"><name>getSquaredDistanceIn2D</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a2da35f615c4d6ad9234c694e691a3be3" kind="function"><name>getCollisionPointIn2D</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a6f9414618485f1b3022040bcaf1509ad" kind="function"><name>getCollisionPointIn2D</name></member>
-    <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1ae5ef284e45c3fbbf1d6d2db4831d3e6a" kind="function"><name>toRosMsg</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a6498cdee4a53d1dfce9b2b661476f481" kind="function"><name>getRightBoundsPoint</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1a83d9ff77867ca6db62317461ac88871b" kind="function"><name>getLeftBoundsPoint</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1CatmullRomSpline_1ae998453f5c12a5ede3f6fe5e3cd4bffa" kind="function"><name>getPolygon</name></member>
@@ -266,7 +263,7 @@
     <member refid="structtraffic__simulator_1_1entity_1_1Dimensions_1a49f7bf7c24d4f5a5630a4043f84c46ab" kind="function"><name>Dimensions</name></member>
   </compound>
   <compound refid="classtraffic__simulator_1_1entity_1_1EgoEntity" kind="class"><name>traffic_simulator::entity::EgoEntity</name>
-    <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1a73f8828b882461ebbeec9e5ea0aabc70" kind="variable"><name>autoware</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1a8bd72a6263e8b95bce8150704230d7ad" kind="variable"><name>autoware</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1adf91aef19c1028ff88572bbae627266a" kind="variable"><name>vehicle_model_type_</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1a8edfe25f1f9b9e0ffb16f75d15a57473" kind="variable"><name>vehicle_model_ptr_</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1a4a391d045af95f50e8e531abb201d6c9" kind="variable"><name>initial_pose_</name></member>
@@ -289,7 +286,9 @@
     <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1a5d229203b6a37b9baa17a558231a6565" kind="function"><name>onUpdate</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1a6eb76f8010cea2ca9ea9066adf561789" kind="function"><name>ready</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1a0279d0aa4935a9908258a703b75b558b" kind="function"><name>requestAcquirePosition</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1a8b843c604c09b9972371a8c4998f2687" kind="function"><name>requestAcquirePosition</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1aadefa6e29e32a57eb4fb0f2847262ee3" kind="function"><name>requestAssignRoute</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1a7d5c53673c8de4e0389bafd93012cdcd" kind="function"><name>requestAssignRoute</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1a98ba77621d0f0ee652707364dcd66668" kind="function"><name>requestLaneChange</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1a201003ea5e515bd81ede4bab9ccc3020" kind="function"><name>setStatus</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EgoEntity_1adbb86441cd161fccf0c4090da4e5bd2c" kind="function"><name>setTargetSpeed</name></member>
@@ -312,7 +311,6 @@
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a663d357ca5bbde5ff198254cf910769c" kind="variable"><name>current_marker_</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a7ac2a2df785d151c5141cb51f6b19e99" kind="variable"><name>entity_type_</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a7ae9e394be94b38cdeffbf630f35992b" kind="function"><name>EntityBase</name></member>
-    <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a75205791d99680ba884e6045abe2b370" kind="function"><name>EntityBase</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a14e9768af5cf590d7b93e0797d74c14d" kind="function"><name>~EntityBase</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a68ac9642755f613b95c1326b73193f02" kind="function"><name>engage</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a89741f16edb1c0321e282bc291d34394" kind="function"><name>getBoundingBox</name></member>
@@ -341,7 +339,9 @@
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a8d9a2869ccabffc62d3746393aa655e6" kind="function"><name>onUpdate</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a1360df867bb5ca641f1b30170665b684" kind="function"><name>ready</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1ae502e8355bcbb8024fd940dbec71d933" kind="function"><name>requestAcquirePosition</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1ac7463fe927873ab99f7f6e9e0f6cf2e4" kind="function"><name>requestAcquirePosition</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a511092715e59a7e42242fee720208995" kind="function"><name>requestAssignRoute</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a66b52fd5fbcf234d3bd3a537f82984e6" kind="function"><name>requestAssignRoute</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1ab27b6dab14ac6369aab50d8c53617d5e" kind="function"><name>requestLaneChange</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1a405c0c8f3e106c829b3fa086746030f9" kind="function"><name>requestWalkStraight</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityBase_1ab29fd9d271ee4710b7f93ef143ded4c4" kind="function"><name>statusSet</name></member>
@@ -499,7 +499,7 @@
     <member refid="classhdmap__utils_1_1HdMapUtils_1a4dbcc69645f97b4964942bcfbdfc8c1d" kind="function"><name>getCenterPointsSpline</name></member>
     <member refid="classhdmap__utils_1_1HdMapUtils_1a40fa24534a3a21637640c40571509441" kind="function"><name>clipTrajectoryFromLaneletIds</name></member>
     <member refid="classhdmap__utils_1_1HdMapUtils_1a74e7d1c4fbf11b9f8949f40a982aae10" kind="function"><name>canChangeLane</name></member>
-    <member refid="classhdmap__utils_1_1HdMapUtils_1a64f95a8e12bd8e471ffbcaf380501ad5" kind="function"><name>getLaneChangeTrajectory</name></member>
+    <member refid="classhdmap__utils_1_1HdMapUtils_1a7601293c401c2bf8c8ab725dfa55c271" kind="function"><name>getLaneChangeTrajectory</name></member>
     <member refid="classhdmap__utils_1_1HdMapUtils_1acc87ede109f43af450d07e3876cc21b2" kind="function"><name>getLaneChangeTrajectory</name></member>
     <member refid="classhdmap__utils_1_1HdMapUtils_1af90ae8bff96aeaf305348487ad3a9d79" kind="function"><name>getTangentVector</name></member>
     <member refid="classhdmap__utils_1_1HdMapUtils_1aaec29af041148541c5de5ae0cfcba494" kind="function"><name>getRoute</name></member>
@@ -535,6 +535,7 @@
     <member refid="classhdmap__utils_1_1HdMapUtils_1aacdd04f3efb1e4324b7c0822d4cebb17" kind="function"><name>calculateSegmentDistances</name></member>
   </compound>
   <compound refid="classtraffic__simulator_1_1math_1_1HermiteCurve" kind="class"><name>traffic_simulator::math::HermiteCurve</name>
+    <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a407a22423a84603ad2c8147a372e5542" kind="friend"><name>HermiteCurveTest</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1aa6808c00ab0f72c90a334e1d08d6e13d" kind="variable"><name>ax_</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a4621e79f2754297cc72023823707242c" kind="variable"><name>bx_</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a181a8547bce725b1ba9f33ececa9f199" kind="variable"><name>cx_</name></member>
@@ -549,7 +550,6 @@
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a06d92127367375d4f20e391a9f42e3e0" kind="variable"><name>dz_</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a1d9d60bd8ab20f5ae0a9cbd59a7f8ef3" kind="variable"><name>solver_</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a341ab6760d58ee5320fdcc26196e1d08" kind="variable"><name>length_</name></member>
-    <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1afc4878ce44a5598c869f5a128668ca39" kind="function"><name>HermiteCurve</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1aa46dbb74579ca617d3748cda5b77807a" kind="function"><name>HermiteCurve</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a12e908b0bcd889ca7125f7543ea4d0dd" kind="function"><name>HermiteCurve</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a7eca891d80aae9de6f87b21272457774" kind="function"><name>getTrajectory</name></member>
@@ -566,8 +566,8 @@
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a5a535726c5e70ea9fa52f637ae8f1ba6" kind="function"><name>getSquaredDistanceIn2D</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a7beca5f82ebc83f79f27e3e53475b8fe" kind="function"><name>getCollisionPointIn2D</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a267cd1764fc6cc1a2037d89db0f824a1" kind="function"><name>getCollisionPointIn2D</name></member>
-    <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1ace48c292b8b579388be893f49d2e92bf" kind="function"><name>toRosMsg</name></member>
-    <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a1f5936306891bbd9ef975b1e92d0f867" kind="function"><name>getNewtonMethodStepSize</name></member>
+    <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1a40eb349ddb4f6f84932aa8459e956350" kind="function"><name>get2DMinMaxCurvatureValue</name></member>
+    <member refid="classtraffic__simulator_1_1math_1_1HermiteCurve_1ae19ebfca155b495849ec2a5dd1505716" kind="function"><name>getNewtonMethodStepSize</name></member>
   </compound>
   <compound refid="classentity__behavior_1_1vehicle_1_1LaneChangeAction" kind="class"><name>entity_behavior::vehicle::LaneChangeAction</name>
     <member refid="classentity__behavior_1_1vehicle_1_1LaneChangeAction_1a5643ec51450cae23e8e1d96efcb6adb3" kind="variable"><name>curve_</name></member>
@@ -603,8 +603,8 @@
     <member refid="classmetrics_1_1MetricBase_1a9121f7a9d69506281a9eb0533f09896c" kind="function"><name>success</name></member>
     <member refid="classmetrics_1_1MetricBase_1aab9f2b64fa570816fe577fca1b685af2" kind="function"><name>failure</name></member>
     <member refid="classmetrics_1_1MetricBase_1ae2715921303db9ccba0092c532a386d2" kind="function"><name>activate</name></member>
-    <member refid="classmetrics_1_1MetricBase_1a3ce5f237d1200357687261e5f7418022" kind="function"><name>to_json</name></member>
-    <member refid="classmetrics_1_1MetricBase_1a38aefd236ee82f96ca6cf138507003a7" kind="function"><name>to_base_json</name></member>
+    <member refid="classmetrics_1_1MetricBase_1ac5aa1847a52eebcac7700d2b74142a06" kind="function"><name>toJson</name></member>
+    <member refid="classmetrics_1_1MetricBase_1a91e59b872a12c5f19533165d30292463" kind="function"><name>toBaseJson</name></member>
     <member refid="classmetrics_1_1MetricBase_1a406041977f3badc4bf8a29568d0a3040" kind="function"><name>setEntityManager</name></member>
     <member refid="classmetrics_1_1MetricBase_1a0fcf4330afb3c26942ab0adc45026e65" kind="function"><name>getLifecycle</name></member>
     <member refid="classmetrics_1_1MetricBase_1a3bfb57e35e135f57d65d3a9a18ae8c29" kind="function"><name>throwException</name></member>
@@ -624,10 +624,10 @@
     <member refid="classmetrics_1_1MetricsManager_1a8ac51913c6c983bba925465b5b60f238" kind="function"><name>addMetric</name></member>
     <member refid="classmetrics_1_1MetricsManager_1a1d387eeee19bec3b6e43f19273464110" kind="function"><name>calculate</name></member>
     <member refid="classmetrics_1_1MetricsManager_1a414cfc0e50436ff8517f86e6fbe9fcea" kind="function"><name>getLifecycle</name></member>
+    <member refid="classmetrics_1_1MetricsManager_1a292ce6f24201a05b9d99507907b4bff4" kind="function"><name>exists</name></member>
   </compound>
   <compound refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity" kind="class"><name>traffic_simulator::entity::MiscObjectEntity</name>
     <member refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity_1a30ed29713a7f0b7dc92d0820134acad3" kind="variable"><name>params_</name></member>
-    <member refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity_1a728d0a3d6c3102adda9e6f6c23cc277e" kind="function"><name>MiscObjectEntity</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity_1a6d72ff80a3a2568086c477ad92980e14" kind="function"><name>MiscObjectEntity</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity_1a60e5f653b833166e87116eb8c5411429" kind="function"><name>onUpdate</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity_1abd47091c3636ac62e4ffea756fb5d575" kind="function"><name>getBoundingBox</name></member>
@@ -638,7 +638,9 @@
     <member refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity_1a5cdcf5c19c8143dd5813cb1ae650c0e5" kind="function"><name>getWaypoints</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity_1a6634b41cc7f72c45e527d0b13c913dbe" kind="function"><name>setTargetSpeed</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity_1a730d146c35452714079b1aff418cc77c" kind="function"><name>requestAssignRoute</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity_1ab701acc63b7d219f0ce7c27014424083" kind="function"><name>requestAssignRoute</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity_1ad65a496f1f959905ba0b7d56f3dd5c07" kind="function"><name>requestAcquirePosition</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1MiscObjectEntity_1a052010d59ff5228efffeca5b187321ed" kind="function"><name>requestAcquirePosition</name></member>
   </compound>
   <compound refid="classmetrics_1_1MomentaryStopMetric" kind="class"><name>metrics::MomentaryStopMetric</name>
     <member refid="classmetrics_1_1MomentaryStopMetric_1a8a855a8e7b8a6594ac4caf7a77da83b6" kind="enum"><name>StopTargetLaneletType</name></member>
@@ -659,7 +661,16 @@
     <member refid="classmetrics_1_1MomentaryStopMetric_1abd29ac87e318821359f30eb7f1f7bcdb" kind="function"><name>~MomentaryStopMetric</name></member>
     <member refid="classmetrics_1_1MomentaryStopMetric_1ad168c0484e0c839c64b277b4c11e770f" kind="function"><name>update</name></member>
     <member refid="classmetrics_1_1MomentaryStopMetric_1ab7596342b80ba36b862918b51bf203a8" kind="function"><name>activateTrigger</name></member>
-    <member refid="classmetrics_1_1MomentaryStopMetric_1a02d79bf9d97f6c63ebba3ef8c43af90f" kind="function"><name>to_json</name></member>
+    <member refid="classmetrics_1_1MomentaryStopMetric_1a82b8acb7d4f8f6ce9ff3ca1c43d93b7d" kind="function"><name>toJson</name></member>
+  </compound>
+  <compound refid="classentity__behavior_1_1vehicle_1_1follow__lane__sequence_1_1MoveBackwardAction" kind="class"><name>entity_behavior::vehicle::follow_lane_sequence::MoveBackwardAction</name>
+    <member refid="classentity__behavior_1_1vehicle_1_1follow__lane__sequence_1_1MoveBackwardAction_1a108b8e9471e07298d5d7c33354a81bf1" kind="variable"><name>target_lanelet_pose_</name></member>
+    <member refid="classentity__behavior_1_1vehicle_1_1follow__lane__sequence_1_1MoveBackwardAction_1a2341442143efae5d32cefae12b2c564f" kind="function"><name>MoveBackwardAction</name></member>
+    <member refid="classentity__behavior_1_1vehicle_1_1follow__lane__sequence_1_1MoveBackwardAction_1acbf8e3344d709f0ef560f4df62b49f6d" kind="function"><name>tick</name></member>
+    <member refid="classentity__behavior_1_1vehicle_1_1follow__lane__sequence_1_1MoveBackwardAction_1a4218bfab0bf251f4589abaae96260c80" kind="function"><name>getBlackBoardValues</name></member>
+    <member refid="classentity__behavior_1_1vehicle_1_1follow__lane__sequence_1_1MoveBackwardAction_1aff237bf4b4413317e46e5f3378a140d1" kind="function"><name>calculateWaypoints</name></member>
+    <member refid="classentity__behavior_1_1vehicle_1_1follow__lane__sequence_1_1MoveBackwardAction_1acce86ea39da36f268b062ac2be3e3879" kind="function"><name>calculateObstacle</name></member>
+    <member refid="classentity__behavior_1_1vehicle_1_1follow__lane__sequence_1_1MoveBackwardAction_1ae2c65133cb77af5fa84ac0b6747b44cc" kind="function"><name>providedPorts</name></member>
   </compound>
   <compound refid="classmetrics_1_1OutOfRangeMetric" kind="class"><name>metrics::OutOfRangeMetric</name>
     <member refid="classmetrics_1_1OutOfRangeMetric_1a396c222c39e460a3af9721fad8a89f4f" kind="variable"><name>target_entity</name></member>
@@ -676,7 +687,7 @@
     <member refid="classmetrics_1_1OutOfRangeMetric_1a7f5de64eb25d2a6d0c1224fd094cf3c9" kind="function"><name>OutOfRangeMetric</name></member>
     <member refid="classmetrics_1_1OutOfRangeMetric_1a32309dca73d75cb611b843acd8ed9001" kind="function"><name>update</name></member>
     <member refid="classmetrics_1_1OutOfRangeMetric_1a4e3cb71963e8f46de7c6d540143260e2" kind="function"><name>activateTrigger</name></member>
-    <member refid="classmetrics_1_1OutOfRangeMetric_1a9e7bed54f36df253d513668540a22cf3" kind="function"><name>to_json</name></member>
+    <member refid="classmetrics_1_1OutOfRangeMetric_1a1674a8edd3acb3d16bb1e7eabc868582" kind="function"><name>toJson</name></member>
   </compound>
   <compound refid="classentity__behavior_1_1PedestrianActionNode" kind="class"><name>entity_behavior::PedestrianActionNode</name>
     <member refid="classentity__behavior_1_1PedestrianActionNode_1a23d8075bbbee4793508e61c2f2d2729f" kind="variable"><name>pedestrian_parameters</name></member>
@@ -691,11 +702,11 @@
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1abef69077b1b61dce49386329ecb00792" kind="variable"><name>tree_ptr_</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1af0e47c489cb52d516f0ea3fc5f8d1ed9" kind="variable"><name>target_speed_planner_</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a5bd932def32d53cd1fde80bed8adfcf6" kind="variable"><name>route_planner_ptr_</name></member>
-    <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a1ee67a55bd501e02513db60860f01d02" kind="function"><name>PedestrianEntity</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a540ae7a8360ca6974a4d9002b13625d7" kind="function"><name>PedestrianEntity</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a53a6d180f19d0357ca3294aef39c50ab" kind="function"><name>getEntityTypename</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a2d74c3d8d4d701764da59811697471fa" kind="function"><name>onUpdate</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a2ea589f878fb800c1324ec05d2dc924a" kind="function"><name>requestAcquirePosition</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1adf2f1dd581329dbedd1028893b9728da" kind="function"><name>requestAcquirePosition</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a0430ea701c2918aa5ddf5ccf06710be4" kind="function"><name>requestWalkStraight</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a278e40cbd8d36182dee838faf83a5b3f" kind="function"><name>cancelRequest</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1abb1365a8ada733a36b74f4e8ecbebab0" kind="function"><name>setHdMapUtils</name></member>
@@ -703,6 +714,7 @@
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1af5685211b4c3a9edcc7870facf493478" kind="function"><name>setTargetSpeed</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a11aa789219bf39127244ae02d8faa649" kind="function"><name>getBoundingBox</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a3cf7caa9730daf6ff2bdc8115831de8f" kind="function"><name>requestAssignRoute</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a9ef2e4628f2cf8e7ea38bfed5fc3b8c3" kind="function"><name>requestAssignRoute</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1aac894c52324b81c539985f2bd08de8f8" kind="function"><name>getCurrentAction</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a7013266a9204695fac4563a64db5e703" kind="function"><name>getRouteLanelets</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1PedestrianEntity_1a24452bad4a8d3a50a45d88862a7a042e" kind="function"><name>getObstacle</name></member>
@@ -731,6 +743,7 @@
     <member refid="classtraffic__simulator_1_1math_1_1PolynomialSolver_1a4b580418d1f04131b96a09d08f74b7bd" kind="function"><name>solveCubicEquation</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1PolynomialSolver_1a38eef9650b6f35298cc3d9972da06c78" kind="function"><name>cubicFunction</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1PolynomialSolver_1a1bd94f2c7c0254e09e3ce0f265719e90" kind="function"><name>quadraticFunction</name></member>
+    <member refid="classtraffic__simulator_1_1math_1_1PolynomialSolver_1ad1b1c41fae1a2ec8ed95620be735f793" kind="function"><name>linearFunction</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1PolynomialSolver_1a389f81937033cb90e2cbfd12fd644703" kind="function"><name>solveP3</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1PolynomialSolver_1a6c0fa09070b57fd643a63bff30f01b11" kind="function"><name>_root3</name></member>
     <member refid="classtraffic__simulator_1_1math_1_1PolynomialSolver_1ae754ab03d7ed39115e4261fc9d837e50" kind="function"><name>root3</name></member>
@@ -747,7 +760,7 @@
     <member refid="classmetrics_1_1ReactionTimeMetric_1ac2d3918e0b1aa80bca9905576064bdd7" kind="function"><name>ReactionTimeMetric</name></member>
     <member refid="classmetrics_1_1ReactionTimeMetric_1a2825c8d83beeb024de321a827dd9de92" kind="function"><name>~ReactionTimeMetric</name></member>
     <member refid="classmetrics_1_1ReactionTimeMetric_1aa52600a32cd3b2788f8684bf7312378b" kind="function"><name>update</name></member>
-    <member refid="classmetrics_1_1ReactionTimeMetric_1a00271e19e8ac3c8da5acbc2c107fb538" kind="function"><name>to_json</name></member>
+    <member refid="classmetrics_1_1ReactionTimeMetric_1a8ac6167f8d9e550f6b9d93eee4f0db50" kind="function"><name>toJson</name></member>
     <member refid="classmetrics_1_1ReactionTimeMetric_1a561f0ba26d89a0e00fc871f00018369e" kind="function"><name>activateTrigger</name></member>
   </compound>
   <compound refid="classhdmap__utils_1_1RouteCache" kind="class"><name>hdmap_utils::RouteCache</name>
@@ -1108,7 +1121,7 @@
     <member refid="classmetrics_1_1TraveledDistanceMetric_1a7814594489592bf56f37e733357763d1" kind="function"><name>TraveledDistanceMetric</name></member>
     <member refid="classmetrics_1_1TraveledDistanceMetric_1adc5e79ad4bf81671b8351c391d8ca942" kind="function"><name>~TraveledDistanceMetric</name></member>
     <member refid="classmetrics_1_1TraveledDistanceMetric_1a1c0e779b865fb5fe31685ee8d495a235" kind="function"><name>update</name></member>
-    <member refid="classmetrics_1_1TraveledDistanceMetric_1a83a60b1a279388f2e324be39d3509b4c" kind="function"><name>to_json</name></member>
+    <member refid="classmetrics_1_1TraveledDistanceMetric_1a20d7a41700f7da1f52f62b115b3dfc26" kind="function"><name>toJson</name></member>
     <member refid="classmetrics_1_1TraveledDistanceMetric_1aeca318ff6c5c6c50656a620c2a674e32" kind="function"><name>activateTrigger</name></member>
   </compound>
   <compound refid="classentity__behavior_1_1VehicleActionNode" kind="class"><name>entity_behavior::VehicleActionNode</name>
@@ -1129,12 +1142,12 @@
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a20be75486c599fcdb3a3c3eeec04e2f9" kind="variable"><name>tree_ptr_</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a3f9b4a15b0d15349bed17bb0b69a9f33" kind="variable"><name>route_planner_ptr_</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a26465eb1a25c630ec0909c6c255ea1a9" kind="variable"><name>target_speed_planner_</name></member>
-    <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a3c989a6b58852c517645225975bae493" kind="function"><name>VehicleEntity</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a869734d71d29e94d4beb3f8aa2dc334c" kind="function"><name>VehicleEntity</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a754679ade1e9098579f53174d43a01e4" kind="function"><name>~VehicleEntity</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a0d6eead59fa3fbd130ba1c2abf3c1d49" kind="function"><name>getEntityTypename</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a244d20e0620376ce845f2b317c984945" kind="function"><name>onUpdate</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1afa792a184e28a81af3ec642988489212" kind="function"><name>requestAcquirePosition</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a45d51dd2fc31569bef85b6cc7043b65d" kind="function"><name>requestAcquirePosition</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1adb1d61a6ccefd7b39daf48143c8f34c5" kind="function"><name>requestLaneChange</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a4f96805e870fc82a5a512383e0a5d84f" kind="function"><name>cancelRequest</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a71ca47a68a4737560df2c30ef618ab3f" kind="function"><name>getVehicleParameters</name></member>
@@ -1144,6 +1157,7 @@
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a757d8e5d2d63e237033a6edc86a3cb66" kind="function"><name>setTargetSpeed</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a3addacfa59627b573a0cfbcdab0f01e3" kind="function"><name>getBoundingBox</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a26766b08a3ab925403ffe0257c1d1250" kind="function"><name>requestAssignRoute</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a25f001b2d74e66958c5b8346369b8910" kind="function"><name>requestAssignRoute</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a91b9fb6c08025ff4d8687be9a7313535" kind="function"><name>getCurrentAction</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a62bea62bbcea04fd2fd28fadb7e9cacd" kind="function"><name>getWaypoints</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1VehicleEntity_1a9591a4efefbdd2340b02ea45ca89480f" kind="function"><name>getObstacle</name></member>
@@ -1248,6 +1262,7 @@
     <member refid="ego__entity_8cpp_1ac44caef21eab1d12faeeefb2c6631e79" kind="function"><name>toString</name></member>
     <member refid="ego__entity_8cpp_1a59147159c5c3a714e96d468b2e95850a" kind="function"><name>getVehicleModelType</name></member>
     <member refid="ego__entity_8cpp_1aaae9ced491cf5db4dbcff9a27fa2496e" kind="function"><name>makeSimulationModel</name></member>
+    <member refid="ego__entity_8cpp_1a58d31f914d5925c59a9adfaa23b27820" kind="function"><name>makeAutoware</name></member>
   </compound>
   <compound refid="namespacetraffic__simulator_1_1helper" kind="namespace"><name>traffic_simulator::helper</name>
     <member refid="helper_8hpp_1aeaf5597d701d03be7983065e85866cfe" kind="enum"><name>LidarType</name></member>
@@ -1302,6 +1317,8 @@
   </compound>
   <compound refid="follow__front__entity__action_8hpp" kind="file"><name>follow_front_entity_action.hpp</name>
   </compound>
+  <compound refid="move__backward__action_8hpp" kind="file"><name>move_backward_action.hpp</name>
+  </compound>
   <compound refid="stop__at__crossing__entity__action_8hpp" kind="file"><name>stop_at_crossing_entity_action.hpp</name>
   </compound>
   <compound refid="stop__at__stop__line__action_8hpp" kind="file"><name>stop_at_stop_line_action.hpp</name>
@@ -1317,6 +1334,7 @@
   <compound refid="color__utils_8hpp" kind="file"><name>color_utils.hpp</name>
   </compound>
   <compound refid="ego__entity_8hpp" kind="file"><name>ego_entity.hpp</name>
+    <member refid="ego__entity_8hpp_1afd9afe559233a3ac7d356c039b89c167" kind="function"><name>getParameter</name></member>
   </compound>
   <compound refid="entity__base_8hpp" kind="file"><name>entity_base.hpp</name>
   </compound>
@@ -1421,6 +1439,8 @@
   </compound>
   <compound refid="follow__front__entity__action_8cpp" kind="file"><name>follow_front_entity_action.cpp</name>
   </compound>
+  <compound refid="move__backward__action_8cpp" kind="file"><name>move_backward_action.cpp</name>
+  </compound>
   <compound refid="stop__at__crossing__entity__action_8cpp" kind="file"><name>stop_at_crossing_entity_action.cpp</name>
   </compound>
   <compound refid="stop__at__stop__line__action_8cpp" kind="file"><name>stop_at_stop_line_action.cpp</name>
@@ -1437,7 +1457,6 @@
   </compound>
   <compound refid="ego__entity_8cpp" kind="file"><name>ego_entity.cpp</name>
     <member refid="ego__entity_8cpp_1a9c8f164b1af96f53e82a3e558461f33f" kind="define"><name>BOILERPLATE</name></member>
-    <member refid="ego__entity_8cpp_1afd9afe559233a3ac7d356c039b89c167" kind="function"><name>getParameter</name></member>
   </compound>
   <compound refid="entity__base_8cpp" kind="file"><name>entity_base.cpp</name>
   </compound>
@@ -1502,31 +1521,80 @@
   </compound>
   <compound refid="sim__model__util_8cpp" kind="file"><name>sim_model_util.cpp</name>
   </compound>
+  <compound refid="expect__eq__macros_8hpp" kind="file"><name>expect_eq_macros.hpp</name>
+    <member refid="expect__eq__macros_8hpp_1a6df533c04729420c3374502b8b74e21e" kind="define"><name>EXPECT_POINT_EQ</name></member>
+  </compound>
+  <compound refid="test__bounding__box_8cpp" kind="file"><name>test_bounding_box.cpp</name>
+    <member refid="test__bounding__box_8cpp_1a33d8552ffaf352e5b3cc665c5bcf0ff8" kind="function"><name>TEST</name></member>
+    <member refid="test__bounding__box_8cpp_1a8a2d32aa10d7e1f5e53daa11fabad298" kind="function"><name>TEST</name></member>
+    <member refid="test__bounding__box_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test__catmull__rom__spline_8cpp" kind="file"><name>test_catmull_rom_spline.cpp</name>
+    <member refid="test__catmull__rom__spline_8cpp_1ad0dab0cd6ad149bff77d3bc99b898d82" kind="function"><name>TEST</name></member>
+    <member refid="test__catmull__rom__spline_8cpp_1ac696c49d2c0fef18fcd96a907dfd820a" kind="function"><name>TEST</name></member>
+    <member refid="test__catmull__rom__spline_8cpp_1aeede809a2138430b014ce93a76a99e07" kind="function"><name>TEST</name></member>
+    <member refid="test__catmull__rom__spline_8cpp_1abbdff0559a229304a5d0f4af8caff7a1" kind="function"><name>TEST</name></member>
+    <member refid="test__catmull__rom__spline_8cpp_1af2c56c0c16af7f7c680ea1701f1997cd" kind="function"><name>TEST</name></member>
+    <member refid="test__catmull__rom__spline_8cpp_1a72f149a5b53ac58420ec4d52dd47958e" kind="function"><name>TEST</name></member>
+    <member refid="test__catmull__rom__spline_8cpp_1ae84f082d20dcd31e793094f379d22701" kind="function"><name>TEST</name></member>
+    <member refid="test__catmull__rom__spline_8cpp_1ad8374707e090df3119cb8da3d2886045" kind="function"><name>TEST</name></member>
+    <member refid="test__catmull__rom__spline_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test__collision_8cpp" kind="file"><name>test_collision.cpp</name>
+    <member refid="test__collision_8cpp_1aeb4055dd1a1dfbd2c11428900f514fcc" kind="function"><name>TEST</name></member>
+    <member refid="test__collision_8cpp_1a73981572860b04ab8a654e8f2a67c98f" kind="function"><name>TEST</name></member>
+    <member refid="test__collision_8cpp_1af66f3dbb95976fdea6a792189289803d" kind="function"><name>TEST</name></member>
+    <member refid="test__collision_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test__distance_8cpp" kind="file"><name>test_distance.cpp</name>
+    <member refid="test__distance_8cpp_1a0ba50d0194fd258eb57a8e5e791cba82" kind="function"><name>TEST</name></member>
+    <member refid="test__distance_8cpp_1abd35140b2e0d0b09313b7cbfad83b3a3" kind="function"><name>TEST</name></member>
+    <member refid="test__distance_8cpp_1a6e372764a8bc46a7a691aafe1f5fabd5" kind="function"><name>TEST</name></member>
+    <member refid="test__distance_8cpp_1a3db2b787728790f64d9f7a0370b72c46" kind="function"><name>TEST</name></member>
+    <member refid="test__distance_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test__hermite__curve_8cpp" kind="file"><name>test_hermite_curve.cpp</name>
+    <member refid="test__hermite__curve_8cpp_1ac7597b59dd5f10314d7c78363f9889dd" kind="function"><name>TEST</name></member>
+    <member refid="test__hermite__curve_8cpp_1a3a2605a013c1ad6efda55fb204eb7cdd" kind="function"><name>TEST</name></member>
+    <member refid="test__hermite__curve_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test__polynominal__solver_8cpp" kind="file"><name>test_polynominal_solver.cpp</name>
+    <member refid="test__polynominal__solver_8cpp_1a87562a9f2698fbf736547f9f375f50a3" kind="function"><name>checkValuetWithTorelance</name></member>
+    <member refid="test__polynominal__solver_8cpp_1adacec95389e309f2ff62c1a620ddce8d" kind="function"><name>TEST</name></member>
+    <member refid="test__polynominal__solver_8cpp_1a9a41fbc6a249b350e217c42bcb68d05b" kind="function"><name>TEST</name></member>
+    <member refid="test__polynominal__solver_8cpp_1a039af0afaf4bef7f8f0adf7fce65f3f7" kind="function"><name>TEST</name></member>
+    <member refid="test__polynominal__solver_8cpp_1a7c80de16e3be82df97c3a4135b15d526" kind="function"><name>TEST</name></member>
+    <member refid="test__polynominal__solver_8cpp_1aa05a99cccaa7ca07e3203db5da92b164" kind="function"><name>TEST</name></member>
+    <member refid="test__polynominal__solver_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test__uuid_8cpp" kind="file"><name>test_uuid.cpp</name>
+    <member refid="test__uuid_8cpp_1a7672a9d2b3f7926ea514e8b3375092fc" kind="function"><name>TEST</name></member>
+    <member refid="test__uuid_8cpp_1acacb17a57b0bbf6b789602405ae81f98" kind="function"><name>TEST</name></member>
+    <member refid="test__uuid_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
   <compound refid="test__hdmap__utils_8cpp" kind="file"><name>test_hdmap_utils.cpp</name>
     <member refid="test__hdmap__utils_8cpp_1a498e9411b3fb1eb73145a4baafa6d7de" kind="function"><name>TEST</name></member>
     <member refid="test__hdmap__utils_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
   </compound>
-  <compound refid="test__math_8cpp" kind="file"><name>test_math.cpp</name>
-    <member refid="test__math_8cpp_1a0b0292a1281153990e8fd2b1bceeb367" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1afe9e80e68c20a6c079ca394e703da862" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a02910a63d9a139810666ca7aa7b86583" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a8a1907ff68e44e91f81403c2ff1eafd4" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a5570b36e3c21109174e9d46ddc8d9869" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1ad3f2bc23ecee960278d04a73d052b873" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1addd17cf1f621ae907ee20f110423589d" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a3e3767cca1ff0d2f625c199f7b82a06d" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a21e364c66beef2a3c3eb403d457c4872" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a863bf65780118707b578e9628249e0cb" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1ab3001b9f1fd36e6301f56aede4c6cb1a" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a6bfb71cfa8fe155e8fc88220d78774f6" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a29af2a6f72f64c256358e55f5c4aba93" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1ab7109ed460d6aae4c09acca436061931" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a5d2dc95c0f3ada42a253a283ca80d053" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1abc62edbd97c1335eb42a8bcd8293355c" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1ae45cf83430283e9e004fe408fde34c14" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a550a74192335083e3d1bbdc30594f527" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a1df3ff64b4d14552b762e78115e46e8a" kind="function"><name>TEST</name></member>
-    <member refid="test__math_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  <compound refid="test__traffic__light_8cpp" kind="file"><name>test_traffic_light.cpp</name>
+    <member refid="test__traffic__light_8cpp_1a8671ced8b607ba479cc36b7737343c0b" kind="function"><name>getPoint</name></member>
+    <member refid="test__traffic__light_8cpp_1a6201c07eea67cf0503e353db906683b7" kind="function"><name>TEST</name></member>
+    <member refid="test__traffic__light_8cpp_1a495e130de1caad8af99eaf62b6fb41af" kind="function"><name>TEST</name></member>
+    <member refid="test__traffic__light_8cpp_1ae706e8ac1b65a49967e71774649b5682" kind="function"><name>TEST</name></member>
+    <member refid="test__traffic__light_8cpp_1a331ad68cb175a0d719c1fc6b90135844" kind="function"><name>TEST</name></member>
+    <member refid="test__traffic__light_8cpp_1a7877cde1a2ed774fd30fdbfd086d7218" kind="function"><name>TEST</name></member>
+    <member refid="test__traffic__light_8cpp_1af7bbf03284c7264408abb5e6cf8c040d" kind="function"><name>TEST</name></member>
+    <member refid="test__traffic__light_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test__traffic__light__manager_8cpp" kind="file"><name>test_traffic_light_manager.cpp</name>
+    <member refid="test__traffic__light__manager_8cpp_1ab1c5272980a8ab4e4c37692f19a3e654" kind="function"><name>TEST</name></member>
+    <member refid="test__traffic__light__manager_8cpp_1a6ae8359d5bf4716921ec532a13a38b37" kind="function"><name>TEST</name></member>
+    <member refid="test__traffic__light__manager_8cpp_1a2e0688ce15823e45a86740f9c4c9e8ca" kind="function"><name>TEST</name></member>
+    <member refid="test__traffic__light__manager_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="test__traffic__light__state_8cpp" kind="file"><name>test_traffic_light_state.cpp</name>
+    <member refid="test__traffic__light__state_8cpp_1ac7a271c8755d2081a09d6b72db7a404d" kind="function"><name>TEST</name></member>
+    <member refid="test__traffic__light__state_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
   </compound>
   <compound refid="dir_9e85a400e84ec3f23f7a034a5d22c072" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api</name>
   </compound>
@@ -1558,6 +1626,8 @@
   </compound>
   <compound refid="dir_ebd9203a9be144e2c3b6de4f1f8bb9ba" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include</name>
   </compound>
+  <compound refid="dir_7a4945bfcc0f9cadff1ebe71a289dff3" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/math</name>
+  </compound>
   <compound refid="dir_d5b022ff6d07d1d434437376ce9ce522" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/math</name>
   </compound>
   <compound refid="dir_89926193ebc9886a4e07ae71e2f86f16" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/math</name>
@@ -1586,17 +1656,19 @@
   </compound>
   <compound refid="dir_b109bf232346013814ee96e4aeb7eb77" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/traffic</name>
   </compound>
-  <compound refid="dir_675ce22d09a5a78e6a63f5f36337dee4" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/traffic_lights</name>
-  </compound>
   <compound refid="dir_e6d5481ef75dd3273f2445213b0ffe4a" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/traffic_lights</name>
+  </compound>
+  <compound refid="dir_7ce852e5048c2fe1badfdbcb3527726e" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights</name>
+  </compound>
+  <compound refid="dir_675ce22d09a5a78e6a63f5f36337dee4" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/traffic_lights</name>
   </compound>
   <compound refid="dir_5229c5c80e1beeb41e5cbea006789ee7" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator</name>
   </compound>
   <compound refid="dir_a1f2d8220e61e65a4d5040b23c80eedf" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator</name>
   </compound>
-  <compound refid="dir_b96efc5979f89bd9ba73645ba58773b5" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/behavior/vehicle</name>
-  </compound>
   <compound refid="dir_a380353df616a3b30c5fcfd2cfeb6ca0" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/vehicle</name>
+  </compound>
+  <compound refid="dir_b96efc5979f89bd9ba73645ba58773b5" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/behavior/vehicle</name>
   </compound>
   <compound refid="dir_57741dd24952e660e789fd19928b2131" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/vehicle_model</name>
   </compound>
