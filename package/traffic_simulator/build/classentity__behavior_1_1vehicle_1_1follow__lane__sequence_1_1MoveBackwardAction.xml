@@ -119,48 +119,48 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="120">
+      <node id="113">
         <label>entity_behavior::VehicleActionNode</label>
         <link refid="classentity__behavior_1_1VehicleActionNode"/>
-        <childnode refid="121" relation="public-inheritance">
+        <childnode refid="114" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="122">
+      <node id="115">
         <label>BT::ActionNodeBase</label>
       </node>
-      <node id="119">
+      <node id="112">
         <label>entity_behavior::vehicle::follow_lane_sequence::MoveBackwardAction</label>
         <link refid="classentity__behavior_1_1vehicle_1_1follow__lane__sequence_1_1MoveBackwardAction"/>
-        <childnode refid="120" relation="public-inheritance">
+        <childnode refid="113" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="121">
+      <node id="114">
         <label>entity_behavior::ActionNode</label>
         <link refid="classentity__behavior_1_1ActionNode"/>
-        <childnode refid="122" relation="public-inheritance">
+        <childnode refid="115" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="124">
+      <node id="117">
         <label>entity_behavior::VehicleActionNode</label>
         <link refid="classentity__behavior_1_1VehicleActionNode"/>
-        <childnode refid="125" relation="public-inheritance">
+        <childnode refid="118" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="126">
+      <node id="119">
         <label>BT::ActionNodeBase</label>
       </node>
-      <node id="123">
+      <node id="116">
         <label>entity_behavior::vehicle::follow_lane_sequence::MoveBackwardAction</label>
         <link refid="classentity__behavior_1_1vehicle_1_1follow__lane__sequence_1_1MoveBackwardAction"/>
-        <childnode refid="124" relation="public-inheritance">
+        <childnode refid="117" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="125">
+      <node id="118">
         <label>entity_behavior::ActionNode</label>
         <link refid="classentity__behavior_1_1ActionNode"/>
-        <childnode refid="126" relation="public-inheritance">
+        <childnode refid="119" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

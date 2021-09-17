@@ -101,19 +101,19 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="363">
+      <node id="367">
         <label>openscenario_interpreter::syntax::InitActions</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1InitActions"/>
-        <childnode refid="364" relation="public-inheritance">
+        <childnode refid="368" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="364">
+      <node id="368">
         <label>Elements</label>
       </node>
-      <node id="362">
+      <node id="366">
         <label>openscenario_interpreter::syntax::Init</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Init"/>
-        <childnode refid="363" relation="usage">
+        <childnode refid="367" relation="usage">
           <edgelabel>actions</edgelabel>
         </childnode>
       </node>

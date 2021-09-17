@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="228" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="228" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="229" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="229" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1aab23398abda0efc2453a1f2e38e4b95b" prot="private" static="no" mutable="no">
         <type>const std::shared_ptr&lt; <ref refid="classtraffic__simulator_1_1entity_1_1EntityManager" kindref="compound">traffic_simulator::entity::EntityManager</ref> &gt;</type>
@@ -42,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="230" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="230" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="231" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="231" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1a5ab45fbade259798b76a5251cd2887da" prot="private" static="no" mutable="no">
         <type>const std::shared_ptr&lt; <ref refid="classtraffic__simulator_1_1traffic_1_1TrafficController" kindref="compound">traffic_simulator::traffic::TrafficController</ref> &gt;</type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="232" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="232" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="233" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="233" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1a252d903eb4b259b5b59981ab1d15af45" prot="private" static="no" mutable="no">
         <type><ref refid="classmetrics_1_1MetricsManager" kindref="compound">metrics::MetricsManager</ref></type>
@@ -68,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="234" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="234" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="235" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="235" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1afe9dc061eb1bec132a0a664d5b3b397d" prot="private" static="no" mutable="no">
         <type>const rclcpp::Publisher&lt; rosgraph_msgs::msg::Clock &gt;::SharedPtr</type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="236" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="236" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="237" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="237" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1a67546a89f57af53542266ef0a37436fe" prot="private" static="no" mutable="no">
         <type><ref refid="classtraffic__simulator_1_1SimulationClock" kindref="compound">traffic_simulator::SimulationClock</ref></type>
@@ -94,7 +94,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="238" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="238" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="239" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="239" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1a30211a9a4f8b955ad71facf1d83c810d" prot="private" static="no" mutable="no">
         <type>zeromq::Client&lt; simulation_api_schema::InitializeRequest, simulation_api_schema::InitializeResponse &gt;</type>
@@ -107,7 +107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="242" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="242" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="243" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="243" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1a45d7a7b05e701152eec0c628e1cbc8cc" prot="private" static="no" mutable="no">
         <type>zeromq::Client&lt; simulation_api_schema::UpdateFrameRequest, simulation_api_schema::UpdateFrameResponse &gt;</type>
@@ -120,7 +120,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="245" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="245" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="246" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="246" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1a7a5f3fbd7cd5b1bee74b20dfde8ca61b" prot="private" static="no" mutable="no">
         <type>zeromq::Client&lt; simulation_api_schema::UpdateSensorFrameRequest, simulation_api_schema::UpdateSensorFrameResponse &gt;</type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="249" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="249" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="250" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="250" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1af65c3beebde41b2091354484f5da7ea4" prot="private" static="no" mutable="no">
         <type>zeromq::Client&lt; simulation_api_schema::SpawnVehicleEntityRequest, simulation_api_schema::SpawnVehicleEntityResponse &gt;</type>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="253" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="253" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="254" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="254" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1ac006c577516f9535d7b13e65ad6bf3de" prot="private" static="no" mutable="no">
         <type>zeromq::Client&lt; simulation_api_schema::SpawnPedestrianEntityRequest, simulation_api_schema::SpawnPedestrianEntityResponse &gt;</type>
@@ -159,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="257" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="257" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="258" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="258" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1ab4a66b09dcb82e469bd2f6537a8d96d3" prot="private" static="no" mutable="no">
         <type>zeromq::Client&lt; simulation_api_schema::SpawnMiscObjectEntityRequest, simulation_api_schema::SpawnMiscObjectEntityResponse &gt;</type>
@@ -172,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="261" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="261" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="262" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="262" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1a5ce85cea2cb277e8b1122d949403c057" prot="private" static="no" mutable="no">
         <type>zeromq::Client&lt; simulation_api_schema::DespawnEntityRequest, simulation_api_schema::DespawnEntityResponse &gt;</type>
@@ -185,7 +185,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="264" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="264" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="265" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="265" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1aa9b8877249a83d2de54b382c225ea897" prot="private" static="no" mutable="no">
         <type>zeromq::Client&lt; simulation_api_schema::UpdateEntityStatusRequest, simulation_api_schema::UpdateEntityStatusResponse &gt;</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="268" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="268" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="269" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="269" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1aee17063f1d521eacf8c994acccd0fc40" prot="private" static="no" mutable="no">
         <type>zeromq::Client&lt; simulation_api_schema::AttachLidarSensorRequest, simulation_api_schema::AttachLidarSensorResponse &gt;</type>
@@ -211,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="272" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="272" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="273" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="273" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classtraffic__simulator_1_1API_1a2ddca493cc78ad0ad80170eb779582b8" prot="private" static="no" mutable="no">
         <type>zeromq::Client&lt; simulation_api_schema::AttachDetectionSensorRequest, simulation_api_schema::AttachDetectionSensorResponse &gt;</type>
@@ -224,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="276" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="276" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="277" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="277" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -364,7 +364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="107" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="57" bodyend="92"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="107" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="57" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a4754fecd5ca125ba276b7c583ba73035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -389,7 +389,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="111" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="94" bodyend="114"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="111" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="84" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a6ac6e8a54ae3e0ce4a6bfac484d0001e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -414,7 +414,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="115" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="116" bodyend="136"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="115" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="106" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1aae68d616f62dc7cfe69e7af2b2dd72ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -487,7 +487,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="127" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="144" bodyend="151"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="127" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="134" bodyend="141"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a34af32e329fe0387601afb3819b018d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>geometry_msgs::msg::Pose</type>
@@ -504,7 +504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="129" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="138" bodyend="142"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="129" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="128" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a5a05d689e0b4428a438aea3189f7c235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -525,7 +525,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="131" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="153" bodyend="157"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="131" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="143" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1aae03f7a1d133caf5f80c359f5e35e4f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -551,7 +551,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="133" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="247" bodyend="264"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="133" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="237" bodyend="254"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1ac74fbfbb8c7b37c8209aa5c4f2732643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -577,7 +577,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="137" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="232" bodyend="245"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="137" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="222" bodyend="235"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a23a7ef18d598099f0251dc445b68c8d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -607,7 +607,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="141" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="171" bodyend="189"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="141" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="161" bodyend="179"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1ab2b11f7bcae5b2189b2f27a8c43e1055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -641,7 +641,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="146" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="159" bodyend="169"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="146" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="149" bodyend="159"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1ab460f27c7bff806aca339ea78b3eb6a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>boost::optional&lt; double &gt;</type>
@@ -662,7 +662,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="153" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="191" bodyend="206"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="153" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="181" bodyend="196"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a1ad85e24897c6516c9f9f1df7c4dc45d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -687,7 +687,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="155" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="208" bodyend="213"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="155" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="198" bodyend="203"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a294c3ed575060422bdda6bcfb24ab6b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -712,7 +712,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="157" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="215" bodyend="222"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="157" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="205" bodyend="212"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a9d0b732922882e65b111b090e9f30435" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -737,7 +737,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="160" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="224" bodyend="230"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="160" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="214" bodyend="220"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a0567308c23ed05912f1d30c34b27a506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -754,7 +754,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="163" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="296" bodyend="307"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="163" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="286" bodyend="297"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a58ecd1643d77fafa5cc5bf321d91f2ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -771,7 +771,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="165" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="282" bodyend="294"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="165" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="272" bodyend="284"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a39808db125b0ec000159480cfe3ba519" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -792,7 +792,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="167" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="266" bodyend="280"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="167" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="256" bodyend="270"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1afb26c57f4c8e55ce611b8e69b9d9861c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -805,7 +805,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="169" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="378" bodyend="409"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="169" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="368" bodyend="399"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a0c71dd9eb765af228979193e65556349" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -839,7 +839,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="173" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="411" bodyend="414"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="173" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="401" bodyend="404"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1ae2a89b31d5a66bcbb40f6e326aaf1aea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -860,7 +860,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="175" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="416" bodyend="420"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="175" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="406" bodyend="410"/>
+      </memberdef>
+      <memberdef kind="function" id="classtraffic__simulator_1_1API_1a92df4553239ef7d687178192fbce9371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>traffic_simulator::API::FORWARD_TO_ENTITY_MANAGER</definition>
+        <argsstring>(cancelRequest)</argsstring>
+        <name>FORWARD_TO_ENTITY_MANAGER</name>
+        <param>
+          <type>cancelRequest</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="187" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a1f9178b1fd4c678f6c18ce3982df4d70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -876,7 +892,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="187" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="188" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1afa6387ef4f852a4545f85d6b109fc932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -892,7 +908,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="188" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="189" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a5fe7992b86ac036d462462a57bd8afb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -908,7 +924,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="189" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="190" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a619f0f22127fc1d6761398ac076e5950" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -924,7 +940,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="190" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="191" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a17c3ae7808141f748bbe763988259813" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -940,7 +956,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="191" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="192" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1ab06feec5add5091b905cbd542047f28d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -956,7 +972,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="192" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="193" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a8c7b1a5e22c6651e6edfa190f457c087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -972,7 +988,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="193" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="194" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1ac31230b4d345edb3fd966b7a1fa3fd42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -988,7 +1004,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="194" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="195" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a0f6c55ebde9840b46bc794dc7b84baec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1004,7 +1020,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="195" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="196" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1ac3387fece63a32d8f3a25ee2b966eb19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1020,7 +1036,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="196" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="197" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a253a3b0eb955277aa5fd6e65581bb2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1036,7 +1052,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="197" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="198" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a3ad649de2a40b68fb6f3074a97a4ccbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1052,7 +1068,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="198" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="199" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a1d155ba0b0cb2ebcaaf7d4cd23422456" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1068,7 +1084,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="199" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="200" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a34c6e07790cdc47d6070ab07e1751abc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1084,7 +1100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="200" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="201" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a5c509910924498499cd1645ab3ee7ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1100,7 +1116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="201" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="202" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1ae661f633256d19bd430fd42c3c92b25c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1116,7 +1132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="202" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="203" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a3e66073639f0a858a36f9f04516bd64d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1132,7 +1148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="203" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="204" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1af7ff4e7986ce6ef343d91f5d0465f9e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1148,7 +1164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="204" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="205" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1ac708c51916cdc82f892d99e16e82fd44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1164,7 +1180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="205" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="206" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1abda96a356a45e80a11eccf04dc2fe2de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1180,7 +1196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="206" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="207" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1ad1e81ab90cfb937eb1f31f638707aae6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1196,7 +1212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="207" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="208" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1acc317cdbc1c81648e0a4c0f56716fcdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1212,7 +1228,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="208" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="209" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a62c963f84f2fd31c7a5b4f8e7f3a62ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1228,7 +1244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="209" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="210" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1ae70b7004f7bc4af4b84fc0597e01a375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1244,7 +1260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="210" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="211" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a49ccc892b3e5801628da01a8f936c7b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1260,7 +1276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="211" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="212" column="1"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a51d75ce20865ef030fec6c42193a51e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1276,7 +1292,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="212" column="1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="213" column="1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-func">
@@ -1291,7 +1307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="217" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="309" bodyend="322"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="218" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="299" bodyend="312"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a88d108e77cd7cba20b99324ce38c84c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1304,7 +1320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="218" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="324" bodyend="376"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="219" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/api/api.cpp" bodystart="314" bodyend="366"/>
       </memberdef>
       <memberdef kind="function" id="classtraffic__simulator_1_1API_1a085443fc56758e20b2371e38a7eb8e1c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -1334,14 +1350,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="221" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="221" bodyend="226"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="222" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="222" bodyend="227"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="44" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="43" bodyend="277"/>
+    <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" line="44" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp" bodystart="43" bodyend="278"/>
     <listofallmembers>
       <member refid="classtraffic__simulator_1_1API_1a2e1ea4dc91018ccc82c9897267668f79" prot="public" virt="non-virtual"><scope>traffic_simulator::API</scope><name>addMetric</name></member>
       <member refid="classtraffic__simulator_1_1API_1a236ac6d8d87b2b174ac77c4226962c68" prot="public" virt="non-virtual"><scope>traffic_simulator::API</scope><name>API</name></member>
@@ -1356,6 +1372,7 @@
       <member refid="classtraffic__simulator_1_1API_1a5ce85cea2cb277e8b1122d949403c057" prot="private" virt="non-virtual"><scope>traffic_simulator::API</scope><name>despawn_entity_client_</name></member>
       <member refid="classtraffic__simulator_1_1API_1aab23398abda0efc2453a1f2e38e4b95b" prot="private" virt="non-virtual"><scope>traffic_simulator::API</scope><name>entity_manager_ptr_</name></member>
       <member refid="classtraffic__simulator_1_1API_1a9ab2517db8cc9651d46d57397f04b9e0" prot="private" virt="non-virtual"><scope>traffic_simulator::API</scope><name>EntityManager</name></member>
+      <member refid="classtraffic__simulator_1_1API_1a92df4553239ef7d687178192fbce9371" prot="public" virt="non-virtual"><scope>traffic_simulator::API</scope><name>FORWARD_TO_ENTITY_MANAGER</name></member>
       <member refid="classtraffic__simulator_1_1API_1a1f9178b1fd4c678f6c18ce3982df4d70" prot="public" virt="non-virtual"><scope>traffic_simulator::API</scope><name>FORWARD_TO_ENTITY_MANAGER</name></member>
       <member refid="classtraffic__simulator_1_1API_1afa6387ef4f852a4545f85d6b109fc932" prot="public" virt="non-virtual"><scope>traffic_simulator::API</scope><name>FORWARD_TO_ENTITY_MANAGER</name></member>
       <member refid="classtraffic__simulator_1_1API_1a5fe7992b86ac036d462462a57bd8afb0" prot="public" virt="non-virtual"><scope>traffic_simulator::API</scope><name>FORWARD_TO_ENTITY_MANAGER</name></member>

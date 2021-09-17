@@ -616,6 +616,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../design/SimulationResultFormat/" class="md-nav__link">
+        Simulation Result Format
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -738,8 +750,64 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#define-expect_vector3_eq" class="md-nav__link">
+    define EXPECT_VECTOR3_EQ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-expect_twist_eq" class="md-nav__link">
+    define EXPECT_TWIST_EQ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-expect_quaternion_eq" class="md-nav__link">
+    define EXPECT_QUATERNION_EQ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-expect_pose_eq" class="md-nav__link">
+    define EXPECT_POSE_EQ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#define-expect_point_eq" class="md-nav__link">
     define EXPECT_POINT_EQ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-expect_lanelet_pose_eq" class="md-nav__link">
+    define EXPECT_LANELET_POSE_EQ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-expect_detection_sensor_configuration_eq" class="md-nav__link">
+    define EXPECT_DETECTION_SENSOR_CONFIGURATION_EQ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-expect_action_status_eq" class="md-nav__link">
+    define EXPECT_ACTION_STATUS_EQ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#define-expect_accel_eq" class="md-nav__link">
+    define EXPECT_ACCEL_EQ
   </a>
   
 </li>
@@ -785,18 +853,113 @@
 <tbody>
 <tr>
 <td></td>
-<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Files/expect__eq__macros_8hpp#define-expect_point_eq">EXPECT_POINT_EQ</a></strong>(P0, P1)</td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Files/expect__eq__macros_8hpp#define-expect_vector3_eq">EXPECT_VECTOR3_EQ</a></strong>(DATA0, DATA1)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Files/expect__eq__macros_8hpp#define-expect_twist_eq">EXPECT_TWIST_EQ</a></strong>(DATA0, DATA1)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Files/expect__eq__macros_8hpp#define-expect_quaternion_eq">EXPECT_QUATERNION_EQ</a></strong>(DATA0, DATA1)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Files/expect__eq__macros_8hpp#define-expect_pose_eq">EXPECT_POSE_EQ</a></strong>(DATA0, DATA1)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Files/expect__eq__macros_8hpp#define-expect_point_eq">EXPECT_POINT_EQ</a></strong>(DATA0, DATA1)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Files/expect__eq__macros_8hpp#define-expect_lanelet_pose_eq">EXPECT_LANELET_POSE_EQ</a></strong>(DATA0, DATA1)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Files/expect__eq__macros_8hpp#define-expect_detection_sensor_configuration_eq">EXPECT_DETECTION_SENSOR_CONFIGURATION_EQ</a></strong>(DATA0, DATA1)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Files/expect__eq__macros_8hpp#define-expect_action_status_eq">EXPECT_ACTION_STATUS_EQ</a></strong>(DATA0, DATA1)</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Files/expect__eq__macros_8hpp#define-expect_accel_eq">EXPECT_ACCEL_EQ</a></strong>(DATA0, DATA1)</td>
 </tr>
 </tbody>
 </table>
 <h2 id="macro-documentation">Macro Documentation<a class="headerlink" href="#macro-documentation" title="Permanent link">#</a></h2>
+<h3 id="define-expect_vector3_eq">define EXPECT_VECTOR3_EQ<a class="headerlink" href="#define-expect_vector3_eq" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#define EXPECT_VECTOR3_EQ(</span>
+<span class="w">    </span><span class="n">DATA0</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DATA1</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">x</span><span class="p">);</span><span class="w">   </span>\
+<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">y</span><span class="p">);</span><span class="w">   </span>\
+<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">z</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<h3 id="define-expect_twist_eq">define EXPECT_TWIST_EQ<a class="headerlink" href="#define-expect_twist_eq" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#define EXPECT_TWIST_EQ(</span>
+<span class="w">    </span><span class="n">DATA0</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DATA1</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="n">EXPECT_VECTOR3_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">linear</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">linear</span><span class="p">);</span><span class="w"> </span>\
+<span class="w">  </span><span class="n">EXPECT_VECTOR3_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">angular</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">angular</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<h3 id="define-expect_quaternion_eq">define EXPECT_QUATERNION_EQ<a class="headerlink" href="#define-expect_quaternion_eq" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#define EXPECT_QUATERNION_EQ(</span>
+<span class="w">    </span><span class="n">DATA0</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DATA1</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">x</span><span class="p">);</span><span class="w">      </span>\
+<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">y</span><span class="p">);</span><span class="w">      </span>\
+<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">z</span><span class="p">);</span><span class="w">      </span>\
+<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">w</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">w</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<h3 id="define-expect_pose_eq">define EXPECT_POSE_EQ<a class="headerlink" href="#define-expect_pose_eq" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#define EXPECT_POSE_EQ(</span>
+<span class="w">    </span><span class="n">DATA0</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DATA1</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="n">EXPECT_POINT_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">position</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">position</span><span class="p">);</span><span class="w"> </span>\
+<span class="w">  </span><span class="n">EXPECT_QUATERNION_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">orientation</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">orientation</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
 <h3 id="define-expect_point_eq">define EXPECT_POINT_EQ<a class="headerlink" href="#define-expect_point_eq" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code><span class="cp">#define EXPECT_POINT_EQ(</span>
-<span class="w">    </span><span class="n">P0</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">P1</span><span class="w"></span>
-<span class="p">)</span><span class="w"> </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">P0</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">P1</span><span class="p">.</span><span class="n">x</span><span class="p">);</span><span class="w"> </span>\
-<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">P0</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">P1</span><span class="p">.</span><span class="n">y</span><span class="p">);</span><span class="w"> </span>\
-<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">P0</span><span class="p">.</span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">P1</span><span class="p">.</span><span class="n">z</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">DATA0</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DATA1</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">x</span><span class="p">);</span><span class="w"> </span>\
+<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">y</span><span class="p">);</span><span class="w"> </span>\
+<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">z</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">z</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<h3 id="define-expect_lanelet_pose_eq">define EXPECT_LANELET_POSE_EQ<a class="headerlink" href="#define-expect_lanelet_pose_eq" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#define EXPECT_LANELET_POSE_EQ(</span>
+<span class="w">    </span><span class="n">DATA0</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DATA1</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="n">EXPECT_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">lanelet_id</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">lanelet_id</span><span class="p">);</span><span class="w"> </span>\
+<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">s</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">s</span><span class="p">);</span><span class="w">            </span>\
+<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">offset</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">offset</span><span class="p">);</span><span class="w">  </span>\
+<span class="w">  </span><span class="n">EXPECT_VECTOR3_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">rpy</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">rpy</span><span class="p">);</span><span class="w"></span>
+</code></pre></div>
+<h3 id="define-expect_detection_sensor_configuration_eq">define EXPECT_DETECTION_SENSOR_CONFIGURATION_EQ<a class="headerlink" href="#define-expect_detection_sensor_configuration_eq" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#define EXPECT_DETECTION_SENSOR_CONFIGURATION_EQ(</span>
+<span class="w">    </span><span class="n">DATA0</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DATA1</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="n">EXPECT_STREQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">entity</span><span class="p">().</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">entity</span><span class="p">().</span><span class="n">c_str</span><span class="p">());</span><span class="w">         </span>\
+<span class="w">  </span><span class="n">EXPECT_STREQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">topic_name</span><span class="p">().</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">topic_name</span><span class="p">().</span><span class="n">c_str</span><span class="p">());</span><span class="w"> </span>\
+<span class="w">  </span><span class="n">EXPECT_DOUBLE_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">update_duration</span><span class="p">(),</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">update_duration</span><span class="p">());</span><span class="w"></span>
+</code></pre></div>
+<h3 id="define-expect_action_status_eq">define EXPECT_ACTION_STATUS_EQ<a class="headerlink" href="#define-expect_action_status_eq" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#define EXPECT_ACTION_STATUS_EQ(</span>
+<span class="w">    </span><span class="n">DATA0</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DATA1</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="n">EXPECT_ACCEL_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">accel</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">accel</span><span class="p">);</span><span class="w">  </span>\
+<span class="w">  </span><span class="n">EXPECT_TWIST_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">twist</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">twist</span><span class="p">);</span><span class="w">  </span>\
+<span class="w">  </span><span class="n">EXPECT_STREQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">current_action</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">current_action</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span><span class="w"></span>
+</code></pre></div>
+<h3 id="define-expect_accel_eq">define EXPECT_ACCEL_EQ<a class="headerlink" href="#define-expect_accel_eq" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="cp">#define EXPECT_ACCEL_EQ(</span>
+<span class="w">    </span><span class="n">DATA0</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">DATA1</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="n">EXPECT_VECTOR3_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">linear</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">linear</span><span class="p">);</span><span class="w"> </span>\
+<span class="w">  </span><span class="n">EXPECT_VECTOR3_EQ</span><span class="p">(</span><span class="n">DATA0</span><span class="p">.</span><span class="n">angular</span><span class="p">,</span><span class="w"> </span><span class="n">DATA1</span><span class="p">.</span><span class="n">angular</span><span class="p">);</span><span class="w"></span>
 </code></pre></div>
 <h2 id="source-code">Source code<a class="headerlink" href="#source-code" title="Permanent link">#</a></h2>
 <div class="highlight"><pre><span></span><code><span class="c1">// Copyright 2015-2020 Tier IV, Inc. All rights reserved.</span>
@@ -819,16 +982,56 @@
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;gtest/gtest.h&gt;</span><span class="cp"></span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;geometry_msgs/msg/point.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;geometry_msgs/msg/vector3.hpp&gt;</span><span class="cp"></span>
 
-<span class="cp">#define EXPECT_POINT_EQ(P0, P1) \</span>
-<span class="cp">  EXPECT_DOUBLE_EQ(P0.x, P1.x); \</span>
-<span class="cp">  EXPECT_DOUBLE_EQ(P0.y, P1.y); \</span>
-<span class="cp">  EXPECT_DOUBLE_EQ(P0.z, P1.z);</span>
+<span class="cp">#define EXPECT_POINT_EQ(DATA0, DATA1) \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.x, DATA1.x); \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.y, DATA1.y); \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.z, DATA1.z);</span>
+
+<span class="cp">#define EXPECT_VECTOR3_EQ(DATA0, DATA1) \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.x, DATA1.x);   \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.y, DATA1.y);   \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.z, DATA1.z);</span>
+
+<span class="cp">#define EXPECT_QUATERNION_EQ(DATA0, DATA1) \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.x, DATA1.x);      \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.y, DATA1.y);      \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.z, DATA1.z);      \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.w, DATA1.w);</span>
+
+<span class="cp">#define EXPECT_POSE_EQ(DATA0, DATA1)               \</span>
+<span class="cp">  EXPECT_POINT_EQ(DATA0.position, DATA1.position); \</span>
+<span class="cp">  EXPECT_QUATERNION_EQ(DATA0.orientation, DATA1.orientation);</span>
+
+<span class="cp">#define EXPECT_LANELET_POSE_EQ(DATA0, DATA1)     \</span>
+<span class="cp">  EXPECT_EQ(DATA0.lanelet_id, DATA1.lanelet_id); \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.s, DATA1.s);            \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.offset, DATA1.offset);  \</span>
+<span class="cp">  EXPECT_VECTOR3_EQ(DATA0.rpy, DATA1.rpy);</span>
+
+<span class="cp">#define EXPECT_TWIST_EQ(DATA0, DATA1)            \</span>
+<span class="cp">  EXPECT_VECTOR3_EQ(DATA0.linear, DATA1.linear); \</span>
+<span class="cp">  EXPECT_VECTOR3_EQ(DATA0.angular, DATA1.angular);</span>
+
+<span class="cp">#define EXPECT_ACCEL_EQ(DATA0, DATA1)            \</span>
+<span class="cp">  EXPECT_VECTOR3_EQ(DATA0.linear, DATA1.linear); \</span>
+<span class="cp">  EXPECT_VECTOR3_EQ(DATA0.angular, DATA1.angular);</span>
+
+<span class="cp">#define EXPECT_ACTION_STATUS_EQ(DATA0, DATA1) \</span>
+<span class="cp">  EXPECT_ACCEL_EQ(DATA0.accel, DATA1.accel);  \</span>
+<span class="cp">  EXPECT_TWIST_EQ(DATA0.twist, DATA1.twist);  \</span>
+<span class="cp">  EXPECT_STREQ(DATA0.current_action.c_str(), DATA1.current_action.c_str());</span>
+
+<span class="cp">#define EXPECT_DETECTION_SENSOR_CONFIGURATION_EQ(DATA0, DATA1)          \</span>
+<span class="cp">  EXPECT_STREQ(DATA0.entity().c_str(), DATA1.entity().c_str());         \</span>
+<span class="cp">  EXPECT_STREQ(DATA0.topic_name().c_str(), DATA1.topic_name().c_str()); \</span>
+<span class="cp">  EXPECT_DOUBLE_EQ(DATA0.update_duration(), DATA1.update_duration());</span>
 
 <span class="cp">#endif  </span><span class="c1">// TRAFFIC_SIMULATOR__TEST__EXPECT_EQ_MACROS_HPP_</span>
 </code></pre></div>
 <hr />
-<p>Updated on 16 September 2021 at 01:17:58 UTC</p>
+<p>Updated on 17 September 2021 at 03:17:42 UTC</p>
                 
                   
                 

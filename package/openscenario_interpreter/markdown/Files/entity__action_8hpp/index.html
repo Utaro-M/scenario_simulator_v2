@@ -616,6 +616,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../design/SimulationResultFormat/" class="md-nav__link">
+        Simulation Result Format
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -837,8 +849,6 @@
 <span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">true_type</span><span class="w"> </span><span class="n">accomplished</span><span class="p">{};</span><span class="w"></span>
-
 <span class="w">  </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">Node</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span> <span class="nc">Scope</span><span class="o">&gt;</span><span class="w"></span>
 <span class="w">  </span><span class="k">explicit</span><span class="w"> </span><span class="n">EntityAction</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Node</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">Scope</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">outer_scope</span><span class="p">)</span><span class="w"></span>
 <span class="w">  </span><span class="c1">// clang-format off</span>
@@ -851,20 +861,24 @@
 <span class="w">  </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-<span class="w">  </span><span class="k">decltype</span><span class="p">(</span><span class="k">auto</span><span class="p">)</span><span class="w"> </span><span class="n">evaluate</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">accomplished</span><span class="p">()</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">endsImmediately</span><span class="p">();</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">endsImmediately</span><span class="p">()</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="kr">inline</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">evaluate</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
 <span class="w">  </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// clang-format off</span>
-<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">type_index</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="n">Element</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">overloads</span><span class="w"></span>
+<span class="w">    </span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">unordered_map</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">type_index</span><span class="p">,</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityAction</span><span class="w"> </span><span class="o">&amp;</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">overloads</span><span class="w"></span>
 <span class="w">    </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="k">typeid</span><span class="p">(</span><span class="n">AddEntityAction</span><span class="p">),</span><span class="w">    </span><span class="p">[</span><span class="k">this</span><span class="p">](</span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="p">...</span><span class="w"> </span><span class="n">xs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">as</span><span class="o">&lt;</span><span class="n">AddEntityAction</span><span class="w">   </span><span class="o">&gt;</span><span class="p">()(</span><span class="n">std</span><span class="o">::</span><span class="n">forward</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span><span class="o">&gt;</span><span class="p">(</span><span class="n">xs</span><span class="p">)...);</span><span class="w"> </span><span class="p">}},</span><span class="w"></span>
-<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="k">typeid</span><span class="p">(</span><span class="n">DeleteEntityAction</span><span class="p">),</span><span class="w"> </span><span class="p">[</span><span class="k">this</span><span class="p">](</span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="p">...</span><span class="w"> </span><span class="n">xs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">as</span><span class="o">&lt;</span><span class="n">DeleteEntityAction</span><span class="o">&gt;</span><span class="p">()(</span><span class="n">std</span><span class="o">::</span><span class="n">forward</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span><span class="o">&gt;</span><span class="p">(</span><span class="n">xs</span><span class="p">)...);</span><span class="w"> </span><span class="p">}},</span><span class="w"></span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="k">typeid</span><span class="p">(</span><span class="w">   </span><span class="n">AddEntityAction</span><span class="p">),</span><span class="w"> </span><span class="p">[](</span><span class="k">const</span><span class="w"> </span><span class="n">EntityAction</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">entity_action</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="p">...</span><span class="w"> </span><span class="n">xs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">entity_action</span><span class="p">.</span><span class="n">as</span><span class="o">&lt;</span><span class="w">   </span><span class="n">AddEntityAction</span><span class="o">&gt;</span><span class="p">()(</span><span class="n">std</span><span class="o">::</span><span class="n">forward</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span><span class="o">&gt;</span><span class="p">(</span><span class="n">xs</span><span class="p">)...);</span><span class="w"> </span><span class="p">}},</span><span class="w"></span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="k">typeid</span><span class="p">(</span><span class="n">DeleteEntityAction</span><span class="p">),</span><span class="w"> </span><span class="p">[](</span><span class="k">const</span><span class="w"> </span><span class="n">EntityAction</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">entity_action</span><span class="p">,</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="p">...</span><span class="w"> </span><span class="n">xs</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">entity_action</span><span class="p">.</span><span class="n">as</span><span class="o">&lt;</span><span class="n">DeleteEntityAction</span><span class="o">&gt;</span><span class="p">()(</span><span class="n">std</span><span class="o">::</span><span class="n">forward</span><span class="o">&lt;</span><span class="k">decltype</span><span class="p">(</span><span class="n">xs</span><span class="p">)</span><span class="o">&gt;</span><span class="p">(</span><span class="n">xs</span><span class="p">)...);</span><span class="w"> </span><span class="p">}},</span><span class="w"></span>
 <span class="w">    </span><span class="p">};</span><span class="w"></span>
 <span class="w">    </span><span class="c1">// clang-format on</span>
 
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">overloads</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">type</span><span class="p">())(</span><span class="n">entity_ref</span><span class="p">);</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="n">overloads</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">type</span><span class="p">())(</span><span class="o">*</span><span class="k">this</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">);</span><span class="w">  </span><span class="c1">// TODO(yamacir-kit) CATCH std::out_of_range</span>
 
-<span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">endsImmediately</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">unspecified</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace syntax</span>
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace openscenario_interpreter</span>
@@ -872,7 +886,7 @@
 <span class="cp">#endif  </span><span class="c1">// OPENSCENARIO_INTERPRETER__SYNTAX__ENTITY_ACTION_HPP_</span>
 </code></pre></div>
 <hr />
-<p>Updated on 16 September 2021 at 01:18:01 UTC</p>
+<p>Updated on 17 September 2021 at 03:17:45 UTC</p>
                 
                   
                 

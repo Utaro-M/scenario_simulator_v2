@@ -154,32 +154,32 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="90">
+      <node id="92">
         <label>T</label>
       </node>
-      <node id="89">
+      <node id="91">
         <label>openscenario_interpreter::Pointer&lt; T &gt;::Binder&lt; Bound &gt;</label>
-        <childnode refid="90" relation="public-inheritance">
+        <childnode refid="92" relation="public-inheritance">
         </childnode>
-        <childnode refid="91" relation="public-inheritance">
+        <childnode refid="93" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="91">
+      <node id="93">
         <label>Bound</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="93">
+      <node id="95">
         <label>T</label>
       </node>
-      <node id="92">
+      <node id="94">
         <label>openscenario_interpreter::Pointer&lt; T &gt;::Binder&lt; Bound &gt;</label>
-        <childnode refid="93" relation="public-inheritance">
+        <childnode refid="95" relation="public-inheritance">
         </childnode>
-        <childnode refid="94" relation="public-inheritance">
+        <childnode refid="96" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="94">
+      <node id="96">
         <label>Bound</label>
       </node>
     </collaborationgraph>

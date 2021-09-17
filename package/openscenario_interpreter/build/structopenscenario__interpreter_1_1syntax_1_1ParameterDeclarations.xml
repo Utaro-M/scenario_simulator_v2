@@ -52,24 +52,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="523">
+      <node id="527">
         <label>openscenario_interpreter::syntax::ParameterDeclarations</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ParameterDeclarations"/>
-        <childnode refid="524" relation="public-inheritance">
+        <childnode refid="528" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="524">
+      <node id="528">
         <label>std::vector&lt; ParameterDeclaration &gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="525">
+      <node id="529">
         <label>openscenario_interpreter::syntax::ParameterDeclarations</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ParameterDeclarations"/>
-        <childnode refid="526" relation="public-inheritance">
+        <childnode refid="530" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="526">
+      <node id="530">
         <label>std::vector&lt; ParameterDeclaration &gt;</label>
       </node>
     </collaborationgraph>

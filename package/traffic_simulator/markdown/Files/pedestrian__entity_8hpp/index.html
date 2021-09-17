@@ -616,6 +616,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../design/SimulationResultFormat/" class="md-nav__link">
+        Simulation Result Format
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -819,7 +831,6 @@
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;traffic_simulator/behavior/route_planner.hpp&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;traffic_simulator/behavior/target_speed_planner.hpp&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;traffic_simulator/entity/entity_base.hpp&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;traffic_simulator/entity/pedestrian_parameter.hpp&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;vector&gt;</span><span class="cp"></span>
 
 <span class="k">namespace</span><span class="w"> </span><span class="nn">traffic_simulator</span><span class="w"></span>
@@ -848,7 +859,7 @@
 
 <span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">requestWalkStraight</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">cancelRequest</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">cancelRequest</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span><span class="w"></span>
 
 <span class="w">  </span><span class="kt">void</span><span class="w"> </span><span class="nf">setHdMapUtils</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">hdmap_utils</span><span class="o">::</span><span class="n">HdMapUtils</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">ptr</span><span class="p">)</span><span class="w"> </span><span class="k">override</span><span class="w"></span>
 <span class="w">  </span><span class="p">{</span><span class="w"></span>
@@ -889,6 +900,11 @@
 
 <span class="w">  </span><span class="n">boost</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Obstacle</span><span class="o">&gt;</span><span class="w"> </span><span class="n">getObstacle</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">boost</span><span class="o">::</span><span class="n">none</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
 
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">LaneletPose</span><span class="o">&gt;</span><span class="w"> </span><span class="n">getGoalPoses</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">route_planner_ptr_</span><span class="o">-&gt;</span><span class="n">getGoalPoses</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">WaypointsArray</span><span class="w"> </span><span class="n">getWaypoints</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="w"></span>
 <span class="w">  </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">openscenario_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">WaypointsArray</span><span class="p">();</span><span class="w"></span>
@@ -905,7 +921,7 @@
 <span class="cp">#endif  </span><span class="c1">// TRAFFIC_SIMULATOR__ENTITY__PEDESTRIAN_ENTITY_HPP_</span>
 </code></pre></div>
 <hr />
-<p>Updated on 16 September 2021 at 01:17:58 UTC</p>
+<p>Updated on 17 September 2021 at 03:17:42 UTC</p>
                 
                   
                 

@@ -54,23 +54,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="879">
-        <label>openscenario_interpreter::syntax::UserDefinedAction</label>
-        <link refid="structopenscenario__interpreter_1_1syntax_1_1UserDefinedAction"/>
-        <childnode refid="880" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="881">
-        <label>std::shared_ptr&lt; Expression  &gt;</label>
-      </node>
-      <node id="880">
-        <label>Element</label>
-        <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="881" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="882">
         <label>openscenario_interpreter::syntax::UserDefinedAction</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1UserDefinedAction"/>
@@ -84,6 +67,23 @@
         <label>Element</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
         <childnode refid="884" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="885">
+        <label>openscenario_interpreter::syntax::UserDefinedAction</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1UserDefinedAction"/>
+        <childnode refid="886" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="887">
+        <label>std::shared_ptr&lt; Expression  &gt;</label>
+      </node>
+      <node id="886">
+        <label>Element</label>
+        <link refid="classopenscenario__interpreter_1_1Pointer"/>
+        <childnode refid="887" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

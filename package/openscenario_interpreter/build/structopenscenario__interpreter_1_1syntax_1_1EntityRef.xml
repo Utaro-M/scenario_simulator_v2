@@ -63,17 +63,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="235">
-        <label>String</label>
-      </node>
-      <node id="234">
-        <label>openscenario_interpreter::syntax::EntityRef</label>
-        <link refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef"/>
-        <childnode refid="235" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="237">
         <label>String</label>
       </node>
@@ -81,6 +70,17 @@
         <label>openscenario_interpreter::syntax::EntityRef</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef"/>
         <childnode refid="237" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="239">
+        <label>String</label>
+      </node>
+      <node id="238">
+        <label>openscenario_interpreter::syntax::EntityRef</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef"/>
+        <childnode refid="239" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

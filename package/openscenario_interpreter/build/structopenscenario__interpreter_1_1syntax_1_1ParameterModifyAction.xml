@@ -96,44 +96,44 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="527">
+      <node id="531">
         <label>openscenario_interpreter::syntax::ParameterModifyAction</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ParameterModifyAction"/>
-        <childnode refid="528" relation="public-inheritance">
+        <childnode refid="532" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="528">
+      <node id="532">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="533">
+      <node id="537">
         <label>std::shared_ptr&lt; Expression  &gt;</label>
       </node>
-      <node id="529">
+      <node id="533">
         <label>openscenario_interpreter::syntax::ParameterModifyAction</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ParameterModifyAction"/>
-        <childnode refid="530" relation="public-inheritance">
+        <childnode refid="534" relation="public-inheritance">
         </childnode>
-        <childnode refid="531" relation="usage">
+        <childnode refid="535" relation="usage">
           <edgelabel>rule</edgelabel>
         </childnode>
       </node>
-      <node id="532">
+      <node id="536">
         <label>Element</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="533" relation="public-inheritance">
+        <childnode refid="537" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="530">
+      <node id="534">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
-      <node id="531">
+      <node id="535">
         <label>openscenario_interpreter::syntax::ModifyRule</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ModifyRule"/>
-        <childnode refid="532" relation="public-inheritance">
+        <childnode refid="536" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>
@@ -141,19 +141,18 @@
     <listofallmembers>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1ParameterModifyAction_1a4665dca97b0319953e586aa6231c4eb3" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>accomplished</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1a10b3826ffbeda24506a4b1f6098adf0a" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>actors</name></member>
-      <member refid="classopenscenario__interpreter_1_1Scope_1a6c1520691ffecd19680afe4a8ae9e1f2" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>addElement</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1ParameterModifyAction_1a603988a8593c541981e06a911523b70b" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>evaluate</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1a6e06d610d0a8848a30d6f3f918d77911" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>findElement</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a140531d9487ca398162c3d8bdc1cbef6" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>global</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a52665b2cce71e56a6e1f53c4d78da95a" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>global</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a70e18724b1b9f34062516cd1fb47a20e" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>insert</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1aadff2e8f2596e50f25246d9602eb8d18" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>localScope</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1a81a89c19fa47be12aabf28dc87a4bc0d" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>localScope</name></member>
-      <member refid="classopenscenario__interpreter_1_1Scope_1a6eb516be10fe431f206ce01d0a3f5cd7" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>logic_file</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1aaca945840340f070418d229c6d8fa42a" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>makeChildScope</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1aade3655a2b6949034ff567a90639fdb9" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>name</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1ParameterModifyAction_1ab62bb7794c5706e2444fc109306e4de0" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>parameter_ref</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1ParameterModifyAction_1a7af107c70e9f7b0d2e24f835de9abec5" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>ParameterModifyAction</name></member>
-      <member refid="classopenscenario__interpreter_1_1Scope_1ae59a0eb9f9fa26076eebf7b37e3d81e5" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>pathname</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1ParameterModifyAction_1ae1e6f9d9c546fd5eb4247a35bad7e683" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>rule</name></member>
-      <member refid="classopenscenario__interpreter_1_1Scope_1a654470c4c01e81f3158c036460a732b3" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>scene_graph_file</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1a6e1f374442352c5c86eb1c63e1454a1c" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>Scope</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1a3da70b847b0daded6ce397ac0f1b7fa5" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>Scope</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1ac2732f157198c385fb788574698b1185" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ParameterModifyAction</scope><name>Scope</name></member>

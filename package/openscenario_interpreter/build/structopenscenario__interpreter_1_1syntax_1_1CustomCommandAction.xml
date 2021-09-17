@@ -271,25 +271,25 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="175">
+      <node id="179">
         <label>openscenario_interpreter::syntax::CustomCommandAction</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1CustomCommandAction"/>
-        <childnode refid="176" relation="private-inheritance">
+        <childnode refid="180" relation="private-inheritance">
         </childnode>
       </node>
-      <node id="176">
+      <node id="180">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="177">
+      <node id="181">
         <label>openscenario_interpreter::syntax::CustomCommandAction</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1CustomCommandAction"/>
-        <childnode refid="178" relation="private-inheritance">
+        <childnode refid="182" relation="private-inheritance">
         </childnode>
       </node>
-      <node id="178">
+      <node id="182">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
@@ -298,7 +298,6 @@
     <listofallmembers>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1CustomCommandAction_1a8f6369f2ef2f859968599a8df05a4196" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>accomplished</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1a10b3826ffbeda24506a4b1f6098adf0a" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>actors</name></member>
-      <member refid="classopenscenario__interpreter_1_1Scope_1a6c1520691ffecd19680afe4a8ae9e1f2" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>addElement</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1CustomCommandAction_1a24a8e21c20a04898eb9963725f5c3d77" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>builtins</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1CustomCommandAction_1a6994da45943a63a7b3190a70ec4118d0" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>content</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1CustomCommandAction_1ac5012f67d2e07d519fb3ca75c3054e0d" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>CustomCommandAction</name></member>
@@ -307,14 +306,14 @@
       <member refid="structopenscenario__interpreter_1_1syntax_1_1CustomCommandAction_1a910c1391076dde61840e239a4ec6cc73" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>exitFailure</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1CustomCommandAction_1a937c46f54bffa91e84fea9540772ea5d" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>exitSuccess</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1a6e06d610d0a8848a30d6f3f918d77911" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>findElement</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a140531d9487ca398162c3d8bdc1cbef6" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>global</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a52665b2cce71e56a6e1f53c4d78da95a" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>global</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a70e18724b1b9f34062516cd1fb47a20e" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>insert</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1aadff2e8f2596e50f25246d9602eb8d18" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>localScope</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1a81a89c19fa47be12aabf28dc87a4bc0d" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>localScope</name></member>
-      <member refid="classopenscenario__interpreter_1_1Scope_1a6eb516be10fe431f206ce01d0a3f5cd7" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>logic_file</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1aaca945840340f070418d229c6d8fa42a" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>makeChildScope</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1aade3655a2b6949034ff567a90639fdb9" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>name</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1CustomCommandAction_1ab8a42644c542e0b204e79bb01f5e3d8a" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>operator&lt;&lt;</name></member>
-      <member refid="classopenscenario__interpreter_1_1Scope_1ae59a0eb9f9fa26076eebf7b37e3d81e5" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>pathname</name></member>
-      <member refid="classopenscenario__interpreter_1_1Scope_1a654470c4c01e81f3158c036460a732b3" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>scene_graph_file</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1a6e1f374442352c5c86eb1c63e1454a1c" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>Scope</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1a3da70b847b0daded6ce397ac0f1b7fa5" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>Scope</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1ac2732f157198c385fb788574698b1185" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::CustomCommandAction</scope><name>Scope</name></member>

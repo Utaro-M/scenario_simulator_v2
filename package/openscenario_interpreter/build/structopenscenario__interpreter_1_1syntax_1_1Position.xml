@@ -54,36 +54,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="576">
+      <node id="580">
         <label>std::shared_ptr&lt; Expression  &gt;</label>
       </node>
-      <node id="574">
+      <node id="578">
         <label>openscenario_interpreter::syntax::Position</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Position"/>
-        <childnode refid="575" relation="public-inheritance">
+        <childnode refid="579" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="575">
+      <node id="579">
         <label>Element</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="576" relation="public-inheritance">
+        <childnode refid="580" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="579">
+      <node id="583">
         <label>std::shared_ptr&lt; Expression  &gt;</label>
       </node>
-      <node id="577">
+      <node id="581">
         <label>openscenario_interpreter::syntax::Position</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Position"/>
-        <childnode refid="578" relation="public-inheritance">
+        <childnode refid="582" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="578">
+      <node id="582">
         <label>Element</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="579" relation="public-inheritance">
+        <childnode refid="583" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -214,24 +214,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="195">
+      <node id="181">
         <label>rclcpp::Clock</label>
       </node>
-      <node id="194">
+      <node id="180">
         <label>traffic_simulator::SimulationClock</label>
         <link refid="classtraffic__simulator_1_1SimulationClock"/>
-        <childnode refid="195" relation="private-inheritance">
+        <childnode refid="181" relation="private-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="197">
+      <node id="183">
         <label>rclcpp::Clock</label>
       </node>
-      <node id="196">
+      <node id="182">
         <label>traffic_simulator::SimulationClock</label>
         <link refid="classtraffic__simulator_1_1SimulationClock"/>
-        <childnode refid="197" relation="private-inheritance">
+        <childnode refid="183" relation="private-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -83,15 +83,17 @@
         </childnode>
         <childnode refid="582" relation="include">
         </childnode>
-        <childnode refid="555" relation="include">
-        </childnode>
         <childnode refid="583" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
         </childnode>
         <childnode refid="584" relation="include">
         </childnode>
         <childnode refid="585" relation="include">
         </childnode>
         <childnode refid="586" relation="include">
+        </childnode>
+        <childnode refid="587" relation="include">
         </childnode>
       </node>
       <node id="580">
@@ -136,13 +138,13 @@
         <childnode refid="565" relation="include">
         </childnode>
       </node>
-      <node id="584">
+      <node id="585">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/stand_still_condition.hpp</label>
         <link refid="stand__still__condition_8hpp_source"/>
         <childnode refid="573" relation="include">
         </childnode>
       </node>
-      <node id="582">
+      <node id="583">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/simulation_time_condition.hpp</label>
         <link refid="simulation__time__condition_8hpp_source"/>
         <childnode refid="580" relation="include">
@@ -176,7 +178,7 @@
         <childnode refid="573" relation="include">
         </childnode>
       </node>
-      <node id="581">
+      <node id="582">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/relative_target_speed.hpp</label>
         <link refid="relative__target__speed_8hpp_source"/>
         <childnode refid="554" relation="include">
@@ -194,7 +196,13 @@
         <childnode refid="569" relation="include">
         </childnode>
       </node>
-      <node id="586">
+      <node id="581">
+        <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/relative_distance_condition.hpp</label>
+        <link refid="relative__distance__condition_8hpp_source"/>
+        <childnode refid="573" relation="include">
+        </childnode>
+      </node>
+      <node id="587">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/user_defined_value_condition.hpp</label>
         <link refid="user__defined__value__condition_8hpp_source"/>
         <childnode refid="580" relation="include">
@@ -242,13 +250,13 @@
         <childnode refid="574" relation="include">
         </childnode>
       </node>
-      <node id="585">
+      <node id="586">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/time_headway_condition.hpp</label>
         <link refid="time__headway__condition_8hpp_source"/>
         <childnode refid="573" relation="include">
         </childnode>
       </node>
-      <node id="583">
+      <node id="584">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/speed_condition.hpp</label>
         <link refid="speed__condition_8hpp_source"/>
         <childnode refid="573" relation="include">

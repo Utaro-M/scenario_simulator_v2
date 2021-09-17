@@ -7,44 +7,44 @@
     <includes local="no">scenario_simulator_exception/exception.hpp</includes>
     <includes refid="traffic__light__state_8hpp" local="no">traffic_simulator/traffic_lights/traffic_light_state.hpp</includes>
     <incdepgraph>
-      <node id="7494">
+      <node id="7823">
         <label>scenario_simulator_exception/exception.hpp</label>
       </node>
-      <node id="7495">
+      <node id="7824">
         <label>traffic_simulator/traffic_lights/traffic_light_state.hpp</label>
         <link refid="traffic__light__state_8hpp_source"/>
-        <childnode refid="7496" relation="include">
+        <childnode refid="7825" relation="include">
         </childnode>
-        <childnode refid="7497" relation="include">
+        <childnode refid="7826" relation="include">
         </childnode>
-        <childnode refid="7498" relation="include">
+        <childnode refid="7827" relation="include">
         </childnode>
       </node>
-      <node id="7496">
+      <node id="7825">
         <label>autoware_perception_msgs/msg/lamp_state.hpp</label>
       </node>
-      <node id="7498">
+      <node id="7827">
         <label>stdexcept</label>
       </node>
-      <node id="7493">
+      <node id="7822">
         <label>regex</label>
       </node>
-      <node id="7492">
+      <node id="7821">
         <label>gtest/gtest.h</label>
       </node>
-      <node id="7491">
+      <node id="7820">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp</label>
         <link refid="test__traffic__light__state_8cpp"/>
-        <childnode refid="7492" relation="include">
+        <childnode refid="7821" relation="include">
         </childnode>
-        <childnode refid="7493" relation="include">
+        <childnode refid="7822" relation="include">
         </childnode>
-        <childnode refid="7494" relation="include">
+        <childnode refid="7823" relation="include">
         </childnode>
-        <childnode refid="7495" relation="include">
+        <childnode refid="7824" relation="include">
         </childnode>
       </node>
-      <node id="7497">
+      <node id="7826">
         <label>iostream</label>
       </node>
     </incdepgraph>
@@ -68,6 +68,44 @@
         </inbodydescription>
         <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp" line="21" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp" bodystart="21" bodyend="47"/>
       </memberdef>
+      <memberdef kind="function" id="test__traffic__light__state_8cpp_1a27ac265a69336778791493790bf29609" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(TrafficLights, OPERATOR_INSERT)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>TrafficLights</type>
+        </param>
+        <param>
+          <type>OPERATOR_INSERT</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp" line="49" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp" bodystart="49" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="test__traffic__light__state_8cpp_1a6eb49baff4b0fa2fce07724c5ea9b065" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(TrafficLights, OPERATOR_INPUT)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>TrafficLights</type>
+        </param>
+        <param>
+          <type>OPERATOR_INPUT</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp" line="77" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp" bodystart="77" bodyend="99"/>
+      </memberdef>
       <memberdef kind="function" id="test__traffic__light__state_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int main</definition>
@@ -87,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp" line="49" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp" bodystart="49" bodyend="53"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp" line="101" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp" bodystart="101" bodyend="105"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -143,11 +181,63 @@
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>std::out_of_range);</highlight></codeline>
 <codeline lineno="47"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>argv)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">TEST(TrafficLights,<sp/>OPERATOR_INSERT)</highlight></codeline>
 <codeline lineno="50"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/>testing::InitGoogleTest(&amp;argc,<sp/>argv);</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RUN_ALL_TESTS();</highlight></codeline>
-<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>std::stringstream<sp/>ss;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>ss<sp/>&lt;&lt;<sp/>traffic_simulator::TrafficLightArrow::STRAIGHT;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>EXPECT_STREQ(ss.str().c_str(),<sp/></highlight><highlight class="stringliteral">&quot;straight&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>ss<sp/>=<sp/>std::stringstream();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>ss<sp/>&lt;&lt;<sp/>traffic_simulator::TrafficLightArrow::NONE;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>EXPECT_STREQ(ss.str().c_str(),<sp/></highlight><highlight class="stringliteral">&quot;none&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>ss<sp/>=<sp/>std::stringstream();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>ss<sp/>&lt;&lt;<sp/>traffic_simulator::TrafficLightArrow::LEFT;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>EXPECT_STREQ(ss.str().c_str(),<sp/></highlight><highlight class="stringliteral">&quot;left&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>ss<sp/>=<sp/>std::stringstream();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>ss<sp/>&lt;&lt;<sp/>traffic_simulator::TrafficLightArrow::RIGHT;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>EXPECT_STREQ(ss.str().c_str(),<sp/></highlight><highlight class="stringliteral">&quot;right&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>ss<sp/>=<sp/>std::stringstream();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>ss<sp/>&lt;&lt;<sp/>traffic_simulator::TrafficLightColor::NONE;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>EXPECT_STREQ(ss.str().c_str(),<sp/></highlight><highlight class="stringliteral">&quot;none&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>ss<sp/>=<sp/>std::stringstream();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>ss<sp/>&lt;&lt;<sp/>traffic_simulator::TrafficLightColor::RED;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>EXPECT_STREQ(ss.str().c_str(),<sp/></highlight><highlight class="stringliteral">&quot;red&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>ss<sp/>=<sp/>std::stringstream();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>ss<sp/>&lt;&lt;<sp/>traffic_simulator::TrafficLightColor::GREEN;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>EXPECT_STREQ(ss.str().c_str(),<sp/></highlight><highlight class="stringliteral">&quot;green&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>ss<sp/>=<sp/>std::stringstream();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>ss<sp/>&lt;&lt;<sp/>traffic_simulator::TrafficLightColor::YELLOW;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>EXPECT_STREQ(ss.str().c_str(),<sp/></highlight><highlight class="stringliteral">&quot;yellow&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">TEST(TrafficLights,<sp/>OPERATOR_INPUT)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>traffic_simulator::TrafficLightArrow<sp/>arrow;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>std::stringstream(</highlight><highlight class="stringliteral">&quot;straight&quot;</highlight><highlight class="normal">)<sp/>&gt;&gt;<sp/>arrow;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>EXPECT_EQ(arrow,<sp/>traffic_simulator::TrafficLightArrow::STRAIGHT);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>std::stringstream(</highlight><highlight class="stringliteral">&quot;none&quot;</highlight><highlight class="normal">)<sp/>&gt;&gt;<sp/>arrow;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>EXPECT_EQ(arrow,<sp/>traffic_simulator::TrafficLightArrow::NONE);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>std::stringstream(</highlight><highlight class="stringliteral">&quot;left&quot;</highlight><highlight class="normal">)<sp/>&gt;&gt;<sp/>arrow;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>EXPECT_EQ(arrow,<sp/>traffic_simulator::TrafficLightArrow::LEFT);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>std::stringstream(</highlight><highlight class="stringliteral">&quot;right&quot;</highlight><highlight class="normal">)<sp/>&gt;&gt;<sp/>arrow;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>EXPECT_EQ(arrow,<sp/>traffic_simulator::TrafficLightArrow::RIGHT);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>EXPECT_THROW(std::stringstream(</highlight><highlight class="stringliteral">&quot;invalid&quot;</highlight><highlight class="normal">)<sp/>&gt;&gt;<sp/>arrow,<sp/>common::SimulationError);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>traffic_simulator::TrafficLightColor<sp/>color;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>std::stringstream(</highlight><highlight class="stringliteral">&quot;red&quot;</highlight><highlight class="normal">)<sp/>&gt;&gt;<sp/>color;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>EXPECT_EQ(color,<sp/>traffic_simulator::TrafficLightColor::RED);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>std::stringstream(</highlight><highlight class="stringliteral">&quot;green&quot;</highlight><highlight class="normal">)<sp/>&gt;&gt;<sp/>color;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>EXPECT_EQ(color,<sp/>traffic_simulator::TrafficLightColor::GREEN);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>std::stringstream(</highlight><highlight class="stringliteral">&quot;yellow&quot;</highlight><highlight class="normal">)<sp/>&gt;&gt;<sp/>color;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>EXPECT_EQ(color,<sp/>traffic_simulator::TrafficLightColor::YELLOW);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>std::stringstream(</highlight><highlight class="stringliteral">&quot;none&quot;</highlight><highlight class="normal">)<sp/>&gt;&gt;<sp/>color;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>EXPECT_EQ(color,<sp/>traffic_simulator::TrafficLightColor::NONE);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>EXPECT_THROW(std::stringstream(</highlight><highlight class="stringliteral">&quot;invalid&quot;</highlight><highlight class="normal">)<sp/>&gt;&gt;<sp/>color,<sp/>common::SimulationError);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>argv)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>testing::InitGoogleTest(&amp;argc,<sp/>argv);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RUN_ALL_TESTS();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/traffic_lights/test_traffic_light_state.cpp"/>
   </compounddef>

@@ -552,25 +552,25 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="188">
+      <node id="174">
         <label>SimModelTimeDelayTwist</label>
         <link refid="classSimModelTimeDelayTwist"/>
-        <childnode refid="189" relation="public-inheritance">
+        <childnode refid="175" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="189">
+      <node id="175">
         <label>SimModelInterface</label>
         <link refid="classSimModelInterface"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="190">
+      <node id="176">
         <label>SimModelTimeDelayTwist</label>
         <link refid="classSimModelTimeDelayTwist"/>
-        <childnode refid="191" relation="public-inheritance">
+        <childnode refid="177" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="191">
+      <node id="177">
         <label>SimModelInterface</label>
         <link refid="classSimModelInterface"/>
       </node>

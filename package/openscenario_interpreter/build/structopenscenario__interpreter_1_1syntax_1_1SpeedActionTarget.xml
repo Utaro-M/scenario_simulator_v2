@@ -67,36 +67,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="748">
+      <node id="753">
         <label>std::shared_ptr&lt; Expression  &gt;</label>
       </node>
-      <node id="746">
+      <node id="751">
         <label>openscenario_interpreter::syntax::SpeedActionTarget</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1SpeedActionTarget"/>
-        <childnode refid="747" relation="public-inheritance">
+        <childnode refid="752" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="747">
+      <node id="752">
         <label>Element</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="748" relation="public-inheritance">
+        <childnode refid="753" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="751">
+      <node id="756">
         <label>std::shared_ptr&lt; Expression  &gt;</label>
       </node>
-      <node id="749">
+      <node id="754">
         <label>openscenario_interpreter::syntax::SpeedActionTarget</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1SpeedActionTarget"/>
-        <childnode refid="750" relation="public-inheritance">
+        <childnode refid="755" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="750">
+      <node id="755">
         <label>Element</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="751" relation="public-inheritance">
+        <childnode refid="756" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

@@ -133,8 +133,8 @@
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>socket_.send(message);</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>zmqpp::message<sp/>buffer;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>socket_.receive(buffer);</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>recieved_string<sp/>=<sp/>buffer.get(0);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>res.ParseFromString(recieved_string);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>received_string<sp/>=<sp/>buffer.get(0);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>res.ParseFromString(received_string);</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/>end<sp/>=<sp/>std::chrono::system_clock::now();</highlight></codeline>
 <codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/>double<sp/>elapsed<sp/>=<sp/>std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(end<sp/>-<sp/>start).count();</highlight></codeline>

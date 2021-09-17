@@ -16,6 +16,7 @@
     <innerfile refid="condition_8cpp">condition.cpp</innerfile>
     <innerfile refid="condition__edge_8cpp">condition_edge.cpp</innerfile>
     <innerfile refid="condition__group_8cpp">condition_group.cpp</innerfile>
+    <innerfile refid="coordinate__system_8cpp">coordinate_system.cpp</innerfile>
     <innerfile refid="dimensions_8cpp">dimensions.cpp</innerfile>
     <innerfile refid="double_8cpp">double.cpp</innerfile>
     <innerfile refid="dynamics__dimension_8cpp">dynamics_dimension.cpp</innerfile>
@@ -38,6 +39,7 @@
     <innerfile refid="priority_8cpp">priority.cpp</innerfile>
     <innerfile refid="private_8cpp">private.cpp</innerfile>
     <innerfile refid="reference__context_8cpp">reference_context.cpp</innerfile>
+    <innerfile refid="relative__distance__condition_8cpp">relative_distance_condition.cpp</innerfile>
     <innerfile refid="relative__distance__type_8cpp">relative_distance_type.cpp</innerfile>
     <innerfile refid="route__strategy_8cpp">route_strategy.cpp</innerfile>
     <innerfile refid="rule_8cpp">rule.cpp</innerfile>

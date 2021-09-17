@@ -42,42 +42,42 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="222">
+      <node id="224">
         <label>std::shared_ptr&lt; Expression  &gt;</label>
       </node>
-      <node id="220">
+      <node id="222">
         <label>openscenario_interpreter::syntax::EntityCondition</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1EntityCondition"/>
-        <childnode refid="221" relation="public-inheritance">
+        <childnode refid="223" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="225">
+        <label>openscenario_interpreter::syntax::ByEntityCondition</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1ByEntityCondition"/>
+        <childnode refid="222" relation="public-inheritance">
         </childnode>
       </node>
       <node id="223">
-        <label>openscenario_interpreter::syntax::ByEntityCondition</label>
-        <link refid="structopenscenario__interpreter_1_1syntax_1_1ByEntityCondition"/>
-        <childnode refid="220" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="221">
         <label>Element</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="222" relation="public-inheritance">
+        <childnode refid="224" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="226">
+      <node id="228">
         <label>std::shared_ptr&lt; Expression  &gt;</label>
       </node>
-      <node id="224">
+      <node id="226">
         <label>openscenario_interpreter::syntax::EntityCondition</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1EntityCondition"/>
-        <childnode refid="225" relation="public-inheritance">
+        <childnode refid="227" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="225">
+      <node id="227">
         <label>Element</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="226" relation="public-inheritance">
+        <childnode refid="228" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

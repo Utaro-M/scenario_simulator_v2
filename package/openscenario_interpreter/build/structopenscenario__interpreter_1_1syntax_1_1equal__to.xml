@@ -17,17 +17,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="242">
-        <label>openscenario_interpreter::syntax::equal_to&lt; T, typename &gt;</label>
-        <link refid="structopenscenario__interpreter_1_1syntax_1_1equal__to"/>
-        <childnode refid="243" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="243">
-        <label>std::equal_to&lt; T &gt;</label>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="244">
         <label>openscenario_interpreter::syntax::equal_to&lt; T, typename &gt;</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1equal__to"/>
@@ -35,6 +24,17 @@
         </childnode>
       </node>
       <node id="245">
+        <label>std::equal_to&lt; T &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="246">
+        <label>openscenario_interpreter::syntax::equal_to&lt; T, typename &gt;</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1equal__to"/>
+        <childnode refid="247" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="247">
         <label>std::equal_to&lt; T &gt;</label>
       </node>
     </collaborationgraph>

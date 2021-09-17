@@ -616,6 +616,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../design/SimulationResultFormat/" class="md-nav__link">
+        Simulation Result Format
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -680,6 +692,13 @@
         <li class="md-nav__item">
   <a href="#difference-between-the-latest-release-and-master" class="md-nav__link">
     Difference between the latest release and master
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#version-050" class="md-nav__link">
+    Version 0.5.0
   </a>
   
 </li>
@@ -847,6 +866,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#version-050" class="md-nav__link">
+    Version 0.5.0
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-045" class="md-nav__link">
     Version 0.4.5
   </a>
@@ -943,10 +969,23 @@
                 <h1 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">#</a></h1>
 <h2 id="difference-between-the-latest-release-and-master">Difference between the latest release and master<a class="headerlink" href="#difference-between-the-latest-release-and-master" title="Permanent link">#</a></h2>
 <ul>
+<li>Support OpenSCENARIO 1.1 <code>AddEntityAction</code> (<a href="https://github.com/tier4/scenario_simulator_v2/pull/506">link</a>).</li>
+<li>Add StandStillMetric. <a href="https://github.com/tier4/scenario_simulator_v2/pull/520">Link</a></li>
+<li>Add CollisionMetric. <a href="https://github.com/tier4/scenario_simulator_v2/pull/521">Link</a></li>
+<li>Support OpenSCENARIO 1.1 <code>RelativeDistanceCondition</code> (<a href="https://github.com/tier4/scenario_simulator_v2/pull/519">link</a>).</li>
+</ul>
+<h2 id="version-050">Version 0.5.0<a class="headerlink" href="#version-050" title="Permanent link">#</a></h2>
+<ul>
+<li>Add arrow markers to visualize goal poses of entities. (Contribution by <a href="https://github.com/Utaro-M">Utaro-M</a>).</li>
 <li>Fix problems in setting entity names in proto message. <a href="https://github.com/tier4/scenario_simulator_v2/pull/481">Link</a> (Contribution by <a href="https://robotec.ai/">Robotec.ai</a>).</li>
 <li>Fix problems in never hit line. <a href="https://github.com/tier4/scenario_simulator_v2/pull/480">Link</a> (Contribution by <a href="https://robotec.ai/">Robotec.ai</a>).</li>
 <li>Start support getting longitudinal distance to the behind entity in API::getLongitudinalDistance function. <a href="https://github.com/tier4/scenario_simulator_v2/pull/486">Link</a></li>
 <li>Fix problems in update/getPhaseDuration function in traffic light class. <a href="https://github.com/tier4/scenario_simulator_v2/pull/492">Link</a></li>
+<li>Update dependency for message types of Autoware to reference <code>AutowareArchitectureProposal_msgs</code> instead of <code>AutowareArchitectureProposal.iv</code>.</li>
+<li>Add to the AutowareArchitectureProposal_api_msgs to the .repos file. <a href="https://github.com/tier4/scenario_simulator_v2/pull/496">Link</a></li>
+<li>Fix rotation calculation in toMapPose function. <a href="https://github.com/tier4/scenario_simulator_v2/pull/500">Link</a></li>
+<li>Simplify logics in bool API::spawn(const bool is_ego, const std::string &amp; name, const openscenario_msgs::msg::VehicleParameters &amp; params) <a href="https://github.com/tier4/scenario_simulator_v2/pull/486">Link</a> (Contribution by <a href="https://robotec.ai/">Robotec.ai</a>).</li>
+<li>Fix lane coordinate calculation logic for pedestrian in walk straight action. <a href="https://github.com/tier4/scenario_simulator_v2/pull/507">Link</a></li>
 </ul>
 <h2 id="version-045">Version 0.4.5<a class="headerlink" href="#version-045" title="Permanent link">#</a></h2>
 <ul>

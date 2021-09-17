@@ -616,6 +616,18 @@
   
 
           
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../design/SimulationResultFormat/" class="md-nav__link">
+        Simulation Result Format
+      </a>
+    </li>
+  
+
+          
         </ul>
       </nav>
     </li>
@@ -863,8 +875,8 @@
 <span class="w">    </span><span class="n">socket_</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">message</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="n">zmqpp</span><span class="o">::</span><span class="n">message</span><span class="w"> </span><span class="n">buffer</span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="n">socket_</span><span class="p">.</span><span class="n">receive</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">recieved_string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">buffer</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="n">res</span><span class="p">.</span><span class="n">ParseFromString</span><span class="p">(</span><span class="n">recieved_string</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">received_string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">buffer</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">res</span><span class="p">.</span><span class="n">ParseFromString</span><span class="p">(</span><span class="n">received_string</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="cm">/*</span>
 <span class="cm">    end = std::chrono::system_clock::now();</span>
 <span class="cm">    double elapsed = std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(end - start).count();</span>
@@ -884,7 +896,7 @@
 <span class="cp">#endif  </span><span class="c1">// SIMULATION_INTERFACE__ZMQ_CLIENT_HPP_</span>
 </code></pre></div>
 <hr />
-<p>Updated on 16 September 2021 at 01:17:59 UTC</p>
+<p>Updated on 17 September 2021 at 03:17:43 UTC</p>
                 
                   
                 

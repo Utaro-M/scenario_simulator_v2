@@ -22,385 +22,401 @@
     <includedby refid="catmull__rom__spline_8cpp" local="no">/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/math/catmull_rom_spline.cpp</includedby>
     <includedby refid="test__catmull__rom__spline_8cpp" local="no">/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/test/src/math/test_catmull_rom_spline.cpp</includedby>
     <incdepgraph>
-      <node id="2488">
+      <node id="2340">
         <label>geometry_msgs/msg/pose.hpp</label>
       </node>
-      <node id="2483">
+      <node id="2335">
         <label>string</label>
       </node>
-      <node id="2484">
+      <node id="2336">
         <label>traffic_simulator/math/hermite_curve.hpp</label>
         <link refid="hermite__curve_8hpp_source"/>
-        <childnode refid="2485" relation="include">
+        <childnode refid="2337" relation="include">
         </childnode>
-        <childnode refid="2486" relation="include">
+        <childnode refid="2338" relation="include">
         </childnode>
-        <childnode refid="2487" relation="include">
+        <childnode refid="2339" relation="include">
         </childnode>
-        <childnode refid="2482" relation="include">
+        <childnode refid="2334" relation="include">
         </childnode>
-        <childnode refid="2488" relation="include">
+        <childnode refid="2340" relation="include">
         </childnode>
-        <childnode refid="2489" relation="include">
+        <childnode refid="2341" relation="include">
         </childnode>
-        <childnode refid="2490" relation="include">
+        <childnode refid="2342" relation="include">
         </childnode>
-        <childnode refid="2491" relation="include">
+        <childnode refid="2343" relation="include">
         </childnode>
       </node>
-      <node id="2481">
+      <node id="2333">
         <label>exception</label>
       </node>
-      <node id="2489">
+      <node id="2341">
         <label>geometry_msgs/msg/vector3.hpp</label>
       </node>
-      <node id="2486">
+      <node id="2338">
         <label>quaternion_operation/quaternion_operation.h</label>
       </node>
-      <node id="2482">
+      <node id="2334">
         <label>geometry_msgs/msg/point.hpp</label>
       </node>
-      <node id="2491">
+      <node id="2343">
         <label>vector</label>
       </node>
-      <node id="2485">
+      <node id="2337">
         <label>gtest/gtest.h</label>
       </node>
-      <node id="2492">
+      <node id="2344">
         <label>utility</label>
       </node>
-      <node id="2490">
+      <node id="2342">
         <label>traffic_simulator/math/polynomial_solver.hpp</label>
         <link refid="polynomial__solver_8hpp_source"/>
-        <childnode refid="2491" relation="include">
+        <childnode refid="2343" relation="include">
         </childnode>
       </node>
-      <node id="2480">
+      <node id="2332">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/math/catmull_rom_spline.hpp</label>
         <link refid="catmull__rom__spline_8hpp"/>
-        <childnode refid="2481" relation="include">
+        <childnode refid="2333" relation="include">
         </childnode>
-        <childnode refid="2482" relation="include">
+        <childnode refid="2334" relation="include">
         </childnode>
-        <childnode refid="2483" relation="include">
+        <childnode refid="2335" relation="include">
         </childnode>
-        <childnode refid="2484" relation="include">
+        <childnode refid="2336" relation="include">
         </childnode>
-        <childnode refid="2492" relation="include">
+        <childnode refid="2344" relation="include">
         </childnode>
-        <childnode refid="2491" relation="include">
+        <childnode refid="2343" relation="include">
         </childnode>
       </node>
-      <node id="2487">
+      <node id="2339">
         <label>boost/optional.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="2523">
+      <node id="2377">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/route_planner.hpp</label>
         <link refid="route__planner_8hpp_source"/>
-        <childnode refid="2498" relation="include">
+        <childnode refid="2350" relation="include">
         </childnode>
-        <childnode refid="2519" relation="include">
+        <childnode refid="2373" relation="include">
         </childnode>
       </node>
-      <node id="2500">
+      <node id="2352">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/api/api.hpp</label>
         <link refid="api_8hpp_source"/>
       </node>
-      <node id="2507">
+      <node id="2361">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/metrics/traveled_distance_metric.hpp</label>
         <link refid="traveled__distance__metric_8hpp_source"/>
-        <childnode refid="2502" relation="include">
+        <childnode refid="2355" relation="include">
         </childnode>
       </node>
-      <node id="2508">
+      <node id="2362">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/pedestrian/walk_straight_action.hpp</label>
         <link refid="walk__straight__action_8hpp"/>
-        <childnode refid="2497" relation="include">
+        <childnode refid="2349" relation="include">
         </childnode>
-        <childnode refid="2509" relation="include">
+        <childnode refid="2363" relation="include">
         </childnode>
       </node>
-      <node id="2511">
+      <node id="2365">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/vehicle/follow_lane_sequence/follow_front_entity_action.hpp</label>
         <link refid="follow__front__entity__action_8hpp_source"/>
       </node>
-      <node id="2504">
+      <node id="2357">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/metrics/momentary_stop_metric.hpp</label>
         <link refid="momentary__stop__metric_8hpp_source"/>
-        <childnode refid="2502" relation="include">
+        <childnode refid="2355" relation="include">
         </childnode>
       </node>
-      <node id="2514">
+      <node id="2368">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/vehicle/follow_lane_sequence/stop_at_crossing_entity_action.hpp</label>
         <link refid="stop__at__crossing__entity__action_8hpp_source"/>
       </node>
-      <node id="2497">
+      <node id="2349">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/pedestrian/behavior_tree.hpp</label>
         <link refid="pedestrian_2behavior__tree_8hpp_source"/>
-        <childnode refid="2498" relation="include">
+        <childnode refid="2350" relation="include">
         </childnode>
       </node>
-      <node id="2516">
+      <node id="2370">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/vehicle/follow_lane_sequence/stop_at_traffic_light_action.hpp</label>
         <link refid="stop__at__traffic__light__action_8hpp_source"/>
       </node>
-      <node id="2530">
+      <node id="2384">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/traffic_lights/traffic_light_phase.hpp</label>
         <link refid="traffic__light__phase_8hpp_source"/>
-        <childnode refid="2531" relation="include">
+        <childnode refid="2385" relation="include">
         </childnode>
       </node>
-      <node id="2501">
+      <node id="2353">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/metrics/metric_base.hpp</label>
         <link refid="metric__base_8hpp_source"/>
-        <childnode refid="2502" relation="include">
+        <childnode refid="2354" relation="include">
         </childnode>
-        <childnode refid="2503" relation="include">
+        <childnode refid="2355" relation="include">
         </childnode>
-        <childnode refid="2504" relation="include">
+        <childnode refid="2356" relation="include">
         </childnode>
-        <childnode refid="2505" relation="include">
+        <childnode refid="2357" relation="include">
         </childnode>
-        <childnode refid="2506" relation="include">
+        <childnode refid="2358" relation="include">
         </childnode>
-        <childnode refid="2507" relation="include">
+        <childnode refid="2359" relation="include">
+        </childnode>
+        <childnode refid="2360" relation="include">
+        </childnode>
+        <childnode refid="2361" relation="include">
         </childnode>
       </node>
-      <node id="2498">
+      <node id="2350">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/entity/pedestrian_entity.hpp</label>
         <link refid="pedestrian__entity_8hpp_source"/>
-        <childnode refid="2499" relation="include">
+        <childnode refid="2351" relation="include">
         </childnode>
       </node>
-      <node id="2494">
+      <node id="2360">
+        <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/metrics/standstill_metric.hpp</label>
+        <link refid="standstill__metric_8hpp_source"/>
+        <childnode refid="2355" relation="include">
+        </childnode>
+      </node>
+      <node id="2346">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/action_node.hpp</label>
         <link refid="action__node_8hpp_source"/>
-        <childnode refid="2495" relation="include">
+        <childnode refid="2347" relation="include">
         </childnode>
-        <childnode refid="2510" relation="include">
+        <childnode refid="2364" relation="include">
         </childnode>
       </node>
-      <node id="2505">
+      <node id="2358">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/metrics/out_of_range_metric.hpp</label>
         <link refid="out__of__range__metric_8hpp_source"/>
-        <childnode refid="2502" relation="include">
+        <childnode refid="2355" relation="include">
         </childnode>
       </node>
-      <node id="2509">
+      <node id="2363">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/behavior/pedestrian/walk_straight_action.cpp</label>
         <link refid="walk__straight__action_8cpp"/>
       </node>
-      <node id="2521">
+      <node id="2375">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/hdmap_utils/cache.hpp</label>
         <link refid="cache_8hpp_source"/>
-        <childnode refid="2522" relation="include">
+        <childnode refid="2376" relation="include">
         </childnode>
       </node>
-      <node id="2515">
+      <node id="2369">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/vehicle/follow_lane_sequence/stop_at_stop_line_action.hpp</label>
         <link refid="stop__at__stop__line__action_8hpp_source"/>
       </node>
-      <node id="2518">
+      <node id="2372">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/vehicle/lane_change_action.hpp</label>
         <link refid="lane__change__action_8hpp_source"/>
-        <childnode refid="2519" relation="include">
+        <childnode refid="2373" relation="include">
         </childnode>
       </node>
-      <node id="2522">
+      <node id="2376">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/hdmap_utils/hdmap_utils.hpp</label>
         <link refid="hdmap__utils_8hpp_source"/>
-        <childnode refid="2494" relation="include">
+        <childnode refid="2346" relation="include">
         </childnode>
-        <childnode refid="2497" relation="include">
+        <childnode refid="2349" relation="include">
         </childnode>
-        <childnode refid="2496" relation="include">
+        <childnode refid="2348" relation="include">
         </childnode>
-        <childnode refid="2508" relation="include">
+        <childnode refid="2362" relation="include">
         </childnode>
-        <childnode refid="2523" relation="include">
+        <childnode refid="2377" relation="include">
         </childnode>
-        <childnode refid="2524" relation="include">
+        <childnode refid="2378" relation="include">
         </childnode>
-        <childnode refid="2525" relation="include">
+        <childnode refid="2379" relation="include">
         </childnode>
-        <childnode refid="2499" relation="include">
+        <childnode refid="2351" relation="include">
         </childnode>
-        <childnode refid="2527" relation="include">
+        <childnode refid="2381" relation="include">
         </childnode>
-        <childnode refid="2529" relation="include">
+        <childnode refid="2383" relation="include">
         </childnode>
-        <childnode refid="2530" relation="include">
+        <childnode refid="2384" relation="include">
         </childnode>
       </node>
-      <node id="2513">
+      <node id="2367">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/vehicle/follow_lane_sequence/move_backward_action.hpp</label>
         <link refid="move__backward__action_8hpp_source"/>
       </node>
-      <node id="2499">
+      <node id="2351">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/entity/entity_manager.hpp</label>
         <link refid="entity__manager_8hpp_source"/>
-        <childnode refid="2500" relation="include">
+        <childnode refid="2352" relation="include">
         </childnode>
-        <childnode refid="2501" relation="include">
+        <childnode refid="2353" relation="include">
         </childnode>
-        <childnode refid="2503" relation="include">
+        <childnode refid="2356" relation="include">
         </childnode>
       </node>
-      <node id="2506">
+      <node id="2359">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/metrics/reaction_time_metric.hpp</label>
         <link refid="reaction__time__metric_8hpp_source"/>
-        <childnode refid="2502" relation="include">
+        <childnode refid="2355" relation="include">
         </childnode>
       </node>
-      <node id="2503">
+      <node id="2356">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/metrics/metrics_manager.hpp</label>
         <link refid="metrics__manager_8hpp_source"/>
-        <childnode refid="2500" relation="include">
+        <childnode refid="2352" relation="include">
         </childnode>
       </node>
-      <node id="2526">
+      <node id="2380">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/entity/misc_object_entity.hpp</label>
         <link refid="misc__object__entity_8hpp_source"/>
-        <childnode refid="2499" relation="include">
+        <childnode refid="2351" relation="include">
         </childnode>
       </node>
-      <node id="2528">
+      <node id="2382">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/src/traffic/traffic_controller.cpp</label>
         <link refid="traffic__controller_8cpp"/>
       </node>
-      <node id="2519">
+      <node id="2373">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/entity/vehicle_entity.hpp</label>
         <link refid="vehicle__entity_8hpp_source"/>
-        <childnode refid="2520" relation="include">
+        <childnode refid="2374" relation="include">
         </childnode>
-        <childnode refid="2499" relation="include">
+        <childnode refid="2351" relation="include">
         </childnode>
       </node>
-      <node id="2496">
+      <node id="2348">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/pedestrian/follow_lane_action.hpp</label>
         <link refid="pedestrian_2follow__lane__action_8hpp_source"/>
-        <childnode refid="2497" relation="include">
+        <childnode refid="2349" relation="include">
         </childnode>
       </node>
-      <node id="2524">
+      <node id="2378">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/vehicle/behavior_tree.hpp</label>
         <link refid="vehicle_2behavior__tree_8hpp_source"/>
-        <childnode refid="2512" relation="include">
+        <childnode refid="2366" relation="include">
         </childnode>
-        <childnode refid="2513" relation="include">
+        <childnode refid="2367" relation="include">
         </childnode>
-        <childnode refid="2519" relation="include">
+        <childnode refid="2373" relation="include">
         </childnode>
       </node>
-      <node id="2502">
+      <node id="2354">
+        <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/metrics/collision_metric.hpp</label>
+        <link refid="collision__metric_8hpp_source"/>
+        <childnode refid="2355" relation="include">
+        </childnode>
+      </node>
+      <node id="2355">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/metrics/metrics.hpp</label>
         <link refid="metrics_8hpp_source"/>
-        <childnode refid="2500" relation="include">
+        <childnode refid="2352" relation="include">
         </childnode>
       </node>
-      <node id="2520">
+      <node id="2374">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/entity/ego_entity.hpp</label>
         <link refid="ego__entity_8hpp_source"/>
-        <childnode refid="2499" relation="include">
+        <childnode refid="2351" relation="include">
         </childnode>
       </node>
-      <node id="2493">
+      <node id="2345">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/math/catmull_rom_spline.hpp</label>
         <link refid="catmull__rom__spline_8hpp"/>
-        <childnode refid="2494" relation="include">
+        <childnode refid="2346" relation="include">
         </childnode>
-        <childnode refid="2510" relation="include">
+        <childnode refid="2364" relation="include">
         </childnode>
-        <childnode refid="2521" relation="include">
+        <childnode refid="2375" relation="include">
         </childnode>
       </node>
-      <node id="2495">
+      <node id="2347">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/pedestrian/pedestrian_action_node.hpp</label>
         <link refid="pedestrian__action__node_8hpp_source"/>
-        <childnode refid="2496" relation="include">
+        <childnode refid="2348" relation="include">
         </childnode>
-        <childnode refid="2508" relation="include">
+        <childnode refid="2362" relation="include">
         </childnode>
       </node>
-      <node id="2510">
+      <node id="2364">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/vehicle/vehicle_action_node.hpp</label>
         <link refid="vehicle__action__node_8hpp_source"/>
-        <childnode refid="2511" relation="include">
+        <childnode refid="2365" relation="include">
         </childnode>
-        <childnode refid="2512" relation="include">
+        <childnode refid="2366" relation="include">
         </childnode>
-        <childnode refid="2513" relation="include">
+        <childnode refid="2367" relation="include">
         </childnode>
-        <childnode refid="2514" relation="include">
+        <childnode refid="2368" relation="include">
         </childnode>
-        <childnode refid="2515" relation="include">
+        <childnode refid="2369" relation="include">
         </childnode>
-        <childnode refid="2516" relation="include">
+        <childnode refid="2370" relation="include">
         </childnode>
-        <childnode refid="2517" relation="include">
+        <childnode refid="2371" relation="include">
         </childnode>
-        <childnode refid="2518" relation="include">
+        <childnode refid="2372" relation="include">
         </childnode>
       </node>
-      <node id="2531">
+      <node id="2385">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/traffic_lights/traffic_light.hpp</label>
         <link refid="traffic__light_8hpp_source"/>
-        <childnode refid="2500" relation="include">
+        <childnode refid="2352" relation="include">
         </childnode>
-        <childnode refid="2529" relation="include">
+        <childnode refid="2383" relation="include">
         </childnode>
       </node>
-      <node id="2529">
+      <node id="2383">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/traffic_lights/traffic_light_manager.hpp</label>
         <link refid="traffic__light__manager_8hpp_source"/>
-        <childnode refid="2494" relation="include">
+        <childnode refid="2346" relation="include">
         </childnode>
-        <childnode refid="2525" relation="include">
+        <childnode refid="2379" relation="include">
         </childnode>
-        <childnode refid="2499" relation="include">
+        <childnode refid="2351" relation="include">
         </childnode>
       </node>
-      <node id="2525">
+      <node id="2379">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/entity/entity_base.hpp</label>
         <link refid="entity__base_8hpp_source"/>
-        <childnode refid="2500" relation="include">
+        <childnode refid="2352" relation="include">
         </childnode>
-        <childnode refid="2494" relation="include">
+        <childnode refid="2346" relation="include">
         </childnode>
-        <childnode refid="2511" relation="include">
+        <childnode refid="2365" relation="include">
         </childnode>
-        <childnode refid="2514" relation="include">
+        <childnode refid="2368" relation="include">
         </childnode>
-        <childnode refid="2515" relation="include">
+        <childnode refid="2369" relation="include">
         </childnode>
-        <childnode refid="2516" relation="include">
+        <childnode refid="2370" relation="include">
         </childnode>
-        <childnode refid="2517" relation="include">
+        <childnode refid="2371" relation="include">
         </childnode>
-        <childnode refid="2499" relation="include">
+        <childnode refid="2351" relation="include">
         </childnode>
-        <childnode refid="2526" relation="include">
+        <childnode refid="2380" relation="include">
         </childnode>
-        <childnode refid="2498" relation="include">
+        <childnode refid="2350" relation="include">
         </childnode>
-        <childnode refid="2519" relation="include">
+        <childnode refid="2373" relation="include">
         </childnode>
       </node>
-      <node id="2512">
+      <node id="2366">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/vehicle/follow_lane_sequence/follow_lane_action.hpp</label>
         <link refid="vehicle_2follow__lane__sequence_2follow__lane__action_8hpp_source"/>
       </node>
-      <node id="2527">
+      <node id="2381">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/traffic/traffic_controller.hpp</label>
         <link refid="traffic__controller_8hpp"/>
-        <childnode refid="2500" relation="include">
+        <childnode refid="2352" relation="include">
         </childnode>
-        <childnode refid="2528" relation="include">
+        <childnode refid="2382" relation="include">
         </childnode>
       </node>
-      <node id="2517">
+      <node id="2371">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/traffic_simulator/include/traffic_simulator/behavior/vehicle/follow_lane_sequence/yield_action.hpp</label>
         <link refid="yield__action_8hpp_source"/>
       </node>
