@@ -19,23 +19,24 @@ namespace openscenario_interpreter
 {
 inline namespace syntax
 {
-nlohmann::json & operator<<(nlohmann::json & json, const Action & datum)
+auto Action::run() -> void
+{
+  return apply<void>([](auto && action) { return action.run(); }, *this);
+}
+
+auto Action::start() -> void
+{
+  return apply<void>([](auto && action) { return action.start(); }, *this);
+}
+
+auto operator<<(nlohmann::json & json, const Action & datum) -> nlohmann::json &
 {
   json["name"] = datum.name;
 
   json["currentState"] = boost::lexical_cast<std::string>(datum.currentState());
 
-  // clang-format off
-  static const std::unordered_map<
-    std::type_index, std::function<std::string(const Action &)>> table
-  {
-    { typeid(     GlobalAction), [](const Action & action) { return makeTypename(action.as<     GlobalAction>().type()); } },
-    { typeid(UserDefinedAction), [](const Action & action) { return makeTypename(action.as<UserDefinedAction>().type()); } },
-    { typeid(    PrivateAction), [](const Action & action) { return makeTypename(action.as<    PrivateAction>().type()); } },
-  };
-  // clang-format on
-
-  json["type"] = table.at(datum.type())(datum);
+  json["type"] =
+    apply<std::string>([](auto && action) { return makeTypename(action.type()); }, datum);
 
   return json;
 }

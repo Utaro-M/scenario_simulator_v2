@@ -1,6 +1,12 @@
 # Release Notes
 
 ## Difference between the latest release and master
+- Support OpenSCENARIO 1.1 `AddEntityAction` ([link](https://github.com/tier4/scenario_simulator_v2/pull/506)).
+- Add StandStillMetric. [Link](https://github.com/tier4/scenario_simulator_v2/pull/520)
+- Add CollisionMetric. [Link](https://github.com/tier4/scenario_simulator_v2/pull/521)
+- Support OpenSCENARIO 1.1 `RelativeDistanceCondition` ([link](https://github.com/tier4/scenario_simulator_v2/pull/519)).
+- Fixed Action to not cause side effects during `startTransition` ([link](https://github.com/tier4/scenario_simulator_v2/pull/522)).
+- Support new `CustomCommandAction` type `FaultInjectionAction` for ArchitectureProposal ([link](https://github.com/tier4/scenario_simulator_v2/pull/491))
 
 ## Version 0.5.0
 - Add arrow markers to visualize goal poses of entities. (Contribution by [Utaro-M](https://github.com/Utaro-M)).

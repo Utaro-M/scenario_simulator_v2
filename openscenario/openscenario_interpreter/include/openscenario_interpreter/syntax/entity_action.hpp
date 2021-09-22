@@ -19,8 +19,6 @@
 #include <openscenario_interpreter/reader/element.hpp>
 #include <openscenario_interpreter/syntax/add_entity_action.hpp>
 #include <openscenario_interpreter/syntax/delete_entity_action.hpp>
-#include <typeindex>
-#include <unordered_map>
 #include <utility>
 
 namespace openscenario_interpreter
@@ -42,8 +40,6 @@ struct EntityAction : public Element
 {
   const String entity_ref;
 
-  const std::true_type accomplished{};
-
   template <typename Node, typename Scope>
   explicit EntityAction(const Node & node, Scope & outer_scope)
   // clang-format off
@@ -56,21 +52,26 @@ struct EntityAction : public Element
   {
   }
 
-  decltype(auto) evaluate() const
-  {
-    // clang-format off
-    static const std::unordered_map<std::type_index, std::function<Element(const String &)>> overloads
-    {
-      { typeid(AddEntityAction),    [this](auto &&... xs) { return as<AddEntityAction   >()(std::forward<decltype(xs)>(xs)...); }},
-      { typeid(DeleteEntityAction), [this](auto &&... xs) { return as<DeleteEntityAction>()(std::forward<decltype(xs)>(xs)...); }},
-    };
-    // clang-format on
+  static auto accomplished() noexcept -> bool { return endsImmediately(); }
 
-    return overloads.at(type())(entity_ref);
-  }
+  static auto endsImmediately() noexcept -> bool { return true; }
 
-  static bool endsImmediately() { return true; }
+  auto run() const -> void;
+
+  static auto start() noexcept -> void {}
 };
+
+DEFINE_LAZY_VISITOR(
+  EntityAction,
+  CASE(AddEntityAction),     //
+  CASE(DeleteEntityAction),  //
+);
+
+DEFINE_LAZY_VISITOR(
+  const EntityAction,
+  CASE(AddEntityAction),     //
+  CASE(DeleteEntityAction),  //
+);
 }  // namespace syntax
 }  // namespace openscenario_interpreter
 
