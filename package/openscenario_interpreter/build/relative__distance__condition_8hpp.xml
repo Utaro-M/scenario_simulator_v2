@@ -3,6 +3,7 @@
   <compounddef id="relative__distance__condition_8hpp" kind="file" language="C++">
     <compoundname>relative_distance_condition.hpp</compoundname>
     <includes refid="procedure_8hpp" local="no">openscenario_interpreter/procedure.hpp</includes>
+    <includes refid="scope_8hpp" local="no">openscenario_interpreter/scope.hpp</includes>
     <includes refid="coordinate__system_8hpp" local="no">openscenario_interpreter/syntax/coordinate_system.hpp</includes>
     <includes refid="relative__distance__type_8hpp" local="no">openscenario_interpreter/syntax/relative_distance_type.hpp</includes>
     <includes refid="rule_8hpp" local="no">openscenario_interpreter/syntax/rule.hpp</includes>
@@ -11,655 +12,671 @@
     <includedby refid="entity__condition_8hpp" local="no">/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/entity_condition.hpp</includedby>
     <includedby refid="relative__distance__condition_8cpp" local="no">/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/relative_distance_condition.cpp</includedby>
     <incdepgraph>
-      <node id="10608">
+      <node id="10538">
         <label>list</label>
       </node>
-      <node id="10591">
+      <node id="10523">
         <label>scenario_simulator_exception/exception.hpp</label>
       </node>
-      <node id="10600">
+      <node id="10528">
+        <label>boost/algorithm/string.hpp</label>
+      </node>
+      <node id="10533">
         <label>functional</label>
       </node>
-      <node id="10587">
+      <node id="10519">
         <label>iomanip</label>
       </node>
-      <node id="10583">
+      <node id="10515">
         <label>limits</label>
       </node>
-      <node id="10647">
+      <node id="10582">
         <label>iterator</label>
       </node>
-      <node id="10626">
+      <node id="10555">
         <label>openscenario_interpreter/type_traits/has_stream_output_operator.hpp</label>
         <link refid="has__stream__output__operator_8hpp_source"/>
-        <childnode refid="10596" relation="include">
+        <childnode refid="10535" relation="include">
         </childnode>
-        <childnode refid="10613" relation="include">
+        <childnode refid="10543" relation="include">
         </childnode>
       </node>
-      <node id="10630">
+      <node id="10559">
         <label>boost/lexical_cast.hpp</label>
       </node>
-      <node id="10588">
+      <node id="10520">
         <label>openscenario_interpreter/utility/demangle.hpp</label>
         <link refid="demangle_8hpp_source"/>
-        <childnode refid="10589" relation="include">
+        <childnode refid="10521" relation="include">
         </childnode>
-        <childnode refid="10590" relation="include">
+        <childnode refid="10522" relation="include">
         </childnode>
       </node>
-      <node id="10650">
+      <node id="10530">
         <label>openscenario_interpreter/syntax/entity_ref.hpp</label>
         <link refid="entity__ref_8hpp_source"/>
-        <childnode refid="10603" relation="include">
+        <childnode refid="10531" relation="include">
         </childnode>
-        <childnode refid="10594" relation="include">
-        </childnode>
-      </node>
-      <node id="10651">
-        <label>openscenario_interpreter/syntax/triggering_entities_rule.hpp</label>
-        <link refid="triggering__entities__rule_8hpp_source"/>
-        <childnode refid="10652" relation="include">
-        </childnode>
-        <childnode refid="10596" relation="include">
-        </childnode>
-        <childnode refid="10594" relation="include">
-        </childnode>
-      </node>
-      <node id="10598">
-        <label>openscenario_interpreter/syntax/relative_distance_type.hpp</label>
-        <link refid="relative__distance__type_8hpp_source"/>
-        <childnode refid="10596" relation="include">
-        </childnode>
-        <childnode refid="10597" relation="include">
-        </childnode>
-      </node>
-      <node id="10599">
-        <label>openscenario_interpreter/syntax/rule.hpp</label>
-        <link refid="rule_8hpp_source"/>
-        <childnode refid="10600" relation="include">
-        </childnode>
-        <childnode refid="10601" relation="include">
-        </childnode>
-        <childnode refid="10603" relation="include">
-        </childnode>
-        <childnode refid="10589" relation="include">
-        </childnode>
-        <childnode refid="10594" relation="include">
-        </childnode>
-      </node>
-      <node id="10616">
-        <label>openscenario_interpreter/type_traits/if_has_member_function_description.hpp</label>
-        <link refid="if__has__member__function__description_8hpp_source"/>
-        <childnode refid="10617" relation="include">
-        </childnode>
-      </node>
-      <node id="10642">
-        <label>pugixml.hpp</label>
-      </node>
-      <node id="10607">
-        <label>openscenario_interpreter/object.hpp</label>
-        <link refid="object_8hpp_source"/>
-        <childnode refid="10608" relation="include">
-        </childnode>
-        <childnode refid="10609" relation="include">
-        </childnode>
-        <childnode refid="10597" relation="include">
-        </childnode>
-        <childnode refid="10594" relation="include">
-        </childnode>
-      </node>
-      <node id="10609">
-        <label>openscenario_interpreter/expression.hpp</label>
-        <link refid="expression_8hpp_source"/>
-        <childnode refid="10610" relation="include">
-        </childnode>
-      </node>
-      <node id="10602">
-        <label>cmath</label>
-      </node>
-      <node id="10592">
-        <label>stdexcept</label>
-      </node>
-      <node id="10615">
-        <label>openscenario_interpreter/type_traits/has_member_function_current_state.hpp</label>
-        <link refid="has__member__function__current__state_8hpp_source"/>
-        <childnode refid="10613" relation="include">
-        </childnode>
-      </node>
-      <node id="10632">
-        <label>openscenario_interpreter/syntax/integer.hpp</label>
-        <link refid="integer_8hpp_source"/>
-        <childnode refid="10630" relation="include">
-        </childnode>
-        <childnode refid="10585" relation="include">
-        </childnode>
-        <childnode refid="10633" relation="include">
-        </childnode>
-        <childnode refid="10589" relation="include">
-        </childnode>
-      </node>
-      <node id="10633">
-        <label>std_msgs/msg/int64.hpp</label>
-      </node>
-      <node id="10589">
-        <label>string</label>
-      </node>
-      <node id="10629">
-        <label>openscenario_interpreter/syntax/double.hpp</label>
-        <link refid="double_8hpp_source"/>
-        <childnode refid="10630" relation="include">
-        </childnode>
-        <childnode refid="10583" relation="include">
-        </childnode>
-        <childnode refid="10585" relation="include">
-        </childnode>
-        <childnode refid="10631" relation="include">
-        </childnode>
-        <childnode refid="10589" relation="include">
-        </childnode>
-      </node>
-      <node id="10613">
-        <label>openscenario_interpreter/type_traits/void_t.hpp</label>
-        <link refid="void__t_8hpp_source"/>
-        <childnode refid="10597" relation="include">
-        </childnode>
-      </node>
-      <node id="10610">
-        <label>openscenario_interpreter/pointer.hpp</label>
-        <link refid="pointer_8hpp_source"/>
-        <childnode refid="10584" relation="include">
-        </childnode>
-        <childnode refid="10585" relation="include">
-        </childnode>
-        <childnode refid="10611" relation="include">
-        </childnode>
-        <childnode refid="10614" relation="include">
-        </childnode>
-        <childnode refid="10616" relation="include">
-        </childnode>
-        <childnode refid="10618" relation="include">
-        </childnode>
-        <childnode refid="10620" relation="include">
-        </childnode>
-        <childnode refid="10622" relation="include">
-        </childnode>
-        <childnode refid="10628" relation="include">
-        </childnode>
-        <childnode refid="10590" relation="include">
-        </childnode>
-        <childnode refid="10594" relation="include">
-        </childnode>
-      </node>
-      <node id="10623">
-        <label>openscenario_interpreter/console/escape_sequence.hpp</label>
-        <link refid="escape__sequence_8hpp_source"/>
-        <childnode refid="10624" relation="include">
-        </childnode>
-        <childnode refid="10589" relation="include">
-        </childnode>
-      </node>
-      <node id="10643">
-        <label>regex</label>
-      </node>
-      <node id="10620">
-        <label>openscenario_interpreter/type_traits/if_has_member_function_start.hpp</label>
-        <link refid="if__has__member__function__start_8hpp_source"/>
-        <childnode refid="10621" relation="include">
-        </childnode>
-      </node>
-      <node id="10649">
-        <label>openscenario_interpreter/type_traits/must_be_default_constructible.hpp</label>
-        <link refid="must__be__default__constructible_8hpp_source"/>
-        <childnode refid="10585" relation="include">
-        </childnode>
-        <childnode refid="10597" relation="include">
-        </childnode>
-      </node>
-      <node id="10634">
-        <label>openscenario_interpreter/syntax/string.hpp</label>
-        <link refid="string_8hpp_source"/>
-        <childnode refid="10589" relation="include">
-        </childnode>
-      </node>
-      <node id="10593">
-        <label>traffic_simulator/api/api.hpp</label>
-      </node>
-      <node id="10586">
-        <label>exception</label>
-      </node>
-      <node id="10641">
-        <label>ostream</label>
-      </node>
-      <node id="10595">
-        <label>openscenario_interpreter/syntax/coordinate_system.hpp</label>
-        <link refid="coordinate__system_8hpp_source"/>
-        <childnode refid="10596" relation="include">
-        </childnode>
-        <childnode refid="10597" relation="include">
-        </childnode>
-      </node>
-      <node id="10638">
-        <label>std_msgs/msg/u_int16.hpp</label>
-      </node>
-      <node id="10617">
-        <label>openscenario_interpreter/type_traits/has_member_function_description.hpp</label>
-        <link refid="has__member__function__description_8hpp_source"/>
-        <childnode refid="10613" relation="include">
+        <childnode refid="10526" relation="include">
         </childnode>
       </node>
       <node id="10585">
-        <label>openscenario_interpreter/error.hpp</label>
-        <link refid="error_8hpp_source"/>
+        <label>openscenario_interpreter/syntax/triggering_entities_rule.hpp</label>
+        <link refid="triggering__entities__rule_8hpp_source"/>
         <childnode refid="10586" relation="include">
         </childnode>
-        <childnode refid="10587" relation="include">
+        <childnode refid="10535" relation="include">
         </childnode>
-        <childnode refid="10588" relation="include">
-        </childnode>
-        <childnode refid="10591" relation="include">
-        </childnode>
-        <childnode refid="10592" relation="include">
+        <childnode refid="10526" relation="include">
         </childnode>
       </node>
-      <node id="10618">
+      <node id="10576">
+        <label>openscenario_interpreter/syntax/relative_distance_type.hpp</label>
+        <link refid="relative__distance__type_8hpp_source"/>
+        <childnode refid="10535" relation="include">
+        </childnode>
+        <childnode refid="10544" relation="include">
+        </childnode>
+      </node>
+      <node id="10577">
+        <label>openscenario_interpreter/syntax/rule.hpp</label>
+        <link refid="rule_8hpp_source"/>
+        <childnode refid="10533" relation="include">
+        </childnode>
+        <childnode refid="10578" relation="include">
+        </childnode>
+        <childnode refid="10531" relation="include">
+        </childnode>
+        <childnode refid="10521" relation="include">
+        </childnode>
+        <childnode refid="10526" relation="include">
+        </childnode>
+      </node>
+      <node id="10547">
+        <label>openscenario_interpreter/type_traits/if_has_member_function_description.hpp</label>
+        <link refid="if__has__member__function__description_8hpp_source"/>
+        <childnode refid="10548" relation="include">
+        </childnode>
+      </node>
+      <node id="10571">
+        <label>pugixml.hpp</label>
+      </node>
+      <node id="10537">
+        <label>openscenario_interpreter/object.hpp</label>
+        <link refid="object_8hpp_source"/>
+        <childnode refid="10538" relation="include">
+        </childnode>
+        <childnode refid="10539" relation="include">
+        </childnode>
+        <childnode refid="10544" relation="include">
+        </childnode>
+        <childnode refid="10526" relation="include">
+        </childnode>
+      </node>
+      <node id="10539">
+        <label>openscenario_interpreter/expression.hpp</label>
+        <link refid="expression_8hpp_source"/>
+        <childnode refid="10540" relation="include">
+        </childnode>
+      </node>
+      <node id="10579">
+        <label>cmath</label>
+      </node>
+      <node id="10524">
+        <label>stdexcept</label>
+      </node>
+      <node id="10546">
+        <label>openscenario_interpreter/type_traits/has_member_function_current_state.hpp</label>
+        <link refid="has__member__function__current__state_8hpp_source"/>
+        <childnode refid="10543" relation="include">
+        </childnode>
+      </node>
+      <node id="10561">
+        <label>openscenario_interpreter/syntax/integer.hpp</label>
+        <link refid="integer_8hpp_source"/>
+        <childnode refid="10559" relation="include">
+        </childnode>
+        <childnode refid="10517" relation="include">
+        </childnode>
+        <childnode refid="10562" relation="include">
+        </childnode>
+        <childnode refid="10521" relation="include">
+        </childnode>
+      </node>
+      <node id="10562">
+        <label>std_msgs/msg/int64.hpp</label>
+      </node>
+      <node id="10527">
+        <label>openscenario_interpreter/scope.hpp</label>
+        <link refid="scope_8hpp_source"/>
+        <childnode refid="10528" relation="include">
+        </childnode>
+        <childnode refid="10529" relation="include">
+        </childnode>
+        <childnode refid="10515" relation="include">
+        </childnode>
+        <childnode refid="10516" relation="include">
+        </childnode>
+        <childnode refid="10530" relation="include">
+        </childnode>
+        <childnode refid="10523" relation="include">
+        </childnode>
+        <childnode refid="10573" relation="include">
+        </childnode>
+        <childnode refid="10526" relation="include">
+        </childnode>
+        <childnode refid="10574" relation="include">
+        </childnode>
+      </node>
+      <node id="10521">
+        <label>string</label>
+      </node>
+      <node id="10558">
+        <label>openscenario_interpreter/syntax/double.hpp</label>
+        <link refid="double_8hpp_source"/>
+        <childnode refid="10559" relation="include">
+        </childnode>
+        <childnode refid="10515" relation="include">
+        </childnode>
+        <childnode refid="10517" relation="include">
+        </childnode>
+        <childnode refid="10560" relation="include">
+        </childnode>
+        <childnode refid="10521" relation="include">
+        </childnode>
+      </node>
+      <node id="10543">
+        <label>openscenario_interpreter/type_traits/void_t.hpp</label>
+        <link refid="void__t_8hpp_source"/>
+        <childnode refid="10544" relation="include">
+        </childnode>
+      </node>
+      <node id="10540">
+        <label>openscenario_interpreter/pointer.hpp</label>
+        <link refid="pointer_8hpp_source"/>
+        <childnode refid="10516" relation="include">
+        </childnode>
+        <childnode refid="10517" relation="include">
+        </childnode>
+        <childnode refid="10541" relation="include">
+        </childnode>
+        <childnode refid="10545" relation="include">
+        </childnode>
+        <childnode refid="10547" relation="include">
+        </childnode>
+        <childnode refid="10549" relation="include">
+        </childnode>
+        <childnode refid="10551" relation="include">
+        </childnode>
+        <childnode refid="10557" relation="include">
+        </childnode>
+        <childnode refid="10522" relation="include">
+        </childnode>
+        <childnode refid="10526" relation="include">
+        </childnode>
+      </node>
+      <node id="10552">
+        <label>openscenario_interpreter/console/escape_sequence.hpp</label>
+        <link refid="escape__sequence_8hpp_source"/>
+        <childnode refid="10553" relation="include">
+        </childnode>
+        <childnode refid="10521" relation="include">
+        </childnode>
+      </node>
+      <node id="10572">
+        <label>regex</label>
+      </node>
+      <node id="10584">
+        <label>openscenario_interpreter/type_traits/must_be_default_constructible.hpp</label>
+        <link refid="must__be__default__constructible_8hpp_source"/>
+        <childnode refid="10517" relation="include">
+        </childnode>
+        <childnode refid="10544" relation="include">
+        </childnode>
+      </node>
+      <node id="10563">
+        <label>openscenario_interpreter/syntax/string.hpp</label>
+        <link refid="string_8hpp_source"/>
+        <childnode refid="10521" relation="include">
+        </childnode>
+      </node>
+      <node id="10525">
+        <label>traffic_simulator/api/api.hpp</label>
+      </node>
+      <node id="10518">
+        <label>exception</label>
+      </node>
+      <node id="10570">
+        <label>ostream</label>
+      </node>
+      <node id="10575">
+        <label>openscenario_interpreter/syntax/coordinate_system.hpp</label>
+        <link refid="coordinate__system_8hpp_source"/>
+        <childnode refid="10535" relation="include">
+        </childnode>
+        <childnode refid="10544" relation="include">
+        </childnode>
+      </node>
+      <node id="10567">
+        <label>std_msgs/msg/u_int16.hpp</label>
+      </node>
+      <node id="10548">
+        <label>openscenario_interpreter/type_traits/has_member_function_description.hpp</label>
+        <link refid="has__member__function__description_8hpp_source"/>
+        <childnode refid="10543" relation="include">
+        </childnode>
+      </node>
+      <node id="10517">
+        <label>openscenario_interpreter/error.hpp</label>
+        <link refid="error_8hpp_source"/>
+        <childnode refid="10518" relation="include">
+        </childnode>
+        <childnode refid="10519" relation="include">
+        </childnode>
+        <childnode refid="10520" relation="include">
+        </childnode>
+        <childnode refid="10523" relation="include">
+        </childnode>
+        <childnode refid="10524" relation="include">
+        </childnode>
+      </node>
+      <node id="10549">
         <label>openscenario_interpreter/type_traits/if_has_member_function_evaluate.hpp</label>
         <link refid="if__has__member__function__evaluate_8hpp_source"/>
-        <childnode refid="10619" relation="include">
+        <childnode refid="10550" relation="include">
         </childnode>
-        <childnode refid="10594" relation="include">
+        <childnode refid="10526" relation="include">
         </childnode>
       </node>
-      <node id="10605">
+      <node id="10534">
         <label>openscenario_interpreter/syntax/parameter_type.hpp</label>
         <link refid="parameter__type_8hpp_source"/>
-        <childnode refid="10596" relation="include">
+        <childnode refid="10535" relation="include">
         </childnode>
-        <childnode refid="10606" relation="include">
+        <childnode refid="10536" relation="include">
         </childnode>
-        <childnode refid="10629" relation="include">
+        <childnode refid="10558" relation="include">
         </childnode>
-        <childnode refid="10632" relation="include">
+        <childnode refid="10561" relation="include">
         </childnode>
-        <childnode refid="10634" relation="include">
+        <childnode refid="10563" relation="include">
         </childnode>
-        <childnode refid="10635" relation="include">
+        <childnode refid="10564" relation="include">
         </childnode>
-        <childnode refid="10637" relation="include">
+        <childnode refid="10566" relation="include">
         </childnode>
       </node>
-      <node id="10603">
+      <node id="10531">
         <label>openscenario_interpreter/reader/attribute.hpp</label>
         <link refid="attribute_8hpp_source"/>
-        <childnode refid="10604" relation="include">
+        <childnode refid="10532" relation="include">
         </childnode>
-        <childnode refid="10600" relation="include">
+        <childnode refid="10533" relation="include">
         </childnode>
-        <childnode refid="10605" relation="include">
+        <childnode refid="10534" relation="include">
         </childnode>
-        <childnode refid="10639" relation="include">
+        <childnode refid="10568" relation="include">
         </childnode>
-        <childnode refid="10640" relation="include">
+        <childnode refid="10569" relation="include">
         </childnode>
-        <childnode refid="10643" relation="include">
+        <childnode refid="10572" relation="include">
         </childnode>
-        <childnode refid="10589" relation="include">
+        <childnode refid="10521" relation="include">
         </childnode>
-        <childnode refid="10644" relation="include">
+        <childnode refid="10573" relation="include">
         </childnode>
       </node>
-      <node id="10582">
+      <node id="10514">
         <label>openscenario_interpreter/procedure.hpp</label>
         <link refid="procedure_8hpp_source"/>
+        <childnode refid="10515" relation="include">
+        </childnode>
+        <childnode refid="10516" relation="include">
+        </childnode>
+        <childnode refid="10517" relation="include">
+        </childnode>
+        <childnode refid="10525" relation="include">
+        </childnode>
+        <childnode refid="10526" relation="include">
+        </childnode>
+      </node>
+      <node id="10532">
+        <label>ament_index_cpp/get_package_share_directory.hpp</label>
+      </node>
+      <node id="10522">
+        <label>typeinfo</label>
+      </node>
+      <node id="10560">
+        <label>std_msgs/msg/float64.hpp</label>
+      </node>
+      <node id="10513">
+        <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/relative_distance_condition.hpp</label>
+        <link refid="relative__distance__condition_8hpp"/>
+        <childnode refid="10514" relation="include">
+        </childnode>
+        <childnode refid="10527" relation="include">
+        </childnode>
+        <childnode refid="10575" relation="include">
+        </childnode>
+        <childnode refid="10576" relation="include">
+        </childnode>
+        <childnode refid="10577" relation="include">
+        </childnode>
+        <childnode refid="10580" relation="include">
+        </childnode>
+        <childnode refid="10526" relation="include">
+        </childnode>
+      </node>
+      <node id="10545">
+        <label>openscenario_interpreter/type_traits/if_has_member_function_current_state.hpp</label>
+        <link refid="if__has__member__function__current__state_8hpp_source"/>
+        <childnode refid="10517" relation="include">
+        </childnode>
+        <childnode refid="10546" relation="include">
+        </childnode>
+      </node>
+      <node id="10542">
+        <label>openscenario_interpreter/type_traits/has_member_function_accomplished.hpp</label>
+        <link refid="has__member__function__accomplished_8hpp_source"/>
+        <childnode refid="10543" relation="include">
+        </childnode>
+      </node>
+      <node id="10564">
+        <label>openscenario_interpreter/syntax/unsigned_integer.hpp</label>
+        <link refid="unsigned__integer_8hpp_source"/>
+        <childnode refid="10559" relation="include">
+        </childnode>
+        <childnode refid="10517" relation="include">
+        </childnode>
+        <childnode refid="10565" relation="include">
+        </childnode>
+        <childnode refid="10521" relation="include">
+        </childnode>
+      </node>
+      <node id="10554">
+        <label>unistd.h</label>
+      </node>
+      <node id="10574">
+        <label>vector</label>
+      </node>
+      <node id="10536">
+        <label>openscenario_interpreter/syntax/boolean.hpp</label>
+        <link refid="boolean_8hpp_source"/>
+        <childnode refid="10519" relation="include">
+        </childnode>
+        <childnode refid="10535" relation="include">
+        </childnode>
+        <childnode refid="10517" relation="include">
+        </childnode>
+        <childnode refid="10537" relation="include">
+        </childnode>
+        <childnode refid="10521" relation="include">
+        </childnode>
+      </node>
+      <node id="10529">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="10578">
+        <label>openscenario_interpreter/functional/equal_to.hpp</label>
+        <link refid="equal__to_8hpp_source"/>
+        <childnode refid="10579" relation="include">
+        </childnode>
+        <childnode refid="10533" relation="include">
+        </childnode>
+        <childnode refid="10515" relation="include">
+        </childnode>
+        <childnode refid="10544" relation="include">
+        </childnode>
+      </node>
+      <node id="10569">
+        <label>openscenario_interpreter/utility/pugi_extension.hpp</label>
+        <link refid="pugi__extension_8hpp_source"/>
+        <childnode refid="10570" relation="include">
+        </childnode>
+        <childnode refid="10571" relation="include">
+        </childnode>
+      </node>
+      <node id="10526">
+        <label>utility</label>
+      </node>
+      <node id="10568">
+        <label>openscenario_interpreter/utility/highlighter.hpp</label>
+        <link refid="highlighter_8hpp_source"/>
+        <childnode refid="10535" relation="include">
+        </childnode>
+        <childnode refid="10555" relation="include">
+        </childnode>
+        <childnode refid="10521" relation="include">
+        </childnode>
+        <childnode refid="10526" relation="include">
+        </childnode>
+      </node>
+      <node id="10583">
+        <label>openscenario_interpreter/iterator/size.hpp</label>
+        <link refid="size_8hpp_source"/>
+        <childnode refid="10582" relation="include">
+        </childnode>
+      </node>
+      <node id="10550">
+        <label>openscenario_interpreter/type_traits/has_member_function_evaluate.hpp</label>
+        <link refid="has__member__function__evaluate_8hpp_source"/>
+        <childnode refid="10543" relation="include">
+        </childnode>
+      </node>
+      <node id="10535">
+        <label>iostream</label>
+      </node>
+      <node id="10565">
+        <label>std_msgs/msg/u_int64.hpp</label>
+      </node>
+      <node id="10573">
+        <label>unordered_map</label>
+      </node>
+      <node id="10587">
+        <label>openscenario_interpreter/utility/print.hpp</label>
+        <link refid="print_8hpp_source"/>
+        <childnode refid="10519" relation="include">
+        </childnode>
+        <childnode refid="10535" relation="include">
+        </childnode>
+      </node>
+      <node id="10581">
+        <label>openscenario_interpreter/reader/element.hpp</label>
+        <link refid="element_8hpp_source"/>
+        <childnode refid="10533" relation="include">
+        </childnode>
+        <childnode refid="10582" relation="include">
+        </childnode>
+        <childnode refid="10515" relation="include">
+        </childnode>
         <childnode refid="10583" relation="include">
+        </childnode>
+        <childnode refid="10537" relation="include">
         </childnode>
         <childnode refid="10584" relation="include">
         </childnode>
-        <childnode refid="10585" relation="include">
+        <childnode refid="10569" relation="include">
         </childnode>
-        <childnode refid="10593" relation="include">
+        <childnode refid="10521" relation="include">
         </childnode>
-        <childnode refid="10594" relation="include">
+        <childnode refid="10573" relation="include">
         </childnode>
-      </node>
-      <node id="10604">
-        <label>ament_index_cpp/get_package_share_directory.hpp</label>
-      </node>
-      <node id="10590">
-        <label>typeinfo</label>
-      </node>
-      <node id="10621">
-        <label>openscenario_interpreter/type_traits/has_member_function_start.hpp</label>
-        <link refid="has__member__function__start_8hpp_source"/>
-        <childnode refid="10613" relation="include">
+        <childnode refid="10526" relation="include">
         </childnode>
       </node>
-      <node id="10631">
-        <label>std_msgs/msg/float64.hpp</label>
-      </node>
-      <node id="10581">
-        <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/relative_distance_condition.hpp</label>
-        <link refid="relative__distance__condition_8hpp"/>
-        <childnode refid="10582" relation="include">
-        </childnode>
-        <childnode refid="10595" relation="include">
-        </childnode>
-        <childnode refid="10598" relation="include">
-        </childnode>
-        <childnode refid="10599" relation="include">
-        </childnode>
-        <childnode refid="10645" relation="include">
-        </childnode>
-        <childnode refid="10594" relation="include">
-        </childnode>
-      </node>
-      <node id="10614">
-        <label>openscenario_interpreter/type_traits/if_has_member_function_current_state.hpp</label>
-        <link refid="if__has__member__function__current__state_8hpp_source"/>
-        <childnode refid="10585" relation="include">
-        </childnode>
-        <childnode refid="10615" relation="include">
-        </childnode>
-      </node>
-      <node id="10612">
-        <label>openscenario_interpreter/type_traits/has_member_function_accomplished.hpp</label>
-        <link refid="has__member__function__accomplished_8hpp_source"/>
-        <childnode refid="10613" relation="include">
-        </childnode>
-      </node>
-      <node id="10635">
-        <label>openscenario_interpreter/syntax/unsigned_integer.hpp</label>
-        <link refid="unsigned__integer_8hpp_source"/>
-        <childnode refid="10630" relation="include">
-        </childnode>
-        <childnode refid="10585" relation="include">
-        </childnode>
-        <childnode refid="10636" relation="include">
-        </childnode>
-        <childnode refid="10589" relation="include">
-        </childnode>
-      </node>
-      <node id="10625">
-        <label>unistd.h</label>
-      </node>
-      <node id="10654">
-        <label>vector</label>
-      </node>
-      <node id="10606">
-        <label>openscenario_interpreter/syntax/boolean.hpp</label>
-        <link refid="boolean_8hpp_source"/>
-        <childnode refid="10587" relation="include">
-        </childnode>
-        <childnode refid="10596" relation="include">
-        </childnode>
-        <childnode refid="10585" relation="include">
-        </childnode>
-        <childnode refid="10607" relation="include">
-        </childnode>
-        <childnode refid="10589" relation="include">
-        </childnode>
-      </node>
-      <node id="10601">
-        <label>openscenario_interpreter/functional/equal_to.hpp</label>
-        <link refid="equal__to_8hpp_source"/>
-        <childnode refid="10602" relation="include">
-        </childnode>
-        <childnode refid="10600" relation="include">
-        </childnode>
-        <childnode refid="10583" relation="include">
-        </childnode>
-        <childnode refid="10597" relation="include">
-        </childnode>
-      </node>
-      <node id="10640">
-        <label>openscenario_interpreter/utility/pugi_extension.hpp</label>
-        <link refid="pugi__extension_8hpp_source"/>
-        <childnode refid="10641" relation="include">
-        </childnode>
-        <childnode refid="10642" relation="include">
-        </childnode>
-      </node>
-      <node id="10594">
-        <label>utility</label>
-      </node>
-      <node id="10639">
-        <label>openscenario_interpreter/utility/highlighter.hpp</label>
-        <link refid="highlighter_8hpp_source"/>
-        <childnode refid="10596" relation="include">
-        </childnode>
-        <childnode refid="10626" relation="include">
-        </childnode>
-        <childnode refid="10589" relation="include">
-        </childnode>
-        <childnode refid="10594" relation="include">
-        </childnode>
-      </node>
-      <node id="10648">
-        <label>openscenario_interpreter/iterator/size.hpp</label>
-        <link refid="size_8hpp_source"/>
-        <childnode refid="10647" relation="include">
-        </childnode>
-      </node>
-      <node id="10619">
-        <label>openscenario_interpreter/type_traits/has_member_function_evaluate.hpp</label>
-        <link refid="has__member__function__evaluate_8hpp_source"/>
-        <childnode refid="10613" relation="include">
-        </childnode>
-      </node>
-      <node id="10596">
-        <label>iostream</label>
-      </node>
-      <node id="10636">
-        <label>std_msgs/msg/u_int64.hpp</label>
-      </node>
-      <node id="10644">
-        <label>unordered_map</label>
-      </node>
-      <node id="10653">
-        <label>openscenario_interpreter/utility/print.hpp</label>
-        <link refid="print_8hpp_source"/>
-        <childnode refid="10587" relation="include">
-        </childnode>
-        <childnode refid="10596" relation="include">
-        </childnode>
-      </node>
-      <node id="10646">
-        <label>openscenario_interpreter/reader/element.hpp</label>
-        <link refid="element_8hpp_source"/>
-        <childnode refid="10600" relation="include">
-        </childnode>
-        <childnode refid="10647" relation="include">
-        </childnode>
-        <childnode refid="10583" relation="include">
-        </childnode>
-        <childnode refid="10648" relation="include">
-        </childnode>
-        <childnode refid="10607" relation="include">
-        </childnode>
-        <childnode refid="10649" relation="include">
-        </childnode>
-        <childnode refid="10640" relation="include">
-        </childnode>
-        <childnode refid="10589" relation="include">
-        </childnode>
-        <childnode refid="10644" relation="include">
-        </childnode>
-        <childnode refid="10594" relation="include">
-        </childnode>
-      </node>
-      <node id="10611">
+      <node id="10541">
         <label>openscenario_interpreter/type_traits/if_has_member_function_accomplished.hpp</label>
         <link refid="if__has__member__function__accomplished_8hpp_source"/>
-        <childnode refid="10612" relation="include">
+        <childnode refid="10542" relation="include">
         </childnode>
       </node>
-      <node id="10622">
+      <node id="10551">
         <label>openscenario_interpreter/type_traits/if_has_stream_output_operator.hpp</label>
         <link refid="if__has__stream__output__operator_8hpp_source"/>
-        <childnode refid="10623" relation="include">
+        <childnode refid="10552" relation="include">
         </childnode>
-        <childnode refid="10626" relation="include">
+        <childnode refid="10555" relation="include">
         </childnode>
-        <childnode refid="10588" relation="include">
+        <childnode refid="10520" relation="include">
         </childnode>
-        <childnode refid="10627" relation="include">
+        <childnode refid="10556" relation="include">
         </childnode>
       </node>
-      <node id="10597">
+      <node id="10544">
         <label>type_traits</label>
       </node>
-      <node id="10624">
+      <node id="10553">
         <label>openscenario_interpreter/console/is_console.hpp</label>
         <link refid="is__console_8hpp_source"/>
-        <childnode refid="10625" relation="include">
+        <childnode refid="10554" relation="include">
         </childnode>
-        <childnode refid="10596" relation="include">
+        <childnode refid="10535" relation="include">
         </childnode>
       </node>
-      <node id="10637">
+      <node id="10566">
         <label>openscenario_interpreter/syntax/unsigned_short.hpp</label>
         <link refid="unsigned__short_8hpp_source"/>
-        <childnode refid="10630" relation="include">
+        <childnode refid="10559" relation="include">
         </childnode>
-        <childnode refid="10596" relation="include">
+        <childnode refid="10535" relation="include">
+        </childnode>
+        <childnode refid="10517" relation="include">
+        </childnode>
+        <childnode refid="10567" relation="include">
+        </childnode>
+        <childnode refid="10521" relation="include">
+        </childnode>
+      </node>
+      <node id="10586">
+        <label>algorithm</label>
+      </node>
+      <node id="10556">
+        <label>openscenario_interpreter/utility/indent.hpp</label>
+        <link refid="indent_8hpp_source"/>
+        <childnode refid="10535" relation="include">
+        </childnode>
+        <childnode refid="10521" relation="include">
+        </childnode>
+      </node>
+      <node id="10516">
+        <label>memory</label>
+      </node>
+      <node id="10580">
+        <label>openscenario_interpreter/syntax/triggering_entities.hpp</label>
+        <link refid="triggering__entities_8hpp_source"/>
+        <childnode refid="10581" relation="include">
+        </childnode>
+        <childnode refid="10530" relation="include">
         </childnode>
         <childnode refid="10585" relation="include">
         </childnode>
-        <childnode refid="10638" relation="include">
+        <childnode refid="10587" relation="include">
         </childnode>
-        <childnode refid="10589" relation="include">
+        <childnode refid="10526" relation="include">
         </childnode>
-      </node>
-      <node id="10652">
-        <label>algorithm</label>
-      </node>
-      <node id="10627">
-        <label>openscenario_interpreter/utility/indent.hpp</label>
-        <link refid="indent_8hpp_source"/>
-        <childnode refid="10596" relation="include">
-        </childnode>
-        <childnode refid="10589" relation="include">
+        <childnode refid="10574" relation="include">
         </childnode>
       </node>
-      <node id="10584">
-        <label>memory</label>
-      </node>
-      <node id="10645">
-        <label>openscenario_interpreter/syntax/triggering_entities.hpp</label>
-        <link refid="triggering__entities_8hpp_source"/>
-        <childnode refid="10646" relation="include">
-        </childnode>
-        <childnode refid="10650" relation="include">
-        </childnode>
-        <childnode refid="10651" relation="include">
-        </childnode>
-        <childnode refid="10653" relation="include">
-        </childnode>
-        <childnode refid="10594" relation="include">
-        </childnode>
-        <childnode refid="10654" relation="include">
-        </childnode>
-      </node>
-      <node id="10628">
+      <node id="10557">
         <label>openscenario_interpreter/utility/pair.hpp</label>
         <link refid="pair_8hpp_source"/>
-        <childnode refid="10594" relation="include">
+        <childnode refid="10526" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="10663">
+      <node id="10596">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/maneuver_group.hpp</label>
         <link refid="maneuver__group_8hpp_source"/>
-        <childnode refid="10664" relation="include">
+        <childnode refid="10597" relation="include">
         </childnode>
       </node>
-      <node id="10659">
+      <node id="10592">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/condition_group.hpp</label>
         <link refid="condition__group_8hpp_source"/>
-        <childnode refid="10660" relation="include">
+        <childnode refid="10593" relation="include">
         </childnode>
       </node>
-      <node id="10657">
+      <node id="10590">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/by_entity_condition.hpp</label>
         <link refid="by__entity__condition_8hpp_source"/>
-        <childnode refid="10658" relation="include">
+        <childnode refid="10591" relation="include">
         </childnode>
       </node>
-      <node id="10658">
+      <node id="10591">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/condition.hpp</label>
         <link refid="condition_8hpp_source"/>
-        <childnode refid="10659" relation="include">
+        <childnode refid="10592" relation="include">
         </childnode>
       </node>
-      <node id="10666">
+      <node id="10599">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/storyboard.hpp</label>
         <link refid="storyboard_8hpp_source"/>
-        <childnode refid="10667" relation="include">
+        <childnode refid="10600" relation="include">
         </childnode>
       </node>
-      <node id="10670">
+      <node id="10603">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/openscenario_interpreter.hpp</label>
         <link refid="openscenario__interpreter_8hpp_source"/>
       </node>
-      <node id="10661">
+      <node id="10594">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/event.hpp</label>
         <link refid="event_8hpp_source"/>
-        <childnode refid="10662" relation="include">
+        <childnode refid="10595" relation="include">
         </childnode>
       </node>
-      <node id="10655">
+      <node id="10588">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/relative_distance_condition.hpp</label>
         <link refid="relative__distance__condition_8hpp"/>
-        <childnode refid="10656" relation="include">
+        <childnode refid="10589" relation="include">
         </childnode>
       </node>
-      <node id="10664">
+      <node id="10597">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/act.hpp</label>
         <link refid="act_8hpp_source"/>
-        <childnode refid="10665" relation="include">
+        <childnode refid="10598" relation="include">
         </childnode>
       </node>
-      <node id="10669">
+      <node id="10602">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/openscenario.hpp</label>
         <link refid="openscenario_8hpp_source"/>
-        <childnode refid="10670" relation="include">
+        <childnode refid="10603" relation="include">
         </childnode>
       </node>
-      <node id="10668">
+      <node id="10601">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/open_scenario_category.hpp</label>
         <link refid="open__scenario__category_8hpp_source"/>
-        <childnode refid="10669" relation="include">
+        <childnode refid="10602" relation="include">
         </childnode>
       </node>
-      <node id="10665">
+      <node id="10598">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/story.hpp</label>
         <link refid="story_8hpp_source"/>
-        <childnode refid="10666" relation="include">
+        <childnode refid="10599" relation="include">
         </childnode>
       </node>
-      <node id="10656">
+      <node id="10589">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/entity_condition.hpp</label>
         <link refid="entity__condition_8hpp_source"/>
-        <childnode refid="10657" relation="include">
+        <childnode refid="10590" relation="include">
         </childnode>
       </node>
-      <node id="10662">
+      <node id="10595">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/maneuver.hpp</label>
         <link refid="maneuver_8hpp_source"/>
-        <childnode refid="10663" relation="include">
+        <childnode refid="10596" relation="include">
         </childnode>
       </node>
-      <node id="10667">
+      <node id="10600">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_definition.hpp</label>
         <link refid="scenario__definition_8hpp_source"/>
-        <childnode refid="10668" relation="include">
+        <childnode refid="10601" relation="include">
         </childnode>
       </node>
-      <node id="10660">
+      <node id="10593">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/trigger.hpp</label>
         <link refid="trigger_8hpp_source"/>
-        <childnode refid="10661" relation="include">
+        <childnode refid="10594" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -689,118 +706,120 @@
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPENSCENARIO_INTERPRETER__SYNTAX__RELATIVE_DISTANCE_CONDITION_HPP_</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/procedure.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/syntax/coordinate_system.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/syntax/relative_distance_type.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/syntax/rule.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/syntax/triggering_entities.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceopenscenario__interpreter" kindref="compound">openscenario_interpreter</ref></highlight></codeline>
-<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">syntax</highlight></codeline>
-<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>Between<sp/>{</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/>reference_points,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>freespace<sp/>=<sp/>false</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/>closest_bounding_box_points,<sp/><sp/></highlight><highlight class="comment">//<sp/>freespace<sp/>=<sp/>true</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>----<sp/>RelativeDistanceCondition<sp/>(OpenSCENARIO<sp/>1.1)<sp/>---------------------------</highlight></codeline>
-<codeline lineno="35"><highlight class="comment"><sp/>*</highlight></codeline>
-<codeline lineno="36"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>current<sp/>relative<sp/>distance<sp/>of<sp/>a<sp/>triggering<sp/>entity/entities<sp/>to<sp/>a</highlight></codeline>
-<codeline lineno="37"><highlight class="comment"><sp/>*<sp/><sp/>reference<sp/>entity<sp/>is<sp/>compared<sp/>to<sp/>a<sp/>given<sp/>value.<sp/>The<sp/>logical<sp/>operator<sp/>used</highlight></codeline>
-<codeline lineno="38"><highlight class="comment"><sp/>*<sp/><sp/>for<sp/>comparison<sp/>is<sp/>defined<sp/>in<sp/>the<sp/>rule<sp/>attribute.</highlight></codeline>
-<codeline lineno="39"><highlight class="comment"><sp/>*</highlight></codeline>
-<codeline lineno="40"><highlight class="comment"><sp/>*<sp/><sp/>&lt;xsd:complexType<sp/>name=&quot;RelativeDistanceCondition&quot;&gt;</highlight></codeline>
-<codeline lineno="41"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;coordinateSystem&quot;<sp/>type=&quot;CoordinateSystem&quot;/&gt;</highlight></codeline>
-<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;entityRef&quot;<sp/>type=&quot;String&quot;<sp/>use=&quot;required&quot;/&gt;</highlight></codeline>
-<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;freespace&quot;<sp/>type=&quot;Boolean&quot;<sp/>use=&quot;required&quot;/&gt;</highlight></codeline>
-<codeline lineno="44"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;relativeDistanceType&quot;<sp/>type=&quot;RelativeDistanceType&quot;<sp/>use=&quot;required&quot;/&gt;</highlight></codeline>
-<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;rule&quot;<sp/>type=&quot;Rule&quot;<sp/>use=&quot;required&quot;/&gt;</highlight></codeline>
-<codeline lineno="46"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;value&quot;<sp/>type=&quot;Double&quot;<sp/>use=&quot;required&quot;/&gt;</highlight></codeline>
-<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/>&lt;/xsd:complexType&gt;</highlight></codeline>
-<codeline lineno="48"><highlight class="comment"><sp/>*</highlight></codeline>
-<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>--------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="50" refid="structopenscenario__interpreter_1_1syntax_1_1RelativeDistanceCondition" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structopenscenario__interpreter_1_1syntax_1_1RelativeDistanceCondition" kindref="compound">RelativeDistanceCondition</ref></highlight></codeline>
-<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1CoordinateSystem" kindref="compound">CoordinateSystem</ref><sp/>coordinate_system;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Definition<sp/>of<sp/>the<sp/>coordinate<sp/>system<sp/>to<sp/>be<sp/>used<sp/>for<sp/>calculations.<sp/>If<sp/>not<sp/>provided<sp/>the<sp/>value<sp/>is<sp/>interpreted<sp/>as<sp/>&quot;entity&quot;.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>String<sp/>entity_ref;<sp/><sp/></highlight><highlight class="comment">//<sp/>Reference<sp/>entity.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1Boolean" kindref="compound">Boolean</ref><sp/>freespace;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>True:<sp/>distance<sp/>is<sp/>measured<sp/>between<sp/>closest<sp/>bounding<sp/>box<sp/>points.<sp/>False:<sp/>reference<sp/>point<sp/>distance<sp/>is<sp/>used.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1RelativeDistanceType" kindref="compound">RelativeDistanceType</ref><sp/>relative_distance_type;</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Definition<sp/>of<sp/>the<sp/>coordinate<sp/>system<sp/>dimension(s)<sp/>to<sp/>be<sp/>used<sp/>for<sp/>calculating<sp/>distances.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1Rule" kindref="compound">Rule</ref><sp/>rule;<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>operator<sp/>(less,<sp/>greater,<sp/>equal).</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1Double" kindref="compound">Double</ref><sp/>value;<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>distance<sp/>value.<sp/>Unit:<sp/>m;<sp/>Range:<sp/>[0..inf[.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1TriggeringEntities" kindref="compound">TriggeringEntities</ref><sp/>triggering_entities;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/>std::vector&lt;Double&gt;<sp/>last_checked_values;<sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>description</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Node,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Scope&gt;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1RelativeDistanceCondition" kindref="compound">RelativeDistanceCondition</ref>(</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Node<sp/>&amp;<sp/>node,<sp/><ref refid="classopenscenario__interpreter_1_1Scope" kindref="compound">Scope</ref><sp/>&amp;<sp/>scope,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1TriggeringEntities" kindref="compound">TriggeringEntities</ref><sp/>&amp;<sp/>triggering_entities)</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/>:<sp/>coordinate_system<sp/><sp/><sp/><sp/><sp/>(readAttribute&lt;CoordinateSystem<sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="stringliteral">&quot;coordinateSystem&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/>node,<sp/>scope,<sp/>CoordinateSystem::entity)),</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>entity_ref<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(readAttribute&lt;String<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="stringliteral">&quot;entityRef&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node,<sp/>scope)),</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>freespace<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(readAttribute&lt;Boolean<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="stringliteral">&quot;freespace&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node,<sp/>scope)),</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>relative_distance_type(readAttribute&lt;RelativeDistanceType&gt;(</highlight><highlight class="stringliteral">&quot;relativeDistanceType&quot;</highlight><highlight class="normal">,<sp/>node,<sp/>scope)),</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>rule<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(readAttribute&lt;Rule<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="stringliteral">&quot;rule&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node,<sp/>scope)),</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>value<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(readAttribute&lt;Double<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="stringliteral">&quot;value&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node,<sp/>scope)),</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>triggering_entities(triggering_entities),</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>last_checked_values(triggering_entities.entity_refs.size(),<sp/>Double::nan())</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>description()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="88"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>description;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>description<sp/>&lt;&lt;<sp/>triggering_entities.description()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;s<sp/>relative<sp/>distance<sp/>to<sp/>given<sp/>entity<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>entity_ref<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>=<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>print_to(description,<sp/>last_checked_values);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/scope.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/syntax/coordinate_system.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/syntax/relative_distance_type.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/syntax/rule.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/syntax/triggering_entities.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;utility&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceopenscenario__interpreter" kindref="compound">openscenario_interpreter</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">syntax</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>Between<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>reference_points,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>freespace<sp/>=<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>closest_bounding_box_points,<sp/><sp/></highlight><highlight class="comment">//<sp/>freespace<sp/>=<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>----<sp/>RelativeDistanceCondition<sp/>(OpenSCENARIO<sp/>1.1)<sp/>---------------------------</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/>*<sp/><sp/>The<sp/>current<sp/>relative<sp/>distance<sp/>of<sp/>a<sp/>triggering<sp/>entity/entities<sp/>to<sp/>a</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/><sp/>reference<sp/>entity<sp/>is<sp/>compared<sp/>to<sp/>a<sp/>given<sp/>value.<sp/>The<sp/>logical<sp/>operator<sp/>used</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/><sp/>for<sp/>comparison<sp/>is<sp/>defined<sp/>in<sp/>the<sp/>rule<sp/>attribute.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/><sp/>&lt;xsd:complexType<sp/>name=&quot;RelativeDistanceCondition&quot;&gt;</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;coordinateSystem&quot;<sp/>type=&quot;CoordinateSystem&quot;/&gt;</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;entityRef&quot;<sp/>type=&quot;String&quot;<sp/>use=&quot;required&quot;/&gt;</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;freespace&quot;<sp/>type=&quot;Boolean&quot;<sp/>use=&quot;required&quot;/&gt;</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;relativeDistanceType&quot;<sp/>type=&quot;RelativeDistanceType&quot;<sp/>use=&quot;required&quot;/&gt;</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;rule&quot;<sp/>type=&quot;Rule&quot;<sp/>use=&quot;required&quot;/&gt;</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>&lt;xsd:attribute<sp/>name=&quot;value&quot;<sp/>type=&quot;Double&quot;<sp/>use=&quot;required&quot;/&gt;</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/><sp/>&lt;/xsd:complexType&gt;</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>--------------------------------------------------------------------------<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structopenscenario__interpreter_1_1syntax_1_1RelativeDistanceCondition" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structopenscenario__interpreter_1_1syntax_1_1RelativeDistanceCondition" kindref="compound">RelativeDistanceCondition</ref><sp/>:<sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/><ref refid="classopenscenario__interpreter_1_1Scope" kindref="compound">Scope</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1CoordinateSystem" kindref="compound">CoordinateSystem</ref><sp/>coordinate_system;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Definition<sp/>of<sp/>the<sp/>coordinate<sp/>system<sp/>to<sp/>be<sp/>used<sp/>for<sp/>calculations.<sp/>If<sp/>not<sp/>provided<sp/>the<sp/>value<sp/>is<sp/>interpreted<sp/>as<sp/>&quot;entity&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>String<sp/>entity_ref;<sp/><sp/></highlight><highlight class="comment">//<sp/>Reference<sp/>entity.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1Boolean" kindref="compound">Boolean</ref><sp/>freespace;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>True:<sp/>distance<sp/>is<sp/>measured<sp/>between<sp/>closest<sp/>bounding<sp/>box<sp/>points.<sp/>False:<sp/>reference<sp/>point<sp/>distance<sp/>is<sp/>used.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1RelativeDistanceType" kindref="compound">RelativeDistanceType</ref><sp/>relative_distance_type;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Definition<sp/>of<sp/>the<sp/>coordinate<sp/>system<sp/>dimension(s)<sp/>to<sp/>be<sp/>used<sp/>for<sp/>calculating<sp/>distances.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1Rule" kindref="compound">Rule</ref><sp/>rule;<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>operator<sp/>(less,<sp/>greater,<sp/>equal).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1Double" kindref="compound">Double</ref><sp/>value;<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>distance<sp/>value.<sp/>Unit:<sp/>m;<sp/>Range:<sp/>[0..inf[.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1TriggeringEntities" kindref="compound">TriggeringEntities</ref><sp/>triggering_entities;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>std::vector&lt;Double&gt;<sp/>last_checked_values;<sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>description</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Node,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Scope&gt;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1RelativeDistanceCondition" kindref="compound">RelativeDistanceCondition</ref>(</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Node<sp/>&amp;<sp/>node,<sp/><ref refid="classopenscenario__interpreter_1_1Scope" kindref="compound">Scope</ref><sp/>&amp;<sp/>scope,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1TriggeringEntities" kindref="compound">TriggeringEntities</ref><sp/>&amp;<sp/>triggering_entities)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>:<sp/><ref refid="classopenscenario__interpreter_1_1Scope" kindref="compound">Scope</ref>(scope),</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>coordinate_system<sp/><sp/><sp/><sp/><sp/>(readAttribute&lt;CoordinateSystem<sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="stringliteral">&quot;coordinateSystem&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/>node,<sp/>scope,<sp/>CoordinateSystem::entity)),</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>entity_ref<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(readAttribute&lt;String<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="stringliteral">&quot;entityRef&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node,<sp/>scope)),</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>freespace<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(readAttribute&lt;Boolean<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="stringliteral">&quot;freespace&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node,<sp/>scope)),</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>relative_distance_type(readAttribute&lt;RelativeDistanceType&gt;(</highlight><highlight class="stringliteral">&quot;relativeDistanceType&quot;</highlight><highlight class="normal">,<sp/>node,<sp/>scope)),</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>rule<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(readAttribute&lt;Rule<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="stringliteral">&quot;rule&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node,<sp/>scope)),</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>value<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(readAttribute&lt;Double<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="stringliteral">&quot;value&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>node,<sp/>scope)),</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>triggering_entities(triggering_entities),</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>last_checked_values(triggering_entities.entity_refs.size(),<sp/>Double::nan())</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>description()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="90"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>std::stringstream<sp/>description;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>description<sp/>&lt;&lt;<sp/>triggering_entities.description()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;s<sp/>relative<sp/>distance<sp/>to<sp/>given<sp/>entity<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>entity_ref<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>=<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>description<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rule<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>value<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>print_to(description,<sp/>last_checked_values);</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>description.str();</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;CoordinateSystem::value_type,<sp/>RelativeDistanceType::value_type,<sp/>Between&gt;</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>distance(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>SyntaxError(__FILE__,<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">,<sp/>__LINE__);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>distance(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/>double;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>description<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>rule<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>value<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;?&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>description.str();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;CoordinateSystem::value_type,<sp/>RelativeDistanceType::value_type,<sp/>Between&gt;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>distance(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>SyntaxError(__FILE__,<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">,<sp/>__LINE__);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>evaluate()</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>last_checked_values.clear();</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>asBoolean(triggering_entities.apply([&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;<sp/>triggering_entity)<sp/>{</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>last_checked_values.push_back(distance(triggering_entity));</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>rule(last_checked_values.back(),<sp/>value);</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>}));</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="118"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;<sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::closest_bounding_box_points&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;<sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;<sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;<sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>syntax</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>openscenario_interpreter</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>OPENSCENARIO_INTERPRETER__SYNTAX__RELATIVE_DISTANCE_CONDITION_HPP_</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>distance(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/>double;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>evaluate()</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>last_checked_values.clear();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>asBoolean(triggering_entities.apply([&amp;](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;<sp/>triggering_entity)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>last_checked_values.push_back(distance(triggering_entity));</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>rule(last_checked_values.back(),<sp/>value);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>}));</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;<sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::closest_bounding_box_points&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;<sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;<sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;<sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;<sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref><sp/>&amp;)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>syntax</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>openscenario_interpreter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>OPENSCENARIO_INTERPRETER__SYNTAX__RELATIVE_DISTANCE_CONDITION_HPP_</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/relative_distance_condition.hpp"/>
   </compounddef>

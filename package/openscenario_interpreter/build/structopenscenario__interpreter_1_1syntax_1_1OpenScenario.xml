@@ -131,63 +131,63 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="474">
+      <node id="468">
         <label>openscenario_interpreter::syntax::OpenScenario</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1OpenScenario"/>
-        <childnode refid="475" relation="public-inheritance">
+        <childnode refid="469" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="475">
+      <node id="469">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="483">
+      <node id="477">
         <label>std::shared_ptr&lt; T &gt;</label>
       </node>
-      <node id="478">
+      <node id="472">
         <label>openscenario_interpreter::syntax::FileHeader</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1FileHeader"/>
-        <childnode refid="479" relation="usage">
+        <childnode refid="473" relation="usage">
           <edgelabel>revMajor</edgelabel>
           <edgelabel>revMinor</edgelabel>
         </childnode>
       </node>
-      <node id="476">
+      <node id="470">
         <label>openscenario_interpreter::syntax::OpenScenario</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1OpenScenario"/>
-        <childnode refid="477" relation="public-inheritance">
+        <childnode refid="471" relation="public-inheritance">
         </childnode>
-        <childnode refid="478" relation="usage">
+        <childnode refid="472" relation="usage">
           <edgelabel>file_header</edgelabel>
         </childnode>
-        <childnode refid="481" relation="usage">
+        <childnode refid="475" relation="usage">
           <edgelabel>category</edgelabel>
         </childnode>
       </node>
-      <node id="482">
+      <node id="476">
         <label>Group</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="483" relation="public-inheritance">
+        <childnode refid="477" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="479">
+      <node id="473">
         <label>openscenario_interpreter::syntax::UnsignedShort</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1UnsignedShort"/>
-        <childnode refid="480" relation="public-inheritance">
+        <childnode refid="474" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="481">
+      <node id="475">
         <label>openscenario_interpreter::syntax::OpenScenarioCategory</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1OpenScenarioCategory"/>
-        <childnode refid="482" relation="public-inheritance">
+        <childnode refid="476" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="480">
+      <node id="474">
         <label>std_msgs::msg::UInt16</label>
       </node>
-      <node id="477">
+      <node id="471">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>

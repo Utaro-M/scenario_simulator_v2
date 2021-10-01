@@ -7,134 +7,135 @@
     <includes local="no">string</includes>
     <includes local="no">vector</includes>
     <incdepgraph>
-      <node id="81">
+      <node id="82">
         <label>scenario_simulator_exception/exception.hpp</label>
       </node>
-      <node id="86">
+      <node id="87">
         <label>geometry_msgs.pb.h</label>
       </node>
-      <node id="114">
+      <node id="116">
         <label>rosgraph_msgs/msg/clock.hpp</label>
       </node>
-      <node id="108">
+      <node id="110">
         <label>openscenario_msgs/msg/entity_type.hpp</label>
       </node>
-      <node id="100">
+      <node id="102">
         <label>geometry_msgs/msg/twist.hpp</label>
       </node>
-      <node id="91">
+      <node id="92">
         <label>autoware_control_msgs/msg/control_command.hpp</label>
       </node>
-      <node id="94">
+      <node id="96">
         <label>builtin_interfaces/msg/duration.hpp</label>
       </node>
-      <node id="110">
+      <node id="112">
         <label>openscenario_msgs/msg/misc_object_parameters.hpp</label>
       </node>
-      <node id="88">
+      <node id="89">
         <label>rosgraph_msgs.pb.h</label>
       </node>
-      <node id="109">
+      <node id="111">
         <label>openscenario_msgs/msg/lanelet_pose.hpp</label>
       </node>
-      <node id="103">
+      <node id="105">
         <label>openscenario_msgs/msg/action_status.hpp</label>
       </node>
-      <node id="107">
+      <node id="109">
         <label>openscenario_msgs/msg/entity_status.hpp</label>
       </node>
-      <node id="98">
+      <node id="100">
         <label>geometry_msgs/msg/pose.hpp</label>
       </node>
-      <node id="87">
+      <node id="88">
         <label>openscenario_msgs.pb.h</label>
       </node>
-      <node id="113">
+      <node id="115">
         <label>openscenario_msgs/msg/vehicle_parameters.hpp</label>
       </node>
-      <node id="84">
+      <node id="85">
         <label>autoware_vehicle_msgs.pb.h</label>
       </node>
-      <node id="116">
+      <node id="118">
         <label>string</label>
       </node>
-      <node id="106">
+      <node id="108">
         <label>openscenario_msgs/msg/bounding_box.hpp</label>
       </node>
-      <node id="117">
+      <node id="119">
         <label>std_msgs/msg/header.hpp</label>
       </node>
-      <node id="95">
+      <node id="97">
         <label>builtin_interfaces/msg/time.hpp</label>
       </node>
-      <node id="101">
+      <node id="103">
         <label>geometry_msgs/msg/vector3.hpp</label>
       </node>
-      <node id="104">
+      <node id="93">
+        <label>autoware_perception_msgs/msg/traffic_light_state.hpp</label>
+      </node>
+      <node id="106">
         <label>openscenario_msgs/msg/axle.hpp</label>
       </node>
-      <node id="105">
+      <node id="107">
         <label>openscenario_msgs/msg/axles.hpp</label>
       </node>
-      <node id="92">
+      <node id="94">
         <label>autoware_vehicle_msgs/msg/shift.hpp</label>
       </node>
-      <node id="97">
+      <node id="99">
         <label>geometry_msgs/msg/point.hpp</label>
       </node>
-      <node id="90">
+      <node id="91">
         <label>std_msgs.pb.h</label>
       </node>
-      <node id="118">
+      <node id="120">
         <label>vector</label>
       </node>
-      <node id="85">
+      <node id="86">
         <label>builtin_interfaces.pb.h</label>
       </node>
-      <node id="93">
+      <node id="95">
         <label>autoware_vehicle_msgs/msg/vehicle_command.hpp</label>
       </node>
-      <node id="80">
+      <node id="81">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/src/conversions.cpp</label>
         <link refid="conversions_8cpp"/>
-        <childnode refid="81" relation="include">
-        </childnode>
         <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="83" relation="include">
         </childnode>
         <childnode refid="118" relation="include">
         </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
       </node>
-      <node id="83">
+      <node id="84">
         <label>autoware_control_msgs.pb.h</label>
       </node>
-      <node id="102">
+      <node id="104">
         <label>iostream</label>
       </node>
-      <node id="115">
+      <node id="117">
         <label>simulation_interface/constants.hpp</label>
         <link refid="constants_8hpp_source"/>
-        <childnode refid="116" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
       </node>
-      <node id="96">
+      <node id="98">
         <label>geometry_msgs/msg/accel.hpp</label>
       </node>
-      <node id="112">
+      <node id="114">
         <label>openscenario_msgs/msg/performance.hpp</label>
       </node>
-      <node id="99">
+      <node id="101">
         <label>geometry_msgs/msg/quaternion.hpp</label>
       </node>
-      <node id="111">
+      <node id="113">
         <label>openscenario_msgs/msg/pedestrian_parameters.hpp</label>
       </node>
-      <node id="82">
+      <node id="83">
         <label>simulation_interface/conversions.hpp</label>
         <link refid="conversions_8hpp_source"/>
-        <childnode refid="83" relation="include">
-        </childnode>
         <childnode refid="84" relation="include">
         </childnode>
         <childnode refid="85" relation="include">
@@ -199,14 +200,18 @@
         </childnode>
         <childnode refid="115" relation="include">
         </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
         <childnode refid="117" relation="include">
         </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="119" relation="include">
         </childnode>
         <childnode refid="118" relation="include">
         </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
       </node>
-      <node id="89">
+      <node id="90">
         <label>simulation_api_schema.pb.h</label>
       </node>
     </incdepgraph>
@@ -699,7 +704,19 @@
 <codeline lineno="481"><highlight class="normal"><sp/><sp/>toMsg(proto.header(),<sp/>vehicle_command.header);</highlight></codeline>
 <codeline lineno="482"><highlight class="normal"><sp/><sp/>toMsg(proto.shift(),<sp/>vehicle_command.shift);</highlight></codeline>
 <codeline lineno="483"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="484"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>simulation_interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>toProto(</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>autoware_perception_msgs::msg::TrafficLightState<sp/>&amp;<sp/>traffic_light_state,</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/>simulation_api_schema::TrafficLightState<sp/>&amp;<sp/>proto)</highlight></codeline>
+<codeline lineno="488"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/>proto.set_id(traffic_light_state.id);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>autoware_perception_msgs::msg::LampState<sp/>&amp;<sp/>ls<sp/>:<sp/>traffic_light_state.lamp_states)<sp/>{</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/>simulation_api_schema::TrafficLightState::LampState<sp/>lamp_state;</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/>lamp_state.set_type((simulation_api_schema::TrafficLightState_LampState_State)ls.type);</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/>*proto.add_lamp_states()<sp/>=<sp/>lamp_state;</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="495"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="496"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>simulation_interface</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/src/conversions.cpp"/>
   </compounddef>

@@ -101,44 +101,44 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="163">
-        <label>openscenario_interpreter::syntax::Controller</label>
-        <link refid="structopenscenario__interpreter_1_1syntax_1_1Controller"/>
-        <childnode refid="164" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="164">
-        <label>openscenario_interpreter::Scope</label>
-        <link refid="classopenscenario__interpreter_1_1Scope"/>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="168">
-        <label>openscenario_interpreter::syntax::ParameterDeclarations</label>
-        <link refid="structopenscenario__interpreter_1_1syntax_1_1ParameterDeclarations"/>
-        <childnode refid="169" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="169">
-        <label>std::vector&lt; ParameterDeclaration &gt;</label>
-      </node>
       <node id="165">
         <label>openscenario_interpreter::syntax::Controller</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Controller"/>
         <childnode refid="166" relation="public-inheritance">
         </childnode>
-        <childnode refid="167" relation="usage">
+      </node>
+      <node id="166">
+        <label>openscenario_interpreter::Scope</label>
+        <link refid="classopenscenario__interpreter_1_1Scope"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="170">
+        <label>openscenario_interpreter::syntax::ParameterDeclarations</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1ParameterDeclarations"/>
+        <childnode refid="171" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="171">
+        <label>std::vector&lt; ParameterDeclaration &gt;</label>
+      </node>
+      <node id="167">
+        <label>openscenario_interpreter::syntax::Controller</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1Controller"/>
+        <childnode refid="168" relation="public-inheritance">
+        </childnode>
+        <childnode refid="169" relation="usage">
           <edgelabel>properties</edgelabel>
         </childnode>
-        <childnode refid="168" relation="usage">
+        <childnode refid="170" relation="usage">
           <edgelabel>parameter_declarations</edgelabel>
         </childnode>
       </node>
-      <node id="167">
+      <node id="169">
         <label>openscenario_interpreter::syntax::Properties</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Properties"/>
       </node>
-      <node id="166">
+      <node id="168">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>

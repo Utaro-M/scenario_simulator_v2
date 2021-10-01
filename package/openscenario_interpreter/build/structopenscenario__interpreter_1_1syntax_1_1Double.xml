@@ -164,24 +164,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="206">
+      <node id="212">
         <label>openscenario_interpreter::syntax::Double</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Double"/>
-        <childnode refid="207" relation="public-inheritance">
+        <childnode refid="213" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="207">
+      <node id="213">
         <label>std_msgs::msg::Float64</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="208">
+      <node id="214">
         <label>openscenario_interpreter::syntax::Double</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Double"/>
-        <childnode refid="209" relation="public-inheritance">
+        <childnode refid="215" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="209">
+      <node id="215">
         <label>std_msgs::msg::Float64</label>
       </node>
     </collaborationgraph>

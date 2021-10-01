@@ -762,8 +762,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
-        Development Rules
+      <a href="../../../../../etc/HowToContribute/" class="md-nav__link">
+        How to Contribute
       </a>
     </li>
   
@@ -853,6 +853,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#function-trafficlightschanged" class="md-nav__link">
+    function trafficLightsChanged
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#function-tomappose" class="md-nav__link">
     function toMapPose
   </a>
@@ -911,6 +918,13 @@
           <li class="md-nav__item">
   <a href="#function-reachposition_2" class="md-nav__link">
     function reachPosition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-lanematchingsucceed" class="md-nav__link">
+    function laneMatchingSucceed
   </a>
   
 </li>
@@ -1015,6 +1029,27 @@
         
           <li class="md-nav__item">
   <a href="#function-getlongitudinaldistance" class="md-nav__link">
+    function getLongitudinalDistance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-getlongitudinaldistance_1" class="md-nav__link">
+    function getLongitudinalDistance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-getlongitudinaldistance_2" class="md-nav__link">
+    function getLongitudinalDistance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-getlongitudinaldistance_3" class="md-nav__link">
     function getLongitudinalDistance
   </a>
   
@@ -1335,6 +1370,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#function-define_get_traffic_light_2" class="md-nav__link">
+    function DEFINE_GET_TRAFFIC_LIGHT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-define_get_traffic_light_3" class="md-nav__link">
+    function DEFINE_GET_TRAFFIC_LIGHT
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1384,6 +1433,10 @@
 <td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-update">update</a></strong>(const double current_time, const double step_time)</td>
 </tr>
 <tr>
+<td>bool</td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-trafficlightschanged">trafficLightsChanged</a></strong>()</td>
+</tr>
+<tr>
 <td>auto</td>
 <td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-tomappose">toMapPose</a></strong>(const openscenario_msgs::msg::LaneletPose &amp; lanelet_pose) const</td>
 </tr>
@@ -1418,6 +1471,10 @@
 <tr>
 <td>bool</td>
 <td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-reachposition">reachPosition</a></strong>(const std::string &amp; name, const std::string &amp; target_name, const double tolerance) const</td>
+</tr>
+<tr>
+<td>bool</td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-lanematchingsucceed">laneMatchingSucceed</a></strong>(const std::string &amp; name) <br>If the target entity's lanelet pose is valid, return true.</td>
 </tr>
 <tr>
 <td>bool</td>
@@ -1474,6 +1531,18 @@
 <tr>
 <td>auto</td>
 <td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-getmappose">getMapPose</a></strong>(const std::string &amp; reference_entity_name, const geometry_msgs::msg::Pose &amp; relative_pose)</td>
+</tr>
+<tr>
+<td>auto</td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-getlongitudinaldistance">getLongitudinalDistance</a></strong>(const LaneletPose &amp; from, const LaneletPose &amp; to, const double max_distance =100)</td>
+</tr>
+<tr>
+<td>auto</td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-getlongitudinaldistance">getLongitudinalDistance</a></strong>(const LaneletPose &amp; from, const std::string &amp; to, const double max_distance =100)</td>
+</tr>
+<tr>
+<td>auto</td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-getlongitudinaldistance">getLongitudinalDistance</a></strong>(const std::string &amp; from, const LaneletPose &amp; to, const double max_distance =100)</td>
 </tr>
 <tr>
 <td>auto</td>
@@ -1659,6 +1728,14 @@
 <td></td>
 <td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-define_get_traffic_light">DEFINE_GET_TRAFFIC_LIGHT</a></strong>(Arrow )</td>
 </tr>
+<tr>
+<td></td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-define_get_traffic_light">DEFINE_GET_TRAFFIC_LIGHT</a></strong>(Ids )</td>
+</tr>
+<tr>
+<td></td>
+<td><strong><a href="/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classtraffic__simulator_1_1entity_1_1EntityManager#function-define_get_traffic_light">DEFINE_GET_TRAFFIC_LIGHT</a></strong>(Instance )</td>
+</tr>
 </tbody>
 </table>
 <h2 id="public-functions-documentation">Public Functions Documentation<a class="headerlink" href="#public-functions-documentation" title="Permanent link">#</a></h2>
@@ -1679,6 +1756,9 @@
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">current_time</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">step_time</span><span class="w"></span>
 <span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<h3 id="function-trafficlightschanged">function trafficLightsChanged<a class="headerlink" href="#function-trafficlightschanged" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">trafficLightsChanged</span><span class="p">()</span><span class="w"></span>
 </code></pre></div>
 <h3 id="function-tomappose">function toMapPose<a class="headerlink" href="#function-tomappose" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">toMapPose</span><span class="p">(</span><span class="w"></span>
@@ -1740,6 +1820,21 @@
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">tolerance</span><span class="w"></span>
 <span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
 </code></pre></div>
+<h3 id="function-lanematchingsucceed">function laneMatchingSucceed<a class="headerlink" href="#function-lanematchingsucceed" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">laneMatchingSucceed</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<p>If the target entity's lanelet pose is valid, return true. </p>
+<p><strong>Parameters</strong>: </p>
+<ul>
+<li><strong>name</strong> name of the target entity </li>
+</ul>
+<p><strong>Return</strong>: </p>
+<ul>
+<li>true lane matching is succeed </li>
+<li>false lane mathing is failed </li>
+</ul>
 <h3 id="function-isstopping">function isStopping<a class="headerlink" href="#function-isstopping" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">isStopping</span><span class="p">(</span><span class="w"></span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">name</span><span class="w"></span>
@@ -1825,6 +1920,27 @@
 <span class="p">)</span><span class="w"></span>
 </code></pre></div>
 <h3 id="function-getlongitudinaldistance">function getLongitudinalDistance<a class="headerlink" href="#function-getlongitudinaldistance" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">getLongitudinalDistance</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">LaneletPose</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">from</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">LaneletPose</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">to</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max_distance</span><span class="w"> </span><span class="o">=</span><span class="mi">100</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<h3 id="function-getlongitudinaldistance_1">function getLongitudinalDistance<a class="headerlink" href="#function-getlongitudinaldistance_1" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">getLongitudinalDistance</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">LaneletPose</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">from</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">to</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max_distance</span><span class="w"> </span><span class="o">=</span><span class="mi">100</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<h3 id="function-getlongitudinaldistance_2">function getLongitudinalDistance<a class="headerlink" href="#function-getlongitudinaldistance_2" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">getLongitudinalDistance</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">from</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">LaneletPose</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">to</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">max_distance</span><span class="w"> </span><span class="o">=</span><span class="mi">100</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<h3 id="function-getlongitudinaldistance_3">function getLongitudinalDistance<a class="headerlink" href="#function-getlongitudinaldistance_3" title="Permanent link">#</a></h3>
 <div class="highlight"><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">getLongitudinalDistance</span><span class="p">(</span><span class="w"></span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">from</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">to</span><span class="p">,</span><span class="w"></span>
@@ -2067,8 +2183,18 @@
 <span class="w">    </span><span class="n">Arrow</span><span class="w"> </span>
 <span class="p">)</span><span class="w"></span>
 </code></pre></div>
+<h3 id="function-define_get_traffic_light_2">function DEFINE_GET_TRAFFIC_LIGHT<a class="headerlink" href="#function-define_get_traffic_light_2" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">DEFINE_GET_TRAFFIC_LIGHT</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">Ids</span><span class="w"> </span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
+<h3 id="function-define_get_traffic_light_3">function DEFINE_GET_TRAFFIC_LIGHT<a class="headerlink" href="#function-define_get_traffic_light_3" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">DEFINE_GET_TRAFFIC_LIGHT</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">Instance</span><span class="w"> </span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div>
 <hr />
-<p>Updated on  1 October 2021 at 01:12:39 UTC</p>
+<p>Updated on  1 October 2021 at 02:58:09 UTC</p>
                 
                   
                 

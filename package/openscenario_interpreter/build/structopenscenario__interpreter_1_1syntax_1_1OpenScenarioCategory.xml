@@ -41,36 +41,36 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="486">
+      <node id="480">
         <label>std::shared_ptr&lt; T &gt;</label>
       </node>
-      <node id="485">
+      <node id="479">
         <label>Group</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="486" relation="public-inheritance">
+        <childnode refid="480" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="484">
+      <node id="478">
         <label>openscenario_interpreter::syntax::OpenScenarioCategory</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1OpenScenarioCategory"/>
-        <childnode refid="485" relation="public-inheritance">
+        <childnode refid="479" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="489">
+      <node id="483">
         <label>std::shared_ptr&lt; T &gt;</label>
       </node>
-      <node id="488">
+      <node id="482">
         <label>Group</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="489" relation="public-inheritance">
+        <childnode refid="483" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="487">
+      <node id="481">
         <label>openscenario_interpreter::syntax::OpenScenarioCategory</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1OpenScenarioCategory"/>
-        <childnode refid="488" relation="public-inheritance">
+        <childnode refid="482" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

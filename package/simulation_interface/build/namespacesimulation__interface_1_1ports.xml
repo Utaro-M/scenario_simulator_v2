@@ -143,6 +143,20 @@
         </inbodydescription>
         <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/include/simulation_interface/constants.hpp" line="43" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/include/simulation_interface/constants.hpp" bodystart="43" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="constants_8hpp_1a77b87d3e73180fc4a89237412640ad02" prot="public" static="no" mutable="no">
+        <type>const unsigned int</type>
+        <definition>const unsigned int simulation_interface::ports::update_traffic_lights</definition>
+        <argsstring></argsstring>
+        <name>update_traffic_lights</name>
+        <initializer>= 5565</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/include/simulation_interface/constants.hpp" line="44" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/include/simulation_interface/constants.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>

@@ -37,7 +37,9 @@
     <member refid="classzeromq_1_1MultiServer_1a92ee67e2dcad31b11c1fb260ded0e49d" kind="variable"><name>attach_lidar_sensor_func_</name></member>
     <member refid="classzeromq_1_1MultiServer_1a5971209d95cb23f4b4cc999776e9bc3f" kind="variable"><name>attach_detection_sensor_sock_</name></member>
     <member refid="classzeromq_1_1MultiServer_1acbd64f784e0b4e25714407b059efcd97" kind="variable"><name>attach_detection_sensor_func_</name></member>
-    <member refid="classzeromq_1_1MultiServer_1aa92cc8b0b7b653ebc9888ba4c028c4fe" kind="function"><name>MultiServer</name></member>
+    <member refid="classzeromq_1_1MultiServer_1aeedb2cc11d6f4ab4e9bea24c35bbb3ac" kind="variable"><name>update_traffic_lights_sock_</name></member>
+    <member refid="classzeromq_1_1MultiServer_1a30fce78e6840d45eb0f416bd682e61af" kind="variable"><name>update_traffic_lights_func_</name></member>
+    <member refid="classzeromq_1_1MultiServer_1a1cbef1f87deb816ba3e67db3957deea3" kind="function"><name>MultiServer</name></member>
     <member refid="classzeromq_1_1MultiServer_1af178ab3db5fb296a6d661f0dc0f12d5e" kind="function"><name>~MultiServer</name></member>
     <member refid="classzeromq_1_1MultiServer_1ad55c5a6a82c340a6f6d60859a0e96cc7" kind="function"><name>poll</name></member>
     <member refid="classzeromq_1_1MultiServer_1ac36b3ebda0b34c7e6348631d20e172f6" kind="function"><name>start_poll</name></member>
@@ -116,6 +118,7 @@
     <member refid="conversions_8hpp_1a5fbeed003cdb224f6082e2915e86f56f" kind="function"><name>toMsg</name></member>
     <member refid="conversions_8hpp_1a5ea8c01fd6e5ac89478b6398cf79e794" kind="function"><name>toProto</name></member>
     <member refid="conversions_8hpp_1aef1c80a28830641aa9995c2e09816199" kind="function"><name>toMsg</name></member>
+    <member refid="conversions_8hpp_1a7296aaf7cac8e57609731ed2af459c89" kind="function"><name>toProto</name></member>
   </compound>
   <compound refid="namespacesimulation__interface_1_1ports" kind="namespace"><name>simulation_interface::ports</name>
     <member refid="constants_8hpp_1a760bbcbdab973867cf21e4244555f44a" kind="variable"><name>initialize</name></member>
@@ -128,6 +131,7 @@
     <member refid="constants_8hpp_1a572918bad4d85a08da599c7244605c1c" kind="variable"><name>update_entity_status</name></member>
     <member refid="constants_8hpp_1ab3a172684614b43111d19d261ed4b2e5" kind="variable"><name>attach_lidar_sensor</name></member>
     <member refid="constants_8hpp_1a07ccb18fcf6580002d6b19094415f8b1" kind="variable"><name>attach_detection_sensor</name></member>
+    <member refid="constants_8hpp_1a77b87d3e73180fc4a89237412640ad02" kind="variable"><name>update_traffic_lights</name></member>
   </compound>
   <compound refid="namespacezeromq" kind="namespace"><name>zeromq</name>
     <member refid="zmq__multi__server_8cpp_1a48966c004b9f11c90bcc6e31b28e1ee7" kind="function"><name>toZMQ</name></member>
@@ -198,6 +202,7 @@
     <member refid="test__conversions_8cpp_1a6d1253fa622e5fc142893815417c57e0" kind="function"><name>TEST</name></member>
     <member refid="test__conversions_8cpp_1ad5878066258ba7f53cafa76336d9b1ff" kind="function"><name>TEST</name></member>
     <member refid="test__conversions_8cpp_1a2458e3eca4b74b2064d02236cd60972f" kind="function"><name>TEST</name></member>
+    <member refid="test__conversions_8cpp_1afb349ea36c14101c2fe4e4bc8eb79f7c" kind="function"><name>TEST</name></member>
     <member refid="test__conversions_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
   </compound>
   <compound refid="dir_b6cc3fed419ff00dacb077e8ae57c3d2" kind="dir"><name>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/include</name>

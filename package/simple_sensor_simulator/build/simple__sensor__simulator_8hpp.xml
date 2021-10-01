@@ -409,21 +409,24 @@
 <codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateSensorFrame(</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>simulation_api_schema::UpdateSensorFrameRequest<sp/>&amp;<sp/>req,</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>simulation_api_schema::UpdateSensorFrameResponse<sp/>&amp;<sp/>res);</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/>std::vector&lt;openscenario_msgs::VehicleParameters&gt;<sp/>ego_vehicles_;</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/>std::vector&lt;openscenario_msgs::VehicleParameters&gt;<sp/>vehicles_;</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/>std::vector&lt;openscenario_msgs::PedestrianParameters&gt;<sp/>pedestrians_;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/>std::vector&lt;openscenario_msgs::MiscObjectParameters&gt;<sp/>misc_objects_;</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>realtime_factor_;</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>step_time_;</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>current_time_;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/>rclcpp::Time<sp/>current_ros_time_;</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initialized_;</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/>std::vector&lt;openscenario_msgs::EntityStatus&gt;<sp/>entity_status_;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/>zeromq::MultiServer<sp/>server_;</highlight></codeline>
-<codeline lineno="131"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="132"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>simple_sensor_simulator</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>SIMPLE_SENSOR_SIMULATOR__SIMPLE_SENSOR_SIMULATOR_HPP_</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>updateTrafficLights(</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>simulation_api_schema::UpdateTrafficLightsRequest<sp/>&amp;<sp/>req,</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>simulation_api_schema::UpdateTrafficLightsResponse<sp/>&amp;<sp/>res);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>std::vector&lt;openscenario_msgs::VehicleParameters&gt;<sp/>ego_vehicles_;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>std::vector&lt;openscenario_msgs::VehicleParameters&gt;<sp/>vehicles_;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>std::vector&lt;openscenario_msgs::PedestrianParameters&gt;<sp/>pedestrians_;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/>std::vector&lt;openscenario_msgs::MiscObjectParameters&gt;<sp/>misc_objects_;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>realtime_factor_;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>step_time_;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>current_time_;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>rclcpp::Time<sp/>current_ros_time_;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initialized_;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>std::vector&lt;openscenario_msgs::EntityStatus&gt;<sp/>entity_status_;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>zeromq::MultiServer<sp/>server_;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="135"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>simple_sensor_simulator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>SIMPLE_SENSOR_SIMULATOR__SIMPLE_SENSOR_SIMULATOR_HPP_</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simple_sensor_simulator/include/simple_sensor_simulator/simple_sensor_simulator.hpp"/>
   </compounddef>

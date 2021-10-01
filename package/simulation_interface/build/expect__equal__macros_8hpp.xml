@@ -15,124 +15,123 @@
     <includes local="no">string</includes>
     <includedby refid="test__conversions_8cpp" local="yes">/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp</includedby>
     <incdepgraph>
-      <node id="140">
+      <node id="142">
         <label>scenario_simulator_exception/exception.hpp</label>
       </node>
-      <node id="132">
+      <node id="134">
         <label>geometry_msgs.pb.h</label>
       </node>
-      <node id="166">
+      <node id="169">
         <label>rosgraph_msgs/msg/clock.hpp</label>
       </node>
-      <node id="160">
+      <node id="163">
         <label>openscenario_msgs/msg/entity_type.hpp</label>
       </node>
-      <node id="138">
+      <node id="140">
         <label>geometry_msgs/msg/twist.hpp</label>
       </node>
-      <node id="149">
+      <node id="151">
         <label>autoware_control_msgs/msg/control_command.hpp</label>
       </node>
-      <node id="152">
+      <node id="155">
         <label>builtin_interfaces/msg/duration.hpp</label>
       </node>
-      <node id="162">
+      <node id="165">
         <label>openscenario_msgs/msg/misc_object_parameters.hpp</label>
       </node>
-      <node id="146">
+      <node id="148">
         <label>rosgraph_msgs.pb.h</label>
       </node>
-      <node id="161">
+      <node id="164">
         <label>openscenario_msgs/msg/lanelet_pose.hpp</label>
       </node>
-      <node id="155">
+      <node id="158">
         <label>openscenario_msgs/msg/action_status.hpp</label>
       </node>
-      <node id="159">
+      <node id="162">
         <label>openscenario_msgs/msg/entity_status.hpp</label>
       </node>
-      <node id="136">
+      <node id="138">
         <label>geometry_msgs/msg/pose.hpp</label>
       </node>
-      <node id="145">
+      <node id="147">
         <label>openscenario_msgs.pb.h</label>
       </node>
-      <node id="165">
+      <node id="168">
         <label>openscenario_msgs/msg/vehicle_parameters.hpp</label>
       </node>
-      <node id="143">
+      <node id="145">
         <label>autoware_vehicle_msgs.pb.h</label>
       </node>
-      <node id="168">
+      <node id="171">
         <label>string</label>
       </node>
-      <node id="158">
+      <node id="161">
         <label>openscenario_msgs/msg/bounding_box.hpp</label>
       </node>
-      <node id="169">
+      <node id="172">
         <label>std_msgs/msg/header.hpp</label>
       </node>
-      <node id="153">
+      <node id="156">
         <label>builtin_interfaces/msg/time.hpp</label>
       </node>
-      <node id="139">
+      <node id="141">
         <label>geometry_msgs/msg/vector3.hpp</label>
       </node>
-      <node id="156">
+      <node id="152">
+        <label>autoware_perception_msgs/msg/traffic_light_state.hpp</label>
+      </node>
+      <node id="159">
         <label>openscenario_msgs/msg/axle.hpp</label>
       </node>
-      <node id="157">
+      <node id="160">
         <label>openscenario_msgs/msg/axles.hpp</label>
       </node>
-      <node id="150">
+      <node id="153">
         <label>autoware_vehicle_msgs/msg/shift.hpp</label>
       </node>
-      <node id="135">
+      <node id="137">
         <label>geometry_msgs/msg/point.hpp</label>
       </node>
-      <node id="148">
+      <node id="150">
         <label>std_msgs.pb.h</label>
       </node>
-      <node id="170">
+      <node id="173">
         <label>vector</label>
       </node>
-      <node id="144">
+      <node id="146">
         <label>builtin_interfaces.pb.h</label>
       </node>
-      <node id="133">
+      <node id="135">
         <label>gtest/gtest.h</label>
       </node>
-      <node id="151">
+      <node id="154">
         <label>autoware_vehicle_msgs/msg/vehicle_command.hpp</label>
       </node>
-      <node id="142">
+      <node id="144">
         <label>autoware_control_msgs.pb.h</label>
       </node>
-      <node id="154">
+      <node id="157">
         <label>iostream</label>
       </node>
-      <node id="167">
+      <node id="170">
         <label>simulation_interface/constants.hpp</label>
         <link refid="constants_8hpp_source"/>
-        <childnode refid="168" relation="include">
+        <childnode refid="171" relation="include">
         </childnode>
       </node>
-      <node id="134">
+      <node id="136">
         <label>geometry_msgs/msg/accel.hpp</label>
       </node>
-      <node id="164">
+      <node id="167">
         <label>openscenario_msgs/msg/performance.hpp</label>
       </node>
-      <node id="137">
+      <node id="139">
         <label>geometry_msgs/msg/quaternion.hpp</label>
       </node>
-      <node id="131">
+      <node id="133">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/expect_equal_macros.hpp</label>
         <link refid="expect__equal__macros_8hpp"/>
-        <childnode refid="132" relation="include">
-        </childnode>
-        <childnode refid="133" relation="include">
-        </childnode>
         <childnode refid="134" relation="include">
         </childnode>
         <childnode refid="135" relation="include">
@@ -149,26 +148,26 @@
         </childnode>
         <childnode refid="141" relation="include">
         </childnode>
-        <childnode refid="168" relation="include">
-        </childnode>
-      </node>
-      <node id="163">
-        <label>openscenario_msgs/msg/pedestrian_parameters.hpp</label>
-      </node>
-      <node id="141">
-        <label>simulation_interface/conversions.hpp</label>
-        <link refid="conversions_8hpp_source"/>
         <childnode refid="142" relation="include">
         </childnode>
         <childnode refid="143" relation="include">
         </childnode>
-        <childnode refid="144" relation="include">
+        <childnode refid="171" relation="include">
         </childnode>
-        <childnode refid="132" relation="include">
+      </node>
+      <node id="166">
+        <label>openscenario_msgs/msg/pedestrian_parameters.hpp</label>
+      </node>
+      <node id="143">
+        <label>simulation_interface/conversions.hpp</label>
+        <link refid="conversions_8hpp_source"/>
+        <childnode refid="144" relation="include">
         </childnode>
         <childnode refid="145" relation="include">
         </childnode>
         <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="134" relation="include">
         </childnode>
         <childnode refid="147" relation="include">
         </childnode>
@@ -184,9 +183,11 @@
         </childnode>
         <childnode refid="153" relation="include">
         </childnode>
-        <childnode refid="134" relation="include">
+        <childnode refid="154" relation="include">
         </childnode>
-        <childnode refid="135" relation="include">
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="156" relation="include">
         </childnode>
         <childnode refid="136" relation="include">
         </childnode>
@@ -196,11 +197,9 @@
         </childnode>
         <childnode refid="139" relation="include">
         </childnode>
-        <childnode refid="154" relation="include">
+        <childnode refid="140" relation="include">
         </childnode>
-        <childnode refid="155" relation="include">
-        </childnode>
-        <childnode refid="156" relation="include">
+        <childnode refid="141" relation="include">
         </childnode>
         <childnode refid="157" relation="include">
         </childnode>
@@ -224,14 +223,20 @@
         </childnode>
         <childnode refid="167" relation="include">
         </childnode>
-        <childnode refid="169" relation="include">
-        </childnode>
         <childnode refid="168" relation="include">
+        </childnode>
+        <childnode refid="169" relation="include">
         </childnode>
         <childnode refid="170" relation="include">
         </childnode>
+        <childnode refid="172" relation="include">
+        </childnode>
+        <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="173" relation="include">
+        </childnode>
       </node>
-      <node id="147">
+      <node id="149">
         <label>simulation_api_schema.pb.h</label>
       </node>
     </incdepgraph>

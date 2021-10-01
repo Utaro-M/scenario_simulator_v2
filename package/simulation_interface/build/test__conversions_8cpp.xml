@@ -6,129 +6,126 @@
     <includes local="no">gtest/gtest.h</includes>
     <includes refid="expect__equal__macros_8hpp" local="yes">expect_equal_macros.hpp</includes>
     <incdepgraph>
-      <node id="182">
+      <node id="185">
         <label>scenario_simulator_exception/exception.hpp</label>
       </node>
-      <node id="173">
+      <node id="176">
         <label>geometry_msgs.pb.h</label>
       </node>
-      <node id="208">
+      <node id="212">
         <label>rosgraph_msgs/msg/clock.hpp</label>
       </node>
-      <node id="202">
+      <node id="206">
         <label>openscenario_msgs/msg/entity_type.hpp</label>
       </node>
-      <node id="180">
+      <node id="183">
         <label>geometry_msgs/msg/twist.hpp</label>
       </node>
-      <node id="191">
+      <node id="194">
         <label>autoware_control_msgs/msg/control_command.hpp</label>
       </node>
-      <node id="194">
+      <node id="198">
         <label>builtin_interfaces/msg/duration.hpp</label>
       </node>
-      <node id="204">
+      <node id="208">
         <label>openscenario_msgs/msg/misc_object_parameters.hpp</label>
       </node>
-      <node id="188">
+      <node id="191">
         <label>rosgraph_msgs.pb.h</label>
       </node>
-      <node id="203">
+      <node id="207">
         <label>openscenario_msgs/msg/lanelet_pose.hpp</label>
       </node>
-      <node id="197">
+      <node id="201">
         <label>openscenario_msgs/msg/action_status.hpp</label>
       </node>
-      <node id="201">
+      <node id="205">
         <label>openscenario_msgs/msg/entity_status.hpp</label>
       </node>
-      <node id="178">
+      <node id="181">
         <label>geometry_msgs/msg/pose.hpp</label>
       </node>
-      <node id="187">
+      <node id="190">
         <label>openscenario_msgs.pb.h</label>
       </node>
-      <node id="207">
+      <node id="211">
         <label>openscenario_msgs/msg/vehicle_parameters.hpp</label>
       </node>
-      <node id="185">
+      <node id="188">
         <label>autoware_vehicle_msgs.pb.h</label>
       </node>
-      <node id="210">
+      <node id="214">
         <label>string</label>
       </node>
-      <node id="200">
+      <node id="204">
         <label>openscenario_msgs/msg/bounding_box.hpp</label>
       </node>
-      <node id="211">
+      <node id="215">
         <label>std_msgs/msg/header.hpp</label>
       </node>
-      <node id="195">
+      <node id="199">
         <label>builtin_interfaces/msg/time.hpp</label>
       </node>
-      <node id="181">
+      <node id="184">
         <label>geometry_msgs/msg/vector3.hpp</label>
       </node>
-      <node id="198">
+      <node id="195">
+        <label>autoware_perception_msgs/msg/traffic_light_state.hpp</label>
+      </node>
+      <node id="202">
         <label>openscenario_msgs/msg/axle.hpp</label>
       </node>
-      <node id="199">
+      <node id="203">
         <label>openscenario_msgs/msg/axles.hpp</label>
       </node>
-      <node id="192">
+      <node id="196">
         <label>autoware_vehicle_msgs/msg/shift.hpp</label>
       </node>
-      <node id="177">
+      <node id="180">
         <label>geometry_msgs/msg/point.hpp</label>
       </node>
-      <node id="190">
+      <node id="193">
         <label>std_msgs.pb.h</label>
       </node>
-      <node id="212">
+      <node id="216">
         <label>vector</label>
       </node>
-      <node id="186">
+      <node id="189">
         <label>builtin_interfaces.pb.h</label>
       </node>
-      <node id="174">
+      <node id="177">
         <label>gtest/gtest.h</label>
       </node>
-      <node id="193">
+      <node id="197">
         <label>autoware_vehicle_msgs/msg/vehicle_command.hpp</label>
       </node>
-      <node id="184">
+      <node id="187">
         <label>autoware_control_msgs.pb.h</label>
       </node>
-      <node id="196">
+      <node id="200">
         <label>iostream</label>
       </node>
-      <node id="209">
+      <node id="213">
         <label>simulation_interface/constants.hpp</label>
         <link refid="constants_8hpp_source"/>
-        <childnode refid="210" relation="include">
+        <childnode refid="214" relation="include">
         </childnode>
-      </node>
-      <node id="176">
-        <label>geometry_msgs/msg/accel.hpp</label>
-      </node>
-      <node id="206">
-        <label>openscenario_msgs/msg/performance.hpp</label>
       </node>
       <node id="179">
+        <label>geometry_msgs/msg/accel.hpp</label>
+      </node>
+      <node id="210">
+        <label>openscenario_msgs/msg/performance.hpp</label>
+      </node>
+      <node id="182">
         <label>geometry_msgs/msg/quaternion.hpp</label>
       </node>
-      <node id="175">
+      <node id="178">
         <label>expect_equal_macros.hpp</label>
         <link refid="expect__equal__macros_8hpp_source"/>
-        <childnode refid="173" relation="include">
-        </childnode>
-        <childnode refid="174" relation="include">
-        </childnode>
         <childnode refid="176" relation="include">
         </childnode>
         <childnode refid="177" relation="include">
-        </childnode>
-        <childnode refid="178" relation="include">
         </childnode>
         <childnode refid="179" relation="include">
         </childnode>
@@ -140,38 +137,38 @@
         </childnode>
         <childnode refid="183" relation="include">
         </childnode>
-        <childnode refid="210" relation="include">
-        </childnode>
-      </node>
-      <node id="172">
-        <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp</label>
-        <link refid="test__conversions_8cpp"/>
-        <childnode refid="173" relation="include">
-        </childnode>
-        <childnode refid="174" relation="include">
-        </childnode>
-        <childnode refid="175" relation="include">
-        </childnode>
-      </node>
-      <node id="205">
-        <label>openscenario_msgs/msg/pedestrian_parameters.hpp</label>
-      </node>
-      <node id="183">
-        <label>simulation_interface/conversions.hpp</label>
-        <link refid="conversions_8hpp_source"/>
         <childnode refid="184" relation="include">
         </childnode>
         <childnode refid="185" relation="include">
         </childnode>
         <childnode refid="186" relation="include">
         </childnode>
-        <childnode refid="173" relation="include">
+        <childnode refid="214" relation="include">
         </childnode>
+      </node>
+      <node id="175">
+        <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp</label>
+        <link refid="test__conversions_8cpp"/>
+        <childnode refid="176" relation="include">
+        </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="209">
+        <label>openscenario_msgs/msg/pedestrian_parameters.hpp</label>
+      </node>
+      <node id="186">
+        <label>simulation_interface/conversions.hpp</label>
+        <link refid="conversions_8hpp_source"/>
         <childnode refid="187" relation="include">
         </childnode>
         <childnode refid="188" relation="include">
         </childnode>
         <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="176" relation="include">
         </childnode>
         <childnode refid="190" relation="include">
         </childnode>
@@ -185,18 +182,6 @@
         </childnode>
         <childnode refid="195" relation="include">
         </childnode>
-        <childnode refid="176" relation="include">
-        </childnode>
-        <childnode refid="177" relation="include">
-        </childnode>
-        <childnode refid="178" relation="include">
-        </childnode>
-        <childnode refid="179" relation="include">
-        </childnode>
-        <childnode refid="180" relation="include">
-        </childnode>
-        <childnode refid="181" relation="include">
-        </childnode>
         <childnode refid="196" relation="include">
         </childnode>
         <childnode refid="197" relation="include">
@@ -204,6 +189,18 @@
         <childnode refid="198" relation="include">
         </childnode>
         <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
         </childnode>
         <childnode refid="200" relation="include">
         </childnode>
@@ -225,14 +222,22 @@
         </childnode>
         <childnode refid="209" relation="include">
         </childnode>
-        <childnode refid="211" relation="include">
-        </childnode>
         <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
         </childnode>
         <childnode refid="212" relation="include">
         </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
       </node>
-      <node id="189">
+      <node id="192">
         <label>simulation_api_schema.pb.h</label>
       </node>
     </incdepgraph>
@@ -699,6 +704,25 @@
         </inbodydescription>
         <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp" line="552" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp" bodystart="552" bodyend="567"/>
       </memberdef>
+      <memberdef kind="function" id="test__conversions_8cpp_1afb349ea36c14101c2fe4e4bc8eb79f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TEST</definition>
+        <argsstring>(Conversion, TrafficLights)</argsstring>
+        <name>TEST</name>
+        <param>
+          <type>Conversion</type>
+        </param>
+        <param>
+          <type>TrafficLights</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp" line="569" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp" bodystart="569" bodyend="614"/>
+      </memberdef>
       <memberdef kind="function" id="test__conversions_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int main</definition>
@@ -718,7 +742,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp" line="569" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp" bodystart="569" bodyend="573"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp" line="616" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp" bodystart="616" bodyend="620"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1272,11 +1296,58 @@
 <codeline lineno="566"><highlight class="normal"><sp/><sp/>EXPECT_LANELET_POSE_EQ(pose,<sp/>proto);</highlight></codeline>
 <codeline lineno="567"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="568"><highlight class="normal"></highlight></codeline>
-<codeline lineno="569"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>argv)</highlight></codeline>
+<codeline lineno="569"><highlight class="normal">TEST(Conversion,<sp/>TrafficLights)</highlight></codeline>
 <codeline lineno="570"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="571"><highlight class="normal"><sp/><sp/>testing::InitGoogleTest(&amp;argc,<sp/>argv);</highlight></codeline>
-<codeline lineno="572"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RUN_ALL_TESTS();</highlight></codeline>
-<codeline lineno="573"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/>simulation_api_schema::TrafficLightState<sp/>proto;</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/>autoware_perception_msgs::msg::TrafficLightState<sp/>msg;</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/>msg.id<sp/>=<sp/>123;</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/>autoware_perception_msgs::msg::LampState<sp/>ls0;</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/>autoware_perception_msgs::msg::LampState<sp/>ls1;</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/>autoware_perception_msgs::msg::LampState<sp/>ls2;</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/>autoware_perception_msgs::msg::LampState<sp/>ls3;</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/>autoware_perception_msgs::msg::LampState<sp/>ls4;</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/>autoware_perception_msgs::msg::LampState<sp/>ls5;</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/>autoware_perception_msgs::msg::LampState<sp/>ls6;</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/>autoware_perception_msgs::msg::LampState<sp/>ls7;</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/>ls0.type<sp/>=<sp/>ls0.UNKNOWN;</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/>ls0.confidence<sp/>=<sp/>12.12;</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/>ls1.type<sp/>=<sp/>ls1.RED;</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/>ls2.type<sp/>=<sp/>ls2.GREEN;</highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/>ls3.type<sp/>=<sp/>ls3.YELLOW;</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/>ls4.type<sp/>=<sp/>ls4.LEFT;</highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/>ls5.type<sp/>=<sp/>ls5.RIGHT;</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"><sp/><sp/>ls6.type<sp/>=<sp/>ls6.UP;</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/>ls7.type<sp/>=<sp/>ls7.DOWN;</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/>msg.lamp_states<sp/>=<sp/>{ls0,<sp/>ls1,<sp/>ls2,<sp/>ls3,<sp/>ls4,<sp/>ls5,<sp/>ls6,<sp/>ls7};</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/>EXPECT_NO_THROW(simulation_interface::toProto(msg,<sp/>proto));</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/>EXPECT_EQ(proto.id(),<sp/>123);</highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/>EXPECT_NE(proto.lamp_states()[0].confidence(),<sp/>12.12);</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/>EXPECT_EQ(</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/>proto.lamp_states()[0].type(),<sp/>simulation_api_schema::TrafficLightState::LampState::UNKNOWN);</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/>EXPECT_EQ(</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/>proto.lamp_states()[1].type(),<sp/>simulation_api_schema::TrafficLightState::LampState::RED);</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/>EXPECT_EQ(</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/>proto.lamp_states()[2].type(),<sp/>simulation_api_schema::TrafficLightState::LampState::GREEN);</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/>EXPECT_EQ(</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/>proto.lamp_states()[3].type(),<sp/>simulation_api_schema::TrafficLightState::LampState::YELLOW);</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/>EXPECT_EQ(</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/>proto.lamp_states()[4].type(),<sp/>simulation_api_schema::TrafficLightState::LampState::LEFT);</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/>EXPECT_EQ(</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/>proto.lamp_states()[5].type(),<sp/>simulation_api_schema::TrafficLightState::LampState::RIGHT);</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/>EXPECT_EQ(proto.lamp_states()[6].type(),<sp/>simulation_api_schema::TrafficLightState::LampState::UP);</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/>EXPECT_EQ(</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/>proto.lamp_states()[7].type(),<sp/>simulation_api_schema::TrafficLightState::LampState::DOWN);</highlight></codeline>
+<codeline lineno="614"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
+<codeline lineno="616"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**<sp/>argv)</highlight></codeline>
+<codeline lineno="617"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/>testing::InitGoogleTest(&amp;argc,<sp/>argv);</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RUN_ALL_TESTS();</highlight></codeline>
+<codeline lineno="620"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/simulation/simulation_interface/test/test_conversions.cpp"/>
   </compounddef>

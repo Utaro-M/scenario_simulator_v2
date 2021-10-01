@@ -762,8 +762,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
-        Development Rules
+      <a href="../../../../../etc/HowToContribute/" class="md-nav__link">
+        How to Contribute
       </a>
     </li>
   
@@ -931,6 +931,8 @@
 <span class="cm"> * -------------------------------------------------------------------------- */</span><span class="w"></span>
 <span class="k">struct</span> <span class="nc">RelativeDistanceType</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// NOTE: I understand that &quot;euclidian&quot; is an incorrect spelling, but the XML</span>
+<span class="w">  </span><span class="c1">//       Schema of the OpenSCENARIO 1.1 standard specifies this spelling.</span>
 <span class="w">  </span><span class="k">enum</span> <span class="nc">value_type</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="n">longitudinal</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="n">lateral</span><span class="p">,</span><span class="w"></span>
@@ -938,6 +940,8 @@
 <span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="n">value</span><span class="p">;</span><span class="w"></span>
 
 <span class="w">  </span><span class="k">explicit</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="p">()</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">constexpr</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="p">(</span><span class="n">value_type</span><span class="w"> </span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">value</span><span class="p">(</span><span class="n">value</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
 
 <span class="w">  </span><span class="k">constexpr</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="n">value_type</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="k">noexcept</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">value</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
@@ -955,7 +959,7 @@
 <span class="cp">#endif  </span><span class="c1">// OPENSCENARIO_INTERPRETER__SYNTAX__RELATIVE_DISTANCE_TYPE_HPP_</span>
 </code></pre></div>
 <hr />
-<p>Updated on  1 October 2021 at 01:12:43 UTC</p>
+<p>Updated on  1 October 2021 at 02:58:12 UTC</p>
                 
                   
                 

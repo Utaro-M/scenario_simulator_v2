@@ -762,8 +762,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
-        Development Rules
+      <a href="../../../../../etc/HowToContribute/" class="md-nav__link">
+        How to Contribute
       </a>
     </li>
   
@@ -903,15 +903,15 @@
 <span class="p">{</span><span class="w"></span>
 <span class="kr">inline</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">syntax</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="cm">/* ==== UserDefinedAction ====================================================</span>
+<span class="cm">/* ---- UserDefinedAction ------------------------------------------------------</span>
 <span class="cm"> *</span>
-<span class="cm"> * &lt;xsd:complexType name=&quot;UserDefinedAction&quot;&gt;</span>
-<span class="cm"> *   &lt;xsd:sequence&gt;</span>
-<span class="cm"> *     &lt;xsd:element name=&quot;CustomCommandAction&quot; type=&quot;CustomCommandAction&quot;/&gt;</span>
-<span class="cm"> *   &lt;/xsd:sequence&gt;</span>
-<span class="cm"> * &lt;/xsd:complexType&gt;</span>
+<span class="cm"> *  &lt;xsd:complexType name=&quot;UserDefinedAction&quot;&gt;</span>
+<span class="cm"> *    &lt;xsd:sequence&gt;</span>
+<span class="cm"> *      &lt;xsd:element name=&quot;CustomCommandAction&quot; type=&quot;CustomCommandAction&quot;/&gt;</span>
+<span class="cm"> *    &lt;/xsd:sequence&gt;</span>
+<span class="cm"> *  &lt;/xsd:complexType&gt;</span>
 <span class="cm"> *</span>
-<span class="cm"> * ======================================================================== */</span><span class="w"></span>
+<span class="cm"> * -------------------------------------------------------------------------- */</span><span class="w"></span>
 <span class="k">struct</span> <span class="nc">UserDefinedAction</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">Element</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">Node</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span> <span class="nc">Scope</span><span class="o">&gt;</span><span class="w"></span>
@@ -923,14 +923,28 @@
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 
 <span class="w">  </span><span class="k">static</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">endsImmediately</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">run</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">void</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">start</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">void</span><span class="p">;</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
+
+<span class="n">DEFINE_LAZY_VISITOR</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="n">UserDefinedAction</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">CASE</span><span class="p">(</span><span class="n">CustomCommandAction</span><span class="p">),</span><span class="w">  </span><span class="c1">//</span>
+<span class="p">);</span><span class="w"></span>
+
+<span class="n">DEFINE_LAZY_VISITOR</span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">UserDefinedAction</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">CASE</span><span class="p">(</span><span class="n">CustomCommandAction</span><span class="p">),</span><span class="w">  </span><span class="c1">//</span>
+<span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace syntax</span>
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace openscenario_interpreter</span>
 
 <span class="cp">#endif  </span><span class="c1">// OPENSCENARIO_INTERPRETER__SYNTAX__USER_DEFINED_ACTION_HPP_</span>
 </code></pre></div>
 <hr />
-<p>Updated on  1 October 2021 at 01:12:43 UTC</p>
+<p>Updated on  1 October 2021 at 02:58:12 UTC</p>
                 
                   
                 

@@ -129,94 +129,94 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="548">
+      <node id="542">
         <label>openscenario_interpreter::syntax::Pedestrian</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Pedestrian"/>
-        <childnode refid="549" relation="public-inheritance">
+        <childnode refid="543" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="549">
+      <node id="543">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="556">
+      <node id="550">
         <label>openscenario_interpreter::syntax::Center</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Center"/>
-        <childnode refid="554" relation="usage">
+        <childnode refid="548" relation="usage">
           <edgelabel>x</edgelabel>
           <edgelabel>y</edgelabel>
           <edgelabel>z</edgelabel>
         </childnode>
       </node>
-      <node id="553">
+      <node id="547">
         <label>openscenario_interpreter::syntax::Dimensions</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Dimensions"/>
-        <childnode refid="554" relation="usage">
+        <childnode refid="548" relation="usage">
           <edgelabel>width</edgelabel>
           <edgelabel>height</edgelabel>
           <edgelabel>length</edgelabel>
         </childnode>
       </node>
-      <node id="557">
+      <node id="551">
         <label>openscenario_interpreter::syntax::PedestrianCategory</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1PedestrianCategory"/>
       </node>
-      <node id="554">
+      <node id="548">
         <label>openscenario_interpreter::syntax::Double</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Double"/>
-        <childnode refid="555" relation="public-inheritance">
+        <childnode refid="549" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="555">
+      <node id="549">
         <label>std_msgs::msg::Float64</label>
       </node>
-      <node id="559">
+      <node id="553">
         <label>openscenario_interpreter::syntax::ParameterDeclarations</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ParameterDeclarations"/>
-        <childnode refid="560" relation="public-inheritance">
+        <childnode refid="554" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="560">
+      <node id="554">
         <label>std::vector&lt; ParameterDeclaration &gt;</label>
       </node>
-      <node id="550">
+      <node id="544">
         <label>openscenario_interpreter::syntax::Pedestrian</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Pedestrian"/>
-        <childnode refid="551" relation="public-inheritance">
+        <childnode refid="545" relation="public-inheritance">
         </childnode>
-        <childnode refid="552" relation="usage">
+        <childnode refid="546" relation="usage">
           <edgelabel>bounding_box</edgelabel>
         </childnode>
-        <childnode refid="557" relation="usage">
+        <childnode refid="551" relation="usage">
           <edgelabel>pedestrian_category</edgelabel>
         </childnode>
-        <childnode refid="558" relation="usage">
+        <childnode refid="552" relation="usage">
           <edgelabel>properties</edgelabel>
         </childnode>
-        <childnode refid="559" relation="usage">
+        <childnode refid="553" relation="usage">
           <edgelabel>parameter_declarations</edgelabel>
         </childnode>
-        <childnode refid="554" relation="usage">
+        <childnode refid="548" relation="usage">
           <edgelabel>mass</edgelabel>
         </childnode>
       </node>
-      <node id="558">
+      <node id="552">
         <label>openscenario_interpreter::syntax::Properties</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Properties"/>
       </node>
-      <node id="551">
+      <node id="545">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
-      <node id="552">
+      <node id="546">
         <label>openscenario_interpreter::syntax::BoundingBox</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1BoundingBox"/>
-        <childnode refid="553" relation="usage">
+        <childnode refid="547" relation="usage">
           <edgelabel>dimensions</edgelabel>
         </childnode>
-        <childnode refid="556" relation="usage">
+        <childnode refid="550" relation="usage">
           <edgelabel>center</edgelabel>
         </childnode>
       </node>

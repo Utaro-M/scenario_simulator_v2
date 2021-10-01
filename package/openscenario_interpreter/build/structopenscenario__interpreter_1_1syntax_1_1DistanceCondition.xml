@@ -2,19 +2,20 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
   <compounddef id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition" kind="struct" language="C++" prot="public">
     <compoundname>openscenario_interpreter::syntax::DistanceCondition</compoundname>
+    <basecompoundref refid="classopenscenario__interpreter_1_1Scope" prot="private" virt="non-virtual">openscenario_interpreter::Scope</basecompoundref>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1aa62cc98859aeaf2baea629b254c295de" prot="public" static="no" mutable="no">
-        <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1Double" kindref="compound">Double</ref></type>
-        <definition>const Double openscenario_interpreter::syntax::DistanceCondition::value</definition>
+      <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a42a1151d0920ef6e8d0188407195d9f8" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1CoordinateSystem" kindref="compound">CoordinateSystem</ref></type>
+        <definition>const CoordinateSystem openscenario_interpreter::syntax::DistanceCondition::coordinate_system</definition>
         <argsstring></argsstring>
-        <name>value</name>
+        <name>coordinate_system</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="54" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="54" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="61" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ad4f54c3c107415bd62e4b26d1b403eee" prot="public" static="no" mutable="no">
         <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1Boolean" kindref="compound">Boolean</ref></type>
@@ -27,33 +28,46 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="63" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="63" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="64" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="64" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a03df5bf474b66600dacda96af05d9768" prot="public" static="no" mutable="no">
-        <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1Boolean" kindref="compound">Boolean</ref></type>
-        <definition>const Boolean openscenario_interpreter::syntax::DistanceCondition::along_route</definition>
+      <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a3810cae51f2eff1e3165c2bf194226ce" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1RelativeDistanceType" kindref="compound">RelativeDistanceType</ref></type>
+        <definition>const RelativeDistanceType openscenario_interpreter::syntax::DistanceCondition::relative_distance_type</definition>
         <argsstring></argsstring>
-        <name>along_route</name>
+        <name>relative_distance_type</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="72" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="72" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="67" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="67" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ac1f68f2be9e89d945e1545426ea543b0" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ab717fd7db98e0e666211b9fd37520f94" prot="public" static="no" mutable="no">
         <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1Rule" kindref="compound">Rule</ref></type>
-        <definition>const Rule openscenario_interpreter::syntax::DistanceCondition::compare</definition>
+        <definition>const Rule openscenario_interpreter::syntax::DistanceCondition::rule</definition>
         <argsstring></argsstring>
-        <name>compare</name>
+        <name>rule</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="79" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="79" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="70" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1aa62cc98859aeaf2baea629b254c295de" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1Double" kindref="compound">Double</ref></type>
+        <definition>const Double openscenario_interpreter::syntax::DistanceCondition::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="73" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a8e576ce3fa8d3c0348ea3fd0aba31d86" prot="public" static="no" mutable="no">
         <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1Position" kindref="compound">Position</ref></type>
@@ -66,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="86" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="86" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="76" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a5b8edf961346a6d7c722a360462df70f" prot="public" static="no" mutable="no">
         <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1TriggeringEntities" kindref="compound">TriggeringEntities</ref></type>
@@ -79,35 +93,32 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="88" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="88" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="78" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="78" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ae257a5e0d139dd35bbcfb997cf9f7803" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a095b2fb4ef52fcd8461602a8b96ac0e2" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="structopenscenario__interpreter_1_1syntax_1_1Double" kindref="compound">Double</ref> &gt;</type>
-        <definition>std::vector&lt;Double&gt; openscenario_interpreter::syntax::DistanceCondition::last_checked_values</definition>
+        <definition>std::vector&lt;Double&gt; openscenario_interpreter::syntax::DistanceCondition::results</definition>
         <argsstring></argsstring>
-        <name>last_checked_values</name>
+        <name>results</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="90" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="90" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="80" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="80" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a00db5b7333f930a8d9bd9ba4bb67e059" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ac58669df30ecae908ef205ec4dd6cd1c" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename Node</type>
           </param>
-          <param>
-            <type>typename <ref refid="classopenscenario__interpreter_1_1Scope" kindref="compound">Scope</ref></type>
-          </param>
         </templateparamlist>
         <type></type>
         <definition>openscenario_interpreter::syntax::DistanceCondition::DistanceCondition</definition>
-        <argsstring>(const Node &amp;node, Scope &amp;outer_scope, const TriggeringEntities &amp;triggering_entities)</argsstring>
+        <argsstring>(const Node &amp;node, Scope &amp;scope, const TriggeringEntities &amp;triggering_entities)</argsstring>
         <name>DistanceCondition</name>
         <param>
           <type>const Node &amp;</type>
@@ -115,7 +126,7 @@
         </param>
         <param>
           <type><ref refid="classopenscenario__interpreter_1_1Scope" kindref="compound">Scope</ref> &amp;</type>
-          <declname>outer_scope</declname>
+          <declname>scope</declname>
         </param>
         <param>
           <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1TriggeringEntities" kindref="compound">TriggeringEntities</ref> &amp;</type>
@@ -127,12 +138,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="93" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="93" bodyend="105"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="83" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="83" bodyend="97"/>
       </memberdef>
-      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a77c278bfba11522606d076828329be19" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a73ac0371b0ec38e762b0e507c9d260e6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
         <definition>auto openscenario_interpreter::syntax::DistanceCondition::description</definition>
-        <argsstring>() const</argsstring>
+        <argsstring>() const -&gt; std::string</argsstring>
         <name>description</name>
         <briefdescription>
         </briefdescription>
@@ -140,12 +151,56 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="107" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="107" bodyend="118"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="99" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/distance_condition.cpp" bodystart="26" bodyend="37"/>
       </memberdef>
-      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a8c5eb15bd59c65ce409b5b52c3932db7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ac3ef89165c02309d6a997b18dbaf911e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>auto</type>
+        <definition>auto openscenario_interpreter::syntax::DistanceCondition::distance</definition>
+        <argsstring>(const EntityRef &amp;) const -&gt; double</argsstring>
+        <name>distance</name>
+        <param>
+          <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref> &amp;</type>
+          <defname>triggering_entity</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="101" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/distance_condition.cpp" bodystart="75" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ac6ebe338ea58fa7f4e14a0ffbe2ef41f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>CoordinateSystem::value_type</type>
+          </param>
+          <param>
+            <type>RelativeDistanceType::value_type</type>
+          </param>
+          <param>
+            <type>bool</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto openscenario_interpreter::syntax::DistanceCondition::distance</definition>
+        <argsstring>(const EntityRef &amp;) const -&gt; double</argsstring>
+        <name>distance</name>
+        <param>
+          <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="104" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a5c43211b42826d5063ff499d7ad8112c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>auto</type>
         <definition>auto openscenario_interpreter::syntax::DistanceCondition::evaluate</definition>
-        <argsstring>()</argsstring>
+        <argsstring>() -&gt; Element</argsstring>
         <name>evaluate</name>
         <briefdescription>
         </briefdescription>
@@ -153,88 +208,215 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="120" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="120" bodyend="133"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="109" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/distance_condition.cpp" bodystart="184" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a2c1411694dc368805eb01d878ea79cb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto openscenario_interpreter::syntax::DistanceCondition::distance</definition>
+        <argsstring>(const EntityRef &amp;triggering_entity) const -&gt; double</argsstring>
+        <name>distance</name>
+        <param>
+          <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref> &amp;</type>
+          <declname>triggering_entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/distance_condition.cpp" line="82" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/distance_condition.cpp" bodystart="83" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a2c1411694dc368805eb01d878ea79cb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto openscenario_interpreter::syntax::DistanceCondition::distance</definition>
+        <argsstring>(const EntityRef &amp;triggering_entity) const -&gt; double</argsstring>
+        <name>distance</name>
+        <param>
+          <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref> &amp;</type>
+          <declname>triggering_entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/distance_condition.cpp" line="107" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/distance_condition.cpp" bodystart="108" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a2c1411694dc368805eb01d878ea79cb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto openscenario_interpreter::syntax::DistanceCondition::distance</definition>
+        <argsstring>(const EntityRef &amp;triggering_entity) const -&gt; double</argsstring>
+        <name>distance</name>
+        <param>
+          <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref> &amp;</type>
+          <declname>triggering_entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/distance_condition.cpp" line="129" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/distance_condition.cpp" bodystart="130" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a2c1411694dc368805eb01d878ea79cb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto openscenario_interpreter::syntax::DistanceCondition::distance</definition>
+        <argsstring>(const EntityRef &amp;triggering_entity) const -&gt; double</argsstring>
+        <name>distance</name>
+        <param>
+          <type>const <ref refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef" kindref="compound">EntityRef</ref> &amp;</type>
+          <declname>triggering_entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/distance_condition.cpp" line="151" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/distance_condition.cpp" bodystart="152" bodyend="182"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
+    <inheritancegraph>
+      <node id="198">
+        <label>openscenario_interpreter::Scope</label>
+        <link refid="classopenscenario__interpreter_1_1Scope"/>
+      </node>
+      <node id="197">
+        <label>openscenario_interpreter::syntax::DistanceCondition</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition"/>
+        <childnode refid="198" relation="private-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
     <collaborationgraph>
-      <node id="202">
+      <node id="207">
         <label>openscenario_interpreter::syntax::Rule</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Rule"/>
       </node>
-      <node id="198">
+      <node id="202">
         <label>openscenario_interpreter::syntax::TriggeringEntitiesRule</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1TriggeringEntitiesRule"/>
       </node>
-      <node id="201">
+      <node id="205">
         <label>std::shared_ptr&lt; Expression  &gt;</label>
       </node>
-      <node id="204">
+      <node id="210">
         <label>openscenario_interpreter::syntax::Double</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Double"/>
-        <childnode refid="205" relation="public-inheritance">
+        <childnode refid="211" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="205">
+      <node id="209">
+        <label>openscenario_interpreter::syntax::CoordinateSystem</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1CoordinateSystem"/>
+      </node>
+      <node id="211">
         <label>std_msgs::msg::Float64</label>
       </node>
-      <node id="199">
+      <node id="203">
         <label>openscenario_interpreter::syntax::Position</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Position"/>
-        <childnode refid="200" relation="public-inheritance">
+        <childnode refid="204" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="203">
+      <node id="208">
         <label>openscenario_interpreter::syntax::Boolean</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Boolean"/>
       </node>
-      <node id="200">
+      <node id="206">
+        <label>openscenario_interpreter::syntax::RelativeDistanceType</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1RelativeDistanceType"/>
+      </node>
+      <node id="204">
         <label>Element</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="201" relation="public-inheritance">
+        <childnode refid="205" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="197">
+      <node id="201">
         <label>openscenario_interpreter::syntax::TriggeringEntities</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1TriggeringEntities"/>
-        <childnode refid="198" relation="usage">
+        <childnode refid="202" relation="usage">
           <edgelabel>triggering_entities_rule</edgelabel>
         </childnode>
       </node>
-      <node id="196">
+      <node id="200">
+        <label>openscenario_interpreter::Scope</label>
+        <link refid="classopenscenario__interpreter_1_1Scope"/>
+      </node>
+      <node id="199">
         <label>openscenario_interpreter::syntax::DistanceCondition</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition"/>
-        <childnode refid="197" relation="usage">
+        <childnode refid="200" relation="private-inheritance">
+        </childnode>
+        <childnode refid="201" relation="usage">
           <edgelabel>triggering_entities</edgelabel>
         </childnode>
-        <childnode refid="199" relation="usage">
+        <childnode refid="203" relation="usage">
           <edgelabel>position</edgelabel>
         </childnode>
-        <childnode refid="202" relation="usage">
-          <edgelabel>compare</edgelabel>
+        <childnode refid="206" relation="usage">
+          <edgelabel>relative_distance_type</edgelabel>
         </childnode>
-        <childnode refid="203" relation="usage">
+        <childnode refid="207" relation="usage">
+          <edgelabel>rule</edgelabel>
+        </childnode>
+        <childnode refid="208" relation="usage">
           <edgelabel>freespace</edgelabel>
-          <edgelabel>along_route</edgelabel>
         </childnode>
-        <childnode refid="204" relation="usage">
+        <childnode refid="209" relation="usage">
+          <edgelabel>coordinate_system</edgelabel>
+        </childnode>
+        <childnode refid="210" relation="usage">
           <edgelabel>value</edgelabel>
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="48" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="47" bodyend="134"/>
+    <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" line="59" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/distance_condition.hpp" bodystart="58" bodyend="110"/>
     <listofallmembers>
-      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a03df5bf474b66600dacda96af05d9768" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>along_route</name></member>
-      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ac1f68f2be9e89d945e1545426ea543b0" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>compare</name></member>
-      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a77c278bfba11522606d076828329be19" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>description</name></member>
-      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a00db5b7333f930a8d9bd9ba4bb67e059" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>DistanceCondition</name></member>
-      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a8c5eb15bd59c65ce409b5b52c3932db7" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>evaluate</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a10b3826ffbeda24506a4b1f6098adf0a" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>actors</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a42a1151d0920ef6e8d0188407195d9f8" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>coordinate_system</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a73ac0371b0ec38e762b0e507c9d260e6" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>description</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ac3ef89165c02309d6a997b18dbaf911e" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>distance</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ac6ebe338ea58fa7f4e14a0ffbe2ef41f" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>distance</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a2c1411694dc368805eb01d878ea79cb4" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>distance</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a2c1411694dc368805eb01d878ea79cb4" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>distance</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a2c1411694dc368805eb01d878ea79cb4" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>distance</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a2c1411694dc368805eb01d878ea79cb4" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>distance</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ac58669df30ecae908ef205ec4dd6cd1c" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>DistanceCondition</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a5c43211b42826d5063ff499d7ad8112c" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>evaluate</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a6e06d610d0a8848a30d6f3f918d77911" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>findElement</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ad4f54c3c107415bd62e4b26d1b403eee" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>freespace</name></member>
-      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ae257a5e0d139dd35bbcfb997cf9f7803" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>last_checked_values</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a140531d9487ca398162c3d8bdc1cbef6" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>global</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a52665b2cce71e56a6e1f53c4d78da95a" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>global</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a70e18724b1b9f34062516cd1fb47a20e" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>insert</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1aadff2e8f2596e50f25246d9602eb8d18" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>localScope</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a81a89c19fa47be12aabf28dc87a4bc0d" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>localScope</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1aaca945840340f070418d229c6d8fa42a" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>makeChildScope</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1aade3655a2b6949034ff567a90639fdb9" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>name</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a8e576ce3fa8d3c0348ea3fd0aba31d86" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>position</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a3810cae51f2eff1e3165c2bf194226ce" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>relative_distance_type</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a095b2fb4ef52fcd8461602a8b96ac0e2" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>results</name></member>
+      <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1ab717fd7db98e0e666211b9fd37520f94" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>rule</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a6e1f374442352c5c86eb1c63e1454a1c" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>Scope</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a3da70b847b0daded6ce397ac0f1b7fa5" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>Scope</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1ac2732f157198c385fb788574698b1185" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>Scope</name></member>
+      <member refid="classopenscenario__interpreter_1_1Scope_1a2c9dcc3e1fdae785c5c2e6d0cd4e7e6b" prot="private" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>Scope</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1a5b8edf961346a6d7c722a360462df70f" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>triggering_entities</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1DistanceCondition_1aa62cc98859aeaf2baea629b254c295de" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::DistanceCondition</scope><name>value</name></member>
     </listofallmembers>

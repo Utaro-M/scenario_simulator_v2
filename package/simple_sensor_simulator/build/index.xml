@@ -78,6 +78,7 @@
     <member refid="classsimple__sensor__simulator_1_1ScenarioSimulator_1a14da08426619a21a167a90a9977b73a3" kind="function"><name>attachDetectionSensor</name></member>
     <member refid="classsimple__sensor__simulator_1_1ScenarioSimulator_1a812c3323ca68c5e1116e55be85e568c9" kind="function"><name>attachLidarSensor</name></member>
     <member refid="classsimple__sensor__simulator_1_1ScenarioSimulator_1abe38e6ca125a6bedd839975d544bbe9c" kind="function"><name>updateSensorFrame</name></member>
+    <member refid="classsimple__sensor__simulator_1_1ScenarioSimulator_1a4c09311cd15e612cc68f79d95674902b" kind="function"><name>updateTrafficLights</name></member>
   </compound>
   <compound refid="classsimple__sensor__simulator_1_1SensorSimulation" kind="class"><name>simple_sensor_simulator::SensorSimulation</name>
     <member refid="classsimple__sensor__simulator_1_1SensorSimulation_1ab559619a71d688e3ed989051a3948aa5" kind="variable"><name>lidar_sensors_</name></member>

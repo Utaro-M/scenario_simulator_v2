@@ -103,22 +103,22 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="647">
+      <node id="643">
         <label>openscenario_interpreter::syntax::TrafficSignals</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1TrafficSignals"/>
       </node>
-      <node id="646">
+      <node id="642">
         <label>openscenario_interpreter::syntax::File</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1File"/>
       </node>
-      <node id="645">
+      <node id="641">
         <label>openscenario_interpreter::syntax::RoadNetwork</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1RoadNetwork"/>
-        <childnode refid="646" relation="usage">
+        <childnode refid="642" relation="usage">
           <edgelabel>scene_graph_file</edgelabel>
           <edgelabel>logic_file</edgelabel>
         </childnode>
-        <childnode refid="647" relation="usage">
+        <childnode refid="643" relation="usage">
           <edgelabel>traffic_signals</edgelabel>
         </childnode>
       </node>

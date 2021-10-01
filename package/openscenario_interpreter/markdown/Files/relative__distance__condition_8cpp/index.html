@@ -762,8 +762,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
-        Development Rules
+      <a href="../../../../../etc/HowToContribute/" class="md-nav__link">
+        How to Contribute
       </a>
     </li>
   
@@ -873,6 +873,7 @@
 <span class="c1">// limitations under the License.</span>
 
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;openscenario_interpreter/syntax/relative_distance_condition.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;openscenario_interpreter/syntax/scenario_object.hpp&gt;</span><span class="cp"></span>
 
 <span class="k">namespace</span><span class="w"> </span><span class="nn">openscenario_interpreter</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
@@ -883,7 +884,13 @@
 <span class="w">  </span><span class="n">CoordinateSystem</span><span class="o">::</span><span class="n">entity</span><span class="p">,</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="o">::</span><span class="n">longitudinal</span><span class="p">,</span><span class="w"> </span><span class="n">Between</span><span class="o">::</span><span class="n">reference_points</span><span class="o">&gt;</span><span class="p">(</span><span class="w"></span>
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">triggering_entity</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">getRelativePose</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">).</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">global</span><span class="p">().</span><span class="n">entities</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">).</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ScenarioObject</span><span class="o">&gt;</span><span class="p">().</span><span class="n">is_added</span><span class="w"> </span><span class="n">and</span><span class="w"></span>
+<span class="w">    </span><span class="n">global</span><span class="p">().</span><span class="n">entities</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">entity_ref</span><span class="p">).</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ScenarioObject</span><span class="o">&gt;</span><span class="p">().</span><span class="n">is_added</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">getRelativePose</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">).</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Double</span><span class="o">::</span><span class="n">nan</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"></span>
@@ -891,7 +898,13 @@
 <span class="w">  </span><span class="n">CoordinateSystem</span><span class="o">::</span><span class="n">entity</span><span class="p">,</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="o">::</span><span class="n">lateral</span><span class="p">,</span><span class="w"> </span><span class="n">Between</span><span class="o">::</span><span class="n">reference_points</span><span class="o">&gt;</span><span class="p">(</span><span class="w"></span>
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">triggering_entity</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">getRelativePose</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">).</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">global</span><span class="p">().</span><span class="n">entities</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">).</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ScenarioObject</span><span class="o">&gt;</span><span class="p">().</span><span class="n">is_added</span><span class="w"> </span><span class="n">and</span><span class="w"></span>
+<span class="w">    </span><span class="n">global</span><span class="p">().</span><span class="n">entities</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">entity_ref</span><span class="p">).</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ScenarioObject</span><span class="o">&gt;</span><span class="p">().</span><span class="n">is_added</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">getRelativePose</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">).</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Double</span><span class="o">::</span><span class="n">nan</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"></span>
@@ -899,7 +912,13 @@
 <span class="w">  </span><span class="n">CoordinateSystem</span><span class="o">::</span><span class="n">entity</span><span class="p">,</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="o">::</span><span class="n">euclidianDistance</span><span class="p">,</span><span class="w"></span>
 <span class="w">  </span><span class="n">Between</span><span class="o">::</span><span class="n">closest_bounding_box_points</span><span class="o">&gt;</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">triggering_entity</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">getBoundingBoxDistance</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">global</span><span class="p">().</span><span class="n">entities</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">).</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ScenarioObject</span><span class="o">&gt;</span><span class="p">().</span><span class="n">is_added</span><span class="w"> </span><span class="n">and</span><span class="w"></span>
+<span class="w">    </span><span class="n">global</span><span class="p">().</span><span class="n">entities</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">entity_ref</span><span class="p">).</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ScenarioObject</span><span class="o">&gt;</span><span class="p">().</span><span class="n">is_added</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">getBoundingBoxDistance</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Double</span><span class="o">::</span><span class="n">nan</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"></span>
@@ -907,9 +926,15 @@
 <span class="w">  </span><span class="n">CoordinateSystem</span><span class="o">::</span><span class="n">entity</span><span class="p">,</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="o">::</span><span class="n">euclidianDistance</span><span class="p">,</span><span class="w"> </span><span class="n">Between</span><span class="o">::</span><span class="n">reference_points</span><span class="o">&gt;</span><span class="p">(</span><span class="w"></span>
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">triggering_entity</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">hypot</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="n">getRelativePose</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">).</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">getRelativePose</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">).</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">global</span><span class="p">().</span><span class="n">entities</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">).</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ScenarioObject</span><span class="o">&gt;</span><span class="p">().</span><span class="n">is_added</span><span class="w"> </span><span class="n">and</span><span class="w"></span>
+<span class="w">    </span><span class="n">global</span><span class="p">().</span><span class="n">entities</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">entity_ref</span><span class="p">).</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ScenarioObject</span><span class="o">&gt;</span><span class="p">().</span><span class="n">is_added</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">hypot</span><span class="p">(</span><span class="w"></span>
+<span class="w">      </span><span class="n">getRelativePose</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">).</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="n">getRelativePose</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">).</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Double</span><span class="o">::</span><span class="n">nan</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"></span>
@@ -917,7 +942,13 @@
 <span class="w">  </span><span class="n">CoordinateSystem</span><span class="o">::</span><span class="n">lane</span><span class="p">,</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="o">::</span><span class="n">longitudinal</span><span class="p">,</span><span class="w"> </span><span class="n">Between</span><span class="o">::</span><span class="n">reference_points</span><span class="o">&gt;</span><span class="p">(</span><span class="w"></span>
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">triggering_entity</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">getLongitudinalDistance</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">global</span><span class="p">().</span><span class="n">entities</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">).</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ScenarioObject</span><span class="o">&gt;</span><span class="p">().</span><span class="n">is_added</span><span class="w"> </span><span class="n">and</span><span class="w"></span>
+<span class="w">    </span><span class="n">global</span><span class="p">().</span><span class="n">entities</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="n">entity_ref</span><span class="p">).</span><span class="n">as</span><span class="o">&lt;</span><span class="n">ScenarioObject</span><span class="o">&gt;</span><span class="p">().</span><span class="n">is_added</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">getLongitudinalDistance</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">,</span><span class="w"> </span><span class="n">entity_ref</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">Double</span><span class="o">::</span><span class="n">nan</span><span class="p">();</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
 <span class="k">auto</span><span class="w"> </span><span class="n">RelativeDistanceCondition</span><span class="o">::</span><span class="n">distance</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">triggering_entity</span><span class="p">)</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="w"></span>
@@ -976,7 +1007,7 @@
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace openscenario_interpreter</span>
 </code></pre></div>
 <hr />
-<p>Updated on  1 October 2021 at 01:12:43 UTC</p>
+<p>Updated on  1 October 2021 at 02:58:12 UTC</p>
                 
                   
                 

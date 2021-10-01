@@ -762,8 +762,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
-        Development Rules
+      <a href="../../../../../etc/HowToContribute/" class="md-nav__link">
+        How to Contribute
       </a>
     </li>
   
@@ -935,7 +935,18 @@
 <span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">evaluate</span><span class="p">()</span><span class="w"></span>
 <span class="w">  </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nl">private_action</span> <span class="p">:</span><span class="w"> </span><span class="n">private_actions</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="c1">// NOTE: standbyState -&gt; startTransition (if ready)</span>
+<span class="w">      </span><span class="c1">// private_action.ready();</span>
+
+<span class="w">      </span><span class="c1">// NOTE: startTransition -&gt; runningState (unconditionally)</span>
 <span class="w">      </span><span class="n">private_action</span><span class="p">.</span><span class="n">start</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">      </span><span class="c1">// NOTE: runningState -&gt; endTransition (if accomplished)</span>
+<span class="w">      </span><span class="k">do</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="n">private_action</span><span class="p">.</span><span class="n">run</span><span class="p">();</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">not</span><span class="w"> </span><span class="n">private_action</span><span class="p">.</span><span class="n">accomplished</span><span class="p">());</span><span class="w"></span>
+
+<span class="w">      </span><span class="c1">// NOTE: endTransition -&gt; completeState (Init.Actions only once executed)</span>
 <span class="w">    </span><span class="p">}</span><span class="w"></span>
 
 <span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">unspecified</span><span class="p">;</span><span class="w"></span>
@@ -956,7 +967,7 @@
 <span class="cp">#endif  </span><span class="c1">// OPENSCENARIO_INTERPRETER__SYNTAX__PRIVATE_HPP_</span>
 </code></pre></div>
 <hr />
-<p>Updated on  1 October 2021 at 01:12:43 UTC</p>
+<p>Updated on  1 October 2021 at 02:58:12 UTC</p>
                 
                   
                 

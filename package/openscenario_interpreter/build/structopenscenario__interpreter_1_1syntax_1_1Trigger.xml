@@ -67,24 +67,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="864">
+      <node id="863">
         <label>std::list&lt; ConditionGroup &gt;</label>
       </node>
-      <node id="863">
+      <node id="862">
         <label>openscenario_interpreter::syntax::Trigger</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Trigger"/>
-        <childnode refid="864" relation="public-inheritance">
+        <childnode refid="863" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="866">
+      <node id="865">
         <label>std::list&lt; ConditionGroup &gt;</label>
       </node>
-      <node id="865">
+      <node id="864">
         <label>openscenario_interpreter::syntax::Trigger</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Trigger"/>
-        <childnode refid="866" relation="public-inheritance">
+        <childnode refid="865" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

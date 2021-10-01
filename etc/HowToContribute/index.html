@@ -14,7 +14,7 @@
     
     
       
-        <title>Development Rules - Scenario testing framework for Autoware</title>
+        <title>How to Contribute - Scenario testing framework for Autoware</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#development-rules" class="md-skip">
+        <a href="#how-to-contribute" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Development Rules
+              How to Contribute
             
           </span>
         </div>
@@ -772,12 +772,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Development Rules
+          How to Contribute
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Development Rules
+        How to Contribute
       </a>
       
         
@@ -795,11 +795,25 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#branch-naming" class="md-nav__link">
-    Branch Naming
+  <a href="#before-you-get-started" class="md-nav__link">
+    Before you get started
   </a>
   
-    <nav class="md-nav" aria-label="Branch Naming">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribution-workflow" class="md-nav__link">
+    Contribution workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branch-naming-rules" class="md-nav__link">
+    Branch naming rules
+  </a>
+  
+    <nav class="md-nav" aria-label="Branch naming rules">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -829,42 +843,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#merge-rule" class="md-nav__link">
-    Merge rule
-  </a>
-  
-    <nav class="md-nav" aria-label="Merge rule">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#continuous-integration" class="md-nav__link">
-    Continuous Integration
+    Continuous integration
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-review" class="md-nav__link">
-    Code review
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-merge-your-contribution" class="md-nav__link">
-    How to merge your contribution
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#push-rule" class="md-nav__link">
-    Push rule
+  <a href="#code-review" class="md-nav__link">
+    Code review
   </a>
   
 </li>
@@ -918,11 +905,25 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#branch-naming" class="md-nav__link">
-    Branch Naming
+  <a href="#before-you-get-started" class="md-nav__link">
+    Before you get started
   </a>
   
-    <nav class="md-nav" aria-label="Branch Naming">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contribution-workflow" class="md-nav__link">
+    Contribution workflow
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branch-naming-rules" class="md-nav__link">
+    Branch naming rules
+  </a>
+  
+    <nav class="md-nav" aria-label="Branch naming rules">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -952,42 +953,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#merge-rule" class="md-nav__link">
-    Merge rule
-  </a>
-  
-    <nav class="md-nav" aria-label="Merge rule">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#continuous-integration" class="md-nav__link">
-    Continuous Integration
+    Continuous integration
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-review" class="md-nav__link">
-    Code review
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#how-to-merge-your-contribution" class="md-nav__link">
-    How to merge your contribution
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#push-rule" class="md-nav__link">
-    Push rule
+  <a href="#code-review" class="md-nav__link">
+    Code review
   </a>
   
 </li>
@@ -1004,98 +978,100 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/tier4/scenario_simulator.auto/edit/master/docs/etc/DevelopmentRules.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/tier4/scenario_simulator.auto/edit/master/docs/etc/HowToContribute.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <h1 id="development-rules">Development Rules<a class="headerlink" href="#development-rules" title="Permanent link">#</a></h1>
-<p>If you have some questions and opinion, please feel free to contact maintainers in <a href="https://github.com/tier4/scenario_simulator_v2/issues">github issue.</a></p>
-<h2 id="branch-naming">Branch Naming<a class="headerlink" href="#branch-naming" title="Permanent link">#</a></h2>
+                <h1 id="how-to-contribute">How to contribute<a class="headerlink" href="#how-to-contribute" title="Permanent link">#</a></h1>
+<p>Thank you for your interest in improving scenario_simulator_v2.
+This contributor guidelines will help you get started.</p>
+<p>If you have any questions, please feel free to contact the <a href="../ContactUs/">maintainers</a>.</p>
+<h2 id="before-you-get-started">Before you get started<a class="headerlink" href="#before-you-get-started" title="Permanent link">#</a></h2>
+<p>To avoid duplicate work, please review current <a href="https://github.com/tier4/scenario_simulator_v2/issues">issues</a> and <a href="https://github.com/tier4/scenario_simulator_v2/pulls">pull requests</a>.</p>
+<h2 id="contribution-workflow">Contribution workflow<a class="headerlink" href="#contribution-workflow" title="Permanent link">#</a></h2>
+<p>Please take the following steps:</p>
+<ol>
+<li>Fork this repository.</li>
+<li>Clone down the repository to your local machine.</li>
+<li>Create a new branch from the <code>master</code>. See <a href="#branch-naming-rules">Branch naming rules</a> below.</li>
+<li>Commit your changes to the branch and push the commit to your GitHub repository that was forked in Step 1.</li>
+<li>Open a Pull Request (PR). Our CI workflows will automatically test your changes. See <a href="#continuous-integration">Continuous integration</a> below.</li>
+<li>The maintainers will review your PR. Once the PR is approved, the code will be merged into the <code>master</code> branch. See <a href="#code-review">Code review</a> below.</li>
+</ol>
+<h2 id="branch-naming-rules">Branch naming rules<a class="headerlink" href="#branch-naming-rules" title="Permanent link">#</a></h2>
 <h3 id="feature-development">Feature development<a class="headerlink" href="#feature-development" title="Permanent link">#</a></h3>
-<p>Please use "feature" prefix.<br />
-Branch name should be like below.</p>
-<div class="highlight"><pre><span></span><code>feature/(name of the feature you are developing.)
+<p>Each new feature development should be worked on in its own branch.</p>
+<p>Please add the <code>feature/</code> prefix to your branch name. For example:</p>
+<div class="highlight"><pre><span></span><code>feature/(name of the feature you are developing)
 </code></pre></div>
-<p>feature branch will be merged into master branch and deleted.</p>
 <h3 id="bugfix">Bugfix<a class="headerlink" href="#bugfix" title="Permanent link">#</a></h3>
-<p>Please use "fix" prefix.
-For example,</p>
-<div class="highlight"><pre><span></span><code>fix/(name of bug what you are fixing.)
+<p>Please add the <code>fix/</code> prefix to your branch name. For example:</p>
+<div class="highlight"><pre><span></span><code>fix/(name of bug what you are fixing)
 </code></pre></div>
-<p>fix branch will be merged into master branch and deleted.</p>
 <h3 id="release">Release<a class="headerlink" href="#release" title="Permanent link">#</a></h3>
-<p>Only maintainers create this branch.<br />
-Naming rules are below.  </p>
+<p>Only maintainers create the <code>release/</code> branch.</p>
 <div class="highlight"><pre><span></span><code>release/prepare_(version_tag)
 </code></pre></div>
-<p>This branch only update release notes.<br />
-For example, <a href="https://github.com/tier4/scenario_simulator_v2/pull/477">link</a></p>
-<h2 id="merge-rule">Merge rule<a class="headerlink" href="#merge-rule" title="Permanent link">#</a></h2>
-<h3 id="continuous-integration">Continuous Integration<a class="headerlink" href="#continuous-integration" title="Permanent link">#</a></h3>
-<p>If you modify source code, you should be pass all checks below.</p>
+<p>The release branches are used only to update the release notes. An example is <a href="https://github.com/tier4/scenario_simulator_v2/pull/477">here</a>.</p>
+<h2 id="continuous-integration">Continuous integration<a class="headerlink" href="#continuous-integration" title="Permanent link">#</a></h2>
+<p>Your changes proposed in your pull request will be tested automatically by the following checks:</p>
 <table>
 <thead>
 <tr>
-<th>Budge</th>
+<th>Checks</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="https://github.com/tier4/scenario_simulator_v2/actions/workflows/ScenarioTest.yaml"><img alt="ScenarioTest" src="https://github.com/tier4/scenario_simulator_v2/actions/workflows/ScenarioTest.yaml/badge.svg" /></a></td>
-<td>Build all packages and running integration test.</td>
+<td>Build all packages and run integration tests.</td>
 </tr>
 <tr>
 <td><a href="https://github.com/tier4/scenario_simulator_v2/actions/workflows/Build.yaml"><img alt="BuildTest" src="https://github.com/tier4/scenario_simulator_v2/actions/workflows/Build.yaml/badge.svg" /></a></td>
-<td>Build each package independently and run linter and unit test.</td>
+<td>Build each package independently, run linters, and run unit tests.</td>
 </tr>
 <tr>
 <td><a href="https://github.com/tier4/scenario_simulator_v2/actions/workflows/Docker.yaml"><img alt="Docker" src="https://github.com/tier4/scenario_simulator_v2/actions/workflows/Docker.yaml/badge.svg" /></a></td>
-<td>Build docker image.</td>
+<td>Build a docker image.</td>
 </tr>
 <tr>
 <td><a href="https://github.com/tier4/scenario_simulator_v2/actions/workflows/Documentation.yaml"><img alt="Documentation" src="https://github.com/tier4/scenario_simulator_v2/actions/workflows/Documentation.yaml/badge.svg" /></a></td>
-<td>Build documentation site.</td>
+<td>Build the documentation sites.</td>
 </tr>
 <tr>
 <td><a href="https://github.com/tier4/scenario_simulator_v2/actions/workflows/SpellCheck.yaml"><img alt="SpellCheck" src="https://github.com/tier4/scenario_simulator_v2/actions/workflows/SpellCheck.yaml/badge.svg" /></a></td>
-<td>Run spell checker and leave comment.</td>
+<td>Run a spell checker and add warnings to the PR.</td>
 </tr>
 </tbody>
 </table>
-<p>Currently, spellcheck is not required, but please check and fix typo if possible.</p>
-<p>If you modify only documentation, you should pass checks below.</p>
+<p>If you contribute to the documentation, your changes should pass the checks below:</p>
 <table>
 <thead>
 <tr>
-<th>Budge</th>
+<th>Checks</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><a href="https://github.com/tier4/scenario_simulator_v2/actions/workflows/Documentation.yaml"><img alt="Documentation" src="https://github.com/tier4/scenario_simulator_v2/actions/workflows/Documentation.yaml/badge.svg" /></a></td>
-<td>Build documentation site.</td>
+<td>Build the documentation sites.</td>
 </tr>
 <tr>
 <td><a href="https://github.com/tier4/scenario_simulator_v2/actions/workflows/SpellCheck.yaml"><img alt="SpellCheck" src="https://github.com/tier4/scenario_simulator_v2/actions/workflows/SpellCheck.yaml/badge.svg" /></a></td>
-<td>Run spell checker and leave comment.</td>
+<td>Run a spell checker and add warnings to the PR.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="code-review">Code review<a class="headerlink" href="#code-review" title="Permanent link">#</a></h3>
-<p>More than one <a href="/etc/ContactUs">maintainer</a> approve your code and check all test cases are passed, your code will be merged into master branch.<br />
-Your contribution will be recorded in <a href="/ReleaseNotes">release note.</a></p>
-<h3 id="how-to-merge-your-contribution">How to merge your contribution<a class="headerlink" href="#how-to-merge-your-contribution" title="Permanent link">#</a></h3>
-<p>Each branches create merge commit and merge into master branch.</p>
-<h2 id="push-rule">Push rule<a class="headerlink" href="#push-rule" title="Permanent link">#</a></h2>
-<p>If you push your source code to scenario_simulator_v2, please follow these guidelines.</p>
-<ol>
-<li>If you are try to solving urgent problem which only can be solve with force push, please contact to the maintainer and after the maintainer allowed it, then you can execute force push.</li>
-<li>Anyone can execute force push to the master branch.</li>
-<li>Pushing your source code to the master branch is principle prohibited.</li>
-</ol>
+<h2 id="code-review">Code review<a class="headerlink" href="#code-review" title="Permanent link">#</a></h2>
+<p>Any changes to the code or documentation are subject to code review. Maintainers will review your pull request.</p>
+<p>As a good practice, reply to the reviewer's comment with a link to your changes (e.g., <code>Fixed in a0b1c2d</code>).
+To keep the commit hashes consistent, <strong>please DO NOT force-push the commit to your pull request during the code review.</strong>
+If you want to force-push the commit during the review, please contact the maintainers for approval in advance.</p>
+<p>If more than one maintainer approves your pull request and all checks are passed, your pull request will be merged into the <code>master</code> branch.
+Your contribution will be recorded in the <a href="../../ReleaseNotes/">release note</a>.</p>
                 
               
               

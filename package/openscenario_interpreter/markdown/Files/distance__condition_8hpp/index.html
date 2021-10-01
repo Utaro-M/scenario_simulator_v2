@@ -762,8 +762,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
-        Development Rules
+      <a href="../../../../../etc/HowToContribute/" class="md-nav__link">
+        How to Contribute
       </a>
     </li>
   
@@ -897,11 +897,12 @@
 <span class="cp">#ifndef OPENSCENARIO_INTERPRETER__SYNTAX__DISTANCE_CONDITION_HPP_</span>
 <span class="cp">#define OPENSCENARIO_INTERPRETER__SYNTAX__DISTANCE_CONDITION_HPP_</span>
 
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;cmath&gt;</span><span class="cp"></span>
-<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;openscenario_interpreter/procedure.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;openscenario_interpreter/scope.hpp&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;openscenario_interpreter/syntax/boolean.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;openscenario_interpreter/syntax/coordinate_system.hpp&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;openscenario_interpreter/syntax/double.hpp&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;openscenario_interpreter/syntax/position.hpp&gt;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;openscenario_interpreter/syntax/relative_distance_type.hpp&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;openscenario_interpreter/syntax/rule.hpp&gt;</span><span class="cp"></span>
 <span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;openscenario_interpreter/syntax/triggering_entities.hpp&gt;</span><span class="cp"></span>
 
@@ -909,118 +910,100 @@
 <span class="p">{</span><span class="w"></span>
 <span class="kr">inline</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">syntax</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="cm">/* ---- DistanceCondition ------------------------------------------------------</span>
+<span class="cm">/* ---- DistanceCondition (OpenSCENARIO 1.1) -----------------------------------</span>
 <span class="cm"> *</span>
-<span class="cm"> *  The current distance between an entity and a reference entity is compared to</span>
-<span class="cm"> *  a given distance (less, greater, equal). Several additional parameters like</span>
-<span class="cm"> *  free space etc. can be defined.</span>
+<span class="cm"> *  The current distance between an entity and a position is compared to a</span>
+<span class="cm"> *  given distance (less, greater, equal). Several additional parameters like</span>
+<span class="cm"> *  free space etc. can be defined. The property &quot;alongRoute&quot; is deprecated. If</span>
+<span class="cm"> *  &quot;coordinateSystem&quot; or &quot;relativeDistanceType&quot; are set, &quot;alongRoute&quot; is</span>
+<span class="cm"> *  ignored.</span>
 <span class="cm"> *</span>
 <span class="cm"> *  &lt;xsd:complexType name=&quot;DistanceCondition&quot;&gt;</span>
 <span class="cm"> *    &lt;xsd:all&gt;</span>
 <span class="cm"> *      &lt;xsd:element name=&quot;Position&quot; type=&quot;Position&quot;/&gt;</span>
 <span class="cm"> *    &lt;/xsd:all&gt;</span>
-<span class="cm"> *    &lt;xsd:attribute name=&quot;value&quot; type=&quot;Double&quot; use=&quot;required&quot;/&gt;</span>
+<span class="cm"> *    &lt;xsd:attribute name=&quot;alongRoute&quot; type=&quot;Boolean&quot;&gt;</span>
+<span class="cm"> *      &lt;xsd:annotation&gt;</span>
+<span class="cm"> *        &lt;xsd:appinfo&gt;</span>
+<span class="cm"> *          deprecated</span>
+<span class="cm"> *        &lt;/xsd:appinfo&gt;</span>
+<span class="cm"> *      &lt;/xsd:annotation&gt;</span>
+<span class="cm"> *    &lt;/xsd:attribute&gt;</span>
+<span class="cm"> *    &lt;xsd:attribute name=&quot;coordinateSystem&quot; type=&quot;CoordinateSystem&quot;/&gt;</span>
 <span class="cm"> *    &lt;xsd:attribute name=&quot;freespace&quot; type=&quot;Boolean&quot; use=&quot;required&quot;/&gt;</span>
-<span class="cm"> *    &lt;xsd:attribute name=&quot;alongRoute&quot; type=&quot;Boolean&quot; use=&quot;required&quot;/&gt;</span>
+<span class="cm"> *    &lt;xsd:attribute name=&quot;relativeDistanceType&quot; type=&quot;RelativeDistanceType&quot;/&gt;</span>
 <span class="cm"> *    &lt;xsd:attribute name=&quot;rule&quot; type=&quot;Rule&quot; use=&quot;required&quot;/&gt;</span>
+<span class="cm"> *    &lt;xsd:attribute name=&quot;value&quot; type=&quot;Double&quot; use=&quot;required&quot;/&gt;</span>
 <span class="cm"> *  &lt;/xsd:complexType&gt;</span>
 <span class="cm"> *</span>
 <span class="cm"> * -------------------------------------------------------------------------- */</span><span class="w"></span>
-<span class="k">struct</span> <span class="nc">DistanceCondition</span><span class="w"></span>
+<span class="k">struct</span> <span class="nc">DistanceCondition</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">private</span><span class="w"> </span><span class="n">Scope</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="cm">/* ---- value ----------------------------------------------------------------</span>
-<span class="cm">   *</span>
-<span class="cm">   *  The distance value. Unit: s; Range: [0..inf[.</span>
-<span class="cm">   *</span>
-<span class="cm">   * ------------------------------------------------------------------------ */</span><span class="w"></span>
-<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">Double</span><span class="w"> </span><span class="n">value</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Definition of the coordinate system to be used for calculations. If not provided the value is interpreted as &quot;entity&quot;. If set, &quot;alongRoute&quot; is ignored.</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">CoordinateSystem</span><span class="w"> </span><span class="n">coordinate_system</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">  </span><span class="cm">/* ---- freespace ------------------------------------------------------------</span>
-<span class="cm">   *</span>
-<span class="cm">   *  True: distance is measured between the closest bounding box points.</span>
-<span class="cm">   *</span>
-<span class="cm">   *  False: reference point distance is used.</span>
-<span class="cm">   *</span>
-<span class="cm">   * ------------------------------------------------------------------------ */</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// True: distance is measured between closest bounding box points. False: reference point distance is used.</span>
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">Boolean</span><span class="w"> </span><span class="n">freespace</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">  </span><span class="cm">/* ---- alongRoute -----------------------------------------------------------</span>
-<span class="cm">   *</span>
-<span class="cm">   *  True: routing is taken into account, e.g. turns will increase distance.</span>
-<span class="cm">   *</span>
-<span class="cm">   *  False: straight line distance is used.</span>
-<span class="cm">   *</span>
-<span class="cm">   * ------------------------------------------------------------------------ */</span><span class="w"></span>
-<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">Boolean</span><span class="w"> </span><span class="n">along_route</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// Definition of the coordinate system dimension(s) to be used for calculating distances. If set, &quot;alongRoute&quot; is ignored. If not provided, value is interpreted as &quot;euclideanDistance&quot;.</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="w"> </span><span class="n">relative_distance_type</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">  </span><span class="cm">/* ---- rule -----------------------------------------------------------------</span>
-<span class="cm">   *</span>
-<span class="cm">   *  The operator (less, greater, equal).</span>
-<span class="cm">   *</span>
-<span class="cm">   * ------------------------------------------------------------------------ */</span><span class="w"></span>
-<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">Rule</span><span class="w"> </span><span class="n">compare</span><span class="p">;</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// The operator (less, greater, equal).</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">Rule</span><span class="w"> </span><span class="n">rule</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">  </span><span class="cm">/* ---- Position -------------------------------------------------------------</span>
-<span class="cm">   *</span>
-<span class="cm">   *  The given position the distance is related to.</span>
-<span class="cm">   *</span>
-<span class="cm">   * ------------------------------------------------------------------------ */</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// The distance value. Unit: m; Range: [0..inf[.</span>
+<span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">Double</span><span class="w"> </span><span class="n">value</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="c1">// The given position the distance is related to.</span>
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">Position</span><span class="w"> </span><span class="n">position</span><span class="p">;</span><span class="w"></span>
 
 <span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">TriggeringEntities</span><span class="w"> </span><span class="n">triggering_entities</span><span class="p">;</span><span class="w"></span>
 
-<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">last_checked_values</span><span class="p">;</span><span class="w">  </span><span class="c1">// for description</span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">Double</span><span class="o">&gt;</span><span class="w"> </span><span class="n">results</span><span class="p">;</span><span class="w">  </span><span class="c1">// for description</span>
 
-<span class="w">  </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">Node</span><span class="p">,</span><span class="w"> </span><span class="k">typename</span> <span class="nc">Scope</span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">Node</span><span class="o">&gt;</span><span class="w"></span>
 <span class="w">  </span><span class="k">explicit</span><span class="w"> </span><span class="n">DistanceCondition</span><span class="p">(</span><span class="w"></span>
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">Node</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">Scope</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">outer_scope</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TriggeringEntities</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">triggering_entities</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">Node</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">Scope</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">scope</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">TriggeringEntities</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">triggering_entities</span><span class="p">)</span><span class="w"></span>
 <span class="w">  </span><span class="c1">// clang-format off</span>
-<span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="n">value</span><span class="w">      </span><span class="p">(</span><span class="n">readAttribute</span><span class="o">&lt;</span><span class="n">Double</span><span class="w">  </span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;value&quot;</span><span class="p">,</span><span class="w">      </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">outer_scope</span><span class="p">)),</span><span class="w"></span>
-<span class="w">    </span><span class="n">freespace</span><span class="w">  </span><span class="p">(</span><span class="n">readAttribute</span><span class="o">&lt;</span><span class="n">Boolean</span><span class="w"> </span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;freespace&quot;</span><span class="p">,</span><span class="w">  </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">outer_scope</span><span class="p">)),</span><span class="w"></span>
-<span class="w">    </span><span class="n">along_route</span><span class="p">(</span><span class="n">readAttribute</span><span class="o">&lt;</span><span class="n">Boolean</span><span class="w"> </span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;alongRoute&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">outer_scope</span><span class="p">)),</span><span class="w"></span>
-<span class="w">    </span><span class="n">compare</span><span class="w">    </span><span class="p">(</span><span class="n">readAttribute</span><span class="o">&lt;</span><span class="n">Rule</span><span class="w">    </span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;rule&quot;</span><span class="p">,</span><span class="w">       </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">outer_scope</span><span class="p">)),</span><span class="w"></span>
-<span class="w">    </span><span class="n">position</span><span class="w">   </span><span class="p">(</span><span class="n">readElement</span><span class="w">  </span><span class="o">&lt;</span><span class="n">Position</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;Position&quot;</span><span class="p">,</span><span class="w">   </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">outer_scope</span><span class="p">)),</span><span class="w"></span>
+<span class="w">  </span><span class="o">:</span><span class="w"> </span><span class="n">Scope</span><span class="p">(</span><span class="n">scope</span><span class="p">),</span><span class="w"></span>
+<span class="w">    </span><span class="n">coordinate_system</span><span class="w">     </span><span class="p">(</span><span class="n">readAttribute</span><span class="o">&lt;</span><span class="n">CoordinateSystem</span><span class="w">    </span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;coordinateSystem&quot;</span><span class="p">,</span><span class="w">     </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">scope</span><span class="p">,</span><span class="w"> </span><span class="n">CoordinateSystem</span><span class="o">::</span><span class="n">entity</span><span class="p">)),</span><span class="w"></span>
+<span class="w">    </span><span class="n">freespace</span><span class="w">             </span><span class="p">(</span><span class="n">readAttribute</span><span class="o">&lt;</span><span class="n">Boolean</span><span class="w">             </span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;freespace&quot;</span><span class="p">,</span><span class="w">            </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">scope</span><span class="p">)),</span><span class="w"></span>
+<span class="w">    </span><span class="n">relative_distance_type</span><span class="p">(</span><span class="n">readAttribute</span><span class="o">&lt;</span><span class="n">RelativeDistanceType</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;relativeDistanceType&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">scope</span><span class="p">,</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="o">::</span><span class="n">euclidianDistance</span><span class="p">)),</span><span class="w"></span>
+<span class="w">    </span><span class="n">rule</span><span class="w">                  </span><span class="p">(</span><span class="n">readAttribute</span><span class="o">&lt;</span><span class="n">Rule</span><span class="w">                </span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;rule&quot;</span><span class="p">,</span><span class="w">                 </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">scope</span><span class="p">)),</span><span class="w"></span>
+<span class="w">    </span><span class="n">value</span><span class="w">                 </span><span class="p">(</span><span class="n">readAttribute</span><span class="o">&lt;</span><span class="n">Double</span><span class="w">              </span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;value&quot;</span><span class="p">,</span><span class="w">                </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">scope</span><span class="p">)),</span><span class="w"></span>
+<span class="w">    </span><span class="n">position</span><span class="w">              </span><span class="p">(</span><span class="n">readElement</span><span class="w">  </span><span class="o">&lt;</span><span class="n">Position</span><span class="w">            </span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;Position&quot;</span><span class="p">,</span><span class="w">             </span><span class="n">node</span><span class="p">,</span><span class="w"> </span><span class="n">scope</span><span class="p">)),</span><span class="w"></span>
 <span class="w">    </span><span class="n">triggering_entities</span><span class="p">(</span><span class="n">triggering_entities</span><span class="p">),</span><span class="w"></span>
-<span class="w">    </span><span class="n">last_checked_values</span><span class="p">(</span><span class="n">triggering_entities</span><span class="p">.</span><span class="n">entity_refs</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="n">Double</span><span class="o">::</span><span class="n">nan</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="n">results</span><span class="p">(</span><span class="n">triggering_entities</span><span class="p">.</span><span class="n">entity_refs</span><span class="p">.</span><span class="n">size</span><span class="p">(),</span><span class="w"> </span><span class="n">Double</span><span class="o">::</span><span class="n">nan</span><span class="p">())</span><span class="w"></span>
 <span class="w">  </span><span class="c1">// clang-format on</span>
 <span class="w">  </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">description</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">description</span><span class="p">()</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">distance</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">  </span><span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="n">CoordinateSystem</span><span class="o">::</span><span class="n">value_type</span><span class="p">,</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="o">::</span><span class="n">value_type</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">distance</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="w"></span>
 <span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">stringstream</span><span class="w"> </span><span class="n">description</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">    </span><span class="n">description</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">triggering_entities</span><span class="p">.</span><span class="n">description</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;&#39;s distance to given position = &quot;</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">    </span><span class="n">print_to</span><span class="p">(</span><span class="n">description</span><span class="p">,</span><span class="w"> </span><span class="n">last_checked_values</span><span class="p">);</span><span class="w"></span>
-
-<span class="w">    </span><span class="n">description</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">compare</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot; &quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">value</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;?&quot;</span><span class="p">;</span><span class="w"></span>
-
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">description</span><span class="p">.</span><span class="n">str</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="k">throw</span><span class="w"> </span><span class="n">SyntaxError</span><span class="p">(</span><span class="n">__FILE__</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;:&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">__LINE__</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 
-<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">evaluate</span><span class="p">()</span><span class="w"></span>
-<span class="w">  </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">distance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="o">&amp;</span><span class="p">](</span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">name</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">pose</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getRelativePose</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="k">static_cast</span><span class="o">&lt;</span><span class="n">geometry_msgs</span><span class="o">::</span><span class="n">msg</span><span class="o">::</span><span class="n">Pose</span><span class="o">&gt;</span><span class="p">(</span><span class="n">position</span><span class="p">));</span><span class="w"></span>
-<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">hypot</span><span class="p">(</span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">pose</span><span class="p">.</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="p">};</span><span class="w"></span>
-
-<span class="w">    </span><span class="n">last_checked_values</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span><span class="w"></span>
-
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">asBoolean</span><span class="p">(</span><span class="n">triggering_entities</span><span class="p">.</span><span class="n">apply</span><span class="p">([</span><span class="o">&amp;</span><span class="p">](</span><span class="k">auto</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">triggering_entity</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">      </span><span class="n">last_checked_values</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">distance</span><span class="p">(</span><span class="n">triggering_entity</span><span class="p">));</span><span class="w"></span>
-<span class="w">      </span><span class="k">return</span><span class="w"> </span><span class="n">compare</span><span class="p">(</span><span class="n">last_checked_values</span><span class="p">.</span><span class="n">back</span><span class="p">(),</span><span class="w"> </span><span class="n">value</span><span class="p">);</span><span class="w"></span>
-<span class="w">    </span><span class="p">}));</span><span class="w"></span>
-<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">evaluate</span><span class="p">()</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Element</span><span class="p">;</span><span class="w"></span>
 <span class="p">};</span><span class="w"></span>
+
+<span class="c1">// clang-format off</span>
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">DistanceCondition</span><span class="o">::</span><span class="n">distance</span><span class="o">&lt;</span><span class="n">CoordinateSystem</span><span class="o">::</span><span class="n">entity</span><span class="p">,</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="o">::</span><span class="n">euclidianDistance</span><span class="p">,</span><span class="w"> </span><span class="nb">false</span><span class="o">&gt;</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="p">;</span><span class="w"></span>
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">DistanceCondition</span><span class="o">::</span><span class="n">distance</span><span class="o">&lt;</span><span class="n">CoordinateSystem</span><span class="o">::</span><span class="n">entity</span><span class="p">,</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="o">::</span><span class="n">lateral</span><span class="p">,</span><span class="w">           </span><span class="nb">false</span><span class="o">&gt;</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="p">;</span><span class="w"></span>
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">DistanceCondition</span><span class="o">::</span><span class="n">distance</span><span class="o">&lt;</span><span class="n">CoordinateSystem</span><span class="o">::</span><span class="n">entity</span><span class="p">,</span><span class="w"> </span><span class="n">RelativeDistanceType</span><span class="o">::</span><span class="n">longitudinal</span><span class="p">,</span><span class="w">      </span><span class="nb">false</span><span class="o">&gt;</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="p">;</span><span class="w"></span>
+<span class="k">template</span><span class="w"> </span><span class="o">&lt;&gt;</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">DistanceCondition</span><span class="o">::</span><span class="n">distance</span><span class="o">&lt;</span><span class="n">CoordinateSystem</span><span class="o">::</span><span class="n">lane</span><span class="p">,</span><span class="w">   </span><span class="n">RelativeDistanceType</span><span class="o">::</span><span class="n">longitudinal</span><span class="p">,</span><span class="w">      </span><span class="nb">false</span><span class="o">&gt;</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">EntityRef</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="kt">double</span><span class="p">;</span><span class="w"></span>
+<span class="c1">// clang-format on</span>
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace syntax</span>
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace openscenario_interpreter</span>
 
 <span class="cp">#endif  </span><span class="c1">// OPENSCENARIO_INTERPRETER__SYNTAX__DISTANCE_CONDITION_HPP_</span>
 </code></pre></div>
 <hr />
-<p>Updated on  1 October 2021 at 01:12:43 UTC</p>
+<p>Updated on  1 October 2021 at 02:58:12 UTC</p>
                 
                   
                 

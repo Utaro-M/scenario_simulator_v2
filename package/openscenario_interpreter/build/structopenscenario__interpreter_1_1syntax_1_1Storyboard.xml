@@ -160,87 +160,87 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="785">
+      <node id="784">
         <label>openscenario_interpreter::syntax::Storyboard</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Storyboard"/>
+        <childnode refid="785" relation="public-inheritance">
+        </childnode>
         <childnode refid="786" relation="public-inheritance">
         </childnode>
         <childnode refid="787" relation="public-inheritance">
         </childnode>
-        <childnode refid="788" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="788">
-        <label>Elements</label>
       </node>
       <node id="787">
+        <label>Elements</label>
+      </node>
+      <node id="786">
         <label>openscenario_interpreter::syntax::StoryboardElement&lt; Storyboard &gt;</label>
         <link refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement"/>
       </node>
-      <node id="786">
+      <node id="785">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="793">
+      <node id="792">
         <label>std::shared_ptr&lt; Expression  &gt;</label>
       </node>
-      <node id="798">
+      <node id="797">
         <label>openscenario_interpreter::syntax::InitActions</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1InitActions"/>
-        <childnode refid="794" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="789">
-        <label>openscenario_interpreter::syntax::Storyboard</label>
-        <link refid="structopenscenario__interpreter_1_1syntax_1_1Storyboard"/>
-        <childnode refid="790" relation="public-inheritance">
-        </childnode>
-        <childnode refid="791" relation="public-inheritance">
-        </childnode>
-        <childnode refid="794" relation="public-inheritance">
-        </childnode>
-        <childnode refid="795" relation="usage">
-          <edgelabel>stop_trigger</edgelabel>
-        </childnode>
-        <childnode refid="797" relation="usage">
-          <edgelabel>init</edgelabel>
-        </childnode>
-      </node>
-      <node id="796">
-        <label>std::list&lt; ConditionGroup &gt;</label>
-      </node>
-      <node id="794">
-        <label>Elements</label>
-      </node>
-      <node id="791">
-        <label>openscenario_interpreter::syntax::StoryboardElement&lt; Storyboard &gt;</label>
-        <link refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement"/>
-        <childnode refid="792" relation="usage">
-          <edgelabel>current_state</edgelabel>
-        </childnode>
-      </node>
-      <node id="795">
-        <label>openscenario_interpreter::syntax::Trigger</label>
-        <link refid="structopenscenario__interpreter_1_1syntax_1_1Trigger"/>
-        <childnode refid="796" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="792">
-        <label>openscenario_interpreter::Pointer&lt; Expression &gt;</label>
-        <link refid="classopenscenario__interpreter_1_1Pointer"/>
         <childnode refid="793" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="797">
+      <node id="788">
+        <label>openscenario_interpreter::syntax::Storyboard</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1Storyboard"/>
+        <childnode refid="789" relation="public-inheritance">
+        </childnode>
+        <childnode refid="790" relation="public-inheritance">
+        </childnode>
+        <childnode refid="793" relation="public-inheritance">
+        </childnode>
+        <childnode refid="794" relation="usage">
+          <edgelabel>stop_trigger</edgelabel>
+        </childnode>
+        <childnode refid="796" relation="usage">
+          <edgelabel>init</edgelabel>
+        </childnode>
+      </node>
+      <node id="795">
+        <label>std::list&lt; ConditionGroup &gt;</label>
+      </node>
+      <node id="793">
+        <label>Elements</label>
+      </node>
+      <node id="790">
+        <label>openscenario_interpreter::syntax::StoryboardElement&lt; Storyboard &gt;</label>
+        <link refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement"/>
+        <childnode refid="791" relation="usage">
+          <edgelabel>current_state</edgelabel>
+        </childnode>
+      </node>
+      <node id="794">
+        <label>openscenario_interpreter::syntax::Trigger</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1Trigger"/>
+        <childnode refid="795" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="791">
+        <label>openscenario_interpreter::Pointer&lt; Expression &gt;</label>
+        <link refid="classopenscenario__interpreter_1_1Pointer"/>
+        <childnode refid="792" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="796">
         <label>openscenario_interpreter::syntax::Init</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Init"/>
-        <childnode refid="798" relation="usage">
+        <childnode refid="797" relation="usage">
           <edgelabel>actions</edgelabel>
         </childnode>
       </node>
-      <node id="790">
+      <node id="789">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
@@ -257,8 +257,8 @@
       <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1afe0e2c7aae7ce38c25a77f042429383a" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>BOILERPLATE</name></member>
       <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1a7816a9deb9eef600a19bb77927586dfd" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>BOILERPLATE</name></member>
       <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1aec47337d8b30da3c060087be7f360657" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>changeStateIf</name></member>
-      <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1afdad38d8cdc90ace80b807a10af58cad" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>changeStateIf</name></member>
-      <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1acf1f12befabf2370168c0d81930d0bc1" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>changeStateIf</name></member>
+      <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1abfee47b60be1bb3dbecbb392dcbb8509" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>changeStateIf</name></member>
+      <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1a02b6a933c3ec2cfbf07c1cd1e98ea83e" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>changeStateIf</name></member>
       <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1aac977dac659f036d2ef5738ab663194d" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>current_execution_count</name></member>
       <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1a97c3157e1903d4c666786446c85f600e" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>current_state</name></member>
       <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1a5c58cb6613e2c78d4c0f0e6789fc24fd" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>currentState</name></member>
@@ -275,8 +275,8 @@
       <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1ae2c6c00f125749d26c125696896dcdc8" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>maximum_execution_count</name></member>
       <member refid="classopenscenario__interpreter_1_1Scope_1aade3655a2b6949034ff567a90639fdb9" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>name</name></member>
       <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1a47fca6e7d7a020124f344edb848a361c" prot="protected" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>names</name></member>
-      <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1a25c9cefa5515185a7f250bf04b136821" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>override</name></member>
-      <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1a817915146b890e0e97984f1e0d40142c" prot="protected" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>readStoryboardElement</name></member>
+      <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1ad92ea83feb951bfb7c958d0002d6a09f" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>override</name></member>
+      <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1a62ddcbd2557cdfa63c89d60e7691a5bf" prot="protected" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>readStoryboardElement</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1Storyboard_1a2016760051a08d93a5f783b27e5a1fe5" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>ready</name></member>
       <member refid="classopenscenario__interpreter_1_1syntax_1_1StoryboardElement_1a25bb156fc90a357c41b0811c9ff951af" prot="protected" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>rename</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1Storyboard_1a305047c67d30e648d1d98dc8ec590166" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::Storyboard</scope><name>run</name></member>

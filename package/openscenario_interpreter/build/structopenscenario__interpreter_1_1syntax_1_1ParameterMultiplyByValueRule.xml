@@ -65,19 +65,19 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="540">
+      <node id="534">
         <label>openscenario_interpreter::syntax::Double</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Double"/>
-        <childnode refid="541" relation="public-inheritance">
+        <childnode refid="535" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="541">
+      <node id="535">
         <label>std_msgs::msg::Float64</label>
       </node>
-      <node id="539">
+      <node id="533">
         <label>openscenario_interpreter::syntax::ParameterMultiplyByValueRule</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ParameterMultiplyByValueRule"/>
-        <childnode refid="540" relation="usage">
+        <childnode refid="534" relation="usage">
           <edgelabel>value</edgelabel>
         </childnode>
       </node>

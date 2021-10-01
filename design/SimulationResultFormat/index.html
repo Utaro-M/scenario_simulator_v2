@@ -851,8 +851,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../etc/DevelopmentRules/" class="md-nav__link">
-        Development Rules
+      <a href="../../etc/HowToContribute/" class="md-nav__link">
+        How to Contribute
       </a>
     </li>
   
@@ -971,9 +971,9 @@
                 
                 <h1 id="simulation-result-format">Simulation Result Format<a class="headerlink" href="#simulation-result-format" title="Permanent link">#</a></h1>
 <h2 id="file-format">File format<a class="headerlink" href="#file-format" title="Permanent link">#</a></h2>
-<p>Result file should be in junit format.<br />
-<a href="https://github.com/tier4/scenario_simulator_v2/tree/master/common/simple_junit">This package</a> helps to output junit.
-Example of result file is here.  </p>
+<p>Result files should follow the JUnit format.<br />
+<a href="https://github.com/tier4/scenario_simulator_v2/tree/master/common/simple_junit">This package</a> helps you to output JUnit-formatted files.
+An example of the result file is below:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
 <span class="nt">&lt;testsuites&gt;</span>
     <span class="nt">&lt;testsuite</span> <span class="na">name=</span><span class="s">&quot;example_suite&quot;</span><span class="nt">&gt;</span>
@@ -985,11 +985,11 @@ Example of result file is here.  </p>
     <span class="nt">&lt;testsuite</span> <span class="na">name=</span><span class="s">&quot;example_suites&quot;</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/testsuites&gt;</span>
 </code></pre></div>
-<p>This format is a Junit5 format.</p>
+<p>The example follows the JUnit 5 format.</p>
 <h3 id="test-case-result">Test Case Result<a class="headerlink" href="#test-case-result" title="Permanent link">#</a></h3>
 <h4 id="failure">Failure<a class="headerlink" href="#failure" title="Permanent link">#</a></h4>
-<p>Failure means the test cases was unexpected situation such as collision, stack etc...<br />
-Message of the result should be</p>
+<p><code>Failure</code> means that the test cases were in an unexpected situation, such as collision, stack, etc.<br />
+Message of the test result should be:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;failure</span> <span class="na">type=</span><span class="s">&quot;Failure&quot;</span> <span class="na">message=</span><span class="s">&quot;Expected success&quot;</span> <span class="nt">/&gt;</span>
 </code></pre></div>
 <p>or</p>
@@ -999,12 +999,12 @@ Message of the result should be</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;failure</span> <span class="na">type=</span><span class="s">&quot;Failure&quot;</span> <span class="na">message=</span><span class="s">&quot;Expected error&quot;</span> <span class="nt">/&gt;</span>
 </code></pre></div>
 <h4 id="error">Error<a class="headerlink" href="#error" title="Permanent link">#</a></h4>
-<p>Error means the test cases was failed with error such as some Autoware node was downed, failed to launch Autoware etc..<br />
-All errors was thrown as error from API class.
-If you want to see example, please see also <a href="https://github.com/tier4/scenario_simulator_v2/blob/c6d7c4da7556a593dc3d34b0a982bc[…]r/include/openscenario_interpreter/openscenario_interpreter.hpp">this code</a>.  </p>
+<p><code>Error</code> means that the test cases were failed with an error, such as some Autoware nodes were downed, failed to launch Autoware, etc.<br />
+All errors are thrown as errors from the API classes.
+If you want to see examples, please refer to <a href="https://github.com/tier4/scenario_simulator_v2/blob/c6d7c4da7556a593dc3d34b0a982bc[…]r/include/openscenario_interpreter/openscenario_interpreter.hpp">this code</a>.</p>
 <h4 id="error-types">Error Types<a class="headerlink" href="#error-types" title="Permanent link">#</a></h4>
-<p>Each error types describe these meanings.<br />
-Flow chart of what message type should be use is here.</p>
+<p>Each error type describes its meaning.<br />
+The following flow chart describes what message types should be used:</p>
 <div class="mermaid">graph TB
     catch_exception
     use_error_type_name
@@ -1015,13 +1015,13 @@ Flow chart of what message type should be use is here.</p>
     check_base_class_of_exception --&gt;|base class was std::exception| InternalError
     UnknownError
     check_base_class_of_exception --&gt; UnknownError</div>
-<p>Output format should be like below.</p>
+<p>Output format should be like below:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">&lt;error</span> <span class="na">type=</span><span class="s">&quot;(ERROR_TYPE)&quot;</span> <span class="na">message=</span><span class="s">&quot;(ERROR_MESSAGE)&quot;</span> <span class="nt">/&gt;</span>
 </code></pre></div>
-<p>If you want to know all exception types defined in scenario simulator exception package, please look at <a href="https://github.com/tier4/scenario_simulator_v2/blob/master/common/scenario_simulator_exception/include/scenario_simulator_exception/exception.hpp">this code</a> and <a href="../ErrorCategories/">this document.</a><br />
-(ERROR_MESSAGE) is a error message from exception.  </p>
+<p>If you want to know all exception types defined in the scenario simulator exception package, please refer to <a href="https://github.com/tier4/scenario_simulator_v2/blob/master/common/scenario_simulator_exception/include/scenario_simulator_exception/exception.hpp">this code</a> and <a href="../ErrorCategories/">this document</a>.<br />
+(ERROR_MESSAGE) is an error message from an exception.</p>
 <h2 id="usage-of-simple_junit">Usage of simple_junit<a class="headerlink" href="#usage-of-simple_junit" title="Permanent link">#</a></h2>
-<p>Sample codes are below.</p>
+<p>Sample codes are below:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;simple_junit/junit5.hpp&gt;</span><span class="cp"></span>
 
 <span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"></span>
@@ -1035,7 +1035,7 @@ Flow chart of what message type should be use is here.</p>
 <span class="w">  </span><span class="n">junit</span><span class="p">.</span><span class="n">write_to</span><span class="p">(</span><span class="s">&quot;result.junit.xml&quot;</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<p>If you run this code, result.junit.xml should be like below.</p>
+<p>If you run this code, result.junit.xml should be like below:</p>
 <div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
 <span class="nt">&lt;testsuites&gt;</span>
     <span class="nt">&lt;testsuite</span> <span class="na">name=</span><span class="s">&quot;example_suite&quot;</span><span class="nt">&gt;</span>
@@ -1047,9 +1047,9 @@ Flow chart of what message type should be use is here.</p>
     <span class="nt">&lt;testsuite</span> <span class="na">name=</span><span class="s">&quot;example_suites&quot;</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/testsuites&gt;</span>
 </code></pre></div>
-<p>common::junit::JUnit5 class provides features to output result in junit format.<br />
-common::junit::Error class describes the error output.<br />
-common::junit::Failure class describes the failure output.  </p>
+<p><code>common::junit::JUnit5</code> class provides features to output results in the JUnit format.<br />
+<code>common::junit::Error</code> class describes the error output.<br />
+<code>common::junit::Failure</code> class describes the failure output.</p>
                 
               
               

@@ -900,8 +900,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../etc/DevelopmentRules/" class="md-nav__link">
-        Development Rules
+      <a href="../../etc/HowToContribute/" class="md-nav__link">
+        How to Contribute
       </a>
     </li>
   
@@ -1068,7 +1068,7 @@
                 
                 
                 <h1 id="metrics">Metrics<a class="headerlink" href="#metrics" title="Permanent link">#</a></h1>
-<p>Metrics class allow you to check Autoware way of driving is valid or not.</p>
+<p>Metrics class allows you to check Autoware way of driving is valid or not.</p>
 <h2 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">#</a></h2>
 <div class="mermaid">graph RL;
   subgraph metric
@@ -1087,13 +1087,13 @@
   API --&gt; |Add metric| inactive
   failure --&gt; |Throw Exception| API
   API --&gt; |Handle Exception| your_application</div>
-<p>You can add metric by using API below,
+<p>You can add a metric by using the API below,</p>
 <div class="highlight"><pre><span></span><code><span class="n">api_</span><span class="p">.</span><span class="n">addMetric</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;name of metric&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;arguments for metric you want to check&quot;</span><span class="w"> </span><span class="p">...);</span><span class="w"></span>
 </code></pre></div>
-If the metric detects specification violation, then the metric move to failure lifecycle and throw errors.<br />
-Thrown exception was handled by your application.</p>
+<p>If a metric detects a specification violation, then the metric moves to the Failure lifecycle and throws errors.<br />
+Thrown exception should be handled by your application.</p>
 <h2 id="lifecycle">Lifecycle<a class="headerlink" href="#lifecycle" title="Permanent link">#</a></h2>
-<p>Each metrics has a lifecycle.</p>
+<p>Each metric has a lifecycle.</p>
 <div class="mermaid">stateDiagram
   [*] --&gt; Inactive
   Inactive --&gt; Active
@@ -1103,37 +1103,37 @@ Thrown exception was handled by your application.</p>
   Failure --&gt; [*]</div>
 <h3 id="inactive">Inactive<a class="headerlink" href="#inactive" title="Permanent link">#</a></h3>
 <p>In this state, metrics class does not start calculating metrics.
-If the activateTrigger function in each metrics class returns true, then the metrics moves to Active state.</p>
+If the activateTrigger function in each metrics class returns true, then the metrics move to the Active state.</p>
 <h3 id="active">Active<a class="headerlink" href="#active" title="Permanent link">#</a></h3>
-<p>In this state, metrics class calculate metrics and check the behavior of entity is good or not.
-update function in metrics class was called in every simulation frame in this state.</p>
+<p>In this state, metrics class calculates metrics and checks the behavior of an entity is good or not.
+update function in the metrics class is called in every simulation frame in this state.</p>
 <h3 id="success">Success<a class="headerlink" href="#success" title="Permanent link">#</a></h3>
-<p>In this state, metrics class does not calculate metrics any more.</p>
+<p>In this state, metrics class does not calculate metrics anymore.</p>
 <h3 id="failure">Failure<a class="headerlink" href="#failure" title="Permanent link">#</a></h3>
-<p>In this state, metrics class throw specification violation error.</p>
+<p>In this state, metrics class throws a specification violation error.</p>
 <h2 id="what-types-of-metrics-can-we-use">What types of metrics can we use?<a class="headerlink" href="#what-types-of-metrics-can-we-use" title="Permanent link">#</a></h2>
-<p>If you want to use metrics class with C++ API, all you have to do is call API::addMetric function.</p>
+<p>If you want to use the metrics class with C++ APIs, all you have to do is call the <code>API::addMetric</code> function.</p>
 <div class="highlight"><pre><span></span><code><span class="n">api_</span><span class="p">.</span><span class="n">addMetric</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;name of metric&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;arguments for metric you want to check&quot;</span><span class="w"> </span><span class="p">...);</span><span class="w"></span>
 </code></pre></div>
 <h3 id="traveled-distance">Traveled Distance<a class="headerlink" href="#traveled-distance" title="Permanent link">#</a></h3>
-<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1TraveledDistanceMetric/#public-functions">here.</a><br />
-Traveled distance metric calculates total traveled distance for target entity.  </p>
+<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1TraveledDistanceMetric/#public-functions">here</a>.<br />
+Traveled distance metric calculates the total traveled distance for a target entity.</p>
 <h3 id="momentary-stop">Momentary Stop<a class="headerlink" href="#momentary-stop" title="Permanent link">#</a></h3>
-<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1MomentaryStopMetric/">here.</a><br />
-Momentary stop metric enable us to check the target entity can stop in front of the crosswalk and stop line.  </p>
+<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1MomentaryStopMetric/">here</a>.<br />
+Momentary stop metric enables us to check the target entity can stop in front of the crosswalk and stop line.</p>
 <h3 id="reaction-time">Reaction Time<a class="headerlink" href="#reaction-time" title="Permanent link">#</a></h3>
-<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1ReactionTimeMetric/">here.</a><br />
-Reaction time metric enable us to check the target entity follow the front entity speed.  </p>
+<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1ReactionTimeMetric/">here</a>.<br />
+Reaction time metric enables us to check the target entity follows the front entity speed.</p>
 <h3 id="out-of-range">Out of range<a class="headerlink" href="#out-of-range" title="Permanent link">#</a></h3>
-<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1OutOfRangeMetric/">here.</a><br />
-Out of range metric enables us to check the velocity, acceleration, jerk of target entity is in the valid range or not.  </p>
+<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1OutOfRangeMetric/">here</a>.<br />
+Out of range metric enables us to check the velocity, acceleration, jerk of a target entity are in the valid range or not.</p>
 <h3 id="standstill">Standstill<a class="headerlink" href="#standstill" title="Permanent link">#</a></h3>
-<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1StandstillMetric/">here.</a><br />
-Standstill metric enables us to check entity is stacked or not.<br />
-This metric checks the standstill duration of target entity overs the allowed standstill duration.</p>
+<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1StandstillMetric/">here</a>.<br />
+Standstill metric enables us to check an entity is stacked or not.
+This metric checks the standstill duration of the target entity overs the allowed standstill duration.</p>
 <h3 id="collision">Collision<a class="headerlink" href="#collision" title="Permanent link">#</a></h3>
-<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1CollisionMetric/">here.</a> 
-Collision metric checks the target entity is colliding to other entity or not.</p>
+<p>Class documentation is <a href="https://tier4.github.io/scenario_simulator_v2/package/traffic_simulator/markdown/Classes/classmetrics_1_1CollisionMetric/">here</a>.
+Collision metric checks the target entity is colliding with the other entity or not.</p>
                 
               
               

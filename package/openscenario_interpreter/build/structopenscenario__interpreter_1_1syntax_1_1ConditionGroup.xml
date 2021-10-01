@@ -67,17 +67,6 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="159">
-        <label>openscenario_interpreter::syntax::ConditionGroup</label>
-        <link refid="structopenscenario__interpreter_1_1syntax_1_1ConditionGroup"/>
-        <childnode refid="160" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="160">
-        <label>std::list&lt; Condition &gt;</label>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
       <node id="161">
         <label>openscenario_interpreter::syntax::ConditionGroup</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ConditionGroup"/>
@@ -85,6 +74,17 @@
         </childnode>
       </node>
       <node id="162">
+        <label>std::list&lt; Condition &gt;</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="163">
+        <label>openscenario_interpreter::syntax::ConditionGroup</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1ConditionGroup"/>
+        <childnode refid="164" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="164">
         <label>std::list&lt; Condition &gt;</label>
       </node>
     </collaborationgraph>

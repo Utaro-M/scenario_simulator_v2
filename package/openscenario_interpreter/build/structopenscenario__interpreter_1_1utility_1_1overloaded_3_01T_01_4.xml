@@ -32,24 +32,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="498">
+      <node id="492">
         <label>T</label>
       </node>
-      <node id="497">
+      <node id="491">
         <label>openscenario_interpreter::utility::overloaded&lt; T &gt;</label>
         <link refid="structopenscenario__interpreter_1_1utility_1_1overloaded_3_01T_01_4"/>
-        <childnode refid="498" relation="public-inheritance">
+        <childnode refid="492" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="500">
+      <node id="494">
         <label>T</label>
       </node>
-      <node id="499">
+      <node id="493">
         <label>openscenario_interpreter::utility::overloaded&lt; T &gt;</label>
         <link refid="structopenscenario__interpreter_1_1utility_1_1overloaded_3_01T_01_4"/>
-        <childnode refid="500" relation="public-inheritance">
+        <childnode refid="494" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

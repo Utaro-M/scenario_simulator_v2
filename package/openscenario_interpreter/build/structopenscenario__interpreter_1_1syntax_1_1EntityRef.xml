@@ -63,24 +63,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="237">
+      <node id="243">
         <label>String</label>
       </node>
-      <node id="236">
+      <node id="242">
         <label>openscenario_interpreter::syntax::EntityRef</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef"/>
-        <childnode refid="237" relation="public-inheritance">
+        <childnode refid="243" relation="public-inheritance">
         </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="239">
+      <node id="245">
         <label>String</label>
       </node>
-      <node id="238">
+      <node id="244">
         <label>openscenario_interpreter::syntax::EntityRef</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1EntityRef"/>
-        <childnode refid="239" relation="public-inheritance">
+        <childnode refid="245" relation="public-inheritance">
         </childnode>
       </node>
     </collaborationgraph>

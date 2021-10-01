@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="52" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="52" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="53" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structopenscenario__interpreter_1_1syntax_1_1ScenarioObject_1aff4bc6d6c0b12075cd2ca8d88f6975b4" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="54" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="54" bodyend="-1"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="55" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="55" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="57" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="57" bodyend="62"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="58" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="58" bodyend="63"/>
       </memberdef>
       <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1ScenarioObject_1a86cc0910624adb69b3f441a081664bc3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="64" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="64" bodyend="84"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="65" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="65" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="structopenscenario__interpreter_1_1syntax_1_1ScenarioObject_1afde3f6bcc23627785b099b6707d1f756" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>auto</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="86" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="86" bodyend="111"/>
+        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="101" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="101" bodyend="126"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -96,79 +96,79 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="689">
+      <node id="685">
         <label>std::shared_ptr&lt; Expression  &gt;</label>
       </node>
-      <node id="685">
+      <node id="681">
         <label>openscenario_interpreter::syntax::ScenarioObject</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ScenarioObject"/>
-        <childnode refid="686" relation="public-inheritance">
+        <childnode refid="682" relation="public-inheritance">
         </childnode>
-        <childnode refid="687" relation="public-inheritance">
+        <childnode refid="683" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="688">
+      <node id="684">
         <label>Group</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="689" relation="public-inheritance">
+        <childnode refid="685" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="687">
+      <node id="683">
         <label>openscenario_interpreter::syntax::EntityObject</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1EntityObject"/>
-        <childnode refid="688" relation="public-inheritance">
+        <childnode refid="684" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="686">
+      <node id="682">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="695">
+      <node id="691">
         <label>openscenario_interpreter::syntax::ObjectController</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ObjectController"/>
-        <childnode refid="696" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="694">
-        <label>std::shared_ptr&lt; Expression  &gt;</label>
-      </node>
-      <node id="690">
-        <label>openscenario_interpreter::syntax::ScenarioObject</label>
-        <link refid="structopenscenario__interpreter_1_1syntax_1_1ScenarioObject"/>
-        <childnode refid="691" relation="public-inheritance">
-        </childnode>
         <childnode refid="692" relation="public-inheritance">
         </childnode>
-        <childnode refid="695" relation="usage">
+      </node>
+      <node id="690">
+        <label>std::shared_ptr&lt; Expression  &gt;</label>
+      </node>
+      <node id="686">
+        <label>openscenario_interpreter::syntax::ScenarioObject</label>
+        <link refid="structopenscenario__interpreter_1_1syntax_1_1ScenarioObject"/>
+        <childnode refid="687" relation="public-inheritance">
+        </childnode>
+        <childnode refid="688" relation="public-inheritance">
+        </childnode>
+        <childnode refid="691" relation="usage">
           <edgelabel>object_controller</edgelabel>
         </childnode>
       </node>
-      <node id="696">
+      <node id="692">
         <label>ComplexType</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="694" relation="public-inheritance">
+        <childnode refid="690" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="693">
+      <node id="689">
         <label>Group</label>
         <link refid="classopenscenario__interpreter_1_1Pointer"/>
-        <childnode refid="694" relation="public-inheritance">
+        <childnode refid="690" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="692">
+      <node id="688">
         <label>openscenario_interpreter::syntax::EntityObject</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1EntityObject"/>
-        <childnode refid="693" relation="public-inheritance">
+        <childnode refid="689" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="691">
+      <node id="687">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
     </collaborationgraph>
-    <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="51" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="40" bodyend="112"/>
+    <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" line="52" column="1" bodyfile="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_object.hpp" bodystart="41" bodyend="127"/>
     <listofallmembers>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1ScenarioObject_1a86cc0910624adb69b3f441a081664bc3" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ScenarioObject</scope><name>activateOutOfRangeMetric</name></member>
       <member refid="structopenscenario__interpreter_1_1syntax_1_1ScenarioObject_1afde3f6bcc23627785b099b6707d1f756" prot="public" virt="non-virtual"><scope>openscenario_interpreter::syntax::ScenarioObject</scope><name>activateSensors</name></member>

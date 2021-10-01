@@ -3,566 +3,875 @@
   <compounddef id="relative__distance__condition_8cpp" kind="file" language="C++">
     <compoundname>relative_distance_condition.cpp</compoundname>
     <includes refid="relative__distance__condition_8hpp" local="no">openscenario_interpreter/syntax/relative_distance_condition.hpp</includes>
+    <includes refid="scenario__object_8hpp" local="no">openscenario_interpreter/syntax/scenario_object.hpp</includes>
     <incdepgraph>
-      <node id="21056">
+      <node id="21557">
         <label>list</label>
       </node>
-      <node id="21039">
+      <node id="21542">
         <label>scenario_simulator_exception/exception.hpp</label>
       </node>
-      <node id="21048">
+      <node id="21547">
+        <label>boost/algorithm/string.hpp</label>
+      </node>
+      <node id="21552">
         <label>functional</label>
       </node>
-      <node id="21035">
+      <node id="21538">
         <label>iomanip</label>
       </node>
-      <node id="21031">
+      <node id="21534">
         <label>limits</label>
       </node>
-      <node id="21095">
+      <node id="21601">
         <label>iterator</label>
       </node>
-      <node id="21074">
+      <node id="21574">
         <label>openscenario_interpreter/type_traits/has_stream_output_operator.hpp</label>
         <link refid="has__stream__output__operator_8hpp_source"/>
-        <childnode refid="21044" relation="include">
+        <childnode refid="21554" relation="include">
         </childnode>
-        <childnode refid="21061" relation="include">
+        <childnode refid="21562" relation="include">
         </childnode>
       </node>
-      <node id="21078">
+      <node id="21578">
         <label>boost/lexical_cast.hpp</label>
       </node>
-      <node id="21036">
+      <node id="21634">
+        <label>openscenario_interpreter/syntax/object_controller.hpp</label>
+        <link refid="object__controller_8hpp_source"/>
+        <childnode refid="21635" relation="include">
+        </childnode>
+        <childnode refid="21545" relation="include">
+        </childnode>
+      </node>
+      <node id="21539">
         <label>openscenario_interpreter/utility/demangle.hpp</label>
         <link refid="demangle_8hpp_source"/>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
-        <childnode refid="21038" relation="include">
+        <childnode refid="21541" relation="include">
         </childnode>
       </node>
-      <node id="21098">
+      <node id="21611">
+        <label>openscenario_interpreter/syntax/center.hpp</label>
+        <link refid="center_8hpp_source"/>
+        <childnode refid="21612" relation="include">
+        </childnode>
+        <childnode refid="21554" relation="include">
+        </childnode>
+        <childnode refid="21550" relation="include">
+        </childnode>
+        <childnode refid="21600" relation="include">
+        </childnode>
+      </node>
+      <node id="21549">
         <label>openscenario_interpreter/syntax/entity_ref.hpp</label>
         <link refid="entity__ref_8hpp_source"/>
-        <childnode refid="21051" relation="include">
+        <childnode refid="21550" relation="include">
         </childnode>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21545" relation="include">
         </childnode>
       </node>
-      <node id="21099">
+      <node id="21613">
+        <label>openscenario_interpreter/syntax/dimensions.hpp</label>
+        <link refid="dimensions_8hpp_source"/>
+        <childnode refid="21614" relation="include">
+        </childnode>
+        <childnode refid="21550" relation="include">
+        </childnode>
+        <childnode refid="21600" relation="include">
+        </childnode>
+        <childnode refid="21589" relation="include">
+        </childnode>
+      </node>
+      <node id="21604">
         <label>openscenario_interpreter/syntax/triggering_entities_rule.hpp</label>
         <link refid="triggering__entities__rule_8hpp_source"/>
-        <childnode refid="21100" relation="include">
+        <childnode refid="21605" relation="include">
         </childnode>
-        <childnode refid="21044" relation="include">
+        <childnode refid="21554" relation="include">
         </childnode>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21545" relation="include">
         </childnode>
       </node>
-      <node id="21046">
+      <node id="21595">
         <label>openscenario_interpreter/syntax/relative_distance_type.hpp</label>
         <link refid="relative__distance__type_8hpp_source"/>
-        <childnode refid="21044" relation="include">
+        <childnode refid="21554" relation="include">
         </childnode>
-        <childnode refid="21045" relation="include">
+        <childnode refid="21563" relation="include">
         </childnode>
       </node>
-      <node id="21047">
+      <node id="21596">
         <label>openscenario_interpreter/syntax/rule.hpp</label>
         <link refid="rule_8hpp_source"/>
-        <childnode refid="21048" relation="include">
+        <childnode refid="21552" relation="include">
         </childnode>
-        <childnode refid="21049" relation="include">
+        <childnode refid="21597" relation="include">
         </childnode>
-        <childnode refid="21051" relation="include">
+        <childnode refid="21550" relation="include">
         </childnode>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21545" relation="include">
         </childnode>
       </node>
-      <node id="21064">
+      <node id="21566">
         <label>openscenario_interpreter/type_traits/if_has_member_function_description.hpp</label>
         <link refid="if__has__member__function__description_8hpp_source"/>
-        <childnode refid="21065" relation="include">
+        <childnode refid="21567" relation="include">
         </childnode>
       </node>
-      <node id="21090">
+      <node id="21590">
         <label>pugixml.hpp</label>
       </node>
-      <node id="21055">
+      <node id="21556">
         <label>openscenario_interpreter/object.hpp</label>
         <link refid="object_8hpp_source"/>
-        <childnode refid="21056" relation="include">
+        <childnode refid="21557" relation="include">
         </childnode>
-        <childnode refid="21057" relation="include">
+        <childnode refid="21558" relation="include">
         </childnode>
-        <childnode refid="21045" relation="include">
+        <childnode refid="21563" relation="include">
         </childnode>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21545" relation="include">
         </childnode>
       </node>
-      <node id="21057">
+      <node id="21558">
         <label>openscenario_interpreter/expression.hpp</label>
         <link refid="expression_8hpp_source"/>
-        <childnode refid="21058" relation="include">
+        <childnode refid="21559" relation="include">
         </childnode>
       </node>
-      <node id="21050">
+      <node id="21620">
+        <label>openscenario_interpreter/syntax/file.hpp</label>
+        <link refid="file_8hpp_source"/>
+        <childnode refid="21548" relation="include">
+        </childnode>
+        <childnode refid="21550" relation="include">
+        </childnode>
+        <childnode refid="21582" relation="include">
+        </childnode>
+        <childnode refid="21545" relation="include">
+        </childnode>
+      </node>
+      <node id="21633">
+        <label>openscenario_msgs/msg/vehicle_parameters.hpp</label>
+      </node>
+      <node id="21598">
         <label>cmath</label>
       </node>
-      <node id="21040">
+      <node id="21626">
+        <label>openscenario_interpreter/syntax/axles.hpp</label>
+        <link refid="axles_8hpp_source"/>
+        <childnode refid="21627" relation="include">
+        </childnode>
+        <childnode refid="21629" relation="include">
+        </childnode>
+        <childnode refid="21593" relation="include">
+        </childnode>
+      </node>
+      <node id="21543">
         <label>stdexcept</label>
       </node>
-      <node id="21063">
+      <node id="21565">
         <label>openscenario_interpreter/type_traits/has_member_function_current_state.hpp</label>
         <link refid="has__member__function__current__state_8hpp_source"/>
-        <childnode refid="21061" relation="include">
+        <childnode refid="21562" relation="include">
         </childnode>
       </node>
-      <node id="21080">
+      <node id="21580">
         <label>openscenario_interpreter/syntax/integer.hpp</label>
         <link refid="integer_8hpp_source"/>
-        <childnode refid="21078" relation="include">
+        <childnode refid="21578" relation="include">
         </childnode>
-        <childnode refid="21033" relation="include">
+        <childnode refid="21536" relation="include">
         </childnode>
-        <childnode refid="21081" relation="include">
+        <childnode refid="21581" relation="include">
         </childnode>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
       </node>
-      <node id="21081">
+      <node id="21581">
         <label>std_msgs/msg/int64.hpp</label>
       </node>
-      <node id="21037">
+      <node id="21546">
+        <label>openscenario_interpreter/scope.hpp</label>
+        <link refid="scope_8hpp_source"/>
+        <childnode refid="21547" relation="include">
+        </childnode>
+        <childnode refid="21548" relation="include">
+        </childnode>
+        <childnode refid="21534" relation="include">
+        </childnode>
+        <childnode refid="21535" relation="include">
+        </childnode>
+        <childnode refid="21549" relation="include">
+        </childnode>
+        <childnode refid="21542" relation="include">
+        </childnode>
+        <childnode refid="21592" relation="include">
+        </childnode>
+        <childnode refid="21545" relation="include">
+        </childnode>
+        <childnode refid="21593" relation="include">
+        </childnode>
+      </node>
+      <node id="21540">
         <label>string</label>
       </node>
-      <node id="21077">
+      <node id="21577">
         <label>openscenario_interpreter/syntax/double.hpp</label>
         <link refid="double_8hpp_source"/>
-        <childnode refid="21078" relation="include">
+        <childnode refid="21578" relation="include">
         </childnode>
-        <childnode refid="21031" relation="include">
+        <childnode refid="21534" relation="include">
         </childnode>
-        <childnode refid="21033" relation="include">
+        <childnode refid="21536" relation="include">
         </childnode>
-        <childnode refid="21079" relation="include">
+        <childnode refid="21579" relation="include">
         </childnode>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
       </node>
-      <node id="21061">
+      <node id="21562">
         <label>openscenario_interpreter/type_traits/void_t.hpp</label>
         <link refid="void__t_8hpp_source"/>
-        <childnode refid="21045" relation="include">
+        <childnode refid="21563" relation="include">
         </childnode>
       </node>
-      <node id="21058">
+      <node id="21559">
         <label>openscenario_interpreter/pointer.hpp</label>
         <link refid="pointer_8hpp_source"/>
-        <childnode refid="21032" relation="include">
+        <childnode refid="21535" relation="include">
         </childnode>
-        <childnode refid="21033" relation="include">
+        <childnode refid="21536" relation="include">
         </childnode>
-        <childnode refid="21059" relation="include">
+        <childnode refid="21560" relation="include">
         </childnode>
-        <childnode refid="21062" relation="include">
+        <childnode refid="21564" relation="include">
         </childnode>
-        <childnode refid="21064" relation="include">
+        <childnode refid="21566" relation="include">
         </childnode>
-        <childnode refid="21066" relation="include">
+        <childnode refid="21568" relation="include">
         </childnode>
-        <childnode refid="21068" relation="include">
+        <childnode refid="21570" relation="include">
         </childnode>
-        <childnode refid="21070" relation="include">
+        <childnode refid="21576" relation="include">
         </childnode>
-        <childnode refid="21076" relation="include">
+        <childnode refid="21541" relation="include">
         </childnode>
-        <childnode refid="21038" relation="include">
-        </childnode>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21545" relation="include">
         </childnode>
       </node>
-      <node id="21071">
+      <node id="21571">
         <label>openscenario_interpreter/console/escape_sequence.hpp</label>
         <link refid="escape__sequence_8hpp_source"/>
-        <childnode refid="21072" relation="include">
+        <childnode refid="21572" relation="include">
         </childnode>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
       </node>
-      <node id="21091">
+      <node id="21615">
+        <label>openscenario_msgs/msg/bounding_box.hpp</label>
+      </node>
+      <node id="21591">
         <label>regex</label>
       </node>
-      <node id="21068">
-        <label>openscenario_interpreter/type_traits/if_has_member_function_start.hpp</label>
-        <link refid="if__has__member__function__start_8hpp_source"/>
-        <childnode refid="21069" relation="include">
-        </childnode>
-      </node>
-      <node id="21097">
+      <node id="21603">
         <label>openscenario_interpreter/type_traits/must_be_default_constructible.hpp</label>
         <link refid="must__be__default__constructible_8hpp_source"/>
-        <childnode refid="21033" relation="include">
+        <childnode refid="21536" relation="include">
         </childnode>
-        <childnode refid="21045" relation="include">
+        <childnode refid="21563" relation="include">
         </childnode>
       </node>
-      <node id="21082">
+      <node id="21582">
         <label>openscenario_interpreter/syntax/string.hpp</label>
         <link refid="string_8hpp_source"/>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
       </node>
-      <node id="21041">
+      <node id="21544">
         <label>traffic_simulator/api/api.hpp</label>
       </node>
-      <node id="21034">
+      <node id="21537">
         <label>exception</label>
       </node>
-      <node id="21089">
+      <node id="21589">
         <label>ostream</label>
       </node>
-      <node id="21043">
+      <node id="21594">
         <label>openscenario_interpreter/syntax/coordinate_system.hpp</label>
         <link refid="coordinate__system_8hpp_source"/>
-        <childnode refid="21044" relation="include">
+        <childnode refid="21554" relation="include">
         </childnode>
-        <childnode refid="21045" relation="include">
+        <childnode refid="21563" relation="include">
         </childnode>
       </node>
-      <node id="21086">
+      <node id="21586">
         <label>std_msgs/msg/u_int16.hpp</label>
       </node>
-      <node id="21065">
+      <node id="21567">
         <label>openscenario_interpreter/type_traits/has_member_function_description.hpp</label>
         <link refid="has__member__function__description_8hpp_source"/>
-        <childnode refid="21061" relation="include">
+        <childnode refid="21562" relation="include">
         </childnode>
       </node>
-      <node id="21033">
+      <node id="21536">
         <label>openscenario_interpreter/error.hpp</label>
         <link refid="error_8hpp_source"/>
-        <childnode refid="21034" relation="include">
+        <childnode refid="21537" relation="include">
         </childnode>
-        <childnode refid="21035" relation="include">
+        <childnode refid="21538" relation="include">
         </childnode>
-        <childnode refid="21036" relation="include">
+        <childnode refid="21539" relation="include">
         </childnode>
-        <childnode refid="21039" relation="include">
+        <childnode refid="21542" relation="include">
         </childnode>
-        <childnode refid="21040" relation="include">
+        <childnode refid="21543" relation="include">
         </childnode>
       </node>
-      <node id="21066">
+      <node id="21607">
+        <label>openscenario_interpreter/syntax/scenario_object.hpp</label>
+        <link refid="scenario__object_8hpp_source"/>
+        <childnode refid="21578" relation="include">
+        </childnode>
+        <childnode refid="21533" relation="include">
+        </childnode>
+        <childnode refid="21608" relation="include">
+        </childnode>
+        <childnode refid="21634" relation="include">
+        </childnode>
+        <childnode refid="21582" relation="include">
+        </childnode>
+        <childnode refid="21637" relation="include">
+        </childnode>
+        <childnode refid="21638" relation="include">
+        </childnode>
+      </node>
+      <node id="21568">
         <label>openscenario_interpreter/type_traits/if_has_member_function_evaluate.hpp</label>
         <link refid="if__has__member__function__evaluate_8hpp_source"/>
-        <childnode refid="21067" relation="include">
+        <childnode refid="21569" relation="include">
         </childnode>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21545" relation="include">
         </childnode>
       </node>
-      <node id="21053">
+      <node id="21636">
+        <label>openscenario_msgs/msg/driver_model.hpp</label>
+      </node>
+      <node id="21614">
+        <label>geometry_msgs/msg/vector3.hpp</label>
+      </node>
+      <node id="21621">
+        <label>openscenario_interpreter/syntax/property.hpp</label>
+        <link refid="property_8hpp_source"/>
+        <childnode refid="21550" relation="include">
+        </childnode>
+        <childnode refid="21555" relation="include">
+        </childnode>
+        <childnode refid="21582" relation="include">
+        </childnode>
+      </node>
+      <node id="21553">
         <label>openscenario_interpreter/syntax/parameter_type.hpp</label>
         <link refid="parameter__type_8hpp_source"/>
-        <childnode refid="21044" relation="include">
+        <childnode refid="21554" relation="include">
         </childnode>
-        <childnode refid="21054" relation="include">
+        <childnode refid="21555" relation="include">
         </childnode>
-        <childnode refid="21077" relation="include">
+        <childnode refid="21577" relation="include">
         </childnode>
-        <childnode refid="21080" relation="include">
+        <childnode refid="21580" relation="include">
         </childnode>
-        <childnode refid="21082" relation="include">
+        <childnode refid="21582" relation="include">
         </childnode>
-        <childnode refid="21083" relation="include">
+        <childnode refid="21583" relation="include">
         </childnode>
-        <childnode refid="21085" relation="include">
+        <childnode refid="21585" relation="include">
         </childnode>
       </node>
-      <node id="21051">
+      <node id="21628">
+        <label>openscenario_msgs/msg/axle.hpp</label>
+      </node>
+      <node id="21550">
         <label>openscenario_interpreter/reader/attribute.hpp</label>
         <link refid="attribute_8hpp_source"/>
-        <childnode refid="21052" relation="include">
+        <childnode refid="21551" relation="include">
         </childnode>
-        <childnode refid="21048" relation="include">
+        <childnode refid="21552" relation="include">
         </childnode>
-        <childnode refid="21053" relation="include">
+        <childnode refid="21553" relation="include">
         </childnode>
-        <childnode refid="21087" relation="include">
+        <childnode refid="21587" relation="include">
         </childnode>
-        <childnode refid="21088" relation="include">
+        <childnode refid="21588" relation="include">
         </childnode>
-        <childnode refid="21091" relation="include">
+        <childnode refid="21591" relation="include">
         </childnode>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
-        <childnode refid="21092" relation="include">
+        <childnode refid="21592" relation="include">
         </childnode>
       </node>
-      <node id="21030">
+      <node id="21533">
         <label>openscenario_interpreter/procedure.hpp</label>
         <link refid="procedure_8hpp_source"/>
-        <childnode refid="21031" relation="include">
+        <childnode refid="21534" relation="include">
         </childnode>
-        <childnode refid="21032" relation="include">
+        <childnode refid="21535" relation="include">
         </childnode>
-        <childnode refid="21033" relation="include">
+        <childnode refid="21536" relation="include">
         </childnode>
-        <childnode refid="21041" relation="include">
+        <childnode refid="21544" relation="include">
         </childnode>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21545" relation="include">
         </childnode>
       </node>
-      <node id="21052">
+      <node id="21617">
+        <label>openscenario_interpreter/syntax/parameter_declarations.hpp</label>
+        <link refid="parameter__declarations_8hpp_source"/>
+        <childnode refid="21600" relation="include">
+        </childnode>
+        <childnode refid="21546" relation="include">
+        </childnode>
+        <childnode refid="21618" relation="include">
+        </childnode>
+        <childnode refid="21593" relation="include">
+        </childnode>
+      </node>
+      <node id="21625">
+        <label>openscenario_interpreter/syntax/vehicle.hpp</label>
+        <link refid="vehicle_8hpp_source"/>
+        <childnode refid="21626" relation="include">
+        </childnode>
+        <childnode refid="21610" relation="include">
+        </childnode>
+        <childnode refid="21617" relation="include">
+        </childnode>
+        <childnode refid="21630" relation="include">
+        </childnode>
+        <childnode refid="21619" relation="include">
+        </childnode>
+        <childnode refid="21632" relation="include">
+        </childnode>
+        <childnode refid="21633" relation="include">
+        </childnode>
+        <childnode refid="21545" relation="include">
+        </childnode>
+      </node>
+      <node id="21629">
+        <label>openscenario_msgs/msg/axles.hpp</label>
+      </node>
+      <node id="21612">
+        <label>geometry_msgs/msg/point.hpp</label>
+      </node>
+      <node id="21551">
         <label>ament_index_cpp/get_package_share_directory.hpp</label>
       </node>
-      <node id="21038">
+      <node id="21541">
         <label>typeinfo</label>
       </node>
-      <node id="21069">
-        <label>openscenario_interpreter/type_traits/has_member_function_start.hpp</label>
-        <link refid="has__member__function__start_8hpp_source"/>
-        <childnode refid="21061" relation="include">
-        </childnode>
-      </node>
-      <node id="21079">
+      <node id="21579">
         <label>std_msgs/msg/float64.hpp</label>
       </node>
-      <node id="21029">
+      <node id="21608">
+        <label>openscenario_interpreter/syntax/entity_object.hpp</label>
+        <link refid="entity__object_8hpp_source"/>
+        <childnode refid="21609" relation="include">
+        </childnode>
+        <childnode refid="21622" relation="include">
+        </childnode>
+        <childnode refid="21625" relation="include">
+        </childnode>
+        <childnode refid="21592" relation="include">
+        </childnode>
+        <childnode refid="21545" relation="include">
+        </childnode>
+      </node>
+      <node id="21532">
         <label>openscenario_interpreter/syntax/relative_distance_condition.hpp</label>
         <link refid="relative__distance__condition_8hpp_source"/>
-        <childnode refid="21030" relation="include">
+        <childnode refid="21533" relation="include">
         </childnode>
-        <childnode refid="21043" relation="include">
+        <childnode refid="21546" relation="include">
         </childnode>
-        <childnode refid="21046" relation="include">
+        <childnode refid="21594" relation="include">
         </childnode>
-        <childnode refid="21047" relation="include">
+        <childnode refid="21595" relation="include">
         </childnode>
-        <childnode refid="21093" relation="include">
+        <childnode refid="21596" relation="include">
         </childnode>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21599" relation="include">
+        </childnode>
+        <childnode refid="21545" relation="include">
         </childnode>
       </node>
-      <node id="21062">
+      <node id="21564">
         <label>openscenario_interpreter/type_traits/if_has_member_function_current_state.hpp</label>
         <link refid="if__has__member__function__current__state_8hpp_source"/>
-        <childnode refid="21033" relation="include">
+        <childnode refid="21536" relation="include">
         </childnode>
-        <childnode refid="21063" relation="include">
+        <childnode refid="21565" relation="include">
         </childnode>
       </node>
-      <node id="21060">
+      <node id="21561">
         <label>openscenario_interpreter/type_traits/has_member_function_accomplished.hpp</label>
         <link refid="has__member__function__accomplished_8hpp_source"/>
-        <childnode refid="21061" relation="include">
+        <childnode refid="21562" relation="include">
         </childnode>
       </node>
-      <node id="21028">
+      <node id="21531">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/relative_distance_condition.cpp</label>
         <link refid="relative__distance__condition_8cpp"/>
-        <childnode refid="21029" relation="include">
+        <childnode refid="21532" relation="include">
+        </childnode>
+        <childnode refid="21607" relation="include">
         </childnode>
       </node>
-      <node id="21083">
+      <node id="21627">
+        <label>openscenario_interpreter/syntax/axle.hpp</label>
+        <link refid="axle_8hpp_source"/>
+        <childnode refid="21550" relation="include">
+        </childnode>
+        <childnode refid="21600" relation="include">
+        </childnode>
+        <childnode refid="21628" relation="include">
+        </childnode>
+      </node>
+      <node id="21583">
         <label>openscenario_interpreter/syntax/unsigned_integer.hpp</label>
         <link refid="unsigned__integer_8hpp_source"/>
-        <childnode refid="21078" relation="include">
+        <childnode refid="21578" relation="include">
         </childnode>
-        <childnode refid="21033" relation="include">
+        <childnode refid="21536" relation="include">
         </childnode>
-        <childnode refid="21084" relation="include">
+        <childnode refid="21584" relation="include">
         </childnode>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
       </node>
-      <node id="21073">
+      <node id="21573">
         <label>unistd.h</label>
       </node>
-      <node id="21102">
+      <node id="21593">
         <label>vector</label>
       </node>
-      <node id="21054">
+      <node id="21555">
         <label>openscenario_interpreter/syntax/boolean.hpp</label>
         <link refid="boolean_8hpp_source"/>
-        <childnode refid="21035" relation="include">
+        <childnode refid="21538" relation="include">
         </childnode>
-        <childnode refid="21044" relation="include">
+        <childnode refid="21554" relation="include">
         </childnode>
-        <childnode refid="21033" relation="include">
+        <childnode refid="21536" relation="include">
         </childnode>
-        <childnode refid="21055" relation="include">
+        <childnode refid="21556" relation="include">
         </childnode>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
       </node>
-      <node id="21049">
+      <node id="21548">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="21597">
         <label>openscenario_interpreter/functional/equal_to.hpp</label>
         <link refid="equal__to_8hpp_source"/>
-        <childnode refid="21050" relation="include">
+        <childnode refid="21598" relation="include">
         </childnode>
-        <childnode refid="21048" relation="include">
+        <childnode refid="21552" relation="include">
         </childnode>
-        <childnode refid="21031" relation="include">
+        <childnode refid="21534" relation="include">
         </childnode>
-        <childnode refid="21045" relation="include">
+        <childnode refid="21563" relation="include">
         </childnode>
       </node>
-      <node id="21088">
+      <node id="21588">
         <label>openscenario_interpreter/utility/pugi_extension.hpp</label>
         <link refid="pugi__extension_8hpp_source"/>
-        <childnode refid="21089" relation="include">
+        <childnode refid="21589" relation="include">
         </childnode>
-        <childnode refid="21090" relation="include">
+        <childnode refid="21590" relation="include">
         </childnode>
       </node>
-      <node id="21042">
+      <node id="21545">
         <label>utility</label>
       </node>
-      <node id="21087">
+      <node id="21587">
         <label>openscenario_interpreter/utility/highlighter.hpp</label>
         <link refid="highlighter_8hpp_source"/>
-        <childnode refid="21044" relation="include">
+        <childnode refid="21554" relation="include">
         </childnode>
-        <childnode refid="21074" relation="include">
+        <childnode refid="21574" relation="include">
         </childnode>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21545" relation="include">
         </childnode>
       </node>
-      <node id="21096">
+      <node id="21609">
+        <label>openscenario_interpreter/syntax/misc_object.hpp</label>
+        <link refid="misc__object_8hpp_source"/>
+        <childnode refid="21546" relation="include">
+        </childnode>
+        <childnode refid="21610" relation="include">
+        </childnode>
+        <childnode refid="21577" relation="include">
+        </childnode>
+        <childnode refid="21616" relation="include">
+        </childnode>
+        <childnode refid="21617" relation="include">
+        </childnode>
+        <childnode refid="21619" relation="include">
+        </childnode>
+        <childnode refid="21582" relation="include">
+        </childnode>
+      </node>
+      <node id="21602">
         <label>openscenario_interpreter/iterator/size.hpp</label>
         <link refid="size_8hpp_source"/>
-        <childnode refid="21095" relation="include">
+        <childnode refid="21601" relation="include">
         </childnode>
       </node>
-      <node id="21067">
+      <node id="21569">
         <label>openscenario_interpreter/type_traits/has_member_function_evaluate.hpp</label>
         <link refid="has__member__function__evaluate_8hpp_source"/>
-        <childnode refid="21061" relation="include">
+        <childnode refid="21562" relation="include">
         </childnode>
       </node>
-      <node id="21044">
+      <node id="21623">
+        <label>openscenario_interpreter/syntax/pedestrian_category.hpp</label>
+        <link refid="pedestrian__category_8hpp_source"/>
+        <childnode refid="21554" relation="include">
+        </childnode>
+      </node>
+      <node id="21554">
         <label>iostream</label>
       </node>
-      <node id="21084">
+      <node id="21584">
         <label>std_msgs/msg/u_int64.hpp</label>
       </node>
-      <node id="21092">
+      <node id="21592">
         <label>unordered_map</label>
       </node>
-      <node id="21101">
+      <node id="21630">
+        <label>openscenario_interpreter/syntax/performance.hpp</label>
+        <link refid="performance_8hpp_source"/>
+        <childnode refid="21550" relation="include">
+        </childnode>
+        <childnode refid="21600" relation="include">
+        </childnode>
+        <childnode refid="21631" relation="include">
+        </childnode>
+      </node>
+      <node id="21606">
         <label>openscenario_interpreter/utility/print.hpp</label>
         <link refid="print_8hpp_source"/>
-        <childnode refid="21035" relation="include">
+        <childnode refid="21538" relation="include">
         </childnode>
-        <childnode refid="21044" relation="include">
+        <childnode refid="21554" relation="include">
         </childnode>
       </node>
-      <node id="21094">
+      <node id="21619">
+        <label>openscenario_interpreter/syntax/properties.hpp</label>
+        <link refid="properties_8hpp_source"/>
+        <childnode refid="21620" relation="include">
+        </childnode>
+        <childnode refid="21621" relation="include">
+        </childnode>
+        <childnode refid="21592" relation="include">
+        </childnode>
+        <childnode refid="21545" relation="include">
+        </childnode>
+        <childnode refid="21593" relation="include">
+        </childnode>
+      </node>
+      <node id="21631">
+        <label>openscenario_msgs/msg/performance.hpp</label>
+      </node>
+      <node id="21616">
+        <label>openscenario_interpreter/syntax/misc_object_category.hpp</label>
+        <link refid="misc__object__category_8hpp_source"/>
+        <childnode refid="21554" relation="include">
+        </childnode>
+      </node>
+      <node id="21622">
+        <label>openscenario_interpreter/syntax/pedestrian.hpp</label>
+        <link refid="pedestrian_8hpp_source"/>
+        <childnode refid="21610" relation="include">
+        </childnode>
+        <childnode refid="21617" relation="include">
+        </childnode>
+        <childnode refid="21623" relation="include">
+        </childnode>
+        <childnode refid="21619" relation="include">
+        </childnode>
+        <childnode refid="21624" relation="include">
+        </childnode>
+      </node>
+      <node id="21600">
         <label>openscenario_interpreter/reader/element.hpp</label>
         <link refid="element_8hpp_source"/>
-        <childnode refid="21048" relation="include">
+        <childnode refid="21552" relation="include">
         </childnode>
-        <childnode refid="21095" relation="include">
+        <childnode refid="21601" relation="include">
         </childnode>
-        <childnode refid="21031" relation="include">
+        <childnode refid="21534" relation="include">
         </childnode>
-        <childnode refid="21096" relation="include">
+        <childnode refid="21602" relation="include">
         </childnode>
-        <childnode refid="21055" relation="include">
+        <childnode refid="21556" relation="include">
         </childnode>
-        <childnode refid="21097" relation="include">
+        <childnode refid="21603" relation="include">
         </childnode>
-        <childnode refid="21088" relation="include">
+        <childnode refid="21588" relation="include">
         </childnode>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
-        <childnode refid="21092" relation="include">
+        <childnode refid="21592" relation="include">
         </childnode>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21545" relation="include">
         </childnode>
       </node>
-      <node id="21059">
+      <node id="21638">
+        <label>traffic_simulator/metrics/out_of_range_metric.hpp</label>
+      </node>
+      <node id="21618">
+        <label>openscenario_interpreter/syntax/parameter_declaration.hpp</label>
+        <link refid="parameter__declaration_8hpp_source"/>
+        <childnode refid="21550" relation="include">
+        </childnode>
+        <childnode refid="21546" relation="include">
+        </childnode>
+        <childnode refid="21540" relation="include">
+        </childnode>
+        <childnode refid="21593" relation="include">
+        </childnode>
+      </node>
+      <node id="21610">
+        <label>openscenario_interpreter/syntax/bounding_box.hpp</label>
+        <link refid="bounding__box_8hpp_source"/>
+        <childnode refid="21611" relation="include">
+        </childnode>
+        <childnode refid="21613" relation="include">
+        </childnode>
+        <childnode refid="21615" relation="include">
+        </childnode>
+      </node>
+      <node id="21560">
         <label>openscenario_interpreter/type_traits/if_has_member_function_accomplished.hpp</label>
         <link refid="if__has__member__function__accomplished_8hpp_source"/>
-        <childnode refid="21060" relation="include">
+        <childnode refid="21561" relation="include">
         </childnode>
       </node>
-      <node id="21070">
+      <node id="21570">
         <label>openscenario_interpreter/type_traits/if_has_stream_output_operator.hpp</label>
         <link refid="if__has__stream__output__operator_8hpp_source"/>
-        <childnode refid="21071" relation="include">
+        <childnode refid="21571" relation="include">
         </childnode>
-        <childnode refid="21074" relation="include">
+        <childnode refid="21574" relation="include">
         </childnode>
-        <childnode refid="21036" relation="include">
+        <childnode refid="21539" relation="include">
         </childnode>
-        <childnode refid="21075" relation="include">
+        <childnode refid="21575" relation="include">
         </childnode>
       </node>
-      <node id="21045">
+      <node id="21563">
         <label>type_traits</label>
       </node>
-      <node id="21072">
+      <node id="21635">
+        <label>openscenario_interpreter/syntax/controller.hpp</label>
+        <link refid="controller_8hpp_source"/>
+        <childnode refid="21617" relation="include">
+        </childnode>
+        <childnode refid="21619" relation="include">
+        </childnode>
+        <childnode refid="21582" relation="include">
+        </childnode>
+        <childnode refid="21636" relation="include">
+        </childnode>
+        <childnode refid="21545" relation="include">
+        </childnode>
+      </node>
+      <node id="21572">
         <label>openscenario_interpreter/console/is_console.hpp</label>
         <link refid="is__console_8hpp_source"/>
-        <childnode refid="21073" relation="include">
+        <childnode refid="21573" relation="include">
         </childnode>
-        <childnode refid="21044" relation="include">
+        <childnode refid="21554" relation="include">
         </childnode>
       </node>
-      <node id="21085">
+      <node id="21585">
         <label>openscenario_interpreter/syntax/unsigned_short.hpp</label>
         <link refid="unsigned__short_8hpp_source"/>
-        <childnode refid="21078" relation="include">
+        <childnode refid="21578" relation="include">
         </childnode>
-        <childnode refid="21044" relation="include">
+        <childnode refid="21554" relation="include">
         </childnode>
-        <childnode refid="21033" relation="include">
+        <childnode refid="21536" relation="include">
         </childnode>
-        <childnode refid="21086" relation="include">
+        <childnode refid="21586" relation="include">
         </childnode>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
       </node>
-      <node id="21100">
+      <node id="21605">
         <label>algorithm</label>
       </node>
-      <node id="21075">
+      <node id="21624">
+        <label>openscenario_msgs/msg/pedestrian_parameters.hpp</label>
+      </node>
+      <node id="21632">
+        <label>openscenario_interpreter/syntax/vehicle_category.hpp</label>
+        <link refid="vehicle__category_8hpp_source"/>
+        <childnode refid="21556" relation="include">
+        </childnode>
+        <childnode refid="21540" relation="include">
+        </childnode>
+        <childnode refid="21545" relation="include">
+        </childnode>
+      </node>
+      <node id="21575">
         <label>openscenario_interpreter/utility/indent.hpp</label>
         <link refid="indent_8hpp_source"/>
-        <childnode refid="21044" relation="include">
+        <childnode refid="21554" relation="include">
         </childnode>
-        <childnode refid="21037" relation="include">
+        <childnode refid="21540" relation="include">
         </childnode>
       </node>
-      <node id="21032">
+      <node id="21637">
+        <label>openscenario_interpreter/utility/overload.hpp</label>
+        <link refid="overload_8hpp_source"/>
+        <childnode refid="21563" relation="include">
+        </childnode>
+        <childnode refid="21545" relation="include">
+        </childnode>
+      </node>
+      <node id="21535">
         <label>memory</label>
       </node>
-      <node id="21093">
+      <node id="21599">
         <label>openscenario_interpreter/syntax/triggering_entities.hpp</label>
         <link refid="triggering__entities_8hpp_source"/>
-        <childnode refid="21094" relation="include">
+        <childnode refid="21600" relation="include">
         </childnode>
-        <childnode refid="21098" relation="include">
+        <childnode refid="21549" relation="include">
         </childnode>
-        <childnode refid="21099" relation="include">
+        <childnode refid="21604" relation="include">
         </childnode>
-        <childnode refid="21101" relation="include">
+        <childnode refid="21606" relation="include">
         </childnode>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21545" relation="include">
         </childnode>
-        <childnode refid="21102" relation="include">
+        <childnode refid="21593" relation="include">
         </childnode>
       </node>
-      <node id="21076">
+      <node id="21576">
         <label>openscenario_interpreter/utility/pair.hpp</label>
         <link refid="pair_8hpp_source"/>
-        <childnode refid="21042" relation="include">
+        <childnode refid="21545" relation="include">
         </childnode>
       </node>
     </incdepgraph>
@@ -588,107 +897,138 @@
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/syntax/relative_distance_condition.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceopenscenario__interpreter" kindref="compound">openscenario_interpreter</ref></highlight></codeline>
-<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">syntax</highlight></codeline>
-<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::longitudinal,<sp/>Between::reference_points&gt;(</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::abs(getRelativePose(triggering_entity,<sp/>entity_ref).position.x);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::lateral,<sp/>Between::reference_points&gt;(</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::abs(getRelativePose(triggering_entity,<sp/>entity_ref).position.y);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::euclidianDistance,</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/>Between::closest_bounding_box_points&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getBoundingBoxDistance(triggering_entity,<sp/>entity_ref);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points&gt;(</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::hypot(</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>getRelativePose(triggering_entity,<sp/>entity_ref).position.x,</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>getRelativePose(triggering_entity,<sp/>entity_ref).position.y);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/>CoordinateSystem::lane,<sp/>RelativeDistanceType::longitudinal,<sp/>Between::reference_points&gt;(</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getLongitudinalDistance(triggering_entity,<sp/>entity_ref);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(coordinate_system)<sp/>{</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoordinateSystem::entity:</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(relative_distance_type)<sp/>{</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::longitudinal:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::lateral:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::euclidianDistance:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoordinateSystem::lane:</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(relative_distance_type)<sp/>{</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::longitudinal:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::lateral:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::euclidianDistance:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoordinateSystem::road:</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(relative_distance_type)<sp/>{</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::longitudinal:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::lateral:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::euclidianDistance:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoordinateSystem::trajectory:</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(relative_distance_type)<sp/>{</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::longitudinal:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::lateral:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::euclidianDistance:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>Error(__FILE__,<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">,<sp/>__LINE__);</highlight></codeline>
-<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="115"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>syntax</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>openscenario_interpreter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;openscenario_interpreter/syntax/scenario_object.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceopenscenario__interpreter" kindref="compound">openscenario_interpreter</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">syntax</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::longitudinal,<sp/>Between::reference_points&gt;(</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>global().entities.at(triggering_entity).as&lt;ScenarioObject&gt;().is_added<sp/>and</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>global().entities.at(entity_ref).as&lt;ScenarioObject&gt;().is_added)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::abs(getRelativePose(triggering_entity,<sp/>entity_ref).position.x);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Double::nan();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::lateral,<sp/>Between::reference_points&gt;(</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>global().entities.at(triggering_entity).as&lt;ScenarioObject&gt;().is_added<sp/>and</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>global().entities.at(entity_ref).as&lt;ScenarioObject&gt;().is_added)<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::abs(getRelativePose(triggering_entity,<sp/>entity_ref).position.y);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Double::nan();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::euclidianDistance,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>Between::closest_bounding_box_points&gt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>global().entities.at(triggering_entity).as&lt;ScenarioObject&gt;().is_added<sp/>and</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>global().entities.at(entity_ref).as&lt;ScenarioObject&gt;().is_added)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getBoundingBoxDistance(triggering_entity,<sp/>entity_ref);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Double::nan();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>CoordinateSystem::entity,<sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points&gt;(</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>global().entities.at(triggering_entity).as&lt;ScenarioObject&gt;().is_added<sp/>and</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>global().entities.at(entity_ref).as&lt;ScenarioObject&gt;().is_added)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::hypot(</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getRelativePose(triggering_entity,<sp/>entity_ref).position.x,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getRelativePose(triggering_entity,<sp/>entity_ref).position.y);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Double::nan();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;&gt;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance&lt;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>CoordinateSystem::lane,<sp/>RelativeDistanceType::longitudinal,<sp/>Between::reference_points&gt;(</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>global().entities.at(triggering_entity).as&lt;ScenarioObject&gt;().is_added<sp/>and</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>global().entities.at(entity_ref).as&lt;ScenarioObject&gt;().is_added)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>getLongitudinalDistance(triggering_entity,<sp/>entity_ref);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Double::nan();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>RelativeDistanceCondition::distance(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>EntityRef<sp/>&amp;<sp/>triggering_entity)<sp/>-&gt;<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(coordinate_system)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoordinateSystem::entity:</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(relative_distance_type)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::longitudinal:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::lateral:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::euclidianDistance:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::entity,<sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoordinateSystem::lane:</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(relative_distance_type)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::longitudinal:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::lateral:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::euclidianDistance:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::lane,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoordinateSystem::road:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(relative_distance_type)<sp/>{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::longitudinal:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::lateral:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::euclidianDistance:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::road,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>CoordinateSystem::trajectory:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(relative_distance_type)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::longitudinal:<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::longitudinal,<sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::lateral:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::lateral,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>RelativeDistanceType::euclidianDistance:<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>freespace<sp/>?<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::closest_bounding_box_points<sp/>&gt;(triggering_entity)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>distance&lt;<sp/>CoordinateSystem::trajectory,<sp/>RelativeDistanceType::euclidianDistance,<sp/>Between::reference_points<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&gt;(triggering_entity);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>Error(__FILE__,<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">,<sp/>__LINE__);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>syntax</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>openscenario_interpreter</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/relative_distance_condition.cpp"/>
   </compounddef>

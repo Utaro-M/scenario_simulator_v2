@@ -17,24 +17,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="293">
+      <node id="299">
         <label>openscenario_interpreter::type_traits::HasMemberFunctionCurrentState&lt; T, typename &gt;</label>
         <link refid="structopenscenario__interpreter_1_1type__traits_1_1HasMemberFunctionCurrentState"/>
-        <childnode refid="294" relation="public-inheritance">
+        <childnode refid="300" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="294">
+      <node id="300">
         <label>std::false_type</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="295">
+      <node id="301">
         <label>openscenario_interpreter::type_traits::HasMemberFunctionCurrentState&lt; T, typename &gt;</label>
         <link refid="structopenscenario__interpreter_1_1type__traits_1_1HasMemberFunctionCurrentState"/>
-        <childnode refid="296" relation="public-inheritance">
+        <childnode refid="302" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="296">
+      <node id="302">
         <label>std::false_type</label>
       </node>
     </collaborationgraph>

@@ -762,8 +762,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../etc/DevelopmentRules/" class="md-nav__link">
-        Development Rules
+      <a href="../../../../../etc/HowToContribute/" class="md-nav__link">
+        How to Contribute
       </a>
     </li>
   
@@ -934,7 +934,11 @@
 <span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="w"></span>
 <span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">simulation_api_schema</span><span class="o">::</span><span class="n">AttachDetectionSensorRequest</span><span class="w"> </span><span class="o">&amp;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="n">simulation_api_schema</span><span class="o">::</span><span class="n">AttachDetectionSensorResponse</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;</span><span class="w"></span>
-<span class="w">    </span><span class="n">attach_detection_sensor_func</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">attach_detection_sensor_func</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">simulation_api_schema</span><span class="o">::</span><span class="n">UpdateTrafficLightsRequest</span><span class="w"> </span><span class="o">&amp;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">simulation_api_schema</span><span class="o">::</span><span class="n">UpdateTrafficLightsResponse</span><span class="w"> </span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;</span><span class="w"></span>
+<span class="w">    </span><span class="n">update_traffic_lights_func</span><span class="p">)</span><span class="w"></span>
 <span class="o">:</span><span class="w"> </span><span class="n">context_</span><span class="p">(</span><span class="n">zmqpp</span><span class="o">::</span><span class="n">context</span><span class="p">()),</span><span class="w"></span>
 <span class="w">  </span><span class="n">type_</span><span class="p">(</span><span class="n">zmqpp</span><span class="o">::</span><span class="n">socket_type</span><span class="o">::</span><span class="n">reply</span><span class="p">),</span><span class="w"></span>
 <span class="w">  </span><span class="n">initialize_sock_</span><span class="p">(</span><span class="n">context_</span><span class="p">,</span><span class="w"> </span><span class="n">type_</span><span class="p">),</span><span class="w"></span>
@@ -956,7 +960,9 @@
 <span class="w">  </span><span class="n">attach_lidar_sensor_sock_</span><span class="p">(</span><span class="n">context_</span><span class="p">,</span><span class="w"> </span><span class="n">type_</span><span class="p">),</span><span class="w"></span>
 <span class="w">  </span><span class="n">attach_lidar_sensor_func_</span><span class="p">(</span><span class="n">attach_lidar_sensor_func</span><span class="p">),</span><span class="w"></span>
 <span class="w">  </span><span class="n">attach_detection_sensor_sock_</span><span class="p">(</span><span class="n">context_</span><span class="p">,</span><span class="w"> </span><span class="n">type_</span><span class="p">),</span><span class="w"></span>
-<span class="w">  </span><span class="n">attach_detection_sensor_func_</span><span class="p">(</span><span class="n">attach_detection_sensor_func</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="n">attach_detection_sensor_func_</span><span class="p">(</span><span class="n">attach_detection_sensor_func</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="n">update_traffic_lights_sock_</span><span class="p">(</span><span class="n">context_</span><span class="p">,</span><span class="w"> </span><span class="n">type_</span><span class="p">),</span><span class="w"></span>
+<span class="w">  </span><span class="n">update_traffic_lights_func_</span><span class="p">(</span><span class="n">update_traffic_lights_func</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="n">initialize_sock_</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="w"></span>
 <span class="w">    </span><span class="n">simulation_interface</span><span class="o">::</span><span class="n">getEndPoint</span><span class="p">(</span><span class="n">protocol</span><span class="p">,</span><span class="w"> </span><span class="n">hostname</span><span class="p">,</span><span class="w"> </span><span class="n">simulation_interface</span><span class="o">::</span><span class="n">ports</span><span class="o">::</span><span class="n">initialize</span><span class="p">));</span><span class="w"></span>
@@ -978,6 +984,8 @@
 <span class="w">    </span><span class="n">protocol</span><span class="p">,</span><span class="w"> </span><span class="n">hostname</span><span class="p">,</span><span class="w"> </span><span class="n">simulation_interface</span><span class="o">::</span><span class="n">ports</span><span class="o">::</span><span class="n">attach_lidar_sensor</span><span class="p">));</span><span class="w"></span>
 <span class="w">  </span><span class="n">attach_detection_sensor_sock_</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="n">simulation_interface</span><span class="o">::</span><span class="n">getEndPoint</span><span class="p">(</span><span class="w"></span>
 <span class="w">    </span><span class="n">protocol</span><span class="p">,</span><span class="w"> </span><span class="n">hostname</span><span class="p">,</span><span class="w"> </span><span class="n">simulation_interface</span><span class="o">::</span><span class="n">ports</span><span class="o">::</span><span class="n">attach_detection_sensor</span><span class="p">));</span><span class="w"></span>
+<span class="w">  </span><span class="n">update_traffic_lights_sock_</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="n">simulation_interface</span><span class="o">::</span><span class="n">getEndPoint</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">protocol</span><span class="p">,</span><span class="w"> </span><span class="n">hostname</span><span class="p">,</span><span class="w"> </span><span class="n">simulation_interface</span><span class="o">::</span><span class="n">ports</span><span class="o">::</span><span class="n">update_traffic_lights</span><span class="p">));</span><span class="w"></span>
 <span class="w">  </span><span class="n">poller_</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">initialize_sock_</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="n">poller_</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">update_frame_sock_</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="n">poller_</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">update_sensor_frame_sock_</span><span class="p">);</span><span class="w"></span>
@@ -988,6 +996,7 @@
 <span class="w">  </span><span class="n">poller_</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">update_entity_status_sock_</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="n">poller_</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">attach_lidar_sensor_sock_</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="n">poller_</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">attach_detection_sensor_sock_</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="n">poller_</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">update_traffic_lights_sock_</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="n">thread_</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="kr">thread</span><span class="p">(</span><span class="o">&amp;</span><span class="n">MultiServer</span><span class="o">::</span><span class="n">start_poll</span><span class="p">,</span><span class="w"> </span><span class="k">this</span><span class="p">);</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
@@ -1084,6 +1093,15 @@
 <span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">toZMQ</span><span class="p">(</span><span class="n">response</span><span class="p">);</span><span class="w"></span>
 <span class="w">    </span><span class="n">attach_detection_sensor_sock_</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">poller_</span><span class="p">.</span><span class="n">has_input</span><span class="p">(</span><span class="n">update_traffic_lights_sock_</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">zmqpp</span><span class="o">::</span><span class="n">message</span><span class="w"> </span><span class="n">request</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">update_traffic_lights_sock_</span><span class="p">.</span><span class="n">receive</span><span class="p">(</span><span class="n">request</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">simulation_api_schema</span><span class="o">::</span><span class="n">UpdateTrafficLightsResponse</span><span class="w"> </span><span class="n">response</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="n">update_traffic_lights_func_</span><span class="p">(</span><span class="w"></span>
+<span class="w">      </span><span class="n">toProto</span><span class="o">&lt;</span><span class="n">simulation_api_schema</span><span class="o">::</span><span class="n">UpdateTrafficLightsRequest</span><span class="o">&gt;</span><span class="p">(</span><span class="n">request</span><span class="p">),</span><span class="w"> </span><span class="n">response</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="k">auto</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">toZMQ</span><span class="p">(</span><span class="n">response</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">update_traffic_lights_sock_</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="p">);</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 <span class="kt">void</span><span class="w"> </span><span class="n">MultiServer</span><span class="o">::</span><span class="n">start_poll</span><span class="p">()</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
@@ -1094,7 +1112,7 @@
 <span class="p">}</span><span class="w">  </span><span class="c1">// namespace zeromq</span>
 </code></pre></div>
 <hr />
-<p>Updated on  1 October 2021 at 01:12:41 UTC</p>
+<p>Updated on  1 October 2021 at 02:58:10 UTC</p>
                 
                   
                 

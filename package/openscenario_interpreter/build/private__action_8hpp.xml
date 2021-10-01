@@ -10,1280 +10,1265 @@
     <includes local="no">utility</includes>
     <includedby refid="action_8hpp" local="no">/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/action.hpp</includedby>
     <includedby refid="private_8hpp" local="no">/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/private.hpp</includedby>
+    <includedby refid="private__action_8cpp" local="no">/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/src/syntax/private_action.cpp</includedby>
     <incdepgraph>
-      <node id="10103">
+      <node id="10045">
         <label>list</label>
       </node>
-      <node id="10092">
+      <node id="10034">
         <label>scenario_simulator_exception/exception.hpp</label>
       </node>
-      <node id="10132">
+      <node id="10072">
         <label>boost/algorithm/string.hpp</label>
       </node>
-      <node id="10178">
+      <node id="10118">
         <label>openscenario_interpreter/syntax/lane_position.hpp</label>
         <link refid="lane__position_8hpp_source"/>
-        <childnode refid="10179" relation="include">
+        <childnode refid="10119" relation="include">
         </childnode>
-        <childnode refid="10083" relation="include">
+        <childnode refid="10025" relation="include">
         </childnode>
-        <childnode refid="10180" relation="include">
+        <childnode refid="10040" relation="include">
         </childnode>
-        <childnode refid="10183" relation="include">
+        <childnode refid="10120" relation="include">
         </childnode>
-        <childnode refid="10184" relation="include">
+        <childnode refid="10123" relation="include">
+        </childnode>
+        <childnode refid="10124" relation="include">
         </childnode>
       </node>
-      <node id="10099">
+      <node id="10041">
         <label>functional</label>
       </node>
-      <node id="10088">
+      <node id="10030">
         <label>iomanip</label>
       </node>
-      <node id="10084">
+      <node id="10026">
         <label>limits</label>
       </node>
-      <node id="10082">
+      <node id="10024">
         <label>openscenario_interpreter/syntax/assign_controller_action.hpp</label>
         <link refid="assign__controller__action_8hpp_source"/>
-        <childnode refid="10083" relation="include">
+        <childnode refid="10025" relation="include">
         </childnode>
-        <childnode refid="10096" relation="include">
+        <childnode refid="10038" relation="include">
         </childnode>
-        <childnode refid="10109" relation="include">
+        <childnode refid="10051" relation="include">
         </childnode>
-        <childnode refid="10095" relation="include">
+        <childnode refid="10037" relation="include">
         </childnode>
       </node>
-      <node id="10164">
+      <node id="10104">
         <label>openscenario_interpreter/syntax/dynamics_shape.hpp</label>
         <link refid="dynamics__shape_8hpp_source"/>
-        <childnode refid="10122" relation="include">
+        <childnode refid="10062" relation="include">
         </childnode>
       </node>
-      <node id="10173">
+      <node id="10113">
         <label>openscenario_interpreter/syntax/speed_target_value_type.hpp</label>
         <link refid="speed__target__value__type_8hpp_source"/>
-        <childnode refid="10122" relation="include">
+        <childnode refid="10062" relation="include">
         </childnode>
-        <childnode refid="10109" relation="include">
+        <childnode refid="10051" relation="include">
         </childnode>
-      </node>
-      <node id="10162">
-        <label>openscenario_interpreter/syntax/transition_dynamics.hpp</label>
-        <link refid="transition__dynamics_8hpp_source"/>
-        <childnode refid="10163" relation="include">
-        </childnode>
-        <childnode refid="10164" relation="include">
-        </childnode>
-      </node>
-      <node id="10100">
-        <label>iterator</label>
-      </node>
-      <node id="10177">
-        <label>boost/function_types/result_type.hpp</label>
-      </node>
-      <node id="10171">
-        <label>openscenario_interpreter/syntax/absolute_target_speed.hpp</label>
-        <link refid="absolute__target__speed_8hpp_source"/>
-        <childnode refid="10135" relation="include">
-        </childnode>
-        <childnode refid="10131" relation="include">
-        </childnode>
-        <childnode refid="10134" relation="include">
-        </childnode>
-        <childnode refid="10167" relation="include">
-        </childnode>
-      </node>
-      <node id="10123">
-        <label>openscenario_interpreter/type_traits/has_stream_output_operator.hpp</label>
-        <link refid="has__stream__output__operator_8hpp_source"/>
-        <childnode refid="10122" relation="include">
-        </childnode>
-        <childnode refid="10108" relation="include">
-        </childnode>
-      </node>
-      <node id="10140">
-        <label>boost/lexical_cast.hpp</label>
-      </node>
-      <node id="10216">
-        <label>openscenario_interpreter/syntax/object_controller.hpp</label>
-        <link refid="object__controller_8hpp_source"/>
-        <childnode refid="10096" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10089">
-        <label>openscenario_interpreter/utility/demangle.hpp</label>
-        <link refid="demangle_8hpp_source"/>
-        <childnode refid="10090" relation="include">
-        </childnode>
-        <childnode refid="10091" relation="include">
-        </childnode>
-      </node>
-      <node id="10200">
-        <label>openscenario_interpreter/syntax/center.hpp</label>
-        <link refid="center_8hpp_source"/>
-        <childnode refid="10186" relation="include">
-        </childnode>
-        <childnode refid="10122" relation="include">
-        </childnode>
-        <childnode refid="10135" relation="include">
-        </childnode>
-        <childnode refid="10098" relation="include">
-        </childnode>
-      </node>
-      <node id="10080">
-        <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/private_action.hpp</label>
-        <link refid="private__action_8hpp"/>
-        <childnode refid="10081" relation="include">
-        </childnode>
-        <childnode refid="10158" relation="include">
-        </childnode>
-        <childnode refid="10165" relation="include">
-        </childnode>
-        <childnode refid="10174" relation="include">
-        </childnode>
-        <childnode refid="10194" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10134">
-        <label>openscenario_interpreter/syntax/entity_ref.hpp</label>
-        <link refid="entity__ref_8hpp_source"/>
-        <childnode refid="10135" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10183">
-        <label>openscenario_msgs/msg/lanelet_pose.hpp</label>
-      </node>
-      <node id="10201">
-        <label>openscenario_interpreter/syntax/dimensions.hpp</label>
-        <link refid="dimensions_8hpp_source"/>
-        <childnode refid="10181" relation="include">
-        </childnode>
-        <childnode refid="10135" relation="include">
-        </childnode>
-        <childnode refid="10098" relation="include">
-        </childnode>
-        <childnode refid="10128" relation="include">
-        </childnode>
-      </node>
-      <node id="10167">
-        <label>openscenario_interpreter/syntax/rule.hpp</label>
-        <link refid="rule_8hpp_source"/>
-        <childnode refid="10099" relation="include">
-        </childnode>
-        <childnode refid="10168" relation="include">
-        </childnode>
-        <childnode refid="10135" relation="include">
-        </childnode>
-        <childnode refid="10090" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10112">
-        <label>openscenario_interpreter/type_traits/if_has_member_function_description.hpp</label>
-        <link refid="if__has__member__function__description_8hpp_source"/>
-        <childnode refid="10113" relation="include">
-        </childnode>
-      </node>
-      <node id="10129">
-        <label>pugixml.hpp</label>
       </node>
       <node id="10102">
-        <label>openscenario_interpreter/object.hpp</label>
-        <link refid="object_8hpp_source"/>
+        <label>openscenario_interpreter/syntax/transition_dynamics.hpp</label>
+        <link refid="transition__dynamics_8hpp_source"/>
         <childnode refid="10103" relation="include">
         </childnode>
         <childnode refid="10104" relation="include">
         </childnode>
-        <childnode refid="10109" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
       </node>
-      <node id="10104">
-        <label>openscenario_interpreter/expression.hpp</label>
-        <link refid="expression_8hpp_source"/>
-        <childnode refid="10105" relation="include">
-        </childnode>
+      <node id="10042">
+        <label>iterator</label>
       </node>
-      <node id="10179">
-        <label>geometry_msgs/msg/pose.hpp</label>
-      </node>
-      <node id="10184">
-        <label>traffic_simulator/helper/helper.hpp</label>
-      </node>
-      <node id="10154">
-        <label>openscenario_interpreter/syntax/file.hpp</label>
-        <link refid="file_8hpp_source"/>
-        <childnode refid="10133" relation="include">
-        </childnode>
-        <childnode refid="10135" relation="include">
-        </childnode>
-        <childnode refid="10144" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10215">
-        <label>openscenario_msgs/msg/vehicle_parameters.hpp</label>
-      </node>
-      <node id="10169">
-        <label>cmath</label>
-      </node>
-      <node id="10166">
-        <label>openscenario_interpreter/syntax/speed_action.hpp</label>
-        <link refid="speed__action_8hpp_source"/>
-        <childnode refid="10083" relation="include">
-        </childnode>
-        <childnode refid="10167" relation="include">
-        </childnode>
-        <childnode refid="10170" relation="include">
-        </childnode>
-        <childnode refid="10144" relation="include">
-        </childnode>
-        <childnode refid="10162" relation="include">
-        </childnode>
-        <childnode refid="10130" relation="include">
-        </childnode>
-      </node>
-      <node id="10208">
-        <label>openscenario_interpreter/syntax/axles.hpp</label>
-        <link refid="axles_8hpp_source"/>
-        <childnode refid="10209" relation="include">
-        </childnode>
-        <childnode refid="10211" relation="include">
-        </childnode>
-        <childnode refid="10151" relation="include">
-        </childnode>
-      </node>
-      <node id="10093">
-        <label>stdexcept</label>
-      </node>
-      <node id="10174">
-        <label>openscenario_interpreter/syntax/routing_action.hpp</label>
-        <link refid="routing__action_8hpp_source"/>
-        <childnode refid="10175" relation="include">
-        </childnode>
-        <childnode refid="10190" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
+      <node id="10117">
+        <label>boost/function_types/result_type.hpp</label>
       </node>
       <node id="10111">
-        <label>openscenario_interpreter/type_traits/has_member_function_current_state.hpp</label>
-        <link refid="has__member__function__current__state_8hpp_source"/>
-        <childnode refid="10108" relation="include">
+        <label>openscenario_interpreter/syntax/absolute_target_speed.hpp</label>
+        <link refid="absolute__target__speed_8hpp_source"/>
+        <childnode refid="10025" relation="include">
+        </childnode>
+        <childnode refid="10075" relation="include">
+        </childnode>
+        <childnode refid="10071" relation="include">
+        </childnode>
+        <childnode refid="10074" relation="include">
+        </childnode>
+        <childnode refid="10107" relation="include">
         </childnode>
       </node>
-      <node id="10142">
-        <label>openscenario_interpreter/syntax/integer.hpp</label>
-        <link refid="integer_8hpp_source"/>
-        <childnode refid="10140" relation="include">
+      <node id="10063">
+        <label>openscenario_interpreter/type_traits/has_stream_output_operator.hpp</label>
+        <link refid="has__stream__output__operator_8hpp_source"/>
+        <childnode refid="10062" relation="include">
         </childnode>
-        <childnode refid="10086" relation="include">
-        </childnode>
-        <childnode refid="10143" relation="include">
-        </childnode>
-        <childnode refid="10090" relation="include">
+        <childnode refid="10050" relation="include">
         </childnode>
       </node>
-      <node id="10191">
-        <label>openscenario_interpreter/syntax/route.hpp</label>
-        <link refid="route_8hpp_source"/>
-        <childnode refid="10097" relation="include">
+      <node id="10080">
+        <label>boost/lexical_cast.hpp</label>
+      </node>
+      <node id="10156">
+        <label>openscenario_interpreter/syntax/object_controller.hpp</label>
+        <link refid="object__controller_8hpp_source"/>
+        <childnode refid="10038" relation="include">
         </childnode>
-        <childnode refid="10192" relation="include">
-        </childnode>
-        <childnode refid="10090" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-        <childnode refid="10151" relation="include">
+        <childnode refid="10037" relation="include">
         </childnode>
       </node>
-      <node id="10143">
-        <label>std_msgs/msg/int64.hpp</label>
-      </node>
-      <node id="10131">
-        <label>openscenario_interpreter/scope.hpp</label>
-        <link refid="scope_8hpp_source"/>
-        <childnode refid="10132" relation="include">
+      <node id="10031">
+        <label>openscenario_interpreter/utility/demangle.hpp</label>
+        <link refid="demangle_8hpp_source"/>
+        <childnode refid="10032" relation="include">
         </childnode>
-        <childnode refid="10133" relation="include">
-        </childnode>
-        <childnode refid="10084" relation="include">
-        </childnode>
-        <childnode refid="10085" relation="include">
-        </childnode>
-        <childnode refid="10134" relation="include">
-        </childnode>
-        <childnode refid="10092" relation="include">
-        </childnode>
-        <childnode refid="10130" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-        <childnode refid="10151" relation="include">
+        <childnode refid="10033" relation="include">
         </childnode>
       </node>
-      <node id="10090">
-        <label>string</label>
-      </node>
-      <node id="10187">
-        <label>openscenario_interpreter/syntax/world_position.hpp</label>
-        <link refid="world__position_8hpp_source"/>
-        <childnode refid="10188" relation="include">
+      <node id="10140">
+        <label>openscenario_interpreter/syntax/center.hpp</label>
+        <link refid="center_8hpp_source"/>
+        <childnode refid="10126" relation="include">
         </childnode>
-        <childnode refid="10179" relation="include">
+        <childnode refid="10062" relation="include">
         </childnode>
-        <childnode refid="10181" relation="include">
+        <childnode refid="10075" relation="include">
         </childnode>
-        <childnode refid="10183" relation="include">
+        <childnode refid="10040" relation="include">
         </childnode>
       </node>
-      <node id="10139">
-        <label>openscenario_interpreter/syntax/double.hpp</label>
-        <link refid="double_8hpp_source"/>
-        <childnode refid="10140" relation="include">
+      <node id="10022">
+        <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/private_action.hpp</label>
+        <link refid="private__action_8hpp"/>
+        <childnode refid="10023" relation="include">
         </childnode>
-        <childnode refid="10084" relation="include">
+        <childnode refid="10098" relation="include">
         </childnode>
-        <childnode refid="10086" relation="include">
-        </childnode>
-        <childnode refid="10141" relation="include">
-        </childnode>
-        <childnode refid="10090" relation="include">
-        </childnode>
-      </node>
-      <node id="10108">
-        <label>openscenario_interpreter/type_traits/void_t.hpp</label>
-        <link refid="void__t_8hpp_source"/>
-        <childnode refid="10109" relation="include">
-        </childnode>
-      </node>
-      <node id="10161">
-        <label>openscenario_interpreter/syntax/absolute_target_lane.hpp</label>
-        <link refid="absolute__target__lane_8hpp_source"/>
-        <childnode refid="10135" relation="include">
-        </childnode>
-      </node>
-      <node id="10105">
-        <label>openscenario_interpreter/pointer.hpp</label>
-        <link refid="pointer_8hpp_source"/>
-        <childnode refid="10085" relation="include">
-        </childnode>
-        <childnode refid="10086" relation="include">
-        </childnode>
-        <childnode refid="10106" relation="include">
-        </childnode>
-        <childnode refid="10110" relation="include">
-        </childnode>
-        <childnode refid="10112" relation="include">
+        <childnode refid="10105" relation="include">
         </childnode>
         <childnode refid="10114" relation="include">
         </childnode>
+        <childnode refid="10134" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10074">
+        <label>openscenario_interpreter/syntax/entity_ref.hpp</label>
+        <link refid="entity__ref_8hpp_source"/>
+        <childnode refid="10075" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10123">
+        <label>openscenario_msgs/msg/lanelet_pose.hpp</label>
+      </node>
+      <node id="10141">
+        <label>openscenario_interpreter/syntax/dimensions.hpp</label>
+        <link refid="dimensions_8hpp_source"/>
+        <childnode refid="10121" relation="include">
+        </childnode>
+        <childnode refid="10075" relation="include">
+        </childnode>
+        <childnode refid="10040" relation="include">
+        </childnode>
+        <childnode refid="10068" relation="include">
+        </childnode>
+      </node>
+      <node id="10107">
+        <label>openscenario_interpreter/syntax/rule.hpp</label>
+        <link refid="rule_8hpp_source"/>
+        <childnode refid="10041" relation="include">
+        </childnode>
+        <childnode refid="10108" relation="include">
+        </childnode>
+        <childnode refid="10075" relation="include">
+        </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10054">
+        <label>openscenario_interpreter/type_traits/if_has_member_function_description.hpp</label>
+        <link refid="if__has__member__function__description_8hpp_source"/>
+        <childnode refid="10055" relation="include">
+        </childnode>
+      </node>
+      <node id="10069">
+        <label>pugixml.hpp</label>
+      </node>
+      <node id="10044">
+        <label>openscenario_interpreter/object.hpp</label>
+        <link refid="object_8hpp_source"/>
+        <childnode refid="10045" relation="include">
+        </childnode>
+        <childnode refid="10046" relation="include">
+        </childnode>
+        <childnode refid="10051" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10046">
+        <label>openscenario_interpreter/expression.hpp</label>
+        <link refid="expression_8hpp_source"/>
+        <childnode refid="10047" relation="include">
+        </childnode>
+      </node>
+      <node id="10119">
+        <label>geometry_msgs/msg/pose.hpp</label>
+      </node>
+      <node id="10124">
+        <label>traffic_simulator/helper/helper.hpp</label>
+      </node>
+      <node id="10094">
+        <label>openscenario_interpreter/syntax/file.hpp</label>
+        <link refid="file_8hpp_source"/>
+        <childnode refid="10073" relation="include">
+        </childnode>
+        <childnode refid="10075" relation="include">
+        </childnode>
+        <childnode refid="10084" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10155">
+        <label>openscenario_msgs/msg/vehicle_parameters.hpp</label>
+      </node>
+      <node id="10109">
+        <label>cmath</label>
+      </node>
+      <node id="10106">
+        <label>openscenario_interpreter/syntax/speed_action.hpp</label>
+        <link refid="speed__action_8hpp_source"/>
+        <childnode refid="10025" relation="include">
+        </childnode>
+        <childnode refid="10040" relation="include">
+        </childnode>
+        <childnode refid="10107" relation="include">
+        </childnode>
+        <childnode refid="10110" relation="include">
+        </childnode>
+        <childnode refid="10084" relation="include">
+        </childnode>
+        <childnode refid="10102" relation="include">
+        </childnode>
+        <childnode refid="10070" relation="include">
+        </childnode>
+      </node>
+      <node id="10148">
+        <label>openscenario_interpreter/syntax/axles.hpp</label>
+        <link refid="axles_8hpp_source"/>
+        <childnode refid="10149" relation="include">
+        </childnode>
+        <childnode refid="10151" relation="include">
+        </childnode>
+        <childnode refid="10091" relation="include">
+        </childnode>
+      </node>
+      <node id="10035">
+        <label>stdexcept</label>
+      </node>
+      <node id="10114">
+        <label>openscenario_interpreter/syntax/routing_action.hpp</label>
+        <link refid="routing__action_8hpp_source"/>
+        <childnode refid="10115" relation="include">
+        </childnode>
+        <childnode refid="10130" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10053">
+        <label>openscenario_interpreter/type_traits/has_member_function_current_state.hpp</label>
+        <link refid="has__member__function__current__state_8hpp_source"/>
+        <childnode refid="10050" relation="include">
+        </childnode>
+      </node>
+      <node id="10082">
+        <label>openscenario_interpreter/syntax/integer.hpp</label>
+        <link refid="integer_8hpp_source"/>
+        <childnode refid="10080" relation="include">
+        </childnode>
+        <childnode refid="10028" relation="include">
+        </childnode>
+        <childnode refid="10083" relation="include">
+        </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+      </node>
+      <node id="10131">
+        <label>openscenario_interpreter/syntax/route.hpp</label>
+        <link refid="route_8hpp_source"/>
+        <childnode refid="10039" relation="include">
+        </childnode>
+        <childnode refid="10132" relation="include">
+        </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+        <childnode refid="10091" relation="include">
+        </childnode>
+      </node>
+      <node id="10083">
+        <label>std_msgs/msg/int64.hpp</label>
+      </node>
+      <node id="10071">
+        <label>openscenario_interpreter/scope.hpp</label>
+        <link refid="scope_8hpp_source"/>
+        <childnode refid="10072" relation="include">
+        </childnode>
+        <childnode refid="10073" relation="include">
+        </childnode>
+        <childnode refid="10026" relation="include">
+        </childnode>
+        <childnode refid="10027" relation="include">
+        </childnode>
+        <childnode refid="10074" relation="include">
+        </childnode>
+        <childnode refid="10034" relation="include">
+        </childnode>
+        <childnode refid="10070" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+        <childnode refid="10091" relation="include">
+        </childnode>
+      </node>
+      <node id="10032">
+        <label>string</label>
+      </node>
+      <node id="10127">
+        <label>openscenario_interpreter/syntax/world_position.hpp</label>
+        <link refid="world__position_8hpp_source"/>
+        <childnode refid="10128" relation="include">
+        </childnode>
+        <childnode refid="10119" relation="include">
+        </childnode>
+        <childnode refid="10121" relation="include">
+        </childnode>
+        <childnode refid="10123" relation="include">
+        </childnode>
+      </node>
+      <node id="10079">
+        <label>openscenario_interpreter/syntax/double.hpp</label>
+        <link refid="double_8hpp_source"/>
+        <childnode refid="10080" relation="include">
+        </childnode>
+        <childnode refid="10026" relation="include">
+        </childnode>
+        <childnode refid="10028" relation="include">
+        </childnode>
+        <childnode refid="10081" relation="include">
+        </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+      </node>
+      <node id="10050">
+        <label>openscenario_interpreter/type_traits/void_t.hpp</label>
+        <link refid="void__t_8hpp_source"/>
+        <childnode refid="10051" relation="include">
+        </childnode>
+      </node>
+      <node id="10101">
+        <label>openscenario_interpreter/syntax/absolute_target_lane.hpp</label>
+        <link refid="absolute__target__lane_8hpp_source"/>
+        <childnode refid="10075" relation="include">
+        </childnode>
+      </node>
+      <node id="10047">
+        <label>openscenario_interpreter/pointer.hpp</label>
+        <link refid="pointer_8hpp_source"/>
+        <childnode refid="10027" relation="include">
+        </childnode>
+        <childnode refid="10028" relation="include">
+        </childnode>
+        <childnode refid="10048" relation="include">
+        </childnode>
+        <childnode refid="10052" relation="include">
+        </childnode>
+        <childnode refid="10054" relation="include">
+        </childnode>
+        <childnode refid="10056" relation="include">
+        </childnode>
+        <childnode refid="10058" relation="include">
+        </childnode>
+        <childnode refid="10065" relation="include">
+        </childnode>
+        <childnode refid="10033" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10059">
+        <label>openscenario_interpreter/console/escape_sequence.hpp</label>
+        <link refid="escape__sequence_8hpp_source"/>
+        <childnode refid="10060" relation="include">
+        </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+      </node>
+      <node id="10142">
+        <label>openscenario_msgs/msg/bounding_box.hpp</label>
+      </node>
+      <node id="10090">
+        <label>regex</label>
+      </node>
+      <node id="10066">
+        <label>openscenario_interpreter/type_traits/must_be_default_constructible.hpp</label>
+        <link refid="must__be__default__constructible_8hpp_source"/>
+        <childnode refid="10028" relation="include">
+        </childnode>
+        <childnode refid="10051" relation="include">
+        </childnode>
+      </node>
+      <node id="10084">
+        <label>openscenario_interpreter/syntax/string.hpp</label>
+        <link refid="string_8hpp_source"/>
+        <childnode refid="10032" relation="include">
+        </childnode>
+      </node>
+      <node id="10036">
+        <label>traffic_simulator/api/api.hpp</label>
+      </node>
+      <node id="10122">
+        <label>openscenario_interpreter/syntax/reference_context.hpp</label>
+        <link refid="reference__context_8hpp_source"/>
+        <childnode refid="10044" relation="include">
+        </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+      </node>
+      <node id="10029">
+        <label>exception</label>
+      </node>
+      <node id="10068">
+        <label>ostream</label>
+      </node>
+      <node id="10088">
+        <label>std_msgs/msg/u_int16.hpp</label>
+      </node>
+      <node id="10055">
+        <label>openscenario_interpreter/type_traits/has_member_function_description.hpp</label>
+        <link refid="has__member__function__description_8hpp_source"/>
+        <childnode refid="10050" relation="include">
+        </childnode>
+      </node>
+      <node id="10028">
+        <label>openscenario_interpreter/error.hpp</label>
+        <link refid="error_8hpp_source"/>
+        <childnode refid="10029" relation="include">
+        </childnode>
+        <childnode refid="10030" relation="include">
+        </childnode>
+        <childnode refid="10031" relation="include">
+        </childnode>
+        <childnode refid="10034" relation="include">
+        </childnode>
+        <childnode refid="10035" relation="include">
+        </childnode>
+      </node>
+      <node id="10110">
+        <label>openscenario_interpreter/syntax/speed_action_target.hpp</label>
+        <link refid="speed__action__target_8hpp_source"/>
+        <childnode refid="10111" relation="include">
+        </childnode>
+        <childnode refid="10112" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10136">
+        <label>openscenario_interpreter/syntax/scenario_object.hpp</label>
+        <link refid="scenario__object_8hpp_source"/>
+        <childnode refid="10080" relation="include">
+        </childnode>
+        <childnode refid="10025" relation="include">
+        </childnode>
+        <childnode refid="10137" relation="include">
+        </childnode>
+        <childnode refid="10156" relation="include">
+        </childnode>
+        <childnode refid="10084" relation="include">
+        </childnode>
+        <childnode refid="10129" relation="include">
+        </childnode>
+        <childnode refid="10157" relation="include">
+        </childnode>
+      </node>
+      <node id="10056">
+        <label>openscenario_interpreter/type_traits/if_has_member_function_evaluate.hpp</label>
+        <link refid="if__has__member__function__evaluate_8hpp_source"/>
+        <childnode refid="10057" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10115">
+        <label>openscenario_interpreter/syntax/acquire_position_action.hpp</label>
+        <link refid="acquire__position__action_8hpp_source"/>
+        <childnode refid="10025" relation="include">
+        </childnode>
+        <childnode refid="10071" relation="include">
+        </childnode>
         <childnode refid="10116" relation="include">
+        </childnode>
+        <childnode refid="10084" relation="include">
+        </childnode>
+        <childnode refid="10129" relation="include">
+        </childnode>
+        <childnode refid="10124" relation="include">
+        </childnode>
+        <childnode refid="10070" relation="include">
+        </childnode>
+      </node>
+      <node id="10121">
+        <label>geometry_msgs/msg/vector3.hpp</label>
+      </node>
+      <node id="10096">
+        <label>openscenario_msgs/msg/driver_model.hpp</label>
+      </node>
+      <node id="10095">
+        <label>openscenario_interpreter/syntax/property.hpp</label>
+        <link refid="property_8hpp_source"/>
+        <childnode refid="10075" relation="include">
+        </childnode>
+        <childnode refid="10078" relation="include">
+        </childnode>
+        <childnode refid="10084" relation="include">
+        </childnode>
+      </node>
+      <node id="10130">
+        <label>openscenario_interpreter/syntax/assign_route_action.hpp</label>
+        <link refid="assign__route__action_8hpp_source"/>
+        <childnode refid="10131" relation="include">
+        </childnode>
+        <childnode refid="10051" relation="include">
+        </childnode>
+        <childnode refid="10070" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+        <childnode refid="10091" relation="include">
+        </childnode>
+      </node>
+      <node id="10077">
+        <label>openscenario_interpreter/syntax/parameter_type.hpp</label>
+        <link refid="parameter__type_8hpp_source"/>
+        <childnode refid="10062" relation="include">
+        </childnode>
+        <childnode refid="10078" relation="include">
+        </childnode>
+        <childnode refid="10079" relation="include">
+        </childnode>
+        <childnode refid="10082" relation="include">
+        </childnode>
+        <childnode refid="10084" relation="include">
+        </childnode>
+        <childnode refid="10085" relation="include">
+        </childnode>
+        <childnode refid="10087" relation="include">
+        </childnode>
+      </node>
+      <node id="10150">
+        <label>openscenario_msgs/msg/axle.hpp</label>
+      </node>
+      <node id="10132">
+        <label>openscenario_interpreter/syntax/waypoint.hpp</label>
+        <link refid="waypoint_8hpp_source"/>
+        <childnode refid="10116" relation="include">
+        </childnode>
+        <childnode refid="10133" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10075">
+        <label>openscenario_interpreter/reader/attribute.hpp</label>
+        <link refid="attribute_8hpp_source"/>
+        <childnode refid="10076" relation="include">
+        </childnode>
+        <childnode refid="10041" relation="include">
+        </childnode>
+        <childnode refid="10077" relation="include">
+        </childnode>
+        <childnode refid="10089" relation="include">
+        </childnode>
+        <childnode refid="10067" relation="include">
+        </childnode>
+        <childnode refid="10090" relation="include">
+        </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+        <childnode refid="10070" relation="include">
+        </childnode>
+      </node>
+      <node id="10105">
+        <label>openscenario_interpreter/syntax/longitudinal_action.hpp</label>
+        <link refid="longitudinal__action_8hpp_source"/>
+        <childnode refid="10106" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10025">
+        <label>openscenario_interpreter/procedure.hpp</label>
+        <link refid="procedure_8hpp_source"/>
+        <childnode refid="10026" relation="include">
+        </childnode>
+        <childnode refid="10027" relation="include">
+        </childnode>
+        <childnode refid="10028" relation="include">
+        </childnode>
+        <childnode refid="10036" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10039">
+        <label>openscenario_interpreter/syntax/parameter_declarations.hpp</label>
+        <link refid="parameter__declarations_8hpp_source"/>
+        <childnode refid="10040" relation="include">
+        </childnode>
+        <childnode refid="10071" relation="include">
+        </childnode>
+        <childnode refid="10092" relation="include">
+        </childnode>
+        <childnode refid="10091" relation="include">
+        </childnode>
+      </node>
+      <node id="10128">
+        <label>quaternion_operation/quaternion_operation.h</label>
+      </node>
+      <node id="10147">
+        <label>openscenario_interpreter/syntax/vehicle.hpp</label>
+        <link refid="vehicle_8hpp_source"/>
+        <childnode refid="10148" relation="include">
+        </childnode>
+        <childnode refid="10139" relation="include">
+        </childnode>
+        <childnode refid="10039" relation="include">
+        </childnode>
+        <childnode refid="10152" relation="include">
+        </childnode>
+        <childnode refid="10093" relation="include">
+        </childnode>
+        <childnode refid="10154" relation="include">
+        </childnode>
+        <childnode refid="10155" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10151">
+        <label>openscenario_msgs/msg/axles.hpp</label>
+      </node>
+      <node id="10126">
+        <label>geometry_msgs/msg/point.hpp</label>
+      </node>
+      <node id="10076">
+        <label>ament_index_cpp/get_package_share_directory.hpp</label>
+      </node>
+      <node id="10033">
+        <label>typeinfo</label>
+      </node>
+      <node id="10112">
+        <label>openscenario_interpreter/syntax/relative_target_speed.hpp</label>
+        <link refid="relative__target__speed_8hpp_source"/>
+        <childnode refid="10075" relation="include">
+        </childnode>
+        <childnode refid="10071" relation="include">
+        </childnode>
+        <childnode refid="10074" relation="include">
+        </childnode>
+        <childnode refid="10107" relation="include">
+        </childnode>
+        <childnode refid="10113" relation="include">
+        </childnode>
+      </node>
+      <node id="10099">
+        <label>openscenario_interpreter/syntax/lane_change_action.hpp</label>
+        <link refid="lane__change__action_8hpp_source"/>
+        <childnode refid="10025" relation="include">
+        </childnode>
+        <childnode refid="10040" relation="include">
+        </childnode>
+        <childnode refid="10071" relation="include">
+        </childnode>
+        <childnode refid="10100" relation="include">
+        </childnode>
+        <childnode refid="10102" relation="include">
+        </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+        <childnode refid="10070" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10100">
+        <label>openscenario_interpreter/syntax/lane_change_target.hpp</label>
+        <link refid="lane__change__target_8hpp_source"/>
+        <childnode refid="10101" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10116">
+        <label>openscenario_interpreter/syntax/position.hpp</label>
+        <link refid="position_8hpp_source"/>
+        <childnode refid="10117" relation="include">
         </childnode>
         <childnode refid="10118" relation="include">
         </childnode>
         <childnode refid="10125" relation="include">
         </childnode>
-        <childnode refid="10091" relation="include">
+        <childnode refid="10127" relation="include">
         </childnode>
-        <childnode refid="10095" relation="include">
+        <childnode refid="10035" relation="include">
         </childnode>
-      </node>
-      <node id="10119">
-        <label>openscenario_interpreter/console/escape_sequence.hpp</label>
-        <link refid="escape__sequence_8hpp_source"/>
-        <childnode refid="10120" relation="include">
+        <childnode refid="10070" relation="include">
         </childnode>
-        <childnode refid="10090" relation="include">
+        <childnode refid="10037" relation="include">
         </childnode>
       </node>
-      <node id="10202">
-        <label>openscenario_msgs/msg/bounding_box.hpp</label>
-      </node>
-      <node id="10150">
-        <label>regex</label>
-      </node>
-      <node id="10116">
-        <label>openscenario_interpreter/type_traits/if_has_member_function_start.hpp</label>
-        <link refid="if__has__member__function__start_8hpp_source"/>
-        <childnode refid="10117" relation="include">
-        </childnode>
-      </node>
-      <node id="10126">
-        <label>openscenario_interpreter/type_traits/must_be_default_constructible.hpp</label>
-        <link refid="must__be__default__constructible_8hpp_source"/>
-        <childnode refid="10086" relation="include">
-        </childnode>
-        <childnode refid="10109" relation="include">
-        </childnode>
-      </node>
-      <node id="10144">
-        <label>openscenario_interpreter/syntax/string.hpp</label>
-        <link refid="string_8hpp_source"/>
-        <childnode refid="10090" relation="include">
-        </childnode>
-      </node>
-      <node id="10094">
-        <label>traffic_simulator/api/api.hpp</label>
-      </node>
-      <node id="10182">
-        <label>openscenario_interpreter/syntax/reference_context.hpp</label>
-        <link refid="reference__context_8hpp_source"/>
-        <childnode refid="10102" relation="include">
-        </childnode>
-        <childnode refid="10090" relation="include">
-        </childnode>
-      </node>
-      <node id="10087">
-        <label>exception</label>
-      </node>
-      <node id="10128">
-        <label>ostream</label>
-      </node>
-      <node id="10148">
-        <label>std_msgs/msg/u_int16.hpp</label>
-      </node>
-      <node id="10113">
-        <label>openscenario_interpreter/type_traits/has_member_function_description.hpp</label>
-        <link refid="has__member__function__description_8hpp_source"/>
-        <childnode refid="10108" relation="include">
-        </childnode>
-      </node>
-      <node id="10086">
-        <label>openscenario_interpreter/error.hpp</label>
-        <link refid="error_8hpp_source"/>
-        <childnode refid="10087" relation="include">
-        </childnode>
-        <childnode refid="10088" relation="include">
-        </childnode>
-        <childnode refid="10089" relation="include">
-        </childnode>
-        <childnode refid="10092" relation="include">
-        </childnode>
-        <childnode refid="10093" relation="include">
-        </childnode>
-      </node>
-      <node id="10170">
-        <label>openscenario_interpreter/syntax/speed_action_target.hpp</label>
-        <link refid="speed__action__target_8hpp_source"/>
-        <childnode refid="10171" relation="include">
-        </childnode>
-        <childnode refid="10172" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10196">
-        <label>openscenario_interpreter/syntax/scenario_object.hpp</label>
-        <link refid="scenario__object_8hpp_source"/>
-        <childnode refid="10083" relation="include">
-        </childnode>
-        <childnode refid="10197" relation="include">
-        </childnode>
-        <childnode refid="10216" relation="include">
-        </childnode>
-        <childnode refid="10144" relation="include">
-        </childnode>
-        <childnode refid="10189" relation="include">
-        </childnode>
-        <childnode refid="10217" relation="include">
-        </childnode>
-      </node>
-      <node id="10114">
-        <label>openscenario_interpreter/type_traits/if_has_member_function_evaluate.hpp</label>
-        <link refid="if__has__member__function__evaluate_8hpp_source"/>
-        <childnode refid="10115" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10175">
-        <label>openscenario_interpreter/syntax/acquire_position_action.hpp</label>
-        <link refid="acquire__position__action_8hpp_source"/>
-        <childnode refid="10083" relation="include">
-        </childnode>
-        <childnode refid="10176" relation="include">
-        </childnode>
-        <childnode refid="10144" relation="include">
-        </childnode>
-        <childnode refid="10189" relation="include">
-        </childnode>
-        <childnode refid="10184" relation="include">
-        </childnode>
-        <childnode refid="10130" relation="include">
-        </childnode>
-      </node>
-      <node id="10181">
-        <label>geometry_msgs/msg/vector3.hpp</label>
-      </node>
-      <node id="10156">
-        <label>openscenario_msgs/msg/driver_model.hpp</label>
-      </node>
-      <node id="10155">
-        <label>openscenario_interpreter/syntax/property.hpp</label>
-        <link refid="property_8hpp_source"/>
-        <childnode refid="10135" relation="include">
-        </childnode>
-        <childnode refid="10138" relation="include">
-        </childnode>
-        <childnode refid="10144" relation="include">
-        </childnode>
-      </node>
-      <node id="10190">
-        <label>openscenario_interpreter/syntax/assign_route_action.hpp</label>
-        <link refid="assign__route__action_8hpp_source"/>
-        <childnode refid="10191" relation="include">
-        </childnode>
-        <childnode refid="10109" relation="include">
-        </childnode>
-        <childnode refid="10130" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-        <childnode refid="10151" relation="include">
-        </childnode>
+      <node id="10081">
+        <label>std_msgs/msg/float64.hpp</label>
       </node>
       <node id="10137">
-        <label>openscenario_interpreter/syntax/parameter_type.hpp</label>
-        <link refid="parameter__type_8hpp_source"/>
-        <childnode refid="10122" relation="include">
-        </childnode>
+        <label>openscenario_interpreter/syntax/entity_object.hpp</label>
+        <link refid="entity__object_8hpp_source"/>
         <childnode refid="10138" relation="include">
         </childnode>
-        <childnode refid="10139" relation="include">
-        </childnode>
-        <childnode refid="10142" relation="include">
-        </childnode>
         <childnode refid="10144" relation="include">
-        </childnode>
-        <childnode refid="10145" relation="include">
         </childnode>
         <childnode refid="10147" relation="include">
         </childnode>
-      </node>
-      <node id="10210">
-        <label>openscenario_msgs/msg/axle.hpp</label>
-      </node>
-      <node id="10192">
-        <label>openscenario_interpreter/syntax/waypoint.hpp</label>
-        <link refid="waypoint_8hpp_source"/>
-        <childnode refid="10176" relation="include">
+        <childnode refid="10070" relation="include">
         </childnode>
-        <childnode refid="10193" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
+        <childnode refid="10037" relation="include">
         </childnode>
       </node>
-      <node id="10135">
-        <label>openscenario_interpreter/reader/attribute.hpp</label>
-        <link refid="attribute_8hpp_source"/>
-        <childnode refid="10136" relation="include">
+      <node id="10052">
+        <label>openscenario_interpreter/type_traits/if_has_member_function_current_state.hpp</label>
+        <link refid="if__has__member__function__current__state_8hpp_source"/>
+        <childnode refid="10028" relation="include">
         </childnode>
-        <childnode refid="10099" relation="include">
+        <childnode refid="10053" relation="include">
         </childnode>
-        <childnode refid="10137" relation="include">
+      </node>
+      <node id="10049">
+        <label>openscenario_interpreter/type_traits/has_member_function_accomplished.hpp</label>
+        <link refid="has__member__function__accomplished_8hpp_source"/>
+        <childnode refid="10050" relation="include">
         </childnode>
-        <childnode refid="10149" relation="include">
+      </node>
+      <node id="10149">
+        <label>openscenario_interpreter/syntax/axle.hpp</label>
+        <link refid="axle_8hpp_source"/>
+        <childnode refid="10075" relation="include">
         </childnode>
-        <childnode refid="10127" relation="include">
+        <childnode refid="10040" relation="include">
         </childnode>
         <childnode refid="10150" relation="include">
         </childnode>
-        <childnode refid="10090" relation="include">
-        </childnode>
-        <childnode refid="10130" relation="include">
-        </childnode>
       </node>
-      <node id="10165">
-        <label>openscenario_interpreter/syntax/longitudinal_action.hpp</label>
-        <link refid="longitudinal__action_8hpp_source"/>
-        <childnode refid="10166" relation="include">
+      <node id="10085">
+        <label>openscenario_interpreter/syntax/unsigned_integer.hpp</label>
+        <link refid="unsigned__integer_8hpp_source"/>
+        <childnode refid="10080" relation="include">
         </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10083">
-        <label>openscenario_interpreter/procedure.hpp</label>
-        <link refid="procedure_8hpp_source"/>
-        <childnode refid="10084" relation="include">
-        </childnode>
-        <childnode refid="10085" relation="include">
+        <childnode refid="10028" relation="include">
         </childnode>
         <childnode refid="10086" relation="include">
         </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+      </node>
+      <node id="10061">
+        <label>unistd.h</label>
+      </node>
+      <node id="10091">
+        <label>vector</label>
+      </node>
+      <node id="10078">
+        <label>openscenario_interpreter/syntax/boolean.hpp</label>
+        <link refid="boolean_8hpp_source"/>
+        <childnode refid="10030" relation="include">
+        </childnode>
+        <childnode refid="10062" relation="include">
+        </childnode>
+        <childnode refid="10028" relation="include">
+        </childnode>
+        <childnode refid="10044" relation="include">
+        </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+      </node>
+      <node id="10073">
+        <label>boost/filesystem.hpp</label>
+      </node>
+      <node id="10120">
+        <label>openscenario_interpreter/syntax/orientation.hpp</label>
+        <link refid="orientation_8hpp_source"/>
+        <childnode refid="10121" relation="include">
+        </childnode>
+        <childnode refid="10075" relation="include">
+        </childnode>
+        <childnode refid="10122" relation="include">
+        </childnode>
+      </node>
+      <node id="10108">
+        <label>openscenario_interpreter/functional/equal_to.hpp</label>
+        <link refid="equal__to_8hpp_source"/>
+        <childnode refid="10109" relation="include">
+        </childnode>
+        <childnode refid="10041" relation="include">
+        </childnode>
+        <childnode refid="10026" relation="include">
+        </childnode>
+        <childnode refid="10051" relation="include">
+        </childnode>
+      </node>
+      <node id="10067">
+        <label>openscenario_interpreter/utility/pugi_extension.hpp</label>
+        <link refid="pugi__extension_8hpp_source"/>
+        <childnode refid="10068" relation="include">
+        </childnode>
+        <childnode refid="10069" relation="include">
+        </childnode>
+      </node>
+      <node id="10037">
+        <label>utility</label>
+      </node>
+      <node id="10135">
+        <label>openscenario_interpreter/syntax/add_entity_action.hpp</label>
+        <link refid="add__entity__action_8hpp_source"/>
+        <childnode refid="10040" relation="include">
+        </childnode>
+        <childnode refid="10071" relation="include">
+        </childnode>
+        <childnode refid="10116" relation="include">
+        </childnode>
+        <childnode refid="10136" relation="include">
+        </childnode>
+      </node>
+      <node id="10089">
+        <label>openscenario_interpreter/utility/highlighter.hpp</label>
+        <link refid="highlighter_8hpp_source"/>
+        <childnode refid="10062" relation="include">
+        </childnode>
+        <childnode refid="10063" relation="include">
+        </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10138">
+        <label>openscenario_interpreter/syntax/misc_object.hpp</label>
+        <link refid="misc__object_8hpp_source"/>
+        <childnode refid="10071" relation="include">
+        </childnode>
+        <childnode refid="10139" relation="include">
+        </childnode>
+        <childnode refid="10079" relation="include">
+        </childnode>
+        <childnode refid="10143" relation="include">
+        </childnode>
+        <childnode refid="10039" relation="include">
+        </childnode>
+        <childnode refid="10093" relation="include">
+        </childnode>
+        <childnode refid="10084" relation="include">
+        </childnode>
+      </node>
+      <node id="10043">
+        <label>openscenario_interpreter/iterator/size.hpp</label>
+        <link refid="size_8hpp_source"/>
+        <childnode refid="10042" relation="include">
+        </childnode>
+      </node>
+      <node id="10057">
+        <label>openscenario_interpreter/type_traits/has_member_function_evaluate.hpp</label>
+        <link refid="has__member__function__evaluate_8hpp_source"/>
+        <childnode refid="10050" relation="include">
+        </childnode>
+      </node>
+      <node id="10023">
+        <label>openscenario_interpreter/syntax/controller_action.hpp</label>
+        <link refid="controller__action_8hpp_source"/>
+        <childnode refid="10024" relation="include">
+        </childnode>
+        <childnode refid="10097" relation="include">
+        </childnode>
+        <childnode refid="10051" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10145">
+        <label>openscenario_interpreter/syntax/pedestrian_category.hpp</label>
+        <link refid="pedestrian__category_8hpp_source"/>
+        <childnode refid="10062" relation="include">
+        </childnode>
+      </node>
+      <node id="10062">
+        <label>iostream</label>
+      </node>
+      <node id="10086">
+        <label>std_msgs/msg/u_int64.hpp</label>
+      </node>
+      <node id="10070">
+        <label>unordered_map</label>
+      </node>
+      <node id="10152">
+        <label>openscenario_interpreter/syntax/performance.hpp</label>
+        <link refid="performance_8hpp_source"/>
+        <childnode refid="10075" relation="include">
+        </childnode>
+        <childnode refid="10040" relation="include">
+        </childnode>
+        <childnode refid="10153" relation="include">
+        </childnode>
+      </node>
+      <node id="10103">
+        <label>openscenario_interpreter/syntax/dynamics_dimension.hpp</label>
+        <link refid="dynamics__dimension_8hpp_source"/>
+        <childnode refid="10062" relation="include">
+        </childnode>
+      </node>
+      <node id="10093">
+        <label>openscenario_interpreter/syntax/properties.hpp</label>
+        <link refid="properties_8hpp_source"/>
         <childnode refid="10094" relation="include">
         </childnode>
         <childnode refid="10095" relation="include">
         </childnode>
-      </node>
-      <node id="10097">
-        <label>openscenario_interpreter/syntax/parameter_declarations.hpp</label>
-        <link refid="parameter__declarations_8hpp_source"/>
-        <childnode refid="10098" relation="include">
+        <childnode refid="10070" relation="include">
         </childnode>
-        <childnode refid="10131" relation="include">
+        <childnode refid="10037" relation="include">
         </childnode>
-        <childnode refid="10152" relation="include">
-        </childnode>
-        <childnode refid="10151" relation="include">
-        </childnode>
-      </node>
-      <node id="10188">
-        <label>quaternion_operation/quaternion_operation.h</label>
-      </node>
-      <node id="10207">
-        <label>openscenario_interpreter/syntax/vehicle.hpp</label>
-        <link refid="vehicle_8hpp_source"/>
-        <childnode refid="10208" relation="include">
-        </childnode>
-        <childnode refid="10199" relation="include">
-        </childnode>
-        <childnode refid="10097" relation="include">
-        </childnode>
-        <childnode refid="10212" relation="include">
-        </childnode>
-        <childnode refid="10153" relation="include">
-        </childnode>
-        <childnode refid="10214" relation="include">
-        </childnode>
-        <childnode refid="10215" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10211">
-        <label>openscenario_msgs/msg/axles.hpp</label>
-      </node>
-      <node id="10186">
-        <label>geometry_msgs/msg/point.hpp</label>
-      </node>
-      <node id="10136">
-        <label>ament_index_cpp/get_package_share_directory.hpp</label>
-      </node>
-      <node id="10091">
-        <label>typeinfo</label>
-      </node>
-      <node id="10117">
-        <label>openscenario_interpreter/type_traits/has_member_function_start.hpp</label>
-        <link refid="has__member__function__start_8hpp_source"/>
-        <childnode refid="10108" relation="include">
-        </childnode>
-      </node>
-      <node id="10172">
-        <label>openscenario_interpreter/syntax/relative_target_speed.hpp</label>
-        <link refid="relative__target__speed_8hpp_source"/>
-        <childnode refid="10135" relation="include">
-        </childnode>
-        <childnode refid="10131" relation="include">
-        </childnode>
-        <childnode refid="10134" relation="include">
-        </childnode>
-        <childnode refid="10167" relation="include">
-        </childnode>
-        <childnode refid="10173" relation="include">
-        </childnode>
-      </node>
-      <node id="10159">
-        <label>openscenario_interpreter/syntax/lane_change_action.hpp</label>
-        <link refid="lane__change__action_8hpp_source"/>
-        <childnode refid="10083" relation="include">
-        </childnode>
-        <childnode refid="10160" relation="include">
-        </childnode>
-        <childnode refid="10162" relation="include">
-        </childnode>
-        <childnode refid="10090" relation="include">
-        </childnode>
-        <childnode refid="10130" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10160">
-        <label>openscenario_interpreter/syntax/lane_change_target.hpp</label>
-        <link refid="lane__change__target_8hpp_source"/>
-        <childnode refid="10161" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10176">
-        <label>openscenario_interpreter/syntax/position.hpp</label>
-        <link refid="position_8hpp_source"/>
-        <childnode refid="10177" relation="include">
-        </childnode>
-        <childnode refid="10178" relation="include">
-        </childnode>
-        <childnode refid="10185" relation="include">
-        </childnode>
-        <childnode refid="10187" relation="include">
-        </childnode>
-        <childnode refid="10093" relation="include">
-        </childnode>
-        <childnode refid="10130" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10141">
-        <label>std_msgs/msg/float64.hpp</label>
-      </node>
-      <node id="10197">
-        <label>openscenario_interpreter/syntax/entity_object.hpp</label>
-        <link refid="entity__object_8hpp_source"/>
-        <childnode refid="10198" relation="include">
-        </childnode>
-        <childnode refid="10204" relation="include">
-        </childnode>
-        <childnode refid="10207" relation="include">
-        </childnode>
-        <childnode refid="10130" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10110">
-        <label>openscenario_interpreter/type_traits/if_has_member_function_current_state.hpp</label>
-        <link refid="if__has__member__function__current__state_8hpp_source"/>
-        <childnode refid="10086" relation="include">
-        </childnode>
-        <childnode refid="10111" relation="include">
-        </childnode>
-      </node>
-      <node id="10107">
-        <label>openscenario_interpreter/type_traits/has_member_function_accomplished.hpp</label>
-        <link refid="has__member__function__accomplished_8hpp_source"/>
-        <childnode refid="10108" relation="include">
-        </childnode>
-      </node>
-      <node id="10209">
-        <label>openscenario_interpreter/syntax/axle.hpp</label>
-        <link refid="axle_8hpp_source"/>
-        <childnode refid="10135" relation="include">
-        </childnode>
-        <childnode refid="10098" relation="include">
-        </childnode>
-        <childnode refid="10210" relation="include">
-        </childnode>
-      </node>
-      <node id="10145">
-        <label>openscenario_interpreter/syntax/unsigned_integer.hpp</label>
-        <link refid="unsigned__integer_8hpp_source"/>
-        <childnode refid="10140" relation="include">
-        </childnode>
-        <childnode refid="10086" relation="include">
-        </childnode>
-        <childnode refid="10146" relation="include">
-        </childnode>
-        <childnode refid="10090" relation="include">
-        </childnode>
-      </node>
-      <node id="10121">
-        <label>unistd.h</label>
-      </node>
-      <node id="10151">
-        <label>vector</label>
-      </node>
-      <node id="10138">
-        <label>openscenario_interpreter/syntax/boolean.hpp</label>
-        <link refid="boolean_8hpp_source"/>
-        <childnode refid="10088" relation="include">
-        </childnode>
-        <childnode refid="10122" relation="include">
-        </childnode>
-        <childnode refid="10086" relation="include">
-        </childnode>
-        <childnode refid="10102" relation="include">
-        </childnode>
-        <childnode refid="10090" relation="include">
-        </childnode>
-      </node>
-      <node id="10133">
-        <label>boost/filesystem.hpp</label>
-      </node>
-      <node id="10180">
-        <label>openscenario_interpreter/syntax/orientation.hpp</label>
-        <link refid="orientation_8hpp_source"/>
-        <childnode refid="10181" relation="include">
-        </childnode>
-        <childnode refid="10135" relation="include">
-        </childnode>
-        <childnode refid="10182" relation="include">
-        </childnode>
-      </node>
-      <node id="10168">
-        <label>openscenario_interpreter/functional/equal_to.hpp</label>
-        <link refid="equal__to_8hpp_source"/>
-        <childnode refid="10169" relation="include">
-        </childnode>
-        <childnode refid="10099" relation="include">
-        </childnode>
-        <childnode refid="10084" relation="include">
-        </childnode>
-        <childnode refid="10109" relation="include">
-        </childnode>
-      </node>
-      <node id="10127">
-        <label>openscenario_interpreter/utility/pugi_extension.hpp</label>
-        <link refid="pugi__extension_8hpp_source"/>
-        <childnode refid="10128" relation="include">
-        </childnode>
-        <childnode refid="10129" relation="include">
-        </childnode>
-      </node>
-      <node id="10095">
-        <label>utility</label>
-      </node>
-      <node id="10195">
-        <label>openscenario_interpreter/syntax/add_entity_action.hpp</label>
-        <link refid="add__entity__action_8hpp_source"/>
-        <childnode refid="10098" relation="include">
-        </childnode>
-        <childnode refid="10131" relation="include">
-        </childnode>
-        <childnode refid="10176" relation="include">
-        </childnode>
-        <childnode refid="10196" relation="include">
-        </childnode>
-      </node>
-      <node id="10149">
-        <label>openscenario_interpreter/utility/highlighter.hpp</label>
-        <link refid="highlighter_8hpp_source"/>
-        <childnode refid="10122" relation="include">
-        </childnode>
-        <childnode refid="10123" relation="include">
-        </childnode>
-        <childnode refid="10090" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10198">
-        <label>openscenario_interpreter/syntax/misc_object.hpp</label>
-        <link refid="misc__object_8hpp_source"/>
-        <childnode refid="10131" relation="include">
-        </childnode>
-        <childnode refid="10199" relation="include">
-        </childnode>
-        <childnode refid="10139" relation="include">
-        </childnode>
-        <childnode refid="10203" relation="include">
-        </childnode>
-        <childnode refid="10097" relation="include">
-        </childnode>
-        <childnode refid="10153" relation="include">
-        </childnode>
-        <childnode refid="10144" relation="include">
-        </childnode>
-      </node>
-      <node id="10101">
-        <label>openscenario_interpreter/iterator/size.hpp</label>
-        <link refid="size_8hpp_source"/>
-        <childnode refid="10100" relation="include">
-        </childnode>
-      </node>
-      <node id="10115">
-        <label>openscenario_interpreter/type_traits/has_member_function_evaluate.hpp</label>
-        <link refid="has__member__function__evaluate_8hpp_source"/>
-        <childnode refid="10108" relation="include">
-        </childnode>
-      </node>
-      <node id="10081">
-        <label>openscenario_interpreter/syntax/controller_action.hpp</label>
-        <link refid="controller__action_8hpp_source"/>
-        <childnode refid="10082" relation="include">
-        </childnode>
-        <childnode refid="10157" relation="include">
-        </childnode>
-        <childnode refid="10109" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10205">
-        <label>openscenario_interpreter/syntax/pedestrian_category.hpp</label>
-        <link refid="pedestrian__category_8hpp_source"/>
-        <childnode refid="10122" relation="include">
-        </childnode>
-      </node>
-      <node id="10122">
-        <label>iostream</label>
-      </node>
-      <node id="10146">
-        <label>std_msgs/msg/u_int64.hpp</label>
-      </node>
-      <node id="10130">
-        <label>unordered_map</label>
-      </node>
-      <node id="10212">
-        <label>openscenario_interpreter/syntax/performance.hpp</label>
-        <link refid="performance_8hpp_source"/>
-        <childnode refid="10135" relation="include">
-        </childnode>
-        <childnode refid="10098" relation="include">
-        </childnode>
-        <childnode refid="10213" relation="include">
-        </childnode>
-      </node>
-      <node id="10163">
-        <label>openscenario_interpreter/syntax/dynamics_dimension.hpp</label>
-        <link refid="dynamics__dimension_8hpp_source"/>
-        <childnode refid="10122" relation="include">
+        <childnode refid="10091" relation="include">
         </childnode>
       </node>
       <node id="10153">
-        <label>openscenario_interpreter/syntax/properties.hpp</label>
-        <link refid="properties_8hpp_source"/>
-        <childnode refid="10154" relation="include">
-        </childnode>
-        <childnode refid="10155" relation="include">
-        </childnode>
-        <childnode refid="10130" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-        <childnode refid="10151" relation="include">
-        </childnode>
-      </node>
-      <node id="10213">
         <label>openscenario_msgs/msg/performance.hpp</label>
       </node>
-      <node id="10194">
+      <node id="10134">
         <label>openscenario_interpreter/syntax/teleport_action.hpp</label>
         <link refid="teleport__action_8hpp_source"/>
-        <childnode refid="10083" relation="include">
+        <childnode refid="10025" relation="include">
         </childnode>
-        <childnode refid="10131" relation="include">
+        <childnode refid="10071" relation="include">
         </childnode>
-        <childnode refid="10195" relation="include">
+        <childnode refid="10135" relation="include">
         </childnode>
-        <childnode refid="10176" relation="include">
+        <childnode refid="10116" relation="include">
         </childnode>
-        <childnode refid="10196" relation="include">
+        <childnode refid="10136" relation="include">
         </childnode>
-        <childnode refid="10095" relation="include">
+        <childnode refid="10037" relation="include">
         </childnode>
       </node>
-      <node id="10203">
+      <node id="10143">
         <label>openscenario_interpreter/syntax/misc_object_category.hpp</label>
         <link refid="misc__object__category_8hpp_source"/>
-        <childnode refid="10122" relation="include">
-        </childnode>
-      </node>
-      <node id="10158">
-        <label>openscenario_interpreter/syntax/lateral_action.hpp</label>
-        <link refid="lateral__action_8hpp_source"/>
-        <childnode refid="10159" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10204">
-        <label>openscenario_interpreter/syntax/pedestrian.hpp</label>
-        <link refid="pedestrian_8hpp_source"/>
-        <childnode refid="10199" relation="include">
-        </childnode>
-        <childnode refid="10097" relation="include">
-        </childnode>
-        <childnode refid="10205" relation="include">
-        </childnode>
-        <childnode refid="10153" relation="include">
-        </childnode>
-        <childnode refid="10206" relation="include">
+        <childnode refid="10062" relation="include">
         </childnode>
       </node>
       <node id="10098">
-        <label>openscenario_interpreter/reader/element.hpp</label>
-        <link refid="element_8hpp_source"/>
+        <label>openscenario_interpreter/syntax/lateral_action.hpp</label>
+        <link refid="lateral__action_8hpp_source"/>
         <childnode refid="10099" relation="include">
         </childnode>
-        <childnode refid="10100" relation="include">
-        </childnode>
-        <childnode refid="10084" relation="include">
-        </childnode>
-        <childnode refid="10101" relation="include">
-        </childnode>
-        <childnode refid="10102" relation="include">
-        </childnode>
-        <childnode refid="10126" relation="include">
-        </childnode>
-        <childnode refid="10127" relation="include">
-        </childnode>
-        <childnode refid="10090" relation="include">
-        </childnode>
-        <childnode refid="10130" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
+        <childnode refid="10037" relation="include">
         </childnode>
       </node>
-      <node id="10217">
-        <label>traffic_simulator/metrics/out_of_range_metric.hpp</label>
-      </node>
-      <node id="10152">
-        <label>openscenario_interpreter/syntax/parameter_declaration.hpp</label>
-        <link refid="parameter__declaration_8hpp_source"/>
-        <childnode refid="10135" relation="include">
+      <node id="10144">
+        <label>openscenario_interpreter/syntax/pedestrian.hpp</label>
+        <link refid="pedestrian_8hpp_source"/>
+        <childnode refid="10139" relation="include">
         </childnode>
-        <childnode refid="10131" relation="include">
+        <childnode refid="10039" relation="include">
         </childnode>
-        <childnode refid="10090" relation="include">
+        <childnode refid="10145" relation="include">
         </childnode>
-        <childnode refid="10151" relation="include">
+        <childnode refid="10093" relation="include">
         </childnode>
-      </node>
-      <node id="10199">
-        <label>openscenario_interpreter/syntax/bounding_box.hpp</label>
-        <link refid="bounding__box_8hpp_source"/>
-        <childnode refid="10200" relation="include">
-        </childnode>
-        <childnode refid="10201" relation="include">
-        </childnode>
-        <childnode refid="10202" relation="include">
+        <childnode refid="10146" relation="include">
         </childnode>
       </node>
-      <node id="10106">
-        <label>openscenario_interpreter/type_traits/if_has_member_function_accomplished.hpp</label>
-        <link refid="if__has__member__function__accomplished_8hpp_source"/>
-        <childnode refid="10107" relation="include">
+      <node id="10040">
+        <label>openscenario_interpreter/reader/element.hpp</label>
+        <link refid="element_8hpp_source"/>
+        <childnode refid="10041" relation="include">
         </childnode>
-      </node>
-      <node id="10118">
-        <label>openscenario_interpreter/type_traits/if_has_stream_output_operator.hpp</label>
-        <link refid="if__has__stream__output__operator_8hpp_source"/>
-        <childnode refid="10119" relation="include">
+        <childnode refid="10042" relation="include">
         </childnode>
-        <childnode refid="10123" relation="include">
+        <childnode refid="10026" relation="include">
         </childnode>
-        <childnode refid="10089" relation="include">
+        <childnode refid="10043" relation="include">
         </childnode>
-        <childnode refid="10124" relation="include">
+        <childnode refid="10044" relation="include">
         </childnode>
-      </node>
-      <node id="10109">
-        <label>type_traits</label>
-      </node>
-      <node id="10096">
-        <label>openscenario_interpreter/syntax/controller.hpp</label>
-        <link refid="controller_8hpp_source"/>
-        <childnode refid="10097" relation="include">
+        <childnode refid="10066" relation="include">
         </childnode>
-        <childnode refid="10153" relation="include">
+        <childnode refid="10067" relation="include">
         </childnode>
-        <childnode refid="10144" relation="include">
+        <childnode refid="10032" relation="include">
         </childnode>
-        <childnode refid="10156" relation="include">
+        <childnode refid="10070" relation="include">
         </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10120">
-        <label>openscenario_interpreter/console/is_console.hpp</label>
-        <link refid="is__console_8hpp_source"/>
-        <childnode refid="10121" relation="include">
-        </childnode>
-        <childnode refid="10122" relation="include">
+        <childnode refid="10037" relation="include">
         </childnode>
       </node>
       <node id="10157">
+        <label>traffic_simulator/metrics/out_of_range_metric.hpp</label>
+      </node>
+      <node id="10092">
+        <label>openscenario_interpreter/syntax/parameter_declaration.hpp</label>
+        <link refid="parameter__declaration_8hpp_source"/>
+        <childnode refid="10075" relation="include">
+        </childnode>
+        <childnode refid="10071" relation="include">
+        </childnode>
+        <childnode refid="10032" relation="include">
+        </childnode>
+        <childnode refid="10091" relation="include">
+        </childnode>
+      </node>
+      <node id="10139">
+        <label>openscenario_interpreter/syntax/bounding_box.hpp</label>
+        <link refid="bounding__box_8hpp_source"/>
+        <childnode refid="10140" relation="include">
+        </childnode>
+        <childnode refid="10141" relation="include">
+        </childnode>
+        <childnode refid="10142" relation="include">
+        </childnode>
+      </node>
+      <node id="10048">
+        <label>openscenario_interpreter/type_traits/if_has_member_function_accomplished.hpp</label>
+        <link refid="if__has__member__function__accomplished_8hpp_source"/>
+        <childnode refid="10049" relation="include">
+        </childnode>
+      </node>
+      <node id="10058">
+        <label>openscenario_interpreter/type_traits/if_has_stream_output_operator.hpp</label>
+        <link refid="if__has__stream__output__operator_8hpp_source"/>
+        <childnode refid="10059" relation="include">
+        </childnode>
+        <childnode refid="10063" relation="include">
+        </childnode>
+        <childnode refid="10031" relation="include">
+        </childnode>
+        <childnode refid="10064" relation="include">
+        </childnode>
+      </node>
+      <node id="10051">
+        <label>type_traits</label>
+      </node>
+      <node id="10038">
+        <label>openscenario_interpreter/syntax/controller.hpp</label>
+        <link refid="controller_8hpp_source"/>
+        <childnode refid="10039" relation="include">
+        </childnode>
+        <childnode refid="10093" relation="include">
+        </childnode>
+        <childnode refid="10084" relation="include">
+        </childnode>
+        <childnode refid="10096" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10060">
+        <label>openscenario_interpreter/console/is_console.hpp</label>
+        <link refid="is__console_8hpp_source"/>
+        <childnode refid="10061" relation="include">
+        </childnode>
+        <childnode refid="10062" relation="include">
+        </childnode>
+      </node>
+      <node id="10097">
         <label>openscenario_interpreter/syntax/override_controller_value_action.hpp</label>
         <link refid="override__controller__value__action_8hpp_source"/>
       </node>
-      <node id="10147">
+      <node id="10087">
         <label>openscenario_interpreter/syntax/unsigned_short.hpp</label>
         <link refid="unsigned__short_8hpp_source"/>
-        <childnode refid="10140" relation="include">
+        <childnode refid="10080" relation="include">
         </childnode>
-        <childnode refid="10122" relation="include">
+        <childnode refid="10062" relation="include">
         </childnode>
-        <childnode refid="10086" relation="include">
+        <childnode refid="10028" relation="include">
         </childnode>
-        <childnode refid="10148" relation="include">
+        <childnode refid="10088" relation="include">
         </childnode>
-        <childnode refid="10090" relation="include">
+        <childnode refid="10032" relation="include">
         </childnode>
       </node>
-      <node id="10193">
+      <node id="10133">
         <label>openscenario_interpreter/syntax/route_strategy.hpp</label>
         <link refid="route__strategy_8hpp_source"/>
-        <childnode refid="10122" relation="include">
+        <childnode refid="10062" relation="include">
         </childnode>
       </node>
-      <node id="10206">
+      <node id="10146">
         <label>openscenario_msgs/msg/pedestrian_parameters.hpp</label>
       </node>
-      <node id="10214">
+      <node id="10154">
         <label>openscenario_interpreter/syntax/vehicle_category.hpp</label>
         <link refid="vehicle__category_8hpp_source"/>
-        <childnode refid="10102" relation="include">
+        <childnode refid="10044" relation="include">
         </childnode>
-        <childnode refid="10090" relation="include">
+        <childnode refid="10032" relation="include">
         </childnode>
-        <childnode refid="10095" relation="include">
+        <childnode refid="10037" relation="include">
         </childnode>
       </node>
-      <node id="10124">
+      <node id="10064">
         <label>openscenario_interpreter/utility/indent.hpp</label>
         <link refid="indent_8hpp_source"/>
-        <childnode refid="10122" relation="include">
+        <childnode refid="10062" relation="include">
         </childnode>
-        <childnode refid="10090" relation="include">
+        <childnode refid="10032" relation="include">
         </childnode>
-      </node>
-      <node id="10185">
-        <label>openscenario_interpreter/syntax/relative_world_position.hpp</label>
-        <link refid="relative__world__position_8hpp_source"/>
-        <childnode refid="10186" relation="include">
-        </childnode>
-        <childnode refid="10179" relation="include">
-        </childnode>
-        <childnode refid="10134" relation="include">
-        </childnode>
-        <childnode refid="10183" relation="include">
-        </childnode>
-      </node>
-      <node id="10189">
-        <label>openscenario_interpreter/utility/overload.hpp</label>
-        <link refid="overload_8hpp_source"/>
-        <childnode refid="10109" relation="include">
-        </childnode>
-        <childnode refid="10095" relation="include">
-        </childnode>
-      </node>
-      <node id="10085">
-        <label>memory</label>
       </node>
       <node id="10125">
+        <label>openscenario_interpreter/syntax/relative_world_position.hpp</label>
+        <link refid="relative__world__position_8hpp_source"/>
+        <childnode refid="10126" relation="include">
+        </childnode>
+        <childnode refid="10119" relation="include">
+        </childnode>
+        <childnode refid="10074" relation="include">
+        </childnode>
+        <childnode refid="10123" relation="include">
+        </childnode>
+      </node>
+      <node id="10129">
+        <label>openscenario_interpreter/utility/overload.hpp</label>
+        <link refid="overload_8hpp_source"/>
+        <childnode refid="10051" relation="include">
+        </childnode>
+        <childnode refid="10037" relation="include">
+        </childnode>
+      </node>
+      <node id="10027">
+        <label>memory</label>
+      </node>
+      <node id="10065">
         <label>openscenario_interpreter/utility/pair.hpp</label>
         <link refid="pair_8hpp_source"/>
-        <childnode refid="10095" relation="include">
+        <childnode refid="10037" relation="include">
         </childnode>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="10222">
+      <node id="10162">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/maneuver_group.hpp</label>
         <link refid="maneuver__group_8hpp_source"/>
-        <childnode refid="10223" relation="include">
+        <childnode refid="10163" relation="include">
         </childnode>
       </node>
-      <node id="10219">
+      <node id="10159">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/action.hpp</label>
         <link refid="action_8hpp_source"/>
-        <childnode refid="10220" relation="include">
+        <childnode refid="10160" relation="include">
         </childnode>
-        <childnode refid="10230" relation="include">
+        <childnode refid="10170" relation="include">
         </childnode>
       </node>
-      <node id="10218">
+      <node id="10158">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/private_action.hpp</label>
         <link refid="private__action_8hpp"/>
-        <childnode refid="10219" relation="include">
+        <childnode refid="10159" relation="include">
         </childnode>
-        <childnode refid="10232" relation="include">
+        <childnode refid="10172" relation="include">
         </childnode>
       </node>
-      <node id="10230">
+      <node id="10170">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/init_actions.hpp</label>
         <link refid="init__actions_8hpp_source"/>
-        <childnode refid="10231" relation="include">
+        <childnode refid="10171" relation="include">
         </childnode>
       </node>
-      <node id="10225">
+      <node id="10165">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/storyboard.hpp</label>
         <link refid="storyboard_8hpp_source"/>
-        <childnode refid="10226" relation="include">
+        <childnode refid="10166" relation="include">
         </childnode>
       </node>
-      <node id="10229">
+      <node id="10169">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/openscenario_interpreter.hpp</label>
         <link refid="openscenario__interpreter_8hpp_source"/>
       </node>
-      <node id="10220">
+      <node id="10160">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/event.hpp</label>
         <link refid="event_8hpp_source"/>
-        <childnode refid="10221" relation="include">
+        <childnode refid="10161" relation="include">
         </childnode>
       </node>
-      <node id="10232">
+      <node id="10172">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/private.hpp</label>
         <link refid="private_8hpp_source"/>
-        <childnode refid="10230" relation="include">
+        <childnode refid="10170" relation="include">
         </childnode>
       </node>
-      <node id="10223">
+      <node id="10163">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/act.hpp</label>
         <link refid="act_8hpp_source"/>
-        <childnode refid="10224" relation="include">
+        <childnode refid="10164" relation="include">
         </childnode>
       </node>
-      <node id="10228">
+      <node id="10168">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/openscenario.hpp</label>
         <link refid="openscenario_8hpp_source"/>
-        <childnode refid="10229" relation="include">
+        <childnode refid="10169" relation="include">
         </childnode>
       </node>
-      <node id="10227">
+      <node id="10167">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/open_scenario_category.hpp</label>
         <link refid="open__scenario__category_8hpp_source"/>
-        <childnode refid="10228" relation="include">
+        <childnode refid="10168" relation="include">
         </childnode>
       </node>
-      <node id="10231">
+      <node id="10171">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/init.hpp</label>
         <link refid="init_8hpp_source"/>
-        <childnode refid="10225" relation="include">
+        <childnode refid="10165" relation="include">
         </childnode>
       </node>
-      <node id="10224">
+      <node id="10164">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/story.hpp</label>
         <link refid="story_8hpp_source"/>
-        <childnode refid="10225" relation="include">
+        <childnode refid="10165" relation="include">
         </childnode>
       </node>
-      <node id="10221">
+      <node id="10161">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/maneuver.hpp</label>
         <link refid="maneuver_8hpp_source"/>
-        <childnode refid="10222" relation="include">
+        <childnode refid="10162" relation="include">
         </childnode>
       </node>
-      <node id="10226">
+      <node id="10166">
         <label>/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/scenario_definition.hpp</label>
         <link refid="scenario__definition_8hpp_source"/>
-        <childnode refid="10227" relation="include">
+        <childnode refid="10167" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="structopenscenario__interpreter_1_1syntax_1_1PrivateAction" prot="public">openscenario_interpreter::syntax::PrivateAction</innerclass>
     <innernamespace refid="namespaceopenscenario__interpreter">openscenario_interpreter</innernamespace>
     <innernamespace refid="namespaceopenscenario__interpreter_1_1syntax">openscenario_interpreter::syntax</innernamespace>
-      <sectiondef kind="define">
-      <memberdef kind="define" id="private__action_8hpp_1aa470251fbe80466c8732a0ad6c409e3a" prot="public" static="no">
-        <name>BOILERPLATE</name>
-        <param><defname>TYPE</defname></param>
-        <initializer>if (is&lt;TYPE&gt;()) {                      \
-    return as&lt;TYPE&gt;().endsImmediately(); \
-  }</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/private_action.hpp" line="65" column="9"/>
-      </memberdef>
-      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -1351,25 +1336,41 @@
 <codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>clang-format<sp/>on</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>endsImmediately()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="64"><highlight class="keyword"><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOILERPLATE(TYPE)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="66"><highlight class="preprocessor"><sp/><sp/>if<sp/>(is&lt;TYPE&gt;())<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="67"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>return<sp/>as&lt;TYPE&gt;().endsImmediately();<sp/>\</highlight></codeline>
-<codeline lineno="68"><highlight class="preprocessor"><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>BOILERPLATE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1LongitudinalAction" kindref="compound">LongitudinalAction</ref>)</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>BOILERPLATE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1LateralAction" kindref="compound">LateralAction</ref>)</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>BOILERPLATE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1ControllerAction" kindref="compound">ControllerAction</ref>)</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>BOILERPLATE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1TeleportAction" kindref="compound">TeleportAction</ref>)</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>BOILERPLATE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1RoutingAction" kindref="compound">RoutingAction</ref>)</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>UNSUPPORTED_ELEMENT_SPECIFIED(type().name());</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>BOILERPLATE</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="77"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="78"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>syntax</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>openscenario_interpreter</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>OPENSCENARIO_INTERPRETER__SYNTAX__PRIVATE_ACTION_HPP_</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>endsImmediately()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>-&gt;<sp/>bool;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>run()<sp/>-&gt;<sp/>void;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start()<sp/>-&gt;<sp/>void;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">DEFINE_LAZY_VISITOR(</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1PrivateAction" kindref="compound">PrivateAction</ref>,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>CASE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1LongitudinalAction" kindref="compound">LongitudinalAction</ref>),<sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>CASE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1LateralAction" kindref="compound">LateralAction</ref>),<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>CASE(VisibilityAction),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>CASE(SynchronizeAction),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>CASE(ActivateControllerAction),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>CASE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1ControllerAction" kindref="compound">ControllerAction</ref>),<sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>CASE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1TeleportAction" kindref="compound">TeleportAction</ref>),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>CASE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1RoutingAction" kindref="compound">RoutingAction</ref>),<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">DEFINE_LAZY_VISITOR(</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structopenscenario__interpreter_1_1syntax_1_1PrivateAction" kindref="compound">PrivateAction</ref>,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>CASE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1LongitudinalAction" kindref="compound">LongitudinalAction</ref>),<sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>CASE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1LateralAction" kindref="compound">LateralAction</ref>),<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>CASE(VisibilityAction),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>CASE(SynchronizeAction),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>CASE(ActivateControllerAction),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>CASE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1ControllerAction" kindref="compound">ControllerAction</ref>),<sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>CASE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1TeleportAction" kindref="compound">TeleportAction</ref>),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>CASE(<ref refid="structopenscenario__interpreter_1_1syntax_1_1RoutingAction" kindref="compound">RoutingAction</ref>),<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>syntax</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>openscenario_interpreter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>OPENSCENARIO_INTERPRETER__SYNTAX__PRIVATE_ACTION_HPP_</highlight></codeline>
     </programlisting>
     <location file="/home/runner/work/scenario_simulator_v2/scenario_simulator_v2/openscenario/openscenario_interpreter/include/openscenario_interpreter/syntax/private_action.hpp"/>
   </compounddef>

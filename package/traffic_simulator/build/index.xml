@@ -57,6 +57,7 @@
     <member refid="classtraffic__simulator_1_1API_1aa9b8877249a83d2de54b382c225ea897" kind="variable"><name>update_entity_status_client_</name></member>
     <member refid="classtraffic__simulator_1_1API_1aee17063f1d521eacf8c994acccd0fc40" kind="variable"><name>attach_lidar_sensor_client_</name></member>
     <member refid="classtraffic__simulator_1_1API_1a2ddca493cc78ad0ad80170eb779582b8" kind="variable"><name>attach_detection_sensor_client_</name></member>
+    <member refid="classtraffic__simulator_1_1API_1a69ccd450d72ee2c85eb713ec09e601bb" kind="variable"><name>update_traffic_lights_client_</name></member>
     <member refid="classtraffic__simulator_1_1API_1a236ac6d8d87b2b174ac77c4226962c68" kind="function"><name>API</name></member>
     <member refid="classtraffic__simulator_1_1API_1a2e1ea4dc91018ccc82c9897267668f79" kind="function"><name>addMetric</name></member>
     <member refid="classtraffic__simulator_1_1API_1ab22b06383fec60a1071be11b0d8c2933" kind="function"><name>getMetricLifecycle</name></member>
@@ -90,8 +91,9 @@
     <member refid="classtraffic__simulator_1_1API_1afa6387ef4f852a4545f85d6b109fc932" kind="function"><name>FORWARD_TO_ENTITY_MANAGER</name></member>
     <member refid="classtraffic__simulator_1_1API_1a5fe7992b86ac036d462462a57bd8afb0" kind="function"><name>FORWARD_TO_ENTITY_MANAGER</name></member>
     <member refid="classtraffic__simulator_1_1API_1a619f0f22127fc1d6761398ac076e5950" kind="function"><name>FORWARD_TO_ENTITY_MANAGER</name></member>
-    <member refid="classtraffic__simulator_1_1API_1a17c3ae7808141f748bbe763988259813" kind="function"><name>FORWARD_TO_ENTITY_MANAGER</name></member>
+    <member refid="classtraffic__simulator_1_1API_1a88eb34d5c0ca00a5ed1309a7c52274d6" kind="function"><name>FORWARD_TO_ENTITY_MANAGER</name></member>
     <member refid="classtraffic__simulator_1_1API_1ab06feec5add5091b905cbd542047f28d" kind="function"><name>FORWARD_TO_ENTITY_MANAGER</name></member>
+    <member refid="classtraffic__simulator_1_1API_1a17c3ae7808141f748bbe763988259813" kind="function"><name>FORWARD_TO_ENTITY_MANAGER</name></member>
     <member refid="classtraffic__simulator_1_1API_1a8c7b1a5e22c6651e6edfa190f457c087" kind="function"><name>FORWARD_TO_ENTITY_MANAGER</name></member>
     <member refid="classtraffic__simulator_1_1API_1ac31230b4d345edb3fd966b7a1fa3fd42" kind="function"><name>FORWARD_TO_ENTITY_MANAGER</name></member>
     <member refid="classtraffic__simulator_1_1API_1a0f6c55ebde9840b46bc794dc7b84baec" kind="function"><name>FORWARD_TO_ENTITY_MANAGER</name></member>
@@ -114,6 +116,7 @@
     <member refid="classtraffic__simulator_1_1API_1a51d75ce20865ef030fec6c42193a51e1" kind="function"><name>FORWARD_TO_ENTITY_MANAGER</name></member>
     <member refid="classtraffic__simulator_1_1API_1ab993dcb3cd511e84391bdc089505f2cd" kind="function"><name>updateSensorFrame</name></member>
     <member refid="classtraffic__simulator_1_1API_1a88d108e77cd7cba20b99324ce38c84c8" kind="function"><name>updateEntityStatusInSim</name></member>
+    <member refid="classtraffic__simulator_1_1API_1a21bfa0093b2cdb918d13cdf3a8a28e17" kind="function"><name>updateTrafficLightsInSim</name></member>
     <member refid="classtraffic__simulator_1_1API_1a085443fc56758e20b2371e38a7eb8e1c" kind="function"><name>spawn</name></member>
   </compound>
   <compound refid="classentity__behavior_1_1pedestrian_1_1BehaviorTree" kind="class"><name>entity_behavior::pedestrian::BehaviorTree</name>
@@ -329,6 +332,7 @@
   <compound refid="classtraffic__simulator_1_1entity_1_1EntityManager" kind="class"><name>traffic_simulator::entity::EntityManager</name>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a0fcee4c5f9e11d43e431c831135ca888" kind="typedef"><name>EntityStatusWithTrajectoryArray</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a0cf1dc0cc1c30535d9bd71e0829cd6e6" kind="typedef"><name>MarkerArray</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a2a64d2f1a8bdfc06a4717b0b05e839d9" kind="typedef"><name>LaneletPose</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1ab81e3caec26c748dafc2bc8de7dee2da" kind="variable"><name>configuration</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a987232c43c09fafe961ef17c751042c2" kind="variable"><name>node_topics_interface</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1aec0bcea6d4e6b96ccdc1c154c25800f4" kind="variable"><name>broadcaster_</name></member>
@@ -351,6 +355,8 @@
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a33712fde45f4f152649b841e45934dfe" kind="function"><name>DEFINE_SET_TRAFFIC_LIGHT</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a47577a2c20a8691f7efd60f7c31d92f1" kind="function"><name>DEFINE_GET_TRAFFIC_LIGHT</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1af8677a21b1609c81d3521b183819f99d" kind="function"><name>DEFINE_GET_TRAFFIC_LIGHT</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a067e74d8aba69078561b49f634a72b7b" kind="function"><name>DEFINE_GET_TRAFFIC_LIGHT</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1acb2266c51601a49946c1d3370376a1fb" kind="function"><name>DEFINE_GET_TRAFFIC_LIGHT</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a5245e3aa36c1a7a352c366b0d6529628" kind="function"><name>FORWARD_TO_HDMAP_UTILS</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a9e688d7578ca16934f87a254ec3ef3ac" kind="function"><name>FORWARD_TO_ENTITY</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a53f1351ed7db55826de330de31766cc6" kind="function"><name>FORWARD_TO_ENTITY</name></member>
@@ -369,6 +375,7 @@
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a3faa6d696c388ba753f0cd76c21e7897" kind="function"><name>FORWARD_TO_ENTITY</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a772af412dff49c685b674a1fb12387db" kind="function"><name>FORWARD_TO_ENTITY</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1ac25ed1a313c7f09c1c7d23b0fae87af8" kind="function"><name>FORWARD_TO_ENTITY</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a8dc7c4010af5f1219bf7e14c72cca85c" kind="function"><name>trafficLightsChanged</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a364e321e9658285c68aad8a9d233c962" kind="function"><name>setTargetSpeed</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1ab18bf10546d93d33d23c4eadf76f2ace" kind="function"><name>updateNpcLogic</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a1f7aa8faa9e41bd0ca3520df50e277e1" kind="function"><name>broadcastEntityTransform</name></member>
@@ -376,6 +383,7 @@
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a6629ab8a3b1158b13cba18a2cb3957ef" kind="function"><name>checkCollision</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a3909ad795108453494747087df213009" kind="function"><name>despawnEntity</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a84d42477a5463cc73ba44307ffb4a7e4" kind="function"><name>entityExists</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1afd8844874ac25454ba7677019b3907d5" kind="function"><name>laneMatchingSucceed</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1ad4536ad71969c95b72b3dae2935fa26e" kind="function"><name>entityStatusSet</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1aa5e6f2a6f74680095ca7ac71db36d8e8" kind="function"><name>getBoundingBoxDistance</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a6b1b90dc50daac45de872ba94b8c6aa7" kind="function"><name>getCurrentTime</name></member>
@@ -386,7 +394,10 @@
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1ab66304ec721faa72edbb6554f394fd63" kind="function"><name>getEntityTypeList</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1aafc74129669334e5e73a4f5753054996" kind="function"><name>getHdmapUtils</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a39f7aee0e3da430a89a820c977d94e5f" kind="function"><name>getLaneletPose</name></member>
-    <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a13f2148305097f9b249e788d76a6accb" kind="function"><name>getLongitudinalDistance</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a66d5df855bf2a323d85c1b26fa497d9f" kind="function"><name>getLongitudinalDistance</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a6a4eec4183dac5057436e13a07052172" kind="function"><name>getLongitudinalDistance</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1af1be3819eb09fbdb1d7cc1a8de428223" kind="function"><name>getLongitudinalDistance</name></member>
+    <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a6077efde989bd2a75adc2488a122601f" kind="function"><name>getLongitudinalDistance</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1a25549719aa5db464b3812f4ac824697a" kind="function"><name>getMapPose</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1af53387cc5b146c100333114c6331ef60" kind="function"><name>getMapPose</name></member>
     <member refid="classtraffic__simulator_1_1entity_1_1EntityManager_1af6deae14d47f0f4b6d05239309f5c594" kind="function"><name>getNumberOfEgo</name></member>
@@ -1062,6 +1073,8 @@
     <member refid="classtraffic__simulator_1_1TrafficLightManager_1a5cc0edc63897bc42afabfd00638a4a7a" kind="variable"><name>clock_ptr_</name></member>
     <member refid="classtraffic__simulator_1_1TrafficLightManager_1ab87407e26ce6922ee6680a5291f14d5f" kind="variable"><name>map_frame_</name></member>
     <member refid="classtraffic__simulator_1_1TrafficLightManager_1a50826927f5f809702a0e4af72f6187d6" kind="function"><name>TrafficLightManager</name></member>
+    <member refid="classtraffic__simulator_1_1TrafficLightManager_1ad33b07dd962dc79d7867b963b9c2c30e" kind="function"><name>hasAnyLightChanged</name></member>
+    <member refid="classtraffic__simulator_1_1TrafficLightManager_1a1e9e7ed55cc9454200dc193bd47ac899" kind="function"><name>getInstance</name></member>
     <member refid="classtraffic__simulator_1_1TrafficLightManager_1a329e64017c8e3ec194602bd5c9db2239" kind="function"><name>update</name></member>
     <member refid="classtraffic__simulator_1_1TrafficLightManager_1aca3fcc350e6e09fe19ed08055dbf48e5" kind="function"><name>FORWARD_TO_GIVEN_TRAFFIC_LIGHT</name></member>
     <member refid="classtraffic__simulator_1_1TrafficLightManager_1a69bbf63b3db409636f375ae853139a26" kind="function"><name>FORWARD_TO_GIVEN_TRAFFIC_LIGHT</name></member>

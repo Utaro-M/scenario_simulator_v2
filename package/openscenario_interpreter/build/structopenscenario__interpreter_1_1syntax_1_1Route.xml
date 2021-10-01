@@ -90,44 +90,44 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="648">
+      <node id="644">
         <label>openscenario_interpreter::syntax::Route</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Route"/>
-        <childnode refid="649" relation="public-inheritance">
+        <childnode refid="645" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="649">
+      <node id="645">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="650">
+      <node id="646">
         <label>openscenario_interpreter::syntax::Route</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Route"/>
-        <childnode refid="651" relation="public-inheritance">
+        <childnode refid="647" relation="public-inheritance">
         </childnode>
-        <childnode refid="652" relation="usage">
+        <childnode refid="648" relation="usage">
           <edgelabel>parameter_declarations</edgelabel>
         </childnode>
-        <childnode refid="654" relation="usage">
+        <childnode refid="650" relation="usage">
           <edgelabel>closed</edgelabel>
         </childnode>
       </node>
-      <node id="652">
+      <node id="648">
         <label>openscenario_interpreter::syntax::ParameterDeclarations</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ParameterDeclarations"/>
-        <childnode refid="653" relation="public-inheritance">
+        <childnode refid="649" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="653">
+      <node id="649">
         <label>std::vector&lt; ParameterDeclaration &gt;</label>
       </node>
-      <node id="654">
+      <node id="650">
         <label>openscenario_interpreter::syntax::Boolean</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Boolean"/>
       </node>
-      <node id="651">
+      <node id="647">
         <label>openscenario_interpreter::Scope</label>
         <link refid="classopenscenario__interpreter_1_1Scope"/>
       </node>

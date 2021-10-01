@@ -430,24 +430,24 @@
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="377">
+      <node id="371">
         <label>openscenario_interpreter::Interpreter</label>
         <link refid="classopenscenario__interpreter_1_1Interpreter"/>
-        <childnode refid="378" relation="public-inheritance">
+        <childnode refid="372" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="378">
+      <node id="372">
         <label>rclcpp_lifecycle::LifecycleNode</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="379">
+      <node id="373">
         <label>openscenario_interpreter::Interpreter</label>
         <link refid="classopenscenario__interpreter_1_1Interpreter"/>
-        <childnode refid="380" relation="public-inheritance">
+        <childnode refid="374" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="380">
+      <node id="374">
         <label>rclcpp_lifecycle::LifecycleNode</label>
       </node>
     </collaborationgraph>

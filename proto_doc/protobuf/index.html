@@ -762,8 +762,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../etc/DevelopmentRules/" class="md-nav__link">
-        Development Rules
+      <a href="../../etc/HowToContribute/" class="md-nav__link">
+        How to Contribute
       </a>
     </li>
   
@@ -1204,6 +1204,20 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#trafficlightstate" class="md-nav__link">
+    TrafficLightState
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trafficlightstatelampstate" class="md-nav__link">
+    TrafficLightState.LampState
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#updateentitystatusrequest" class="md-nav__link">
     UpdateEntityStatusRequest
   </a>
@@ -1246,8 +1260,29 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#updatetrafficlightsrequest" class="md-nav__link">
+    UpdateTrafficLightsRequest
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updatetrafficlightsresponse" class="md-nav__link">
+    UpdateTrafficLightsResponse
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#updatedentitystatus" class="md-nav__link">
     UpdatedEntityStatus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trafficlightstatelampstatestate" class="md-nav__link">
+    TrafficLightState.LampState.State
   </a>
   
 </li>
@@ -1389,13 +1424,22 @@
 <li><a href="#simulation_api_schema.SpawnPedestrianEntityResponse">SpawnPedestrianEntityResponse</a></li>
 <li><a href="#simulation_api_schema.SpawnVehicleEntityRequest">SpawnVehicleEntityRequest</a></li>
 <li><a href="#simulation_api_schema.SpawnVehicleEntityResponse">SpawnVehicleEntityResponse</a></li>
+<li><a href="#simulation_api_schema.TrafficLightState">TrafficLightState</a></li>
+<li><a href="#simulation_api_schema.TrafficLightState.LampState">TrafficLightState.LampState</a></li>
 <li><a href="#simulation_api_schema.UpdateEntityStatusRequest">UpdateEntityStatusRequest</a></li>
 <li><a href="#simulation_api_schema.UpdateEntityStatusResponse">UpdateEntityStatusResponse</a></li>
 <li><a href="#simulation_api_schema.UpdateFrameRequest">UpdateFrameRequest</a></li>
 <li><a href="#simulation_api_schema.UpdateFrameResponse">UpdateFrameResponse</a></li>
 <li><a href="#simulation_api_schema.UpdateSensorFrameRequest">UpdateSensorFrameRequest</a></li>
 <li><a href="#simulation_api_schema.UpdateSensorFrameResponse">UpdateSensorFrameResponse</a></li>
-<li><a href="#simulation_api_schema.UpdatedEntityStatus">UpdatedEntityStatus</a></li>
+<li><a href="#simulation_api_schema.UpdateTrafficLightsRequest">UpdateTrafficLightsRequest</a></li>
+<li><a href="#simulation_api_schema.UpdateTrafficLightsResponse">UpdateTrafficLightsResponse</a></li>
+<li>
+<p><a href="#simulation_api_schema.UpdatedEntityStatus">UpdatedEntityStatus</a></p>
+</li>
+<li>
+<p><a href="#simulation_api_schema.TrafficLightState.LampState.State">TrafficLightState.LampState.State</a></p>
+</li>
 </ul>
 </li>
 <li>
@@ -2690,6 +2734,58 @@ ROS2.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="simulation_api_schema.TrafficLightState"></a></p>
+<h3 id="trafficlightstate">TrafficLightState<a class="headerlink" href="#trafficlightstate" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td><a href="#int32">int32</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>lamp_states</td>
+<td><a href="#simulation_api_schema.TrafficLightState.LampState">TrafficLightState.LampState</a></td>
+<td>repeated</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name="simulation_api_schema.TrafficLightState.LampState"></a></p>
+<h3 id="trafficlightstatelampstate">TrafficLightState.LampState<a class="headerlink" href="#trafficlightstatelampstate" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td><a href="#simulation_api_schema.TrafficLightState.LampState.State">TrafficLightState.LampState.State</a></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>confidence</td>
+<td><a href="#float">float</a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p><a name="simulation_api_schema.UpdateEntityStatusRequest"></a></p>
 <h3 id="updateentitystatusrequest">UpdateEntityStatusRequest<a class="headerlink" href="#updateentitystatusrequest" title="Permanent link">#</a></h3>
 <p>Requests updating entity status.</p>
@@ -2852,6 +2948,48 @@ ROS2.</p>
 </tr>
 </tbody>
 </table>
+<p><a name="simulation_api_schema.UpdateTrafficLightsRequest"></a></p>
+<h3 id="updatetrafficlightsrequest">UpdateTrafficLightsRequest<a class="headerlink" href="#updatetrafficlightsrequest" title="Permanent link">#</a></h3>
+<p>Requests updating traffic lights in simulation.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>states</td>
+<td><a href="#simulation_api_schema.TrafficLightState">TrafficLightState</a></td>
+<td>repeated</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><a name="simulation_api_schema.UpdateTrafficLightsResponse"></a></p>
+<h3 id="updatetrafficlightsresponse">UpdateTrafficLightsResponse<a class="headerlink" href="#updatetrafficlightsresponse" title="Permanent link">#</a></h3>
+<p>Response of updating traffic lights in simulation.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Type</th>
+<th>Label</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>result</td>
+<td><a href="#simulation_api_schema.Result">Result</a></td>
+<td></td>
+<td>Result of <a href="#DespawnEntityRequest">DespawnEntityRequest</a></td>
+</tr>
+</tbody>
+</table>
 <p><a name="simulation_api_schema.UpdatedEntityStatus"></a></p>
 <h3 id="updatedentitystatus">UpdatedEntityStatus<a class="headerlink" href="#updatedentitystatus" title="Permanent link">#</a></h3>
 <p>Updated entity status by the simulator.</p>
@@ -2882,6 +3020,59 @@ ROS2.</p>
 <td><a href="#geometry_msgs.Pose">geometry_msgs.Pose</a></td>
 <td></td>
 <td>Pose of the entity in the map coordinate.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="simulation_api_schema.TrafficLightState.LampState.State"></a></p>
+<h3 id="trafficlightstatelampstatestate">TrafficLightState.LampState.State<a class="headerlink" href="#trafficlightstatelampstatestate" title="Permanent link">#</a></h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Number</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UNKNOWN</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td>RED</td>
+<td>1</td>
+<td></td>
+</tr>
+<tr>
+<td>GREEN</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>YELLOW</td>
+<td>3</td>
+<td></td>
+</tr>
+<tr>
+<td>LEFT</td>
+<td>4</td>
+<td></td>
+</tr>
+<tr>
+<td>RIGHT</td>
+<td>5</td>
+<td></td>
+</tr>
+<tr>
+<td>UP</td>
+<td>6</td>
+<td></td>
+</tr>
+<tr>
+<td>DOWN</td>
+<td>7</td>
+<td></td>
 </tr>
 </tbody>
 </table>

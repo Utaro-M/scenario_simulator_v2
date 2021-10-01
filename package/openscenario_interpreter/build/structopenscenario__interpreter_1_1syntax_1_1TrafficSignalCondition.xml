@@ -130,21 +130,21 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="837">
+      <node id="836">
         <label>openscenario_interpreter::syntax::Arrow</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Arrow"/>
       </node>
-      <node id="835">
+      <node id="834">
         <label>openscenario_interpreter::syntax::TrafficSignalCondition</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1TrafficSignalCondition"/>
-        <childnode refid="836" relation="usage">
+        <childnode refid="835" relation="usage">
           <edgelabel>current_color</edgelabel>
         </childnode>
-        <childnode refid="837" relation="usage">
+        <childnode refid="836" relation="usage">
           <edgelabel>current_arrow</edgelabel>
         </childnode>
       </node>
-      <node id="836">
+      <node id="835">
         <label>openscenario_interpreter::syntax::Color</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Color"/>
       </node>

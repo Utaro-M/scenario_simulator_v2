@@ -118,28 +118,28 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="493">
+      <node id="487">
         <label>openscenario_interpreter::syntax::Double</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Double"/>
-        <childnode refid="494" relation="public-inheritance">
+        <childnode refid="488" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="494">
+      <node id="488">
         <label>std_msgs::msg::Float64</label>
       </node>
-      <node id="491">
+      <node id="485">
         <label>openscenario_interpreter::syntax::Orientation</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1Orientation"/>
-        <childnode refid="492" relation="usage">
+        <childnode refid="486" relation="usage">
           <edgelabel>type</edgelabel>
         </childnode>
-        <childnode refid="493" relation="usage">
+        <childnode refid="487" relation="usage">
           <edgelabel>h</edgelabel>
           <edgelabel>p</edgelabel>
           <edgelabel>r</edgelabel>
         </childnode>
       </node>
-      <node id="492">
+      <node id="486">
         <label>openscenario_interpreter::syntax::ReferenceContext</label>
         <link refid="structopenscenario__interpreter_1_1syntax_1_1ReferenceContext"/>
       </node>
