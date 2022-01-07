@@ -25,7 +25,7 @@ TransitionEvent::TransitionEvent(BT::TreeNode * root_node)
                              BT::TimePoint timestamp, const BT::TreeNode & node,
                              BT::NodeStatus prev, BT::NodeStatus status) {
     if (status != BT::NodeStatus::IDLE) {
-      if (type_ == BT::TimestampType::absolute) {
+      if (type_ == BT::TimestampType::ABSOLUTE) {
         this->callback(timestamp.time_since_epoch(), node, prev, status);
       } else {
         this->callback(timestamp - first_timestamp_, node, prev, status);
